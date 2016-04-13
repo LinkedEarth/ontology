@@ -1,0 +1,41 @@
+Name,Human Readable Description,Comment
+DataSet,"A collection of related information, including - but not limited to - geographical, chronological, and paleoenvironmental data",
+Publication,"Metadata relating to the original publication in which the dataset was first presented.
+One dataset can have more than one publication associated with it",
+Funding,The source(s) of funding for the study,
+Location ,The geographic data and metadata for the dataset,
+Coordinates,"The geolocation of the study site in terms of latitude, longitude, and altitude. The coordinates can represent a single point, a line, or a polygon.",
+PaleoData,The data and metadata that describe the set of measurements used to infer past environmental variability,
+DataTable,A set of Data organized in columns,
+paleoDataTable,Table containig the PaleoData,subclass of DataTable
+Variable,Quantities which can be measured or inferred independently in an experiment,
+PaleoDataVariable,the paleodata variables,subclass of Variable
+ClimateProxy,"Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate proxies in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of measurements can be made on each archives, each sensing a different aspect of the environment (sometimes, several aspects at once). A paleoclimate dataset is a set of observations made on an archive.",
+Archive,"The medium in which the response of a sensor to environmental forcing is recorded (e.g., marine sediments, ice core, lake sediments, speleothems). sensu Evans et al. (2013)",
+Sensor,"The sensor comprises physical, chemical and/or biological components that react to environmental conditions (e.g, foraminifera, coral polyps, cave, catchment basin). sensu Evans et al. (2013)",
+Observation,"The measurements made on the archives, whether chemical (e.g., Mg/Ca, d18O, TEX86, Sr/Ca....), physical (e.g. density, layer thickness) or biological (e.g. species abundance).",
+PaleoDataArchive,The archive for the PaleoData,subclass of Archive
+PaleoDataSensor,The sensor for the PaleoData,subclass of Sensor
+PaleoDataObservation,The observations for the PaleoData,subclass of Observation
+ClimateProxySystemModel,"In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . ""A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information.""",
+ArchiveModel,A mathematical description of how the sensor either creates or emplaces the signal into the archive (Evans et al. 2013),typical use: link to the doi of a publication (e.g. 10.1002/2015MS000447) or a piece of code (e.g. https://github.com/sylvia-dee/PRYSM/blob/master/psm/icecore/archive.py)
+SensorModel,The behavior of the sensor in response to environmental forcing (Evans et al. 2013),e.g. https://github.com/sylvia-dee/PRYSM/blob/master/psm/icecore/sensor.py
+ObservationModel,The way in which observations are made on the archive (Evans et al. 2013),e.g. https://github.com/sylvia-dee/PRYSM/blob/master/psm/aux_functions/analytical_error.py
+Instrument,A tool or implement used in scientific work,
+PaleoDataInstrument,Instrument used to produce some or all of the observations,subclass of Instrument
+ClimateInterpretation,A suite of metadata that describe how a variable is interpreted to reflect climate variability,
+Calibration,Metadata about how the variable was calibrated to refflect an environmental variable,
+ClimateProxyArchiveModel,ArchiveModel for the ClimateProxy,subclass of ArchiveModel
+ChronData,The data and metadata that describe the set of measurements used to infer chronological information,
+ChronDataTable,Table containing the ChronData,subclass of DataTable
+ChronProxy,The data and metadata associated with how the chronology information was obtained.,
+ChronDataVariable,the chronology variables,subclass of Variable
+CalibrationCurve,Metadata about how the variables were calibrated against a curve to infer age information,
+ChronDataArchive,The archive for the ChronData,subclass of Archive
+ChronDataSensor,The sensor for the ChronData,sublcass of Sensor
+ChronDataObservation,The observations for the ChronData,sublcass of Observation
+ChronDataInstrument,The instrument on which the ChronData are measured,subclass of Instrument
+ChronProxySystemModel,"The combination of sensor, archive and observation models in the Evans et al. (2013) framework. ""A generalized proxy system model encapsulates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information."" Used in this case as it applies to the time dimension of the paleoclimate information.",
+ChronProxyArchiveModel,ArchiveModel for the ChronProxy,
+ChronProxySensorModel,SensorModel for the ChronProxy,
+ChronProxyObservationModel,ObservationModel for the ChronProxy,

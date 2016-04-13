@@ -1,0 +1,17 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "The Linked Earth Ontology";
+	 prov:wasAttributedTo <https://linkedearth.slack.com/team/deborah>;
+	 dc:creator <https://linkedearth.slack.com/team/deborah>;
+	 prov:wasAttributedTo <https://linkedearth.slack.com/team/elnino>;
+	 dc:creator <https://linkedearth.slack.com/team/elnino>;
+	 prov:wasAttributedTo <https://linkedearth.slack.com/team/nick>;
+	 dc:creator <https://linkedearth.slack.com/team/nick>;
+	 prov:wasAttributedTo <http://w3id.org/people/dgarijo>;
+	 dc:contributor <http://w3id.org/people/dgarijo>;
+	 prov:wasAttributedTo <http://www.isi.edu/~gil/>;
+	 dc:contributor <http://www.isi.edu/~gil/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

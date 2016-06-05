@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "le:Proxy" "le:ObservationModel" "le:NonPeerReviewedPublication" "le:OrganicSensor" "le:SensorModel" "le:UncertaintyModel" "le:IntegrationTime" "le:Variable" "le:Model" "le:PeerReviewedPublication" "le:InferredVariable" "le:PaleoData" "le:InorganicSensor" "le:Publication" "le:IsotopeInterpretation" "le:ClimateInterpretation" "le:ArchiveModel" "le:Interpretation" "le:PaleoDataTable" "le:ChronData" "le:ChronDataTable" "le:DataTable" "le:ProxySystemModel" "le:CalibrationModel" "le:MeasuredVariable" "le:Sensor" "le:Observation" "le:ClimateProxy" "le:ChronProxy" "le:Data" ; /*classes style*/
+	"le:ChronData" -> "le:Data" [ label = "rdfs:subClassOf" ];
+	"le:CalibrationModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:PaleoDataTable" -> "le:DataTable" [ label = "rdfs:subClassOf" ];
+	"le:ObservationModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:ChronProxy" -> "le:Proxy" [ label = "rdfs:subClassOf" ];
+	"le:SensorModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:InorganicSensor" -> "le:Sensor" [ label = "rdfs:subClassOf" ];
+	"le:Observation" -> "le:MeasuredVariable" [ label = "rdfs:subClassOf" ];
+	"le:ArchiveModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:ClimateInterpretation" -> "le:Interpretation" [ label = "rdfs:subClassOf" ];
+	"le:PeerReviewedPublication" -> "le:Publication" [ label = "rdfs:subClassOf" ];
+	"le:PaleoData" -> "le:Data" [ label = "rdfs:subClassOf" ];
+	"le:NonPeerReviewedPublication" -> "le:Publication" [ label = "rdfs:subClassOf" ];
+	"le:UncertaintyModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:ClimateProxy" -> "le:Proxy" [ label = "rdfs:subClassOf" ];
+	"le:ChronDataTable" -> "le:DataTable" [ label = "rdfs:subClassOf" ];
+	"le:IntegrationTime" -> "le:SensorModel" [ label = "rdfs:subClassOf" ];
+	"le:IntegrationTime" -> "le:ArchiveModel" [ label = "rdfs:subClassOf" ];
+	"le:OrganicSensor" -> "le:Sensor" [ label = "rdfs:subClassOf" ];
+	"le:IsotopeInterpretation" -> "le:Interpretation" [ label = "rdfs:subClassOf" ];
+	"le:InferredVariable" -> "le:Variable" [ label = "rdfs:subClassOf" ];
+	"le:ProxySystemModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:MeasuredVariable" -> "le:Variable" [ label = "rdfs:subClassOf" ];
+
+}

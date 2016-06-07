@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/linkedEarth/ontology#> .
+@prefix : <http://linked.earth/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,15 +6,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/linkedEarth/ontology#> .
+@base <http://linked.earth/ontology#> .
 
-<https://w3id.org/linkedEarth/ontology#> rdf:type owl:Ontology ;
+<http://linked.earth/ontology#> rdf:type owl:Ontology ;
                                          
                                          owl:versionInfo "0.0.4"@en ;
                                          
                                          dcterms:license "http://creativecommons.org/licenses/by-nc-sa/2.0/" ;
                                          
-                                         vann:preferredNamespaceUri "https://w3id.org/linkedEarth/ontology#" ;
+                                         vann:preferredNamespaceUri "http://linked.earth/ontology#" ;
                                          
                                          vann:preferredNamespacePrefix "le" .
 
@@ -67,7 +67,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#archivedIn
+###  http://linked.earth/ontology#archivedIn
 
 :archivedIn rdf:type owl:ObjectProperty ;
             
@@ -79,7 +79,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#basedOn
+###  http://linked.earth/ontology#basedOn
 
 :basedOn rdf:type owl:ObjectProperty ;
          
@@ -91,7 +91,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#calibratedWith
+###  http://linked.earth/ontology#calibratedWith
 
 :calibratedWith rdf:type owl:ObjectProperty ;
                 
@@ -103,7 +103,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#calibrationReferences
+###  http://linked.earth/ontology#calibrationReferences
 
 :calibrationReferences rdf:type owl:ObjectProperty ;
                        
@@ -117,7 +117,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#collectedFrom
+###  http://linked.earth/ontology#collectedFrom
 
 :collectedFrom rdf:type owl:ObjectProperty ;
                
@@ -129,7 +129,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#datasetContributor
+###  http://linked.earth/ontology#datasetContributor
 
 :datasetContributor rdf:type owl:ObjectProperty ;
                     
@@ -139,7 +139,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#datasetCreator
+###  http://linked.earth/ontology#datasetCreator
 
 :datasetCreator rdf:type owl:ObjectProperty ;
                 
@@ -151,7 +151,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#foundInTable
+###  http://linked.earth/ontology#foundInTable
 
 :foundInTable rdf:type owl:ObjectProperty ;
               
@@ -167,7 +167,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#fundedBy
+###  http://linked.earth/ontology#fundedBy
 
 :fundedBy rdf:type owl:ObjectProperty ;
           
@@ -179,7 +179,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasCode
+###  http://linked.earth/ontology#hasCode
 
 :hasCode rdf:type owl:ObjectProperty ;
          
@@ -191,7 +191,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasPart
+###  http://linked.earth/ontology#hasPart
 
 :hasPart rdf:type owl:ObjectProperty ;
          
@@ -208,7 +208,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasResolution
+###  http://linked.earth/ontology#hasResolution
 
 :hasResolution rdf:type owl:ObjectProperty ;
                
@@ -220,7 +220,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasUncertainty
+###  http://linked.earth/ontology#hasUncertainty
 
 :hasUncertainty rdf:type owl:ObjectProperty ;
                 
@@ -238,7 +238,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#includesData
+###  http://linked.earth/ontology#includesData
 
 :includesData rdf:type owl:ObjectProperty ;
               
@@ -250,7 +250,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#includesVariable
+###  http://linked.earth/ontology#includesVariable
 
 :includesVariable rdf:type owl:ObjectProperty ;
                   
@@ -262,7 +262,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#inferredFrom
+###  http://linked.earth/ontology#inferredFrom
 
 :inferredFrom rdf:type owl:ObjectProperty ;
               
@@ -274,7 +274,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#interpretationReferences
+###  http://linked.earth/ontology#interpretationReferences
 
 :interpretationReferences rdf:type owl:ObjectProperty ;
                           
@@ -288,7 +288,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#interpretedAs
+###  http://linked.earth/ontology#interpretedAs
 
 :interpretedAs rdf:type owl:ObjectProperty ;
                
@@ -300,7 +300,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#measuredBy
+###  http://linked.earth/ontology#measuredBy
 
 :measuredBy rdf:type owl:ObjectProperty ;
             
@@ -312,7 +312,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#measuredOn
+###  http://linked.earth/ontology#measuredOn
 
 :measuredOn rdf:type owl:ObjectProperty ;
             
@@ -326,7 +326,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#modelReferences
+###  http://linked.earth/ontology#modelReferences
 
 :modelReferences rdf:type owl:ObjectProperty ;
                  
@@ -340,7 +340,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#modeledBy
+###  http://linked.earth/ontology#modeledBy
 
 :modeledBy rdf:type owl:ObjectProperty ;
            
@@ -352,7 +352,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#observedAs
+###  http://linked.earth/ontology#observedAs
 
 :observedAs rdf:type owl:ObjectProperty ;
             
@@ -364,7 +364,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#principalInvestigator
+###  http://linked.earth/ontology#principalInvestigator
 
 :principalInvestigator rdf:type owl:ObjectProperty ;
                        
@@ -374,7 +374,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#publishedIn
+###  http://linked.earth/ontology#publishedIn
 
 :publishedIn rdf:type owl:ObjectProperty ;
              
@@ -386,7 +386,7 @@ dcterms:references rdf:type owl:ObjectProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#sensingWith
+###  http://linked.earth/ontology#sensingWith
 
 :sensingWith rdf:type owl:ObjectProperty ;
              
@@ -425,7 +425,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#datasetVersion
+###  http://linked.earth/ontology#datasetVersion
 
 :datasetVersion rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
@@ -436,7 +436,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#datasetYear
+###  http://linked.earth/ontology#datasetYear
 
 :datasetYear rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
@@ -451,7 +451,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#description
+###  http://linked.earth/ontology#description
 
 :description rdf:type owl:DatatypeProperty ;
              
@@ -459,7 +459,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#detail
+###  http://linked.earth/ontology#detail
 
 :detail rdf:type owl:DatatypeProperty ;
         
@@ -471,7 +471,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#equation
+###  http://linked.earth/ontology#equation
 
 :equation rdf:type owl:DatatypeProperty ;
           
@@ -483,7 +483,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#fundingAgency
+###  http://linked.earth/ontology#fundingAgency
 
 :fundingAgency rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
@@ -496,7 +496,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#fundingCountry
+###  http://linked.earth/ontology#fundingCountry
 
 :fundingCountry rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
@@ -507,7 +507,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#grantNumber
+###  http://linked.earth/ontology#grantNumber
 
 :grantNumber rdf:type owl:DatatypeProperty ;
              
@@ -519,7 +519,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasDOI
+###  http://linked.earth/ontology#hasDOI
 
 :hasDOI rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
@@ -530,7 +530,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasLink
+###  http://linked.earth/ontology#hasLink
 
 :hasLink rdf:type owl:DatatypeProperty ;
          
@@ -540,7 +540,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasMissingValue
+###  http://linked.earth/ontology#hasMissingValue
 
 :hasMissingValue rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
@@ -559,7 +559,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasRank
+###  http://linked.earth/ontology#hasRank
 
 :hasRank rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
@@ -572,7 +572,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasUnits
+###  http://linked.earth/ontology#hasUnits
 
 :hasUnits rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
@@ -589,7 +589,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#hasValue
+###  http://linked.earth/ontology#hasValue
 
 :hasValue rdf:type owl:DatatypeProperty ;
           
@@ -606,7 +606,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#interpretationDirection
+###  http://linked.earth/ontology#interpretationDirection
 
 :interpretationDirection rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
@@ -619,7 +619,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#isLocal
+###  http://linked.earth/ontology#isLocal
 
 :isLocal rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
@@ -632,7 +632,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#issue
+###  http://linked.earth/ontology#issue
 
 :issue rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
@@ -645,7 +645,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#method
+###  http://linked.earth/ontology#method
 
 :method rdf:type owl:DatatypeProperty ;
         
@@ -662,7 +662,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#notes
+###  http://linked.earth/ontology#notes
 
 :notes rdf:type owl:DatatypeProperty ;
        
@@ -676,7 +676,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#orcidNumber
+###  http://linked.earth/ontology#orcidNumber
 
 :orcidNumber rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
@@ -689,7 +689,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#pages
+###  http://linked.earth/ontology#pages
 
 :pages rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
@@ -702,7 +702,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#publicationYear
+###  http://linked.earth/ontology#publicationYear
 
 :publicationYear rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
@@ -715,7 +715,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#relevantQuote
+###  http://linked.earth/ontology#relevantQuote
 
 :relevantQuote rdf:type owl:DatatypeProperty ;
                
@@ -725,7 +725,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#seasonality
+###  http://linked.earth/ontology#seasonality
 
 :seasonality rdf:type owl:DatatypeProperty ;
              
@@ -738,7 +738,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#sensorGenus
+###  http://linked.earth/ontology#sensorGenus
 
 :sensorGenus rdf:type owl:DatatypeProperty ;
              
@@ -750,7 +750,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#sensorSpecies
+###  http://linked.earth/ontology#sensorSpecies
 
 :sensorSpecies rdf:type owl:DatatypeProperty ;
                
@@ -762,7 +762,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#standard
+###  http://linked.earth/ontology#standard
 
 :standard rdf:type owl:DatatypeProperty ;
           
@@ -772,7 +772,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#uncertaintyLevel
+###  http://linked.earth/ontology#uncertaintyLevel
 
 :uncertaintyLevel rdf:type owl:DatatypeProperty ;
                   
@@ -784,7 +784,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#volume
+###  http://linked.earth/ontology#volume
 
 :volume rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
@@ -797,7 +797,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#warnings
+###  http://linked.earth/ontology#warnings
 
 :warnings rdf:type owl:DatatypeProperty ;
           
@@ -827,7 +827,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Archive
+###  http://linked.earth/ontology#Archive
 
 :Archive rdf:type owl:Class ;
          
@@ -837,7 +837,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ArchiveModel
+###  http://linked.earth/ontology#ArchiveModel
 
 :ArchiveModel rdf:type owl:Class ;
               
@@ -849,7 +849,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#CalibrationModel
+###  http://linked.earth/ontology#CalibrationModel
 
 :CalibrationModel rdf:type owl:Class ;
                   
@@ -859,7 +859,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ChronData
+###  http://linked.earth/ontology#ChronData
 
 :ChronData rdf:type owl:Class ;
            
@@ -869,7 +869,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ChronDataTable
+###  http://linked.earth/ontology#ChronDataTable
 
 :ChronDataTable rdf:type owl:Class ;
                 
@@ -879,7 +879,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ChronProxy
+###  http://linked.earth/ontology#ChronProxy
 
 :ChronProxy rdf:type owl:Class ;
             
@@ -889,7 +889,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ClimateInterpretation
+###  http://linked.earth/ontology#ClimateInterpretation
 
 :ClimateInterpretation rdf:type owl:Class ;
                        
@@ -899,7 +899,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ClimateProxy
+###  http://linked.earth/ontology#ClimateProxy
 
 :ClimateProxy rdf:type owl:Class ;
               
@@ -909,7 +909,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Data
+###  http://linked.earth/ontology#Data
 
 :Data rdf:type owl:Class ;
       
@@ -917,7 +917,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#DataTable
+###  http://linked.earth/ontology#DataTable
 
 :DataTable rdf:type owl:Class ;
            
@@ -925,7 +925,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Dataset
+###  http://linked.earth/ontology#Dataset
 
 :Dataset rdf:type owl:Class ;
          
@@ -935,7 +935,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Funding
+###  http://linked.earth/ontology#Funding
 
 :Funding rdf:type owl:Class ;
          
@@ -943,7 +943,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#InferredVariable
+###  http://linked.earth/ontology#InferredVariable
 
 :InferredVariable rdf:type owl:Class ;
                   
@@ -955,7 +955,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#InorganicSensor
+###  http://linked.earth/ontology#InorganicSensor
 
 :InorganicSensor rdf:type owl:Class ;
                  
@@ -967,7 +967,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Instrument
+###  http://linked.earth/ontology#Instrument
 
 :Instrument rdf:type owl:Class ;
             
@@ -975,7 +975,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#IntegrationTime
+###  http://linked.earth/ontology#IntegrationTime
 
 :IntegrationTime rdf:type owl:Class ;
                  
@@ -986,7 +986,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Interpretation
+###  http://linked.earth/ontology#Interpretation
 
 :Interpretation rdf:type owl:Class ;
                 
@@ -994,7 +994,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#IsotopeInterpretation
+###  http://linked.earth/ontology#IsotopeInterpretation
 
 :IsotopeInterpretation rdf:type owl:Class ;
                        
@@ -1004,7 +1004,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Location
+###  http://linked.earth/ontology#Location
 
 :Location rdf:type owl:Class ;
           
@@ -1012,7 +1012,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#MeasuredVariable
+###  http://linked.earth/ontology#MeasuredVariable
 
 :MeasuredVariable rdf:type owl:Class ;
                   
@@ -1022,7 +1022,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Model
+###  http://linked.earth/ontology#Model
 
 :Model rdf:type owl:Class ;
        
@@ -1030,7 +1030,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#NonPeerReviewedPublication
+###  http://linked.earth/ontology#NonPeerReviewedPublication
 
 :NonPeerReviewedPublication rdf:type owl:Class ;
                             
@@ -1042,7 +1042,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Observation
+###  http://linked.earth/ontology#Observation
 
 :Observation rdf:type owl:Class ;
              
@@ -1054,7 +1054,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ObservationModel
+###  http://linked.earth/ontology#ObservationModel
 
 :ObservationModel rdf:type owl:Class ;
                   
@@ -1066,7 +1066,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#OrganicSensor
+###  http://linked.earth/ontology#OrganicSensor
 
 :OrganicSensor rdf:type owl:Class ;
                
@@ -1076,7 +1076,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#PaleoData
+###  http://linked.earth/ontology#PaleoData
 
 :PaleoData rdf:type owl:Class ;
            
@@ -1086,7 +1086,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#PaleoDataTable
+###  http://linked.earth/ontology#PaleoDataTable
 
 :PaleoDataTable rdf:type owl:Class ;
                 
@@ -1096,7 +1096,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#PeerReviewedPublication
+###  http://linked.earth/ontology#PeerReviewedPublication
 
 :PeerReviewedPublication rdf:type owl:Class ;
                          
@@ -1106,7 +1106,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Proxy
+###  http://linked.earth/ontology#Proxy
 
 :Proxy rdf:type owl:Class ;
        
@@ -1114,7 +1114,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#ProxySystemModel
+###  http://linked.earth/ontology#ProxySystemModel
 
 :ProxySystemModel rdf:type owl:Class ;
                   
@@ -1126,7 +1126,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Publication
+###  http://linked.earth/ontology#Publication
 
 :Publication rdf:type owl:Class ;
              
@@ -1136,7 +1136,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Resolution
+###  http://linked.earth/ontology#Resolution
 
 :Resolution rdf:type owl:Class ;
             
@@ -1144,7 +1144,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Sensor
+###  http://linked.earth/ontology#Sensor
 
 :Sensor rdf:type owl:Class ;
         
@@ -1154,7 +1154,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#SensorModel
+###  http://linked.earth/ontology#SensorModel
 
 :SensorModel rdf:type owl:Class ;
              
@@ -1166,7 +1166,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#SoftwareCode
+###  http://linked.earth/ontology#SoftwareCode
 
 :SoftwareCode rdf:type owl:Class ;
               
@@ -1174,7 +1174,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Uncertainty
+###  http://linked.earth/ontology#Uncertainty
 
 :Uncertainty rdf:type owl:Class ;
              
@@ -1184,7 +1184,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#UncertaintyModel
+###  http://linked.earth/ontology#UncertaintyModel
 
 :UncertaintyModel rdf:type owl:Class ;
                   
@@ -1194,7 +1194,7 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#Variable
+###  http://linked.earth/ontology#Variable
 
 :Variable rdf:type owl:Class ;
           
@@ -1241,9 +1241,9 @@ dcterms:title rdf:type owl:DatatypeProperty .
 
 
 
-###  https://w3id.org/linkedEarth/ontology#
+###  http://linked.earth/ontology#
 
-<https://w3id.org/linkedEarth/ontology#> rdf:type owl:NamedIndividual ;
+<http://linked.earth/ontology#> rdf:type owl:NamedIndividual ;
                                          
                                          dcterms:title "The Linked Earth Ontology" ,
                                                        "The Linked Earth Ontology"@en ;

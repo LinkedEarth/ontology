@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "le:OrganicSensor" "le:Publication" "le:ClimateProxy" "le:PaleoDataTable" "le:Location" "le:ClimateInterpretation" "le:IntegrationTime" "le:ProxySystemModel" "le:InorganicSensor" "le:PaleoData" "le:DataTable" "le:ChronDataTable" "le:IsotopeInterpretation" "le:PeerReviewedPublication" "le:ChronData" "le:MeasuredVariable" "le:ArchiveModel" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "le:Interpretation" "le:SensorModel" "le:Data" "le:ChronProxy" "le:Proxy" "le:Variable" "le:Model" "le:ObservationModel" "le:CalibrationModel" "http://www.opengis.net/ont/geosparql#Feature" "le:Sensor" "le:InferredVariable" "le:NonPeerReviewedPublication" "le:UncertaintyModel" "le:Observation" ; /*classes style*/
+	"le:InferredVariable" -> "le:Variable" [ label = "rdfs:subClassOf" ];
+	"le:CalibrationModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:SensorModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:NonPeerReviewedPublication" -> "le:Publication" [ label = "rdfs:subClassOf" ];
+	"le:ProxySystemModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:IsotopeInterpretation" -> "le:Interpretation" [ label = "rdfs:subClassOf" ];
+	"le:Location" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"le:Location" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"le:ArchiveModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:PeerReviewedPublication" -> "le:Publication" [ label = "rdfs:subClassOf" ];
+	"le:Observation" -> "le:MeasuredVariable" [ label = "rdfs:subClassOf" ];
+	"le:MeasuredVariable" -> "le:Variable" [ label = "rdfs:subClassOf" ];
+	"le:PaleoDataTable" -> "le:DataTable" [ label = "rdfs:subClassOf" ];
+	"le:ChronData" -> "le:Data" [ label = "rdfs:subClassOf" ];
+	"le:ClimateProxy" -> "le:Proxy" [ label = "rdfs:subClassOf" ];
+	"le:ObservationModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:OrganicSensor" -> "le:Sensor" [ label = "rdfs:subClassOf" ];
+	"le:UncertaintyModel" -> "le:Model" [ label = "rdfs:subClassOf" ];
+	"le:ChronProxy" -> "le:Proxy" [ label = "rdfs:subClassOf" ];
+	"le:InorganicSensor" -> "le:Sensor" [ label = "rdfs:subClassOf" ];
+	"le:IntegrationTime" -> "le:SensorModel" [ label = "rdfs:subClassOf" ];
+	"le:IntegrationTime" -> "le:ArchiveModel" [ label = "rdfs:subClassOf" ];
+	"le:ChronDataTable" -> "le:DataTable" [ label = "rdfs:subClassOf" ];
+	"le:ClimateInterpretation" -> "le:Interpretation" [ label = "rdfs:subClassOf" ];
+	"le:PaleoData" -> "le:Data" [ label = "rdfs:subClassOf" ];
+
+}

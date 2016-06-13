@@ -1,0 +1,17 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "The Linked Earth Ontology";
+	 prov:wasAttributedTo <http://www.cefns.nau.edu/~npm4/>;
+	 dc:creator <http://www.cefns.nau.edu/~npm4/>;
+	 prov:wasAttributedTo <http://orcid.org/0000-0001-5920-4751>;
+	 dc:creator <http://orcid.org/0000-0001-5920-4751>;
+	 prov:wasAttributedTo <http://earth.usc.edu/~khider/>;
+	 dc:creator <http://earth.usc.edu/~khider/>;
+	 prov:wasAttributedTo <http://www.isi.edu/~gil/>;
+	 dc:contributor <http://www.isi.edu/~gil/>;
+	 prov:wasAttributedTo <http://w3id.org/people/dgarijo>;
+	 dc:contributor <http://w3id.org/people/dgarijo>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

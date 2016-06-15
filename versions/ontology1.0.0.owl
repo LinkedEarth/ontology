@@ -139,9 +139,9 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 :collectedFrom rdf:type owl:ObjectProperty ;
                
-               rdfs:comment "Where was the data in the dataset collected from? Generally, this is the site where the archive was collected. "@en ;
+               rdfs:label "collectedFrom"@en ;
                
-               rdfs:isDefinedBy "collectedFrom"@en ;
+               rdfs:comment "Where was the data in the dataset collected from? Generally, this is the site where the archive was collected. "@en ;
                
                rdfs:domain :Dataset ;
                
@@ -211,7 +211,7 @@ rdfs:Literal owl:equivalentClass xsd:string .
                          
                          rdfs:label "foundInMeasurementTable"@en ;
                          
-                         rdfs:comment "indicates that a variable was found in a measurement table"@en ;
+                         rdfs:comment "Property that indicates that a variable was found in a measurement table"@en ;
                          
                          rdfs:range :MeasurementTable ;
                          
@@ -284,8 +284,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
          rdfs:label "hasCode"@en ;
          
          rdfs:comment "What is the mathematical formulation that describes the Model?"@en ;
-         
-         rdfs:isDefinedBy "hasCode"@en ;
          
          rdfs:domain :Model ;
          
@@ -584,7 +582,7 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 dcterms:contributor rdf:type owl:ObjectProperty ;
                     
-                    rdfs:isDefinedBy "http://purl.org/dc/terms/contributor"@en .
+                    rdfs:isDefinedBy dcterms: .
 
 
 
@@ -592,7 +590,7 @@ dcterms:contributor rdf:type owl:ObjectProperty ;
 
 dcterms:creator rdf:type owl:ObjectProperty ;
                 
-                rdfs:isDefinedBy "http://purl.org/dc/terms/creator"@en .
+                rdfs:isDefinedBy dcterms: .
 
 
 
@@ -600,7 +598,7 @@ dcterms:creator rdf:type owl:ObjectProperty ;
 
 dcterms:references rdf:type owl:ObjectProperty ;
                    
-                   rdfs:isDefinedBy "http://purl.org/dc/terms/references"@en .
+                   rdfs:isDefinedBy dcterms: .
 
 
 
@@ -1241,7 +1239,7 @@ dcterms:references rdf:type owl:ObjectProperty ;
 
 dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
                               
-                              rdfs:isDefinedBy "http://dublincore.org/documents/dcmi-terms/#terms-bibliographicCitation"@en .
+                              rdfs:isDefinedBy dcterms: .
 
 
 
@@ -1249,7 +1247,7 @@ dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
 
 dcterms:created rdf:type owl:DatatypeProperty ;
                 
-                rdfs:isDefinedBy "http://purl.org/dc/terms/created"@en .
+                rdfs:isDefinedBy dcterms: .
 
 
 
@@ -1257,7 +1255,7 @@ dcterms:created rdf:type owl:DatatypeProperty ;
 
 dcterms:identifier rdf:type owl:DatatypeProperty ;
                    
-                   rdfs:isDefinedBy "http://purl.org/dc/terms/identifier" .
+                   rdfs:isDefinedBy dcterms: .
 
 
 
@@ -1265,7 +1263,7 @@ dcterms:identifier rdf:type owl:DatatypeProperty ;
 
 dcterms:title rdf:type owl:DatatypeProperty ;
               
-              rdfs:isDefinedBy "http://purl.org/dc/terms/title"@en .
+              rdfs:isDefinedBy dcterms: .
 
 
 
@@ -1273,7 +1271,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 <http://schema.org/name> rdf:type owl:DatatypeProperty ;
                          
-                         rdfs:isDefinedBy "http://schema.org/name"@en ;
+                         rdfs:isDefinedBy <http://schema.org/> ;
                          
                          rdfs:range xsd:string ;
                          
@@ -1297,11 +1295,11 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:DatatypeProperty ;
                                               
-                                              rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#alt"@en ;
-                                              
                                               rdfs:range xsd:string ;
                                               
                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                              
+                                              rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
                                               
                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
@@ -1311,9 +1309,9 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
                                               
-                                              rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#lat"@en ;
-                                              
                                               rdfs:range xsd:string ;
+                                              
+                                              rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
                                               
                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
@@ -1323,9 +1321,9 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
                                                
-                                               rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#long"@en ;
-                                               
                                                rdfs:range xsd:string ;
+                                               
+                                               rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
                                                
                                                rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
@@ -1348,7 +1346,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
          
          rdfs:comment "The medium in which the response of a sensor to environmental forcing is recorded (e.g., marine sediments, ice core, lake sediments, speleothems). Sensu Evans et al. (2013)"@en ;
          
-         rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011" .
+         rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1362,7 +1360,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
               
               rdfs:comment "A simplified description of how the sensor either creates or emplaces the signal into the archive. sensu Evans et al. 2013."@en ;
               
-              rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011"@en .
+              rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1648,7 +1646,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
              
              rdfs:comment "The measurements made on the archives, whether chemical (e.g., Mg/Ca, d18O, TEX86, Sr/Ca....), physical (e.g. density, layer thickness) or biological (e.g. species abundance). Evans et al. (2013). Observations are MeasuredVariables"@en ;
              
-             rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011" .
+             rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1662,7 +1660,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
                   
                   rdfs:comment "The simplified representation of the way in which observations are made on the archive. sensu Evans et al. 2013."@en ;
                   
-                  rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011"@en .
+                  rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1746,7 +1744,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
                   
                   rdfs:comment "In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . \"A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information.\""@en ;
                   
-                  rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011" .
+                  rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1778,7 +1776,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
         
         rdfs:comment "The sensor comprises physical, chemical and/or biological components that react to environmental conditions (e.g, foraminifera, coral polyps, cave, catchment basin). sensu Evans et al. (2013)"@en ;
         
-        rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011" .
+        rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1792,7 +1790,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
              
              rdfs:comment "A formalization of the behavior of the sensor in response to environmental forcing. Sensu Evans et al. 2013."@en ;
              
-             rdfs:isDefinedBy "http://www.sciencedirect.com/science/article/pii/S0277379113002011"@en .
+             rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 
 
 
@@ -1825,7 +1823,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
              
              rdfs:comment "A state of incomplete knowledge that can result from a lack of information or from disagreement about what is known or  even knowable. Uncertainty may come from many sources, from imprecision in the data to ambigously defined concepts or terminology, or uncertain projections of human bahavior. Uncertainty can be represented by quantitative measures (e.g., probability density function) or by qualitative statement (e.g., reflecting the judgement of a team of experts. Sensu IPCC AR5"@en ;
              
-             rdfs:isDefinedBy "https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf"@en .
+             rdfs:isDefinedBy <https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf> .
 
 
 
@@ -1879,7 +1877,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
                                    
-                                   rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/"@en .
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> .
 
 
 

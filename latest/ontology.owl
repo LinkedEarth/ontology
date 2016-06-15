@@ -139,8 +139,8 @@
     <!-- http://linked.earth/ontology#collectedFrom -->
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#collectedFrom">
+        <rdfs:label xml:lang="en">collectedFrom</rdfs:label>
         <rdfs:comment xml:lang="en">Where was the data in the dataset collected from? Generally, this is the site where the archive was collected. </rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">collectedFrom</rdfs:isDefinedBy>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
         <rdfs:range rdf:resource="http://linked.earth/ontology#Location"/>
     </owl:ObjectProperty>
@@ -201,7 +201,7 @@
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#foundInMeasurementTable">
         <rdfs:label xml:lang="en">foundInMeasurementTable</rdfs:label>
-        <rdfs:comment xml:lang="en">indicates that a variable was found in a measurement table</rdfs:comment>
+        <rdfs:comment xml:lang="en">Property that indicates that a variable was found in a measurement table</rdfs:comment>
         <rdfs:range rdf:resource="http://linked.earth/ontology#MeasurementTable"/>
         <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#foundInTable"/>
         <rdfs:domain>
@@ -269,7 +269,6 @@
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasCode">
         <rdfs:label xml:lang="en">hasCode</rdfs:label>
         <rdfs:comment xml:lang="en">What is the mathematical formulation that describes the Model?</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">hasCode</rdfs:isDefinedBy>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:range rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
     </owl:ObjectProperty>
@@ -510,7 +509,7 @@
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:ObjectProperty rdf:about="&dcterms;contributor">
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/contributor</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:ObjectProperty>
     
 
@@ -518,7 +517,7 @@
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:ObjectProperty rdf:about="&dcterms;creator">
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/creator</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:ObjectProperty>
     
 
@@ -526,7 +525,7 @@
     <!-- http://purl.org/dc/terms/references -->
 
     <owl:ObjectProperty rdf:about="&dcterms;references">
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/references</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:ObjectProperty>
     
 
@@ -1058,7 +1057,7 @@
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
     <owl:DatatypeProperty rdf:about="&dcterms;bibliographicCitation">
-        <rdfs:isDefinedBy xml:lang="en">http://dublincore.org/documents/dcmi-terms/#terms-bibliographicCitation</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:DatatypeProperty>
     
 
@@ -1066,7 +1065,7 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="&dcterms;created">
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/created</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:DatatypeProperty>
     
 
@@ -1074,7 +1073,7 @@
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:DatatypeProperty rdf:about="&dcterms;identifier">
-        <rdfs:isDefinedBy>http://purl.org/dc/terms/identifier</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:DatatypeProperty>
     
 
@@ -1082,7 +1081,7 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:DatatypeProperty rdf:about="&dcterms;title">
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/title</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:DatatypeProperty>
     
 
@@ -1090,7 +1089,7 @@
     <!-- http://schema.org/name -->
 
     <owl:DatatypeProperty rdf:about="http://schema.org/name">
-        <rdfs:isDefinedBy xml:lang="en">http://schema.org/name</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <rdfs:domain rdf:resource="&owl;Thing"/>
     </owl:DatatypeProperty>
@@ -1110,9 +1109,9 @@
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
-        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2003/01/geo/wgs84_pos#alt</rdfs:isDefinedBy>
         <rdfs:range rdf:resource="&xsd;string"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
@@ -1121,8 +1120,8 @@
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
-        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2003/01/geo/wgs84_pos#lat</rdfs:isDefinedBy>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
@@ -1131,8 +1130,8 @@
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
-        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2003/01/geo/wgs84_pos#long</rdfs:isDefinedBy>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
@@ -1154,7 +1153,7 @@
     <owl:Class rdf:about="http://linked.earth/ontology#Archive">
         <rdfs:label xml:lang="en">Archive</rdfs:label>
         <rdfs:comment xml:lang="en">The medium in which the response of a sensor to environmental forcing is recorded (e.g., marine sediments, ice core, lake sediments, speleothems). Sensu Evans et al. (2013)</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1165,7 +1164,7 @@
         <rdfs:label xml:lang="en">ArchiveModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">A simplified description of how the sensor either creates or emplaces the signal into the archive. sensu Evans et al. 2013.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1405,7 +1404,7 @@
         <rdfs:label xml:lang="en">Observation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
         <rdfs:comment xml:lang="en">The measurements made on the archives, whether chemical (e.g., Mg/Ca, d18O, TEX86, Sr/Ca....), physical (e.g. density, layer thickness) or biological (e.g. species abundance). Evans et al. (2013). Observations are MeasuredVariables</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1416,7 +1415,7 @@
         <rdfs:label xml:lang="en">ObservationModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">The simplified representation of the way in which observations are made on the archive. sensu Evans et al. 2013.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1486,7 +1485,7 @@
         <rdfs:label xml:lang="en">ProxySystemModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . &quot;A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information.&quot;</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1513,8 +1512,8 @@
 
     <owl:Class rdf:about="http://linked.earth/ontology#Sensor">
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
-        <rdfs:isDefinedBy>http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">The sensor comprises physical, chemical and/or biological components that react to environmental conditions (e.g, foraminifera, coral polyps, cave, catchment basin). sensu Evans et al. (2013)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1525,7 +1524,7 @@
         <rdfs:label xml:lang="en">SensorModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">A formalization of the behavior of the sensor in response to environmental forcing. Sensu Evans et al. 2013.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://www.sciencedirect.com/science/article/pii/S0277379113002011</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
     </owl:Class>
     
 
@@ -1554,7 +1553,7 @@
     <owl:Class rdf:about="http://linked.earth/ontology#Uncertainty">
         <rdfs:label xml:lang="en">Uncertainty</rdfs:label>
         <rdfs:comment xml:lang="en">A state of incomplete knowledge that can result from a lack of information or from disagreement about what is known or  even knowable. Uncertainty may come from many sources, from imprecision in the data to ambigously defined concepts or terminology, or uncertain projections of human bahavior. Uncertainty can be represented by quantitative measures (e.g., probability density function) or by qualitative statement (e.g., reflecting the judgement of a team of experts. Sensu IPCC AR5</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf"/>
     </owl:Class>
     
 
@@ -1605,7 +1604,7 @@
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:isDefinedBy xml:lang="en">http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Class>
     
 

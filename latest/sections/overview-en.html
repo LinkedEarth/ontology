@@ -1,5 +1,5 @@
 <h2>2. The Linked Earth Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>The Linked Earth Ontology contains the following classes and properties: </p>
+<p>The Linked Earth ontology defines the following classes and properties:</p>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
@@ -35,6 +35,12 @@
    </li>
    <li>
       <a href="#DataTable" title="http://linked.earth/ontology#DataTable">DataTable</a>
+   </li>
+   <li>
+      <a href="#DistributionTable" title="http://linked.earth/ontology#DistributionTable">DistributionTable</a>
+   </li>
+   <li>
+      <a href="#EnsembleTable" title="http://linked.earth/ontology#EnsembleTable">EnsembleTable</a>
    </li>
    <li>
       <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">
@@ -73,6 +79,9 @@
    </li>
    <li>
       <a href="#MeasuredVariable" title="http://linked.earth/ontology#MeasuredVariable">MeasuredVariable</a>
+   </li>
+   <li>
+      <a href="#MeasurementTable" title="http://linked.earth/ontology#MeasurementTable">MeasurementTable</a>
    </li>
    <li>
       <a href="#Model" title="http://linked.earth/ontology#Model">Model</a>
@@ -136,6 +145,9 @@
       </a>
    </li>
    <li>
+      <a href="#SummaryTable" title="http://linked.earth/ontology#SummaryTable">SummaryTable</a>
+   </li>
+   <li>
       <a href="#Uncertainty" title="http://linked.earth/ontology#Uncertainty">Uncertainty</a>
    </li>
    <li>
@@ -146,22 +158,19 @@
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
-      <a href="#archivedIn" title="http://linked.earth/ontology#archivedIn">
-         <span>archived in</span>
-      </a>
+      <a href="#archivedIn" title="http://linked.earth/ontology#archivedIn">archivedIn</a>
    </li>
    <li>
       <a href="#author" title="http://linked.earth/ontology#author">author</a>
    </li>
    <li>
-      <a href="#basedOn" title="http://linked.earth/ontology#basedOn">
-         <span>based on</span>
-      </a>
+      <a href="#basedOn" title="http://linked.earth/ontology#basedOn">basedOn</a>
    </li>
    <li>
-      <a href="#calibratedWith" title="http://linked.earth/ontology#calibratedWith">
-         <span>calibrated with</span>
-      </a>
+      <a href="#calibratedFrom" title="http://linked.earth/ontology#calibratedFrom">calibratedFrom</a>
+   </li>
+   <li>
+      <a href="#calibratedWith" title="http://linked.earth/ontology#calibratedWith">calibratedWith</a>
    </li>
    <li>
       <a href="#calibrationReferences"
@@ -186,9 +195,22 @@
       </a>
    </li>
    <li>
-      <a href="#foundInTable" title="http://linked.earth/ontology#foundInTable">
-         <span>found in table</span>
-      </a>
+      <a href="#foundInDistributionTable"
+         title="http://linked.earth/ontology#foundInDistributionTable">foundInDistributionTable</a>
+   </li>
+   <li>
+      <a href="#foundInEnsembleTable"
+         title="http://linked.earth/ontology#foundInEnsembleTable">foundInEnsembleTable</a>
+   </li>
+   <li>
+      <a href="#foundInMeasurementTable"
+         title="http://linked.earth/ontology#foundInMeasurementTable">foundInMeasurementTable</a>
+   </li>
+   <li>
+      <a href="#foundInSummaryTable" title="http://linked.earth/ontology#foundInSummaryTable">foundInSummaryTable</a>
+   </li>
+   <li>
+      <a href="#foundInTable" title="http://linked.earth/ontology#foundInTable">foundInTable</a>
    </li>
    <li>
       <a href="#fundedBy" title="http://linked.earth/ontology#fundedBy">fundedBy</a>
@@ -273,7 +295,7 @@
    </li>
    <li>
       <a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">
-         <span>geo:asWKT</span>
+         <span>geo:AsWKT</span>
       </a>
    </li>
    <li>
@@ -385,7 +407,7 @@
    </li>
    <li>
       <a href="#http://schema.org/name" title="http://schema.org/name">
-         <span>name</span>
+         <span>schema:name</span>
       </a>
    </li>
    <li>

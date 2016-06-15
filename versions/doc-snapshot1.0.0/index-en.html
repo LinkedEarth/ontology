@@ -113,6 +113,21 @@ The following changes have been added since the previous draft:
 <li>Added geosparql properties for referring to Locations and their geometries.</li>
 <li>Added labels to all the terms.</li>
 <li>Added definitions to all the terms.</li>
+<li>Added 4 subclasses of DataTable.
+	<ul><li>MeasurementTable: contains the measuredVariables made on the Archive</li>
+	<li>EnsembleTable is a table containing possible series of age models or proxy variability</li>
+	<li>SummaryTable: relevant statistics from the ensemble.</li>
+	<li>DistributionTable contains the probability on the inferred variables.</li>
+	</ul>
+<li>Added the following properties to refer to the respective tables (Data or Variable -> DataTable): 
+	<ul>
+	<li>foundInMeasurementTable</li>
+	<li>foundInModelTable</li>
+	<li>foundInEnsembleTable</li>
+	<li>foundInInterpretationTable</li>
+	</ul>
+</li>
+<li>Added calibratedFrom (MeasuredVariable->CalibrationModel)</li>
 </ul>
 </p>
 </div>

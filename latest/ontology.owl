@@ -1561,7 +1561,7 @@
     <!-- http://linked.earth/ontology#UncertaintyModel -->
 
     <owl:Class rdf:about="http://linked.earth/ontology#UncertaintyModel">
-        <rdfs:label xml:lang="en">UndertaintyModel</rdfs:label>
+        <rdfs:label xml:lang="en">UncertaintyModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">A formalization of the way the uncertainty is accounted for</rdfs:comment>
     </owl:Class>

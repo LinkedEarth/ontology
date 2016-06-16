@@ -1831,7 +1831,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 :UncertaintyModel rdf:type owl:Class ;
                   
-                  rdfs:label "UndertaintyModel"@en ;
+                  rdfs:label "UncertaintyModel"@en ;
                   
                   rdfs:subClassOf :Model ;
                   

@@ -135,6 +135,25 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 
 
+###  http://linked.earth/ontology#chronModeledBy
+
+:chronModeledBy rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "chronModeledBy"@en ;
+                
+                rdfs:comment "How was the chron data modeled?"@en ;
+                
+                rdfs:range :ChronModel ;
+                
+                rdfs:subPropertyOf :modeledBy ;
+                
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :ChronData
+                                          )
+                            ] .
+
+
+
 ###  http://linked.earth/ontology#collectedFrom
 
 :collectedFrom rdf:type owl:ObjectProperty ;
@@ -167,7 +186,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#foundInDistributionTable
 
-:foundInDistributionTable rdf:type owl:ObjectProperty ;
+:foundInDistributionTable rdf:type owl:FunctionalProperty ,
+                                   owl:ObjectProperty ;
                           
                           rdfs:label "foundInDistributionTable"@en ;
                           
@@ -178,7 +198,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
                           rdfs:subPropertyOf :foundInTable ;
                           
                           rdfs:domain [ rdf:type owl:Class ;
-                                        owl:unionOf ( :Data
+                                        owl:unionOf ( :ChronModel
+                                                      :PaleoModel
                                                       :Variable
                                                     )
                                       ] .
@@ -187,7 +208,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#foundInEnsembleTable
 
-:foundInEnsembleTable rdf:type owl:ObjectProperty ;
+:foundInEnsembleTable rdf:type owl:FunctionalProperty ,
+                               owl:ObjectProperty ;
                       
                       rdfs:label "foundInEnsembleTable"@en ;
                       
@@ -198,7 +220,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
                       rdfs:subPropertyOf :foundInTable ;
                       
                       rdfs:domain [ rdf:type owl:Class ;
-                                    owl:unionOf ( :Data
+                                    owl:unionOf ( :ChronModel
+                                                  :PaleoModel
                                                   :Variable
                                                 )
                                   ] .
@@ -227,7 +250,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#foundInSummaryTable
 
-:foundInSummaryTable rdf:type owl:ObjectProperty ;
+:foundInSummaryTable rdf:type owl:FunctionalProperty ,
+                              owl:ObjectProperty ;
                      
                      rdfs:label "foundInSummaryTable"@en ;
                      
@@ -238,7 +262,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
                      rdfs:subPropertyOf :foundInTable ;
                      
                      rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Data
+                                   owl:unionOf ( :ChronModel
+                                                 :PaleoModel
                                                  :Variable
                                                )
                                  ] .
@@ -257,6 +282,7 @@ rdfs:Literal owl:equivalentClass xsd:string .
               
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :Data
+                                          :Model
                                           :Variable
                                         )
                           ] .
@@ -279,7 +305,8 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#hasCode
 
-:hasCode rdf:type owl:ObjectProperty ;
+:hasCode rdf:type owl:FunctionalProperty ,
+                  owl:ObjectProperty ;
          
          rdfs:label "hasCode"@en ;
          
@@ -288,20 +315,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
          rdfs:domain :Model ;
          
          rdfs:range :SoftwareCode .
-
-
-
-###  http://linked.earth/ontology#hasLocation
-
-:hasLocation rdf:type owl:ObjectProperty ;
-             
-             rdfs:label "hasLocation"@en ;
-             
-             rdfs:comment "The location for a given dataset"@en ;
-             
-             rdfs:domain :Dataset ;
-             
-             rdfs:range :Location .
 
 
 
@@ -516,9 +529,13 @@ rdfs:Literal owl:equivalentClass xsd:string .
            
            rdfs:comment "How was the process modeled?"@en ;
            
-           rdfs:domain :Proxy ;
+           rdfs:range :Model ;
            
-           rdfs:range :ProxySystemModel .
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Data
+                                       :Proxy
+                                     )
+                       ] .
 
 
 
@@ -533,6 +550,25 @@ rdfs:Literal owl:equivalentClass xsd:string .
             rdfs:range :Observation ;
             
             rdfs:domain :Proxy .
+
+
+
+###  http://linked.earth/ontology#paleoModeledBy
+
+:paleoModeledBy rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "paleoModeledBy"@en ;
+                
+                rdfs:comment "How was the paleoData modeled?"@en ;
+                
+                rdfs:range :PaleoModel ;
+                
+                rdfs:subPropertyOf :modeledBy ;
+                
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :PaleoData
+                                          )
+                            ] .
 
 
 
@@ -798,6 +834,34 @@ dcterms:references rdf:type owl:ObjectProperty ;
                                     :SoftwareCode
                                   )
                     ] .
+
+
+
+###  http://linked.earth/ontology#hasExecutionCommand
+
+:hasExecutionCommand rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:label "hasExecutionCommand"@en ;
+                     
+                     rdfs:comment "The execution command needed to run the script or software"@en ;
+                     
+                     rdfs:domain :SoftwareCode ;
+                     
+                     rdfs:range xsd:string .
+
+
+
+###  http://linked.earth/ontology#hasExecutionEnvironment
+
+:hasExecutionEnvironment rdf:type owl:DatatypeProperty ;
+                         
+                         rdfs:label "hasExecutionEnvironment"@en ;
+                         
+                         rdfs:comment "Execution environment of the code"@en ;
+                         
+                         rdfs:domain :SoftwareCode ;
+                         
+                         rdfs:range xsd:string .
 
 
 
@@ -1402,6 +1466,18 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 
 
+###  http://linked.earth/ontology#ChronModel
+
+:ChronModel rdf:type owl:Class ;
+            
+            rdfs:label "ChronModel"@en ;
+            
+            rdfs:subClassOf :Model ;
+            
+            rdfs:comment "Model used to obtain the chronology"@en .
+
+
+
 ###  http://linked.earth/ontology#ChronProxy
 
 :ChronProxy rdf:type owl:Class ;
@@ -1464,7 +1540,7 @@ dcterms:title rdf:type owl:DatatypeProperty ;
          
          rdfs:label "Dataset"@en ;
          
-         rdfs:comment "A structured collection of related information, including - but not limited to - geographical, chronological, and paleoenvironmental data"@en .
+         rdfs:comment "A structured collection of related information, including - but not limited to - geographical, chronological, and measured or modeled paleoenvironmental data"@en .
 
 
 
@@ -1697,6 +1773,18 @@ dcterms:title rdf:type owl:DatatypeProperty ;
                 rdfs:subClassOf :DataTable ;
                 
                 rdfs:comment "DataTable containig PaleoData Variables"@en .
+
+
+
+###  http://linked.earth/ontology#PaleoModel
+
+:PaleoModel rdf:type owl:Class ;
+            
+            rdfs:label "PaleoModel"@en ;
+            
+            rdfs:subClassOf :Model ;
+            
+            rdfs:comment "Model describing how the measuredVariables are transformed into inferredVariables"@en .
 
 
 

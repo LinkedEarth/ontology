@@ -130,6 +130,17 @@ The following changes have been added since the previous draft:
 	</ul>
 </li>
 <li>Added calibratedFrom (MeasuredVariable->CalibrationModel)</li>
+<li>Add data property hasExecutionEnvironment (SoftwareCode->String)</li>
+<li>Added data property hasExecutionCommand (SoftwareCode->String)</li>
+<li>Changed the domain of modeledBy adding Data. The range is Model</li>
+<li>chronModeledBy added as a subPropertyOf modeledBy (domain ChronData (instead of Data) -> range PaleoModel)</li>
+<li>paleoModeledBy added as a subPropertyOf modeledBy (domain PaleoData (instead of Data) -> range ChronModel)</li>
+<li>PaleoModel added as a subClassOf Model</li>
+<li>ChronModel added as a subClassOf Model</li>
+<li>foundInSummaryTable has now domain [paleoModel or chronModel]</li>
+<li>foundInEnsembleTable has now domain [paleoModel or chronModel]</li>
+<li>foundInDistributionTable has now domain [paleoModel or chronModel]</li> 
+<li>[hasCode, foundInSummaryTable, foundInEnsembleTable are functional properties now </li>
 </ul>
 </p>
 </div>

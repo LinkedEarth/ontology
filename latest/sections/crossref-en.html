@@ -16,6 +16,9 @@ This section provides details for each class and property defined by The Linked 
       <a href="#ChronDataTable" title="http://linked.earth/ontology#ChronDataTable">ChronDataTable</a>
    </li>
    <li>
+      <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
+   </li>
+   <li>
       <a href="#ChronProxy" title="http://linked.earth/ontology#ChronProxy">ChronProxy</a>
    </li>
    <li>
@@ -105,6 +108,9 @@ This section provides details for each class and property defined by The Linked 
    </li>
    <li>
       <a href="#PaleoDataTable" title="http://linked.earth/ontology#PaleoDataTable">PaleoDataTable</a>
+   </li>
+   <li>
+      <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
    </li>
    <li>
       <a href="#PeerReviewedPublication"
@@ -270,6 +276,29 @@ This section provides details for each class and property defined by The Linked 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ChronModel">
+      <h3>ChronModel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#ChronModel</p>
+      <div class="comment">
+         <span class="markdown">Model used to obtain the chronology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://linked.earth/ontology#Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#chronModeledBy" title="http://linked.earth/ontology#chronModeledBy">chronModeledBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ChronProxy">
       <h3>ChronProxy<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -384,7 +413,7 @@ This section provides details for each class and property defined by The Linked 
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#Dataset</p>
       <div class="comment">
-         <span class="markdown">A structured collection of related information, including - but not limited to - geographical, chronological, and paleoenvironmental data</span>
+         <span class="markdown">A structured collection of related information, including - but not limited to - geographical, chronological, and measured or modeled paleoenvironmental data</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -394,7 +423,6 @@ This section provides details for each class and property defined by The Linked 
             <sup class="type-op" title="object property">op</sup>, <a href="#datasetDate" title="http://linked.earth/ontology#datasetDate">datasetDate</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#datasetVersion" title="http://linked.earth/ontology#datasetVersion">datasetVersion</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#fundedBy" title="http://linked.earth/ontology#fundedBy">fundedBy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="http://linked.earth/ontology#hasLocation">hasLocation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#includesChronData" title="http://linked.earth/ontology#includesChronData">includesChronData</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#includesData" title="http://linked.earth/ontology#includesData">includesData</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#includesPaleoData" title="http://linked.earth/ontology#includesPaleoData">includesPaleoData</a>
@@ -738,7 +766,6 @@ This section provides details for each class and property defined by The Linked 
          <dt>is in range of</dt>
          <dd>
             <a href="#collectedFrom" title="http://linked.earth/ontology#collectedFrom">collectedFrom</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="http://linked.earth/ontology#hasLocation">hasLocation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -823,7 +850,9 @@ This section provides details for each class and property defined by The Linked 
          <dd>
             <a href="#ArchiveModel" title="http://linked.earth/ontology#ArchiveModel">ArchiveModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#CalibrationModel" title="http://linked.earth/ontology#CalibrationModel">CalibrationModel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ObservationModel" title="http://linked.earth/ontology#ObservationModel">ObservationModel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ProxySystemModel" title="http://linked.earth/ontology#ProxySystemModel">ProxySystemModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SensorModel" title="http://linked.earth/ontology#SensorModel">SensorModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#UncertaintyModel" title="http://linked.earth/ontology#UncertaintyModel">UncertaintyModel</a>
@@ -836,6 +865,11 @@ This section provides details for each class and property defined by The Linked 
             <sup class="type-op" title="object property">op</sup>, <a href="#modelReferences" title="http://linked.earth/ontology#modelReferences">modelReferences</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#notes" title="http://linked.earth/ontology#notes">notes</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#modeledBy" title="http://linked.earth/ontology#modeledBy">modeledBy</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -991,6 +1025,29 @@ This section provides details for each class and property defined by The Linked 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PaleoModel">
+      <h3>PaleoModel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#PaleoModel</p>
+      <div class="comment">
+         <span class="markdown">Model describing how the measuredVariables are transformed into inferredVariables</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://linked.earth/ontology#Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#paleoModeledBy" title="http://linked.earth/ontology#paleoModeledBy">paleoModeledBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="PeerReviewedPublication">
       <h3>PeerReviewedPublication<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1082,7 +1139,6 @@ This section provides details for each class and property defined by The Linked 
          <dt>is in domain of</dt>
          <dd>
             <a href="#archivedIn" title="http://linked.earth/ontology#archivedIn">archivedIn</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#modeledBy" title="http://linked.earth/ontology#modeledBy">modeledBy</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#observedAs" title="http://linked.earth/ontology#observedAs">observedAs</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#sensingWith" title="http://linked.earth/ontology#sensingWith">sensingWith</a>
             <sup class="type-op" title="object property">op</sup>
@@ -1119,11 +1175,6 @@ This section provides details for each class and property defined by The Linked 
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasPart" title="http://linked.earth/ontology#hasPart">hasPart</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#modeledBy" title="http://linked.earth/ontology#modeledBy">modeledBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1266,6 +1317,14 @@ This section provides details for each class and property defined by The Linked 
          <span class="markdown">A script that describes the model, in any programming language (e.g., Excel, Matlab, Python, R)</span>
       </div>
       <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasExecutionCommand"
+               title="http://linked.earth/ontology#hasExecutionCommand">hasExecutionCommand</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasExecutionEnvironment"
+               title="http://linked.earth/ontology#hasExecutionEnvironment">hasExecutionEnvironment</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasCode" title="http://linked.earth/ontology#hasCode">hasCode</a>
@@ -1423,6 +1482,9 @@ This section provides details for each class and property defined by The Linked 
          title="http://linked.earth/ontology#calibrationReferences">calibrationReferences</a>
    </li>
    <li>
+      <a href="#chronModeledBy" title="http://linked.earth/ontology#chronModeledBy">chronModeledBy</a>
+   </li>
+   <li>
       <a href="#collectedFrom" title="http://linked.earth/ontology#collectedFrom">collectedFrom</a>
    </li>
    <li>
@@ -1466,9 +1528,6 @@ This section provides details for each class and property defined by The Linked 
    </li>
    <li>
       <a href="#hasCode" title="http://linked.earth/ontology#hasCode">hasCode</a>
-   </li>
-   <li>
-      <a href="#hasLocation" title="http://linked.earth/ontology#hasLocation">hasLocation</a>
    </li>
    <li>
       <a href="#hasPart" title="http://linked.earth/ontology#hasPart">hasPart</a>
@@ -1515,6 +1574,9 @@ This section provides details for each class and property defined by The Linked 
    </li>
    <li>
       <a href="#observedAs" title="http://linked.earth/ontology#observedAs">observedAs</a>
+   </li>
+   <li>
+      <a href="#paleoModeledBy" title="http://linked.earth/ontology#paleoModeledBy">paleoModeledBy</a>
    </li>
    <li>
       <a href="#principalInvestigator"
@@ -1695,6 +1757,36 @@ This section provides details for each class and property defined by The Linked 
          </dl>
       </div>
    </div>
+   <div class="entity" id="chronModeledBy">
+      <h3>chronModeledBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#chronModeledBy</p>
+      <div class="comment">
+         <span class="markdown">How was the chron data modeled?</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#modeledBy" title="http://linked.earth/ontology#modeledBy">modeledBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChronData" title="http://linked.earth/ontology#ChronData">CrhonData</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="collectedFrom">
       <h3>collectedFrom<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1807,6 +1899,8 @@ This section provides details for each class and property defined by The Linked 
          <span class="markdown">Property that indicates that a variable or data is found in a distribution table</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -1815,7 +1909,10 @@ This section provides details for each class and property defined by The Linked 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
+               <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Variable" title="http://linked.earth/ontology#Variable">Variable</a>
@@ -1840,6 +1937,8 @@ This section provides details for each class and property defined by The Linked 
          <span class="markdown">Property that indicates that the data or variable described was found in an ensemble table</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -1848,7 +1947,10 @@ This section provides details for each class and property defined by The Linked 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
+               <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Variable" title="http://linked.earth/ontology#Variable">Variable</a>
@@ -1906,6 +2008,8 @@ This section provides details for each class and property defined by The Linked 
          <span class="markdown">Property that indicates that the describer data or variable was found in a summary table</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -1914,7 +2018,10 @@ This section provides details for each class and property defined by The Linked 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
+               <a href="#ChronModel" title="http://linked.earth/ontology#ChronModel">ChronModel</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Variable" title="http://linked.earth/ontology#Variable">Variable</a>
@@ -1954,6 +2061,9 @@ This section provides details for each class and property defined by The Linked 
             <dt>has domain</dt>
             <dd>
                <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Model" title="http://linked.earth/ontology#Model">Model</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Variable" title="http://linked.earth/ontology#Variable">Variable</a>
@@ -2031,6 +2141,8 @@ This section provides details for each class and property defined by The Linked 
          <span class="markdown">What is the mathematical formulation that describes the Model?</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -2040,31 +2152,6 @@ This section provides details for each class and property defined by The Linked 
             <dt>has range</dt>
             <dd>
                <a href="#SoftwareCode" title="http://linked.earth/ontology#SoftwareCode">SoftwareCode</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLocation">
-      <h3>hasLocation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://linked.earth/ontology#hasLocation</p>
-      <div class="comment">
-         <span class="markdown">The location for a given dataset</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Dataset" title="http://linked.earth/ontology#Dataset">Dataset</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Location" title="http://linked.earth/ontology#Location">Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2422,14 +2509,23 @@ This section provides details for each class and property defined by The Linked 
       </div>
       <div class="description">
          <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#chronModeledBy" title="http://linked.earth/ontology#chronModeledBy">chronModeledBy</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#paleoModeledBy" title="http://linked.earth/ontology#paleoModeledBy">paleoModeledBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
+               <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Proxy" title="http://linked.earth/ontology#Proxy">Proxy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ProxySystemModel" title="http://linked.earth/ontology#ProxySystemModel">ProxySystemModel</a>
+               <a href="#Model" title="http://linked.earth/ontology#Model">Model</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2485,6 +2581,36 @@ This section provides details for each class and property defined by The Linked 
             <dt>has range</dt>
             <dd>
                <a href="#Observation" title="http://linked.earth/ontology#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="paleoModeledBy">
+      <h3>paleoModeledBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#paleoModeledBy</p>
+      <div class="comment">
+         <span class="markdown">How was the paleoData modeled?</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#modeledBy" title="http://linked.earth/ontology#modeledBy">modeledBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PaleoData" title="http://linked.earth/ontology#PaleoData">PaleoData</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PaleoModel" title="http://linked.earth/ontology#PaleoModel">PaleoModel</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2652,6 +2778,14 @@ This section provides details for each class and property defined by The Linked 
       <a href="#hasDOI" title="http://linked.earth/ontology#hasDOI">hasDOI</a>
    </li>
    <li>
+      <a href="#hasExecutionCommand"
+         title="http://linked.earth/ontology#hasExecutionCommand">hasExecutionCommand</a>
+   </li>
+   <li>
+      <a href="#hasExecutionEnvironment"
+         title="http://linked.earth/ontology#hasExecutionEnvironment">hasExecutionEnvironment</a>
+   </li>
+   <li>
       <a href="#hasFileName" title="http://linked.earth/ontology#hasFileName">hasFileName</a>
    </li>
    <li>
@@ -2680,7 +2814,7 @@ This section provides details for each class and property defined by The Linked 
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
-         <span>terms:identifier</span>
+         <span>identifier</span>
       </a>
    </li>
    <li>
@@ -2714,7 +2848,7 @@ This section provides details for each class and property defined by The Linked 
    </li>
    <li>
       <a href="#http://schema.org/name" title="http://schema.org/name">
-         <span>schema:name</span>
+         <span>name</span>
       </a>
    </li>
    <li>
@@ -3169,6 +3303,54 @@ This section provides details for each class and property defined by The Linked 
                <a href="#Publication" title="http://linked.earth/ontology#Publication">Publication</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
+               <a href="#SoftwareCode" title="http://linked.earth/ontology#SoftwareCode">SoftwareCode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExecutionCommand">
+      <h3>hasExecutionCommand<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#hasExecutionCommand</p>
+      <div class="comment">
+         <span class="markdown">The execution command needed to run the script or software</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareCode" title="http://linked.earth/ontology#SoftwareCode">SoftwareCode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExecutionEnvironment">
+      <h3>hasExecutionEnvironment<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#hasExecutionEnvironment</p>
+      <div class="comment">
+         <span class="markdown">Execution environment of the code</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
                <a href="#SoftwareCode" title="http://linked.earth/ontology#SoftwareCode">SoftwareCode</a>
                <sup class="type-c" title="class">c</sup>
             </dd>

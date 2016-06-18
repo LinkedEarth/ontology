@@ -6,6 +6,7 @@
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -18,6 +19,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://linked.earth/ontology#">
         <dcterms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</dcterms:license>
@@ -820,7 +822,7 @@
         <rdfs:label xml:lang="en">hasMissingValue</rdfs:label>
         <rdfs:comment xml:lang="en">Indicates how the missing values are flagged in a dataset</rdfs:comment>
         <owl:propertyDisjointWith rdf:resource="http://linked.earth/ontology#hasValue"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1084,7 +1086,7 @@
         <rdfs:label xml:lang="en">uncertaintyLevel</rdfs:label>
         <rdfs:comment>Quantile or number of standard deviations along a probability distribution of a Variable.</rdfs:comment>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Uncertainty"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -1641,7 +1643,7 @@
     <!-- http://linked.earth/ontology#UncertaintyModel -->
 
     <owl:Class rdf:about="http://linked.earth/ontology#UncertaintyModel">
-        <rdfs:label xml:lang="en">UndertaintyModel</rdfs:label>
+        <rdfs:label xml:lang="en">UncertaintyModel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
         <rdfs:comment xml:lang="en">A formalization of the way the uncertainty is accounted for</rdfs:comment>
     </owl:Class>

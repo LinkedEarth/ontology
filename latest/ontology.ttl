@@ -949,7 +949,7 @@ dcterms:references rdf:type owl:ObjectProperty ;
                  
                  owl:propertyDisjointWith :hasValue ;
                  
-                 rdfs:range xsd:float ;
+                 rdfs:range xsd:string ;
                  
                  rdfs:domain [ rdf:type owl:Class ;
                                owl:unionOf ( :Uncertainty
@@ -1263,7 +1263,7 @@ dcterms:references rdf:type owl:ObjectProperty ;
                   
                   rdfs:domain :Uncertainty ;
                   
-                  rdfs:range xsd:float .
+                  rdfs:range xsd:string .
 
 
 

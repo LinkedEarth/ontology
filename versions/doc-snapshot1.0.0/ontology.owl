@@ -6,7 +6,6 @@
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -19,7 +18,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://linked.earth/ontology#">
         <dcterms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</dcterms:license>
@@ -190,7 +188,6 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://linked.earth/ontology#ChronModel"/>
                     <rdf:Description rdf:about="http://linked.earth/ontology#PaleoModel"/>
-                    <rdf:Description rdf:about="http://linked.earth/ontology#Variable"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -211,7 +208,6 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://linked.earth/ontology#ChronModel"/>
                     <rdf:Description rdf:about="http://linked.earth/ontology#PaleoModel"/>
-                    <rdf:Description rdf:about="http://linked.earth/ontology#Variable"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -224,16 +220,9 @@
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#foundInMeasurementTable">
         <rdfs:label xml:lang="en">foundInMeasurementTable</rdfs:label>
         <rdfs:comment xml:lang="en">Property that indicates that a variable was found in a measurement table</rdfs:comment>
+        <rdfs:domain rdf:resource="http://linked.earth/ontology#Data"/>
         <rdfs:range rdf:resource="http://linked.earth/ontology#MeasurementTable"/>
         <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#foundInTable"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://linked.earth/ontology#Data"/>
-                    <rdf:Description rdf:about="http://linked.earth/ontology#Variable"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -251,7 +240,6 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://linked.earth/ontology#ChronModel"/>
                     <rdf:Description rdf:about="http://linked.earth/ontology#PaleoModel"/>
-                    <rdf:Description rdf:about="http://linked.earth/ontology#Variable"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -810,7 +798,7 @@
     <owl:DatatypeProperty rdf:about="http://linked.earth/ontology#hasLink">
         <rdfs:label xml:lang="en">hasLink</rdfs:label>
         <rdfs:comment xml:lang="en">A downloadable link of a resource</rdfs:comment>
-        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
     </owl:DatatypeProperty>
     
 

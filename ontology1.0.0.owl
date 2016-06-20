@@ -200,7 +200,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
                           rdfs:domain [ rdf:type owl:Class ;
                                         owl:unionOf ( :ChronModel
                                                       :PaleoModel
-                                                      :Variable
                                                     )
                                       ] .
 
@@ -222,7 +221,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
                       rdfs:domain [ rdf:type owl:Class ;
                                     owl:unionOf ( :ChronModel
                                                   :PaleoModel
-                                                  :Variable
                                                 )
                                   ] .
 
@@ -236,15 +234,11 @@ rdfs:Literal owl:equivalentClass xsd:string .
                          
                          rdfs:comment "Property that indicates that a variable was found in a measurement table"@en ;
                          
+                         rdfs:domain :Data ;
+                         
                          rdfs:range :MeasurementTable ;
                          
-                         rdfs:subPropertyOf :foundInTable ;
-                         
-                         rdfs:domain [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Data
-                                                     :Variable
-                                                   )
-                                     ] .
+                         rdfs:subPropertyOf :foundInTable .
 
 
 
@@ -264,7 +258,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
                      rdfs:domain [ rdf:type owl:Class ;
                                    owl:unionOf ( :ChronModel
                                                  :PaleoModel
-                                                 :Variable
                                                )
                                  ] .
 
@@ -934,7 +927,7 @@ dcterms:references rdf:type owl:ObjectProperty ;
          
          rdfs:comment "A downloadable link of a resource"@en ;
          
-         rdfs:range rdfs:Literal .
+         rdfs:range xsd:anyURI .
 
 
 

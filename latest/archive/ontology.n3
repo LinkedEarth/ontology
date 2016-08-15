@@ -36,7 +36,7 @@
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/" .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
-<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Linked Earth Ontology"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Proxy Archive Ontology"@en .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
 <http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1"@en .

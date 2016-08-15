@@ -44,7 +44,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
       dcterms:contributor <http://www.isi.edu/~gil/> , <http://w3id.org/people/dgarijo> ;
       dcterms:creator <http://orcid.org/0000-0001-5920-4751> , <http://www.cefns.nau.edu/~npm4/> , <http://earth.usc.edu/~khider/> ;
       dcterms:license "http://creativecommons.org/licenses/by-nc-sa/2.0/" ;
-      dcterms:title "The Linked Earth Ontology"@en ;
+      dcterms:title "The Proxy Archive Ontology"@en ;
       vann:preferredNamespacePrefix
               "le" ;
       vann:preferredNamespaceUri

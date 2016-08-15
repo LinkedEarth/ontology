@@ -48,7 +48,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
     <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
     <dcterms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</dcterms:license>
     <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
-    <dcterms:title xml:lang="en">The Linked Earth Ontology</dcterms:title>
+    <dcterms:title xml:lang="en">The Proxy Archive Ontology</dcterms:title>
     <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <owl:versionInfo xml:lang="en">0.0.1</owl:versionInfo>

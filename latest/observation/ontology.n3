@@ -1,0 +1,217 @@
+<http://linked.earth/ontology#C> <http://www.w3.org/2000/01/rdf-schema#label> "C"@en .
+<http://linked.earth/ontology#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#MajorElement> .
+<http://linked.earth/ontology#StableCarbonIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#StableIsotope> .
+<http://linked.earth/ontology#StableCarbonIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable Carbon isotope"@en .
+<http://linked.earth/ontology#StableCarbonIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#StableSulfurIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#StableIsotope> .
+<http://linked.earth/ontology#StableSulfurIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable sulfur isotope"@en .
+<http://linked.earth/ontology#StableSulfurIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#N> <http://www.w3.org/2000/01/rdf-schema#label> "N"@en .
+<http://linked.earth/ontology#N> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#N> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#MajorElement> .
+<http://linked.earth/ontology#Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition"@en .
+<http://linked.earth/ontology#Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
+<http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of measurements made on the archives, whether chemical (e.g., Mg/Ca, d18O, TEX86, Sr/Ca....), physical (e.g. density, layer thickness) or biological (e.g. species abundance)"@en .
+<http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy observation"@en .
+<http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Spectral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyObservation> .
+<http://linked.earth/ontology#Spectral> <http://www.w3.org/2000/01/rdf-schema#label> "Spectral observation"@en .
+<http://linked.earth/ontology#Spectral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Li/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Li/Ca"@en .
+<http://linked.earth/ontology#Li/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Li/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#d13C> <http://www.w3.org/2000/01/rdf-schema#label> "d13C"@en .
+<http://linked.earth/ontology#d13C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d13C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableCarbonIsotope> .
+<http://linked.earth/ontology#Si> <http://www.w3.org/2000/01/rdf-schema#label> "Si"@en .
+<http://linked.earth/ontology#Si> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Si> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#MajorElement> .
+<http://linked.earth/ontology#OrganicIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#OrganicIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Organic index"@en .
+<http://linked.earth/ontology#OrganicIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Mg/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Mg/Ca"@en .
+<http://linked.earth/ontology#Mg/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Mg/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#Sr/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Sr/Ca"@en .
+<http://linked.earth/ontology#Sr/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Sr/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#LayerThickness> <http://www.w3.org/2000/01/rdf-schema#label> "Layer thickness"@en .
+<http://linked.earth/ontology#LayerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#LayerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#d180> <http://www.w3.org/2000/01/rdf-schema#label> "d180"@en .
+<http://linked.earth/ontology#d180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableOxygenIsotope> .
+<http://linked.earth/ontology#Radiocarbon> <http://www.w3.org/2000/01/rdf-schema#label> "Radiocarbon"@en .
+<http://linked.earth/ontology#Radiocarbon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Radiocarbon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Radioisotope> .
+<http://linked.earth/ontology#U-Th> <http://www.w3.org/2000/01/rdf-schema#label> "U-Th"@en .
+<http://linked.earth/ontology#U-Th> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#U-Th> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Radioisotope> .
+<http://linked.earth/ontology#Historic> <http://www.w3.org/2000/01/rdf-schema#label> "Historic"@en .
+<http://linked.earth/ontology#Historic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Historic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ProxyObservation> .
+<http://linked.earth/ontology#Assemblage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyObservation> .
+<http://linked.earth/ontology#Assemblage> <http://www.w3.org/2000/01/rdf-schema#label> "Assemblage"@en .
+<http://linked.earth/ontology#Assemblage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#d15N> <http://www.w3.org/2000/01/rdf-schema#label> "d15N"@en .
+<http://linked.earth/ontology#d15N> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d15N> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableNitrogenIsotope> .
+<http://linked.earth/ontology#Floral> <http://www.w3.org/2000/01/rdf-schema#label> "Floral"@en .
+<http://linked.earth/ontology#Floral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Floral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Assemblage> .
+<http://linked.earth/ontology#Fe/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Fe/Ca"@en .
+<http://linked.earth/ontology#Fe/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Fe/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#GrainSize> <http://www.w3.org/2000/01/rdf-schema#label> "Grain size"@en .
+<http://linked.earth/ontology#GrainSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#GrainSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#X-rayFluorescence> <http://www.w3.org/2000/01/rdf-schema#label> "X-ray fluorescence"@en .
+<http://linked.earth/ontology#X-rayFluorescence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#X-rayFluorescence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Fluorescence> .
+<http://linked.earth/ontology#SandFraction> <http://www.w3.org/2000/01/rdf-schema#label> "Sand fraction\n"@en .
+<http://linked.earth/ontology#SandFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#SandFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Composition> .
+<http://linked.earth/ontology#Mn/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Mn/Ca"@en .
+<http://linked.earth/ontology#Mn/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Mn/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#Color> <http://www.w3.org/2000/01/rdf-schema#label> "Color"@en .
+<http://linked.earth/ontology#Color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#StableNitrogenIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#StableIsotope> .
+<http://linked.earth/ontology#StableNitrogenIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable Nitrogen isotope"@en .
+<http://linked.earth/ontology#StableNitrogenIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#MineralMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral matter"@en .
+<http://linked.earth/ontology#MineralMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#MineralMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#Zn/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Zn/Ca"@en .
+<http://linked.earth/ontology#Zn/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Zn/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#Resistivity> <http://www.w3.org/2000/01/rdf-schema#label> "Resistivity"@en .
+<http://linked.earth/ontology#Resistivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Resistivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#Neodymium> <http://www.w3.org/2000/01/rdf-schema#label> "Neodymium"@en .
+<http://linked.earth/ontology#Neodymium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Neodymium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Radioisotope> .
+<http://linked.earth/ontology#Permeability> <http://www.w3.org/2000/01/rdf-schema#label> "Permeability"@en .
+<http://linked.earth/ontology#Permeability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Permeability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#LeadIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Lead Isotope"@en .
+<http://linked.earth/ontology#LeadIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#LeadIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Radioisotope> .
+<http://linked.earth/ontology#Porosity> <http://www.w3.org/2000/01/rdf-schema#label> "Porosity"@en .
+<http://linked.earth/ontology#Porosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Porosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#TEX86> <http://www.w3.org/2000/01/rdf-schema#label> "TEX86"@en .
+<http://linked.earth/ontology#TEX86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#TEX86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OrganicIndex> .
+<http://linked.earth/ontology#Physical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyObservation> .
+<http://linked.earth/ontology#Physical> <http://www.w3.org/2000/01/rdf-schema#label> "Physical obsrevation"@en .
+<http://linked.earth/ontology#Physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#d134S> <http://www.w3.org/2000/01/rdf-schema#label> "d134S"@en .
+<http://linked.earth/ontology#d134S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d134S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableSulfurIsotope> .
+<http://linked.earth/ontology#Uk37> <http://www.w3.org/2000/01/rdf-schema#label> "Uk37"@en .
+<http://linked.earth/ontology#Uk37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Uk37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OrganicIndex> .
+<http://linked.earth/ontology#StableIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Isotope> .
+<http://linked.earth/ontology#StableIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable isotope"@en .
+<http://linked.earth/ontology#StableIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#MoistureContent> <http://www.w3.org/2000/01/rdf-schema#label> "Moisture Content"@en .
+<http://linked.earth/ontology#MoistureContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#MoistureContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#Luminescence> <http://www.w3.org/2000/01/rdf-schema#label> "Luminescence"@en .
+<http://linked.earth/ontology#Luminescence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Luminescence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Spectral> .
+<http://linked.earth/ontology#StableHydrogenIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#StableIsotope> .
+<http://linked.earth/ontology#StableHydrogenIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable Hydrogen isotope"@en .
+<http://linked.earth/ontology#StableHydrogenIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/" .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/observation> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Proxy Observation Ontology"@en .
+<http://linked.earth/ontology#Faunal> <http://www.w3.org/2000/01/rdf-schema#label> "Faunal"@en .
+<http://linked.earth/ontology#Faunal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Faunal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Assemblage> .
+<http://linked.earth/ontology#Diffraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Spectral> .
+<http://linked.earth/ontology#Diffraction> <http://www.w3.org/2000/01/rdf-schema#label> "Diffraction"@en .
+<http://linked.earth/ontology#Diffraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Al/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Al/Ca"@en .
+<http://linked.earth/ontology#Al/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Al/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#d170> <http://www.w3.org/2000/01/rdf-schema#label> "d170"@en .
+<http://linked.earth/ontology#d170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableOxygenIsotope> .
+<http://linked.earth/ontology#TraceElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#TraceElement> <http://www.w3.org/2000/01/rdf-schema#label> "Trace element"@en .
+<http://linked.earth/ontology#TraceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Ba/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "Ba/Ca"@en .
+<http://linked.earth/ontology#Ba/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Ba/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#P> <http://www.w3.org/2000/01/rdf-schema#label> "P"@en .
+<http://linked.earth/ontology#P> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#P> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#MajorElement> .
+<http://linked.earth/ontology#Radioisotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Isotope> .
+<http://linked.earth/ontology#Radioisotope> <http://www.w3.org/2000/01/rdf-schema#label> "Radioisotope"@en .
+<http://linked.earth/ontology#Radioisotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Reflectance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Spectral> .
+<http://linked.earth/ontology#Reflectance> <http://www.w3.org/2000/01/rdf-schema#label> "Reflectance"@en .
+<http://linked.earth/ontology#Reflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#MagneticSusceptibility> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetic susceptibility\n"@en .
+<http://linked.earth/ontology#MagneticSusceptibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#MagneticSusceptibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#OrganicMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Organic matter"@en .
+<http://linked.earth/ontology#OrganicMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#OrganicMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#Fluorescence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Spectral> .
+<http://linked.earth/ontology#Fluorescence> <http://www.w3.org/2000/01/rdf-schema#label> "Fluorescence"@en .
+<http://linked.earth/ontology#Fluorescence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#X-RayDiffraction> <http://www.w3.org/2000/01/rdf-schema#label> "X-Ray diffraction"@en .
+<http://linked.earth/ontology#X-RayDiffraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#X-RayDiffraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Diffraction> .
+<http://linked.earth/ontology#StableOxygenIsotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#StableIsotope> .
+<http://linked.earth/ontology#StableOxygenIsotope> <http://www.w3.org/2000/01/rdf-schema#label> "Stable Oxygen isotope"@en .
+<http://linked.earth/ontology#StableOxygenIsotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#SiltFraction> <http://www.w3.org/2000/01/rdf-schema#label> "Silt fraction"@en .
+<http://linked.earth/ontology#SiltFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#SiltFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Composition> .
+<http://linked.earth/ontology#Isotope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#Isotope> <http://www.w3.org/2000/01/rdf-schema#label> "Isotope"@en .
+<http://linked.earth/ontology#Isotope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Chemical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyObservation> .
+<http://linked.earth/ontology#Chemical> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical"@en .
+<http://linked.earth/ontology#Chemical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#B/Ca> <http://www.w3.org/2000/01/rdf-schema#label> "B/Ca"@en .
+<http://linked.earth/ontology#B/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#B/Ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#TraceElement> .
+<http://linked.earth/ontology#Density> <http://www.w3.org/2000/01/rdf-schema#label> "Density"@en .
+<http://linked.earth/ontology#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#dD> <http://www.w3.org/2000/01/rdf-schema#label> "dD"@en .
+<http://linked.earth/ontology#dD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#dD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#StableHydrogenIsotope> .
+<http://linked.earth/ontology#DiffuseSpectralReflectance> <http://www.w3.org/2000/01/rdf-schema#label> "Diffuse spectral reflectance"@en .
+<http://linked.earth/ontology#DiffuseSpectralReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#DiffuseSpectralReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Reflectance> .
+<http://linked.earth/ontology#Lithics> <http://www.w3.org/2000/01/rdf-schema#label> "Lithics"@en .
+<http://linked.earth/ontology#Lithics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Lithics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Physical> .
+<http://linked.earth/ontology#Ar-Ar> <http://www.w3.org/2000/01/rdf-schema#label> "Ar-Ar"@en .
+<http://linked.earth/ontology#Ar-Ar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Ar-Ar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Radioisotope> .
+<http://linked.earth/ontology#MajorElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Chemical> .
+<http://linked.earth/ontology#MajorElement> <http://www.w3.org/2000/01/rdf-schema#label> "Major element"@en .
+<http://linked.earth/ontology#MajorElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ClayFraction> <http://www.w3.org/2000/01/rdf-schema#label> "Clay fraction"@en .
+<http://linked.earth/ontology#ClayFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#ClayFraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Composition> .

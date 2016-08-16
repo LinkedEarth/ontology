@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ prov: http://www.w3.org/ns/prov# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl#">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />   <script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).text()+'</a></li>';
+		}
+		t = t.replace(' back to ToC','');
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}    $(function(){
+      $("#abstract").load("sections/abstract-en.html"); 
+      $("#introduction").load("sections/introduction-en.html"); 
+      $("#overview").load("sections/overview-en.html"); 
+      //$("#description").load("sections/description-en.html"); 
+      $("#references").load("sections/references-en.html"); 
+      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+    });
+    </script> 
+  </head> 
+
+<body resource="https://w3id.org/linkedEarth/ontology#" typeOf="owl:Ontology schema:TechArticle">
+<span resource="" typeOf="foaf:Document schema:WebPage">
+<span property="dc:created schema:dateCreated" content="10 August 2016"></span>
+<span property="dc:isVersionOf prov:specializationOf" resource="http://linked.earth/ontology#"></span>
+<span property="prov:alternateOf prov:revisionOf" resource="http://linkedearth.github.io/Ontology/versions/doc-snapshot1.0.0/index-en.html"></span>
+<span property="dc:contributor prov:wasAttributedTo schema:contributor" resource="http://purl.org/net/dgarijo"></span>
+</span>
+<div class="container"><div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1 property="dc:title schema:name">The Proxy Observation Ontology</h1>
+<span property="dc:modified schema:dateModified" content="10 August 2016"></span>
+<h2>Release  10 August 2016</h2>
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://linked.earth/ontology/observation">http://linked.earth/ontology/observation</a></dd>
+</dl><dl><dt>Latest version:</dt>
+<dd><a href="http://linked.earth/ontology#">http://linked.earth/ontology#</a></dd>
+</dl>
+<dt>Revision:</dt>
+<dd property="schema:version">0.0.1</dd>
+<dl><dt>Authors:</dt>
+<dd><a property="dc:creator schema:author prov:wasAttributedTo" resource="http://orcid.org/0000-0001-5920-4751" href="http://orcid.org/0000-0001-5920-4751">Julien Emile-Geay</a>, (<a href="http://www.usc.edu/">University of Southern California</a>)</dd><dd><a property="dc:creator schema:author prov:wasAttributedTo" resource="http://earth.usc.edu/~khider/" href="http://earth.usc.edu/~khider/">Deborah Khider</a>, (<a href="http://www.usc.edu/">University of Southern California</a>)</dd><dd><a property="dc:creator schema:author prov:wasAttributedTo" resource="http://www.cefns.nau.edu/~npm4/" href="http://www.cefns.nau.edu/~npm4/">Nick McKay</a>, (<a href="http://nau.edu/ ">http://nau.edu/ </a>)</dd></dl>
+
+<dl><dt>Contributors:</dt>
+<dd><a property="dc:contributor schema:contributor prov:wasAttributedTo" resource="http://w3id.org/people/dgarijo" href="http://w3id.org/people/dgarijo">Daniel Garijo</a>, (<a href="http://isi.edu/">Information Sciences Institute</a>)</dd><dd><a property="dc:contributor schema:contributor prov:wasAttributedTo" resource="http://www.isi.edu/~gil/" href="http://www.isi.edu/~gil/">Yolanda Gil</a>, (<a href="http://isi.edu/">Information Sciences Institute</a>)</dd><dd><a property="dc:contributor schema:contributor prov:wasAttributedTo" resource="http://www.isi.edu/~varunr/ " href="http://www.isi.edu/~varunr/ ">Varun Ratnakar</a>, (<a href="http://isi.edu/">Information Sciences Institute</a>)</dd></dl>
+<dl><dt>Extended ontologies:</dl>
+<dd><a href="http://linked.earth/ontology/core/index-en.html">The Linked Earth Core Ontology</a></dd>
+
+<dl><dt>Download serialization:</dt><dd><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML"></img></a> </span><span><a href="ontology.n3" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples"></img></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL"></img></a> </span></dd></dl><dl><dt>License: </dt><dd><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank"><img src ="https://img.shields.io/badge/License-Creative Commons Attribution_NonCommercial_ShareAlike 2.0 License-blue.svg" alt="http://creativecommons.org/licenses/by-nc-sa/2.0/"></img></a>
+<span property="dc:license" resource="http://creativecommons.org/licenses/by-nc-sa/2.0/"></span>
+<a property="dc:rights" href="http://creativecommons.org/licenses/by-nc-sa/2.0/" rel="license" target="_blank">
+<img src="https://i.creativecommons.org/l/by-nc-sa/2.0/88x31.png" style="border-width:0" alt="License"></img>
+</a>
+<br/></dd></dl><dl><dt>Visualization:</dt><dd><a href="http://vowl.visualdataweb.org/webvowl/index.html#iri=https://w3id.org/linkedEarth/ontology#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl"></img></a></dd></dl>
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Linked Earth Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="introduction"></div>
+     <div id="overview"></div>
+     <!--<div id="description"></div>-->
+     <div id="crossref"></div>
+     <div id="references"></div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+</body> 
+</html>

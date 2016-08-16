@@ -1,0 +1,52 @@
+<http://linked.earth/ontology#Sclerosponge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Sclerosponge> <http://www.w3.org/2000/01/rdf-schema#label> "Sclerosponge"@en .
+<http://linked.earth/ontology#Sclerosponge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/2000/01/rdf-schema#label> "Rock"@en .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<http://linked.earth/ontology#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Wood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Wood> <http://www.w3.org/2000/01/rdf-schema#label> "Wood"@en .
+<http://linked.earth/ontology#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Speleothem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Speleothem> <http://www.w3.org/2000/01/rdf-schema#label> "Speleothem"@en .
+<http://linked.earth/ontology#Speleothem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#GlacierIce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#GlacierIce> <http://www.w3.org/2000/01/rdf-schema#label> "Glacier ice"@en .
+<http://linked.earth/ontology#GlacierIce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#LakeSediment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#LakeSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Lake Sediment"@en .
+<http://linked.earth/ontology#LakeSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#MolluskShells> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#MolluskShells> <http://www.w3.org/2000/01/rdf-schema#label> "Mollusk shells"@en .
+<http://linked.earth/ontology#MolluskShells> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Coral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Coral> <http://www.w3.org/2000/01/rdf-schema#label> "Coral"@en .
+<http://linked.earth/ontology#Coral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#MarineSediment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#MarineSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Marine Sediment"@en .
+<http://linked.earth/ontology#MarineSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/archive> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Proxy Archive Ontology"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1"@en .
+<http://linked.earth/ontology#Peat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Peat> <http://www.w3.org/2000/01/rdf-schema#label> "Peat "@en .
+<http://linked.earth/ontology#Peat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Hybrid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxyArchive> .
+<http://linked.earth/ontology#Hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hybrid"@en .
+<http://linked.earth/ontology#Hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
+<http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#comment> "The medium in which the response of a sensor to environmental forcing is recorded. Sensu Evans et al. (2013).\n\nExamples of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice, etc."@en .
+<http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy archive"@en .
+<http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

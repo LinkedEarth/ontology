@@ -1,0 +1,419 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://linked.earth/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://linked.earth/ontology#LayerThickness">
+    <rdfs:label xml:lang="en">Layer thickness</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#TEX86">
+    <rdfs:label xml:lang="en">TEX86</rdfs:label>
+    <rdfs:comment xml:lang="en">The use of TEX86 (TetraEther indeX of 86 carbons) as a tool to reconstruct past sea surface temperature variability is based on the relative cyclization of isoprenoidal glycerol dialkyl glycerol tetra ethers (GDGTs) produced by marine archaea. TEX86 is defined as [1]:
+
+TEX_{86}=\frac{GDGT-2+GDGT-3+Cren'}{GDGT-1+GDGT-2+GDGT-3+Cren'}
+
+where GDGTs 1-3 indicate compounds containing 1-3 cyclopentyl moieties, respectively, and Cren' denotes the regioisomer of crenarchaeol, a diagnostic biomarker for the Thaumarchaeota, the primary producers of GDGTs in the marine realm. By definition, values of the TEX86 index are comprised between 0 and 1.
+
+Experimental evidence suggests that archaea produce GDGTs with more rings warmer waters, a response observed in cultures of hyperthermophile archaea [2] [3] and mesocosm experiments with natural seawater containing heterogenous archaeal population [4] [5].
+References
+
+[1] Schouten, S., Hopmans, E. C., Schefuß, E., &amp; Sinninghe Damsté, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipids: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.
+
+[2] de Rosa, M., Esposito, E., Gambacorta, A., Nicolaus, B., &amp; Bu'Lock, J. (1980). Effects of temperature on ether lipid composition of Caldariella acidophilia. Phytochemistry, 19, 827-831.
+
+[3] Uda, I., Sugai, A., Itoh, Y., &amp; Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. Lipids, 36, 103-105.
+
+[4] Wuchter, C., Schouten, S., Coolen, M. J. L., &amp; Sinninghe Damsté, J. S. (2004). Temperature-dependent variation in the distribution of tetraether membrane lipids of marine Crenarchaeota: implications for TEX86 paleothermometry. Paleoceanography, 19, PA4028. doi:10.1029/2004PA001041
+
+[5]Schouten, S., Forster, A., Panato, E., &amp; Sinninghe Damsté, J. S. (2007). Towards the calibration of the TEX86 paleothermometer on ancient greenhouse worlds. Organic Geochemistry. doi:10.1016/j.orggeochem.2007.05.014</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OrganicIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Radiocarbon">
+    <rdfs:label xml:lang="en">Radiocarbon</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Radioisotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Uk37">
+    <rdfs:label xml:lang="en">Uk37</rdfs:label>
+    <rdfs:comment xml:lang="en">The C37 alkenone unsaturation index ( U_{37}^{k'} ) is a firmly established tool for past sea surface temperatures reconstruction and is based on the relative abundance of di- (C37:2) and tri- (C37:3) unsaturated ketones with 37 carbon atoms. The index varies between 0 and 1, thus it may saturate in the temperature extremes as it becomes more challenging to determine since C37:3 and C37:2 alkenones approach their detection limits. Since alkenones come exclusively from a few species of haptophyte algae which require sunlight, alkenone thermometry offers the advantage of direct estimate of near-surface ocean temperatures. The ubiquitous presence of alkenone-synthesizing organisms (most commonly the coccolithophorids Emiliania huxleyi and Gephyrocapsa oceanic through the world's ocean and the rapidity and high-precision of the alkenone analyses had made U_{37}^{k'} a valuable proxy for paleoceanographic reconstructions.
+
+However, the U_{37}^{k'} proxy is subject to non-temperature effects, such as lateral transport through oceanic currents (Ohkouchi et al. (2002)) and preferential post-depositional oxidation of C37:3 compared to C37:2 [1] [2]. Furthermore, changes in the seasonality of the proxy (i.e., which part of the seasonal cycle the proxy is recording) may bias the inferred temperatures toward winter or summer conditions [3]. Finally in oceanic regions where the photic zone extends below the surface mixed layer, the sedimentary signal may not strictly represent sea surface temperatures but rather a composite temperature of the mixed layer and the thermocline [4][5].
+References
+
+[1] Hoefs, M. J. L., Versteegh, G. J. M., Rijpstra, W. I. C., de Leeuw, J. W., &amp; Damsté, J. S. S. (1998). Postdepositional oxic degradation of alkenones: Implications for the measurement of palaeo sea surface temperatures. Paleoceanography, 13(1), 42-49. doi:10.1029/97pa02893
+
+[2] Ohkouchi, N., Eglinton, T. I., Keigwin, L. D., &amp; Hayes, J. M. (2002). Spatial and temporal offsets between proxy records in a sediment drift. Science, 298(5596), 1224-1227. doi:10.1126/science.1075287
+
+[3] Herfort, L., Schouten, S., Boon, J. P., &amp; Sinninghe Damsté, J. S. (2006). Application of the TEX86 temperature proxy in the southern North Sea. Organic Geochemistry, 37, 1715-1726.
+
+[4] Müller, P. J., Kirst, G., Ruhland, G., von Storch, I., &amp; Rosell-Melé, A. (1998). Calibration of the alkenone paleotemperature index U_{37}^{k'} based on core-tops from the eastern South Atlantic and the global ocean (60°N-60°S). Geochimica et cosmochimica acta, 62, 1757-1772.
+
+[5] Prahl, F. G., Mix, A. C., &amp; Sparrow, M. A. (2006). Alkenone paleothermometry: biological lessons from amrine sediment records off Western South America. Geochimica and Cosmochimica Acta, 70, 101-117.</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OrganicIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Al/Ca">
+    <rdfs:label xml:lang="en">Al/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Si">
+    <rdfs:label xml:lang="en">Si</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#MajorElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Fluorescence">
+    <rdfs:label xml:lang="en">Fluorescence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Spectral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Reflectance">
+    <rdfs:label xml:lang="en">Reflectance</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Spectral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#GrainSize">
+    <rdfs:label xml:lang="en">Grain size</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Color">
+    <rdfs:label xml:lang="en">Color</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Diffraction">
+    <rdfs:label xml:lang="en">Diffraction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Spectral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#OrganicIndex">
+    <rdfs:label xml:lang="en">Organic index</rdfs:label>
+    <rdfs:comment xml:lang="en">&lt;p&gt;Paleoceanographers use the term &lt;b&gt;biomarker&lt;/b&gt; to describe organic molecules found in &lt;a href="/Category:MarineSediment" title="Category:MarineSediment"&gt; marine sediments&lt;/a&gt;, initially produced by a variety of organisms either on land or in the marine environment &lt;sup id="cite_ref-rosell2007_1-0" class="reference"&gt;&lt;a href="#cite_note-rosell2007-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;. A key characteristic of biomarkers is their ability to survive deposition in the &lt;a href="/Category:ProxyArchive_%C2%A9" title="Category:ProxyArchive ©"&gt; archive&lt;/a&gt; in terms of their original structure and steroidal configuration (i.e., spatial distribution of the atoms) &lt;sup id="cite_ref-rosell2007_1-1" class="reference"&gt;&lt;a href="#cite_note-rosell2007-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;. Their usefulness for paleoceanographic reconstructions largely depends on their &lt;a href="/wiki/index.php?title=Degradation&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="Degradation (page does not exist)"&gt;degradation&lt;/a&gt; within the &lt;a href="/Category:ProxyArchive_%C2%A9" title="Category:ProxyArchive ©"&gt; archive&lt;/a&gt; &lt;sup id="cite_ref-rosell2007_1-2" class="reference"&gt;&lt;a href="#cite_note-rosell2007-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;ol class="references"&gt;
+&lt;li id="cite_note-rosell2007-1"&gt;&lt;span class="mw-cite-backlink"&gt;? &lt;sup&gt;&lt;a href="#cite_ref-rosell2007_1-0"&gt;1.0&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;&lt;a href="#cite_ref-rosell2007_1-1"&gt;1.1&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;&lt;a href="#cite_ref-rosell2007_1-2"&gt;1.2&lt;/a&gt;&lt;/sup&gt;&lt;/span&gt; &lt;span class="reference-text"&gt;Rosell-Melé, A., &amp;amp; McClymont, E. L. (2007). Biomarkers as Paleoceanographic proxies. Developments in Marine Geology, 1, 441-490. doi:10.1016/S1572-5480(07)01016-0 &lt;/span&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d170">
+    <rdfs:label xml:lang="en">d170</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableOxygenIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Uk37Prime">
+    <rdfs:label xml:lang="en">Uk 37'</rdfs:label>
+    <rdfs:comment xml:lang="en">The currently accepted U37kprime (Prahl and Wakeman, 1987) varies positively with temperature, and is defines as C(37:2)/(C(37:2)+C(37:3), where C(37:2) represents the quantity of the di-unsaturated ketone and C(37:3) the quantity of the tri-unsaturated form.
+
+Herbet, T.D., 2003, Alkenone paleotemperature determinations in Treatise on Geochemistry, Volume 6, pp 391-432</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OrganicIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#B/Ca">
+    <rdfs:label xml:lang="en">B/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MajorElement">
+    <rdfs:label xml:lang="en">Major element</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#P">
+    <rdfs:label xml:lang="en">P</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#MajorElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#DiffuseSpectralReflectance">
+    <rdfs:label xml:lang="en">Diffuse spectral reflectance</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Reflectance"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MoistureContent">
+    <rdfs:label xml:lang="en">Moisture Content</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#U-Th">
+    <rdfs:label xml:lang="en">U-Th</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Radioisotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Radioisotope">
+    <rdfs:label xml:lang="en">Radioisotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Isotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Li/Ca">
+    <rdfs:label xml:lang="en">Li/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#C">
+    <rdfs:label xml:lang="en">C</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#MajorElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Porosity">
+    <rdfs:label xml:lang="en">Porosity</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SandFraction">
+    <rdfs:label xml:lang="en">Sand fraction&#xD;
+</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Composition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Neodymium">
+    <rdfs:label xml:lang="en">Neodymium</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Radioisotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Composition">
+    <rdfs:label xml:lang="en">Composition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Floral">
+    <rdfs:label xml:lang="en">Floral</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Assemblage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MagneticSusceptibility">
+    <rdfs:label xml:lang="en">Magnetic susceptibility&#xD;
+</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d13C">
+    <rdfs:label xml:lang="en">d13C</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableCarbonIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Zn/Ca">
+    <rdfs:label xml:lang="en">Zn/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Assemblage">
+    <rdfs:label xml:lang="en">Assemblage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#OrganicMatter">
+    <rdfs:label xml:lang="en">Organic matter</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Spectral">
+    <rdfs:label xml:lang="en">Spectral observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Isotope">
+    <rdfs:label xml:lang="en">Isotope</rdfs:label>
+    <rdfs:comment xml:lang="en">&lt;p&gt;Atoms can be simply described as consisting of &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Proton"&gt;protons&lt;/a&gt;, &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Electron"&gt;electrons&lt;/a&gt;, and &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Neutron"&gt;neutrons&lt;/a&gt;. Isotopes of the same element differ by the number of neutrons in the nucleus, resulting in different mass.
+&lt;/p&gt;</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Resistivity">
+    <rdfs:label xml:lang="en">Resistivity</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableOxygenIsotope">
+    <rdfs:label xml:lang="en">Stable Oxygen isotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#StableIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxyObservation">
+    <rdfs:label xml:lang="en">Proxy observation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://linked.earth/ontology/core/1.2.0/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d34S">
+    <rdfs:label xml:lang="en">d34S</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableSulfurIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Chemical">
+    <rdfs:label xml:lang="en">Chemical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Physical">
+    <rdfs:label xml:lang="en">Physical observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d180">
+    <rdfs:label xml:lang="en">d180</rdfs:label>
+    <rdfs:comment xml:lang="en">Oxygen has three naturally-occuring stable isotopes: 16O, 17O, 18O, with 16O being the most abundant (99.762%).
+
+Two international reference standards are used to report variations in oxygen isotope standards: PDB and SMOW. The use of the PDB standard in reporting oxygen isotope composition is restricted to carbonates of low-temperature origins (e.g., oceanic, lacustrine ). The conversion between SMOW and PDB scales is given by:
+\delta^{18}O_{SMOW} = 1.03091 (\delta^{18}O_{PDB}) +30.91
+
+δ18O may be measured on the shells of foraminifera</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableOxygenIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#X-RayDiffraction">
+    <rdfs:label xml:lang="en">X-Ray diffraction</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Diffraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableHydrogenIsotope">
+    <rdfs:label xml:lang="en">Stable Hydrogen isotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#StableIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableIsotope">
+    <rdfs:label xml:lang="en">Stable isotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Isotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#X-rayFluorescence">
+    <rdfs:label xml:lang="en">X-ray fluorescence</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Fluorescence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Permeability">
+    <rdfs:label xml:lang="en">Permeability</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ClayFraction">
+    <rdfs:label xml:lang="en">Clay fraction</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Composition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Density">
+    <rdfs:label xml:lang="en">Density</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableCarbonIsotope">
+    <rdfs:label xml:lang="en">Stable Carbon isotope</rdfs:label>
+    <rdfs:comment xml:lang="en">&lt;p&gt;&lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Carbon"&gt;Carbon&lt;/a&gt; in nature exists in oxidized (i.e., &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Carbon_dioxide"&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/a&gt; and &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Carbonate"&gt;carbonates&lt;/a&gt;), elemental (i.e., &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Graphite"&gt;graphite&lt;/a&gt; and &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Diamond"&gt;diamond&lt;/a&gt;), and reduced (i.e., &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Methane"&gt;methane&lt;/a&gt; and organic matter]) forms. Carbon has two &lt;a href="/Category:StableIsotope" title="Category:StableIsotope"&gt; stable isotopes&lt;/a&gt;: the light isotope &lt;sup&gt;12&lt;/sup&gt;C (abundance: 98.9%, mass: 12.000000 amu) and the heavy isotope &lt;sup&gt;13&lt;/sup&gt;C (abundance: 1.1%, mass: 13.003355 amu). Since the mass of &lt;sup&gt;13&lt;/sup&gt;C is higher than the mass of &lt;sup&gt;12&lt;/sup&gt;C, the carbon isotopes are fractionated by chemical and biological processes. In general, &lt;sup&gt;12&lt;/sup&gt;C is strongly partitioned into organic matter (reduced form) while the heavy isotope is concentrated in the oxidized forms of carbon.
+&lt;/p&gt;</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#StableIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#dD">
+    <rdfs:label xml:lang="en">dD</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableHydrogenIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#N">
+    <rdfs:label xml:lang="en">N</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#MajorElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Mn/Ca">
+    <rdfs:label xml:lang="en">Mn/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Historic">
+    <rdfs:label xml:lang="en">Historic</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#TraceElement">
+    <rdfs:label xml:lang="en">Trace element</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableSulfurIsotope">
+    <rdfs:label xml:lang="en">Stable sulfur isotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#StableIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Sr/Ca">
+    <rdfs:label xml:lang="en">Sr/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MineralMatter">
+    <rdfs:label xml:lang="en">Mineral matter</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Chemical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#LeadIsotope">
+    <rdfs:label xml:lang="en">Lead Isotope</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Radioisotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Fe/Ca">
+    <rdfs:label xml:lang="en">Fe/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#">
+    <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+    <dcterms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+    <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+    <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
+    <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://linked.earth/ontology/observation/1.0.0"/>
+    <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+    <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+    <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title xml:lang="en">The Proxy Observation Ontology</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#StableNitrogenIsotope">
+    <rdfs:label xml:lang="en">Stable Nitrogen isotope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#StableIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Luminescence">
+    <rdfs:label xml:lang="en">Luminescence</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Mg/Ca">
+    <rdfs:label xml:lang="en">Mg/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d15N">
+    <rdfs:label xml:lang="en">d15N</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#StableNitrogenIsotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Ba/Ca">
+    <rdfs:label xml:lang="en">Ba/Ca</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#TraceElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SiltFraction">
+    <rdfs:label xml:lang="en">Silt fraction</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Composition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Lithics">
+    <rdfs:label xml:lang="en">Lithics</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Faunal">
+    <rdfs:label xml:lang="en">Faunal</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Assemblage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Ar-Ar">
+    <rdfs:label xml:lang="en">Ar-Ar</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Radioisotope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

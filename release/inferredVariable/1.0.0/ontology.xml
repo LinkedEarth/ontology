@@ -1,0 +1,267 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://linked.earth/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://linked.earth/ontology#age">
+    <rdfs:label xml:lang="en">Age</rdfs:label>
+    <rdfs:comment xml:lang="en">The age of a sample</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#palmerDroughtIndex">
+    <rdfs:label xml:lang="en">Palmer Drought Index</rdfs:label>
+    <owl:sameAs rdf:resource="http://linked.earth/ontology#palmerDroughtSeverityIndex"/>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#julianDay">
+    <rdfs:label xml:lang="en">Julian day</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#northAtlanticOscillation">
+    <rdfs:label xml:lang="en">North Atlantic Oscillation (NAO)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#arcticOscillation">
+    <rdfs:label xml:lang="en">Arctic Oscillation (AO, AAO)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#moistureContent">
+    <rdfs:label xml:lang="en">Moisture content</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Hydrology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#OceanChemistry">
+    <rdfs:label xml:lang="en">Ocean chemistry</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#AtmosphericChemistry">
+    <rdfs:label xml:lang="en">Atmospheric chemistry</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#southernOscillationIndex">
+    <rdfs:label xml:lang="en">Southern oscillation index (SOI)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#precipitationAmount">
+    <rdfs:label xml:lang="en">Precipitation amount</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Precipitation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nino2">
+    <rdfs:label xml:lang="en">Nino 2</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#bottomWaterTemperature">
+    <rdfs:label xml:lang="en">Bottom water temperature</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Temperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#temperature">
+    <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">Thermodynamic property which quantifies how cold or warm an object, a fluid, or a substance is.</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Temperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#oceanMixedLayerTemperature">
+    <rdfs:label xml:lang="en">Ocean mixed layer temperature</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Temperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Precipitation">
+    <rdfs:label xml:lang="en">Precipitation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Hydrology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#InferredVariable">
+    <rdfs:label xml:lang="en">Inferred variable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://linked.earth/ontology/core/1.2.0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#IsotopicComposition">
+    <rdfs:label xml:lang="en">Isotopic composition</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#carbonDioxideConcentration">
+    <rdfs:label xml:lang="en">Carbon dioxide concentration</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AtmosphericChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Temperature">
+    <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">Thermodynamic property allowing to quantitatively measure how warm or cold a material, fluid is.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:unionOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nino3_4">
+    <rdfs:label xml:lang="en">Nino 3.4</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nino1">
+    <rdfs:label xml:lang="en">Nino 1</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#year">
+    <rdfs:label xml:lang="en">Year</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#surfaceAirTemperature">
+    <rdfs:label xml:lang="en">Surface air temperature</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Temperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ClimateIndex">
+    <rdfs:label xml:lang="en">Climate index</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#carbonateSaturation">
+    <rdfs:label xml:lang="en">Carbonate saturation</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OceanChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#seaSurfaceTemperature">
+    <rdfs:label xml:lang="en">Sea surface temperature</rdfs:label>
+    <rdfs:comment xml:lang="en">The temperature close to the ocean's surface</rdfs:comment>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Temperature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#palmerDroughtSeverityIndex">
+    <rdfs:label xml:lang="en">Palmer Drought Severity Index (PDSI)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Hydrology"/>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#salinity">
+    <rdfs:label xml:lang="en">Salinity</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OceanChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Hydrology"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#d180">
+    <rdfs:label xml:lang="en">d180</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopicComposition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Hydrology">
+    <rdfs:label xml:lang="en">Hydrology</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nino4">
+    <rdfs:label xml:lang="en">Nino 4</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#southernAnnularMode">
+    <rdfs:label xml:lang="en">Southern Annular Mode (SAM)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#dD">
+    <rdfs:label xml:lang="en">DD</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopicComposition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#freeOxygenLevels">
+    <rdfs:label xml:lang="en">Free oxygen levels</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AtmosphericChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Time">
+    <rdfs:label xml:lang="en">Time</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#pH">
+    <rdfs:label xml:lang="en">PH</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OceanChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#radiocarbonAge">
+    <rdfs:label xml:lang="en">Radiocarbon age</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Nino1Plus2">
+    <rdfs:label xml:lang="en">Nino 1+2</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#methaneConcentration">
+    <rdfs:label xml:lang="en">Methane concentration</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AtmosphericChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#">
+    <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+    <dcterms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+    <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+    <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
+    <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+    <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+    <owl:versionIRI rdf:resource="http://linked.earth/ontology/inferredVariable/1.0.0"/>
+    <dcterms:title xml:lang="en">The Inferred Variable Ontology</dcterms:title>
+    <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#CarbonateIonConcentration">
+    <rdfs:label xml:lang="en">Carbonate ion concentration</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#OceanChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#OceanChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#deuteriumExcess">
+    <rdfs:label xml:lang="en">Deuterium excess (excessD)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopicComposition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ElNinoIndex">
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nitrousOxideConcentration">
+    <rdfs:label xml:lang="en">Nitrous oxide concentration</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AtmosphericChemistry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#atlanticMultiDecadalOscillation">
+    <rdfs:label xml:lang="en">Atlantic Multi-decadal Oscillation (AMO)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ClimateIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#nino3">
+    <rdfs:label xml:lang="en">Nino 3</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#ElNinoIndex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

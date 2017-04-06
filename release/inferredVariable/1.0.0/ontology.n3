@@ -1,0 +1,160 @@
+<http://linked.earth/ontology#southernAnnularMode> <http://www.w3.org/2000/01/rdf-schema#label> "Southern Annular Mode (SAM)"@en .
+<http://linked.earth/ontology#southernAnnularMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#southernAnnularMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#arcticOscillation> <http://www.w3.org/2000/01/rdf-schema#label> "Arctic Oscillation (AO, AAO)"@en .
+<http://linked.earth/ontology#arcticOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#arcticOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#methaneConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Methane concentration"@en .
+<http://linked.earth/ontology#methaneConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#AtmosphericChemistry> .
+<http://linked.earth/ontology#methaneConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#OceanChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Ocean chemistry"@en .
+<http://linked.earth/ontology#OceanChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#OceanChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#year> <http://www.w3.org/2000/01/rdf-schema#label> "Year"@en .
+<http://linked.earth/ontology#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Time> .
+<http://linked.earth/ontology#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#nino2> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 2"@en .
+<http://linked.earth/ontology#nino2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#nino2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#deuteriumExcess> <http://www.w3.org/2000/01/rdf-schema#label> "Deuterium excess (excessD)"@en .
+<http://linked.earth/ontology#deuteriumExcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#IsotopicComposition> .
+<http://linked.earth/ontology#deuteriumExcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#palmerDroughtIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Palmer Drought Index"@en .
+<http://linked.earth/ontology#palmerDroughtIndex> <http://www.w3.org/2002/07/owl#sameAs> <http://linked.earth/ontology#palmerDroughtSeverityIndex> .
+<http://linked.earth/ontology#palmerDroughtIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#palmerDroughtIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Precipitation> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation"@en .
+<http://linked.earth/ontology#Precipitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Hydrology> .
+<http://linked.earth/ontology#Precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#age> <http://www.w3.org/2000/01/rdf-schema#label> "Age"@en .
+<http://linked.earth/ontology#age> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of a sample"@en .
+<http://linked.earth/ontology#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Time> .
+<http://linked.earth/ontology#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#d180> <http://www.w3.org/2000/01/rdf-schema#label> "d180"@en .
+<http://linked.earth/ontology#d180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#IsotopicComposition> .
+<http://linked.earth/ontology#d180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#radiocarbonAge> <http://www.w3.org/2000/01/rdf-schema#label> "Radiocarbon age"@en .
+<http://linked.earth/ontology#radiocarbonAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Time> .
+<http://linked.earth/ontology#radiocarbonAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#nino3_4> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 3.4"@en .
+<http://linked.earth/ontology#nino3_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#nino3_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#northAtlanticOscillation> <http://www.w3.org/2000/01/rdf-schema#label> "North Atlantic Oscillation (NAO)"@en .
+<http://linked.earth/ontology#northAtlanticOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#northAtlanticOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#nino1> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 1"@en .
+<http://linked.earth/ontology#nino1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#nino1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#freeOxygenLevels> <http://www.w3.org/2000/01/rdf-schema#label> "Free oxygen levels"@en .
+<http://linked.earth/ontology#freeOxygenLevels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#AtmosphericChemistry> .
+<http://linked.earth/ontology#freeOxygenLevels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#nitrousOxideConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Nitrous oxide concentration"@en .
+<http://linked.earth/ontology#nitrousOxideConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#AtmosphericChemistry> .
+<http://linked.earth/ontology#nitrousOxideConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+<http://linked.earth/ontology#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermodynamic property allowing to quantitatively measure how warm or cold a material, fluid is."@en .
+<http://linked.earth/ontology#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
+<http://linked.earth/ontology#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#moistureContent> <http://www.w3.org/2000/01/rdf-schema#label> "Moisture content"@en .
+<http://linked.earth/ontology#moistureContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Hydrology> .
+<http://linked.earth/ontology#moistureContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#southernOscillationIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Southern oscillation index (SOI)"@en .
+<http://linked.earth/ontology#southernOscillationIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#southernOscillationIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#seaSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Sea surface temperature"@en .
+<http://linked.earth/ontology#seaSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The temperature close to the ocean's surface"@en .
+<http://linked.earth/ontology#seaSurfaceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Temperature> .
+<http://linked.earth/ontology#seaSurfaceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#precipitationAmount> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation amount"@en .
+<http://linked.earth/ontology#precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Precipitation> .
+<http://linked.earth/ontology#precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:A5e013e84X3aX15b41c74961X3aXX2dX7ffb .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ElNinoIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#ElNinoIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#atlanticMultiDecadalOscillation> <http://www.w3.org/2000/01/rdf-schema#label> "Atlantic Multi-decadal Oscillation (AMO)"@en .
+<http://linked.earth/ontology#atlanticMultiDecadalOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#atlanticMultiDecadalOscillation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Nino1Plus2> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 1+2"@en .
+<http://linked.earth/ontology#Nino1Plus2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#Nino1Plus2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#julianDay> <http://www.w3.org/2000/01/rdf-schema#label> "Julian day"@en .
+<http://linked.earth/ontology#julianDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Time> .
+<http://linked.earth/ontology#julianDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#surfaceAirTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Surface air temperature"@en .
+<http://linked.earth/ontology#surfaceAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Temperature> .
+<http://linked.earth/ontology#surfaceAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#carbonateSaturation> <http://www.w3.org/2000/01/rdf-schema#label> "Carbonate saturation"@en .
+<http://linked.earth/ontology#carbonateSaturation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OceanChemistry> .
+<http://linked.earth/ontology#carbonateSaturation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#palmerDroughtSeverityIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Palmer Drought Severity Index (PDSI)"@en .
+<http://linked.earth/ontology#palmerDroughtSeverityIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Hydrology> .
+<http://linked.earth/ontology#palmerDroughtSeverityIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ClimateIndex> .
+<http://linked.earth/ontology#palmerDroughtSeverityIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/inferredVariable/1.0.0> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Inferred Variable Ontology"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5e013e84X3aX15b41c74961X3aXX2dX7ffa .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Hydrology> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://linked.earth/ontology#CarbonateIonConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Carbonate ion concentration"@en .
+<http://linked.earth/ontology#CarbonateIonConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OceanChemistry> .
+<http://linked.earth/ontology#CarbonateIonConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#Hydrology> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrology"@en .
+<http://linked.earth/ontology#Hydrology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#Hydrology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#nino4> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 4"@en .
+<http://linked.earth/ontology#nino4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#nino4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#carbonDioxideConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Carbon dioxide concentration"@en .
+<http://linked.earth/ontology#carbonDioxideConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#AtmosphericChemistry> .
+<http://linked.earth/ontology#carbonDioxideConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#pH> <http://www.w3.org/2000/01/rdf-schema#label> "PH"@en .
+<http://linked.earth/ontology#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OceanChemistry> .
+<http://linked.earth/ontology#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+<http://linked.earth/ontology#temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermodynamic property which quantifies how cold or warm an object, a fluid, or a substance is."@en .
+<http://linked.earth/ontology#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Temperature> .
+<http://linked.earth/ontology#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#oceanMixedLayerTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Ocean mixed layer temperature"@en .
+<http://linked.earth/ontology#oceanMixedLayerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Temperature> .
+<http://linked.earth/ontology#oceanMixedLayerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#OceanChemistry> .
+_:A5e013e84X3aX15b41c74961X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://linked.earth/ontology#salinity> <http://www.w3.org/2000/01/rdf-schema#label> "Salinity"@en .
+<http://linked.earth/ontology#salinity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#OceanChemistry> .
+<http://linked.earth/ontology#salinity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#AtmosphericChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric chemistry"@en .
+<http://linked.earth/ontology#AtmosphericChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#AtmosphericChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#bottomWaterTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Bottom water temperature"@en .
+<http://linked.earth/ontology#bottomWaterTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#Temperature> .
+<http://linked.earth/ontology#bottomWaterTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#dD> <http://www.w3.org/2000/01/rdf-schema#label> "DD"@en .
+<http://linked.earth/ontology#dD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#IsotopicComposition> .
+<http://linked.earth/ontology#dD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#InferredVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Inferred variable"@en .
+<http://linked.earth/ontology#InferredVariable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linked.earth/ontology/core/1.2.0> .
+<http://linked.earth/ontology#InferredVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#nino3> <http://www.w3.org/2000/01/rdf-schema#label> "Nino 3"@en .
+<http://linked.earth/ontology#nino3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology#ElNinoIndex> .
+<http://linked.earth/ontology#nino3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology#ClimateIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Climate index"@en .
+<http://linked.earth/ontology#ClimateIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InferredVariable> .
+<http://linked.earth/ontology#ClimateIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#IsotopicComposition> <http://www.w3.org/2000/01/rdf-schema#label> "Isotopic composition"@en .
+<http://linked.earth/ontology#IsotopicComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:A5e013e84X3aX15b41c74961X3aXX2dX7ffc .
+<http://linked.earth/ontology#IsotopicComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

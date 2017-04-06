@@ -1,0 +1,135 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://linked.earth/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://linked.earth/ontology#Watershed">
+    <rdfs:label xml:lang="en">Watershed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InorganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#IceSheet">
+    <rdfs:label xml:lang="en">Ice sheet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InorganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Chironomids">
+    <rdfs:label xml:lang="en">Chironomids</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Polyp">
+    <rdfs:label xml:lang="en">Polyp</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Ostracods">
+    <rdfs:label xml:lang="en">Ostracods</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Mollusk"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Tree">
+    <rdfs:label xml:lang="en">Tree</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://wiki.linked.earth/Tree"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Vegetation">
+    <rdfs:label xml:lang="en">Vegetation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#OrganicProxySensor">
+    <rdfs:label xml:lang="en">Organic proxy sensor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://linked.earth/ontology/core/"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxySensor">
+    <rdfs:label xml:lang="en">Proxy sensor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013))</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Karst">
+    <rdfs:label xml:lang="en">Karst</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InorganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#">
+    <owl:versionIRI rdf:resource="http://linked.earth/ontology/sensor/1.0.0"/>
+    <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+    <dcterms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+    <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+    <dcterms:license>http://creativecommons.org/licenses/by/2.0/</dcterms:license>
+    <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
+    <dcterms:title xml:lang="en">The Proxy Sensor Ontology</dcterms:title>
+    <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+    <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+    <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Archea">
+    <rdfs:label xml:lang="en">Archea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Gastropods">
+    <rdfs:label xml:lang="en">Gastropods</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Mollusk"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Foraminifera">
+    <rdfs:label xml:lang="en">Foraminifera</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://wiki.linked.earth/Foraminifera"/>
+    <rdfs:comment xml:lang="en">Because of their population size, foraminifera produce a significant amount of oceanic carbonate, making them a valuable source of paleoceanographic information.&#xD;
+&#xD;
+The following parameters are used in paleoceanographic applications:&#xD;
+&#xD;
+* Faunal Assemblage&#xD;
+* Geochemical measurements:&#xD;
+ *  Isotopes&#xD;
+ * Stable oxygen isotopes&#xD;
+ * Stable carbon isotopes&#xD;
+ * Radiocarbon&#xD;
+* Trace Elements</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Snow">
+    <rdfs:label xml:lang="en">Snow</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InorganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#InorganicProxySensor">
+    <rdfs:label xml:lang="en">Inorganic proxy sensor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://linked.earth/ontology/core/"/>
+    <owl:disjointWith rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Coccolithophores">
+    <rdfs:label xml:lang="en">Coccolithophores</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Rock">
+    <rdfs:label xml:lang="en">Rock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#InorganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Mollusk">
+    <rdfs:label xml:lang="en">Mollusk</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Bivalves">
+    <rdfs:label xml:lang="en">Bivalves</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Mollusk"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

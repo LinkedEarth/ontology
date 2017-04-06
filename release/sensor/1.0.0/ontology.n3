@@ -1,0 +1,76 @@
+<http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy sensor"@en .
+<http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
+<http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013))"@en .
+<http://linked.earth/ontology#ProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Watershed> <http://www.w3.org/2000/01/rdf-schema#label> "Watershed"@en .
+<http://linked.earth/ontology#Watershed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InorganicProxySensor> .
+<http://linked.earth/ontology#Watershed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Mollusk> <http://www.w3.org/2000/01/rdf-schema#label> "Mollusk"@en .
+<http://linked.earth/ontology#Mollusk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Mollusk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Bivalves> <http://www.w3.org/2000/01/rdf-schema#label> "Bivalves"@en .
+<http://linked.earth/ontology#Bivalves> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Mollusk> .
+<http://linked.earth/ontology#Bivalves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Archea> <http://www.w3.org/2000/01/rdf-schema#label> "Archea"@en .
+<http://linked.earth/ontology#Archea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Archea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Chironomids> <http://www.w3.org/2000/01/rdf-schema#label> "Chironomids"@en .
+<http://linked.earth/ontology#Chironomids> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Chironomids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Polyp> <http://www.w3.org/2000/01/rdf-schema#label> "Polyp"@en .
+<http://linked.earth/ontology#Polyp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Polyp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Ostracods> <http://www.w3.org/2000/01/rdf-schema#label> "Ostracods"@en .
+<http://linked.earth/ontology#Ostracods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Mollusk> .
+<http://linked.earth/ontology#Ostracods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Snow> <http://www.w3.org/2000/01/rdf-schema#label> "Snow"@en .
+<http://linked.earth/ontology#Snow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InorganicProxySensor> .
+<http://linked.earth/ontology#Snow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Foraminifera> <http://www.w3.org/2000/01/rdf-schema#label> "Foraminifera"@en .
+<http://linked.earth/ontology#Foraminifera> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://wiki.linked.earth/Foraminifera> .
+<http://linked.earth/ontology#Foraminifera> <http://www.w3.org/2000/01/rdf-schema#comment> "Because of their population size, foraminifera produce a significant amount of oceanic carbonate, making them a valuable source of paleoceanographic information.\r\n\r\nThe following parameters are used in paleoceanographic applications:\r\n\r\n* Faunal Assemblage\r\n* Geochemical measurements:\r\n *  Isotopes\r\n * Stable oxygen isotopes\r\n * Stable carbon isotopes\r\n * Radiocarbon\r\n* Trace Elements"@en .
+<http://linked.earth/ontology#Foraminifera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Foraminifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Tree> <http://www.w3.org/2000/01/rdf-schema#label> "Tree"@en .
+<http://linked.earth/ontology#Tree> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://wiki.linked.earth/Tree> .
+<http://linked.earth/ontology#Tree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Vegetation> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetation"@en .
+<http://linked.earth/ontology#Vegetation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Vegetation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Gastropods> <http://www.w3.org/2000/01/rdf-schema#label> "Gastropods"@en .
+<http://linked.earth/ontology#Gastropods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Mollusk> .
+<http://linked.earth/ontology#Gastropods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Karst> <http://www.w3.org/2000/01/rdf-schema#label> "Karst"@en .
+<http://linked.earth/ontology#Karst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InorganicProxySensor> .
+<http://linked.earth/ontology#Karst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/2000/01/rdf-schema#label> "Rock"@en .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InorganicProxySensor> .
+<http://linked.earth/ontology#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Organic proxy sensor"@en .
+<http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linked.earth/ontology/core/> .
+<http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySensor> .
+<http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Coccolithophores> <http://www.w3.org/2000/01/rdf-schema#label> "Coccolithophores"@en .
+<http://linked.earth/ontology#Coccolithophores> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#Coccolithophores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#IceSheet> <http://www.w3.org/2000/01/rdf-schema#label> "Ice sheet"@en .
+<http://linked.earth/ontology#IceSheet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#InorganicProxySensor> .
+<http://linked.earth/ontology#IceSheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/sensor/1.0.0> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Proxy Sensor Ontology"@en .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Inorganic proxy sensor"@en .
+<http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linked.earth/ontology/core/> .
+<http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2002/07/owl#disjointWith> <http://linked.earth/ontology#OrganicProxySensor> .
+<http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySensor> .
+<http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

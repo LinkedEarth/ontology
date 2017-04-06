@@ -1,0 +1,1818 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://linked.earth/ontology#"
+    xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:unionOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#takenAtDepth">
+    <rdfs:label xml:lang="en">taken at depth</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: At which depth in the ProxyArchive is the Variable measured or inferred?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides depth information. Can link to the depth Variable in the DataTable</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxySensorModel">
+    <rdfs:label xml:lang="en">proxy sensor model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ProxySensorModel is used in the ProxySystemModel?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links ProxySystemModel to ProxySensorModel</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxySensorModel"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySystemModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#publicationYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">publication year</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/dateCreated"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:comment xml:lang="en">Answers the question: What year was the Publication issued?</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#CalibrationModel">
+    <rdfs:label xml:lang="en">Calibration model</rdfs:label>
+    <rdfs:comment xml:lang="en">Metadata about how the variable was calibrated to reflect an environmental variable</rdfs:comment>
+    <vaem:rationale xml:lang="en">Make the model behind the calibration explicit</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#calibrationReferences">
+    <rdfs:label xml:lang="en">calibration references</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In what Reference(s) is the Calibration described/justified?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Relationship needed to link to a Publication desribing the calibration being applied to the dataset</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#CalibrationModel"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+    <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#rationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxyArchiveModel">
+    <rdfs:label xml:lang="en">Proxy archive model</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">A Model of how the ProxySensor either creates or emplaces the signal into the ProxyArchive. Sensu Evans et al. (2013)</rdfs:comment>
+    <vaem:rationale xml:lang="en">We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community"</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxySensorType">
+    <rdfs:label xml:lang="en">proxy sensor type</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ProxySensor underlies this ProxySystem?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links ProxySensor to ProxyArchive</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PhysicalSample"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#UncertaintyModel">
+    <rdfs:label xml:lang="en">Uncertainty model</rdfs:label>
+    <rdfs:comment xml:lang="en">A Model quantifiying the Uncertainty</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows description of how uncertainty was calculated</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:unionOf rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/includedInDataCatalog">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#measuredOn">
+    <rdfs:label xml:lang="en">measured on</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: On which ProxyArchive was the MeasuredVariable measured?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the MeasuredVariable to the ProxyArchive. Refers to the specific archive (i.e. the specific coral head, lake sediment...) and a specific Variable since ProxyArchive provides a link to the ProxySensor. In some instances, two MeasuredVariables on the same PhysicalSample may have different ProxyArchive page. This would be the case for measurements on various species of foraminifera in a MarineSediment</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub"/>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#PhysicalSample"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+    <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#fundedBy">
+    <rdfs:label xml:lang="en">funded by</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What was the Funding source for the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links a dataset to its source of funding</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Funding"/>
+    <rdfs:domain rdf:nodeID="A10"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/funder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:unionOf rdf:nodeID="A13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#DistributionTable">
+    <rdfs:label xml:lang="en">Distribution table</rdfs:label>
+    <rdfs:comment xml:lang="en">DataTable containing the probability distribution of a single value of a Variable. Output of a Model</rdfs:comment>
+    <vaem:rationale xml:lang="en">Added to allow outputs from Bayesian model (especially Bchron) to be saved as part of a dataset. Required to encode irregular probability distributions</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/ODP1098B12.Chron1.Model1.distributionTable.1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#InferredVariable">
+    <rdfs:label xml:lang="en">Inferred variable</rdfs:label>
+    <rdfs:comment xml:lang="en">A Variable that is inferred from one or more MeasuredVariable (s)</rdfs:comment>
+    <vaem:rationale xml:lang="en">See InferredVariable Ontology for concept description.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <owl:disjointWith rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+    <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#author">
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Who wrote (i.e., created) the resource, such as a Publication?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Give credit to the original author of the resource</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
+    <rdfs:domain rdf:nodeID="A15"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/author"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Person">
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:comment xml:lang="en">An individual who has participated directly or indirectly in the authoring of any resources on the LinkedEarth wiki</rdfs:comment>
+    <vaem:rationale xml:lang="en">The researcher, author on a publication.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/D._Khider"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:equivalentClass rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://earth.usc.edu/~khider/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ChronData"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasUncertainty">
+    <rdfs:label xml:lang="en">has uncertainty</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the Uncertainty associated with the Variable, Model, or Instrument?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links to the Uncertainty class</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdfs:domain rdf:nodeID="A18"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:unionOf rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PaleoProxySystem">
+    <rdfs:label xml:lang="en">Paleo proxy system</rdfs:label>
+    <rdfs:comment xml:lang="en">Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate proxies in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of measurements can be made on each archives, each sensing a different aspect of the environment (sometimes, several aspects at once). A paleoclimate dataset is a set of observations made on an archive.</rdfs:comment>
+    <vaem:rationale xml:lang="en">Gives a formal definition of climate proxy following the Evans et al. (2013) framework.
+Subclass of ProxySystem, pertaining to climate information</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#principalInvestigator">
+    <rdfs:label xml:lang="en">principal investigator</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Who was the lead on the source of Funding for the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the source of Funding to the PI (a Person)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.Funding1"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Funding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxySystem">
+    <rdfs:label xml:lang="en">Proxy system</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">Climate monitoring prior to the instrumental era are necessarily indirect. &#xD;
+This indirect assessment is made on proxies. According to Evans et al. (2013), a proxy system is comprised of three components:&#xD;
+- A ProxySensor&#xD;
+- A ProxyArchive&#xD;
+- A ProxyObservation</rdfs:comment>
+    <vaem:rationale xml:lang="en">We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as "proxy" in the paleoclimate community</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MeasurementTable">
+    <rdfs:label xml:lang="en">Measurement table</rdfs:label>
+    <rdfs:comment xml:lang="en">DataTable that contains the Variables (both measured and inferred)</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of DataTable. Allows InferredVariables (despite the name) for practical purposes</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Data">
+    <rdfs:label xml:lang="en">Data</rdfs:label>
+    <rdfs:comment xml:lang="en">An aggregation of DataTables and Models with their supporting paleoenvironmental and/or chronological information</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to describe the paleoenvironmental and/or chronological data comprising the dataset as opposed to the Publication, Funding and Location information</vaem:rationale>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxyObservationType">
+    <rdfs:label xml:lang="en">proxy observation type</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What type of ProxyObservation does the MeasuredVariable or Proxy System belong to?
+For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy observation of the current prpoxy system is Mg/Ca</rdfs:comment>
+    <vaem:rationale xml:lang="en">The need to link a measured variable or a proxy system to the proxy observation type being measured.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca"/>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxyObservation"/>
+    <rdfs:domain rdf:nodeID="A21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#sensorGenus">
+    <rdfs:label xml:lang="en">sensor genus</rdfs:label>
+    <rdfs:comment>Answers the question: What is the Genus of the Organic ProxySensor?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Scientific Name of the organic ProxySensor</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/Globigerinoides_ruber"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/contentLocation">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#equation">
+    <rdfs:label xml:lang="en">equation</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the mathematical formulation of the Model?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to provide the equation as part of the metadata</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982176.Stott.2004.paleo1measurement1.Mg/Ca-g.rub.Calibration"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxyObservation">
+    <rdfs:label xml:lang="en">Proxy observation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">The type of MeasuredVariables measured on the ProxyArchive, whether chemical (e.g. Mg/Ca, D18O, Sr/Ca), physical (e.g. density, layer thickness), or biological (e.g. Species abundance)</rdfs:comment>
+    <vaem:rationale xml:lang="en">See ProxyObservation ontology for details about the concept. 
+
+We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/D18O"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#foundInMeasurementTable">
+    <rdfs:label xml:lang="en">found in measurement table</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which MeasurementTable are the Variables found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subproperty of foundinTable to link the Data to the Variables</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#MeasurementTable"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#foundInTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <owl:unionOf rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ChronModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasCode">
+    <rdfs:label xml:lang="en">has code</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What SoftwareCode was used to generate the Model output?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links a Model to its SoftwareCode.</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#InorganicProxySensor">
+    <rdfs:label xml:lang="en">Inorganic proxy sensor</rdfs:label>
+    <rdfs:comment xml:lang="en">An inorganic substrate sensing enviromental changes. Examples: karst, snow, watershed, ice sheet, rock, etc.</rdfs:comment>
+    <vaem:rationale xml:lang="en">Encode the Genus and Species metadata</vaem:rationale>
+    <owl:disjointWith rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#standard">
+    <rdfs:label xml:lang="en">standard</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Reference material against which the MeasuredVariable is reported?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#journal">
+    <rdfs:label xml:lang="en">journal</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the name of the journal in which the resource can be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Funding">
+    <rdfs:label xml:lang="en">Funding</rdfs:label>
+    <rdfs:comment xml:lang="en">Source of monetary support underlying the collection/creation/analysis/curation of the Dataset</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to associate a grant number following U.S. federal regulation</vaem:rationale>
+    <vann:example xml:lang="en">http://wiki.linked.earth/MD982181.Khider.2014.Funding1</vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#modelReferences">
+    <rdfs:label xml:lang="en">model references</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which Publication is the model described/applied?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links a Model to its Publication. 
+Note: calibrationReferences and modelReferences in the Calibration may not need to be the same. For instance, the calibration data and one mathematical formulation can be provided in one Publication (answering the calibrationReferences) but a different mathematical Model may be applied in another Publication (answering the modelReferences)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:unionOf rdf:nodeID="A23"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:unionOf rdf:nodeID="A32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#method">
+    <rdfs:label xml:lang="en">method</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: How is the information obtained from the resource?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to describe methods.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/A7.Sun.2005.paleo1measurement1.d18og"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A33"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#uncertaintyLevel">
+    <rdfs:label xml:lang="en">uncertainty level</rdfs:label>
+    <rdfs:comment>Answers the question: What parameter of the error distribution is the Uncertainty value referring to?
+
+Examples include 1-sigma, 2-sigma, 95% confidence bounds</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to properly make use of the reported Uncertainty values</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#orcidNumber">
+    <rdfs:label xml:lang="en">orcid number</rdfs:label>
+    <rdfs:comment>Answers the question: What is the persistent digital identifier of the Person?</rdfs:comment>
+    <vaem:rationale xml:lang="en">LinkedEarth uses ORCID number for membership</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/D._Khider"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <owl:unionOf rdf:nodeID="A27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A29"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxySystemModel">
+    <rdfs:label xml:lang="en">Proxy system model</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . "A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information."</rdfs:comment>
+    <vaem:rationale xml:lang="en">We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as "proxy" in the paleoclimate community</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ensembleTableGeneratedByModel">
+    <rdfs:label xml:lang="en">ensemble table generated by model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which EnsembleTable is the Model output found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">"Subproperty of foundinTable to link the Model to its outputs"</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1"/>
+    <rdfs:range rdf:nodeID="A35"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#EnsembleTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#generatedByModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasMaxValue">
+    <rdfs:label xml:lang="en">has max value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the maximum value of the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observedBy">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Interpretation">
+    <rdfs:label xml:lang="en">Interpretation</rdfs:label>
+    <rdfs:comment xml:lang="en">A suite of metadata that describes which phenomena drove variability in this Variable (e.g. environmental drivers).</rdfs:comment>
+    <vaem:rationale xml:lang="en">Used to describe the interpretation of the Variable. For instance, radiocarbon is interpreted to represent age</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Location">
+    <rdfs:label xml:lang="en">Location</rdfs:label>
+    <rdfs:comment xml:lang="en">The geographic data and metadata for the dataset</rdfs:comment>
+    <vaem:rationale xml:lang="en">Gives information about where the ProxyArchive comes from.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.Location"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#contributor">
+    <rdfs:label xml:lang="en">contributor</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a LinkedMember may contribute a previously-published dataset that he/she may not have authored</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows distinction between contributor to a resource and the author</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/contributor"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasRank">
+    <rdfs:label xml:lang="en">has rank</rdfs:label>
+    <rdfs:comment>Answers the question: What is the importance of the ClimateInterpretation or IsotopeInterpretation?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to rank the environmental variable controlling the interpretation. For instance, the d18O of coral aragonite responds to both temperature and the d18O of seawater (closely linked to salinity). Depending on the locale and/or timescale, one variable may dominate over the other.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#pages">
+    <rdfs:label xml:lang="en">pages</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In what pages of the Publication can the reference to the resource be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxyObservationModel">
+    <rdfs:label xml:lang="en">proxy observation model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ProxyObservationModel is used in the ProxySystemModel?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links ProxySystemModel to ProxyObservationModel</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxyObservationModel"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySystemModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PaleoModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/people/dgarijo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <owl:unionOf rdf:nodeID="A39"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PhysicalSample"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <owl:unionOf rdf:nodeID="A42"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#calibratedVia">
+    <rdfs:label xml:lang="en">calibrated via</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What calibration process was used to relate the InferredVariable to the MeasuredVariable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets. If both raw and calibrated data are present, calibratedWith and calibratedFrom should link to the same Calibration instance</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#CalibrationModel"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasISSN">
+    <rdfs:label xml:lang="en">has ISSN</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the International Standard Serial Number of the Publication?</rdfs:comment>
+    <vaem:rationale xml:lang="en">8-digit code used to identify publications</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Observation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+    <rdfs:comment xml:lang="en">The class ssn:Observation provides the structure to represent a single observation. An observation is a situation that describes an observed feature, an observed property, a sensor and method of sensing used and a value observed for the property: that is, an observation describes a single value attributed to a single property by a particular sensor. Observations of multiple features or multiple properties of the one feature should be represented as either compound properties, features and values or as multiple observations, grouped in some appropriate structure.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Instrument">
+    <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    <rdfs:comment xml:lang="en">A tool  used to produce MeasuredVariables</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to categorize types of instruments used for taking the different measurements. See Instrument Ontology for concept description.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <owl:unionOf rdf:nodeID="A44"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasDOI">
+    <rdfs:label xml:lang="en">has DOI</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the digital object identifier associated with the resource?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to link to a resource using a digital object identifier</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A41"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasUnits">
+    <rdfs:label xml:lang="en">has units</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In what unit of measure is (are) the Variable(s) expressed?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the units and the values of the Variable</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A43"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasIntegrationTime">
+    <rdfs:label xml:lang="en">has integration time</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the integration time needed for a ProxySensor to imprint environmental information on the ProxyArchive? Both are included as part of a ProxySystem</rdfs:comment>
+    <vaem:rationale xml:lang="en">Property added to link the proxySystem to the IntegrationTime class</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#IntegrationTime"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#DataTable">
+    <rdfs:label xml:lang="en">Data table</rdfs:label>
+    <rdfs:comment xml:lang="en">A set of Variables organized in columns</rdfs:comment>
+    <vaem:rationale xml:lang="en">Connects to the csv file where the data values are stored</vaem:rationale>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PaleoDataTable">
+    <rdfs:label xml:lang="en">PaleoData table</rdfs:label>
+    <rdfs:comment xml:lang="en">DataTable containing PaleoData Variables</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <owl:unionOf rdf:nodeID="A46"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:rest rdf:nodeID="A38"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ChronModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#publishedIn">
+    <rdfs:label xml:lang="en">published in</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which Publication was the Dataset or Compilation issued?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the resource to its Publication</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:nodeID="A40"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxyObservationModel">
+    <rdfs:label xml:lang="en">Proxy observation model</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">The Model of how ProxyObservations are made on the archive. Sensu Evans et al. (2013)</rdfs:comment>
+    <vaem:rationale xml:lang="en">We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxyArchiveModel">
+    <rdfs:label xml:lang="en">proxy archive model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ProxyArchiveModel is used in the ProxySystemModel?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links ProxySystemModel to ProxyArchiveModel</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxyArchiveModel"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySystemModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasMeanValue">
+    <rdfs:label xml:lang="en">has mean value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the mean value of the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:nodeID="A36"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Resolution"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <owl:unionOf rdf:nodeID="A11"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PeerReviewedPublication">
+    <rdfs:label xml:lang="en">Peer reviewed publication</rdfs:label>
+    <rdfs:comment xml:lang="en">A Publication that has undergone a formal peer-review process</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of Publication.Allows to clearly mark datasets generated as part of a peer-reviewed publication.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PhysicalSample">
+    <rdfs:label xml:lang="en">Physical sample</rdfs:label>
+    <rdfs:comment xml:lang="en">The actual sample on which the measurements are made. For instance, the lake core analyzed in the lab is the physical sample.</rdfs:comment>
+    <vaem:rationale xml:lang="en">Used to differentiate between the concept of a ProxyArchive and its physical (real) manifestation</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD98-2181"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#compilationCitation">
+    <rdfs:label xml:lang="en">compilation citation</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: How should someone cite the compilation?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Data property needed to specify how to cite compilations, in order to provide appropriate credit to all contributors</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/citation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/bibliographicCitation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SoftwareCode">
+    <rdfs:label xml:lang="en">Software code</rdfs:label>
+    <rdfs:comment xml:lang="en">A script that describes the model, in any programming language (e.g., Excel, Matlab, Python, R)</rdfs:comment>
+    <vaem:rationale xml:lang="en">Added to allow for a link towards the code if on a public repository like GitHub</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Pyleoclim"/>
+    <rdfs:subClassOf rdf:resource="http://ontosoft.org/software#Software"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SummaryTable">
+    <rdfs:label xml:lang="en">Summary table</rdfs:label>
+    <rdfs:comment xml:lang="en">A DataTable that contains summary information for the Variable and is output from a Model.</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to represent a summary of basic statistics such as median, mean, standard deviation, and various quantiles from the output of the Model</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1model1summary1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#volume">
+    <rdfs:label xml:lang="en">volume</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which volume of the Publication does the reference to the Datatset appear?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1029/98PA00070"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#notes">
+    <rdfs:label xml:lang="en">notes</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What additional information would you give about the Variable or DataTable ?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to add notes to specific cells in the DataTable</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/A7.Sun.2005.chron1measurement1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A51"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#inferredFrom">
+    <rdfs:label xml:lang="en">inferred from</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: From which MeasuredVariable(s) is (are) the InferredVariable inferred from?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides a link between the Measured and Inferred Variables. For instance, SST is inferred from Mg/Ca measurements</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#fundingCountry">
+    <rdfs:label xml:lang="en">funding country</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which nation funded the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides information about the country the agency is from</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.Funding1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Funding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#NonPeerReviewedPublication">
+    <rdfs:label xml:lang="en">Non peer reviewed publication</rdfs:label>
+    <rdfs:comment xml:lang="en">A publication that has not undergone a formal review process; for instance, a Dataset attached to a dissertation.</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of Publication.Allows to clearly mark datasets not generated as part of a peer-reviewed publication.</vaem:rationale>
+    <owl:disjointWith rdf:resource="http://linked.earth/ontology#PeerReviewedPublication"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/license">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <owl:unionOf rdf:nodeID="A16"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <rdf:rest rdf:nodeID="A17"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#modeledBy">
+    <rdfs:label xml:lang="en">modeled by</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the Model for the Data or ProxySystem under consideration?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links Data or ProxySystem to Model</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdfs:domain rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#chronModeledBy">
+    <rdfs:label xml:lang="en">chron modeled by</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the ChronModel for the ChronData or ProxySystem under consideration?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subproperty of modeledBy. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ChronModel"/>
+    <rdfs:domain rdf:nodeID="A54"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#modeledBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ChronDataTable">
+    <rdfs:label xml:lang="en">Chron data table</rdfs:label>
+    <rdfs:comment xml:lang="en">DataTable containing Variables pertaining to chronological information</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.chron1measurement1"/>
+    <owl:disjointWith rdf:resource="http://linked.earth/ontology#PaleoDataTable"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#interpretedAs">
+    <rdfs:label xml:lang="en">interpreted as</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the Variable's Interpretation?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the Variable to its Interpretation</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#distributionTableGeneratedByModel">
+    <rdfs:label xml:lang="en">distribution table generated by Model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which DistributionTable is the Model output found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">"Subproperty of foundinTable to Link the Model to its outputs"</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1"/>
+    <rdfs:range rdf:nodeID="A34"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#DistributionTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#generatedByModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasExecutionCommand">
+    <rdfs:label xml:lang="en">has execution command</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the command to run the script or the code?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to store the execution command of a script</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PaleoModel">
+    <rdfs:label xml:lang="en">Paleo model</rdfs:label>
+    <rdfs:comment xml:lang="en">Model used to derive an environmental axis from the PaleoDataModel</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A50"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A49"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#datasetVersion">
+    <rdfs:label xml:lang="en">dataset version</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the version of the Dataset?
+
+It should follow the x.y.z notation where x refers to changes in metadata and data following a publication (for instance, the creation of a new age model using a different code), y refers to changes to the data following a publication (for instance, adding data further back in time without changing the model underlying the interpretation), and z refers to changes not associated with a publication (for instance, typos).</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to update a dataset if Data/Models are added and keep track of the various versions</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/version"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasISBN">
+    <rdfs:label xml:lang="en">has ISBN</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the international book number of the Publication?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Link to the ISBN: Identifier used commonly to refer to publications</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cefns.nau.edu/~npm4/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#">
+    <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+    <dcterms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+    <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+    <dcterms:license>http://creativecommons.org/licenses/by/2.0/</dcterms:license>
+    <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
+    <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+    <rdfs:comment xml:lang="en">The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <owl:versionInfo xml:lang="en">1.2.0</owl:versionInfo>
+    <dcterms:description xml:lang="en">The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data</dcterms:description>
+    <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+    <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://linked.earth/ontology/core/1.2.0"/>
+    <dcterms:title xml:lang="en">The Linked Earth LIPID Ontology</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <rdf:rest rdf:nodeID="A57"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:nodeID="A56"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <rdf:rest rdf:nodeID="A53"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <owl:unionOf rdf:nodeID="A55"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#paleoModeledBy">
+    <rdfs:label xml:lang="en">paleo modeled by</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the PaleoModel for the PaleoData or ProxySytem under consideration?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of modeledBy, pertaining to paleoenvironmental information</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#PaleoModel"/>
+    <rdfs:domain rdf:nodeID="A25"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#modeledBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/name">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#isLocal">
+    <rdfs:label xml:lang="en">is local</rdfs:label>
+    <rdfs:comment>Answers the question: Does the Interpretation describe local variability, or far-field variability that may not reflect local conditions?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Added to allow data analysis. Is the interpretation relevant to these coordinates? Does putting a colored dot on the map here make sense?</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#includesVariable">
+    <rdfs:label xml:lang="en">includes variable</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which Variables are included in the DataTable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links DataTable to Variable</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#issue">
+    <rdfs:label xml:lang="en">issue</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In what issue of the journal can the resource be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#fundingAgency">
+    <rdfs:label xml:lang="en">funding agency</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which entity was the Dataset fundedBy?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides information about the Agency funding the study</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.Funding1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Funding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasIGSN">
+    <rdfs:label xml:lang="en">has IGSN</rdfs:label>
+    <rdfs:comment xml:lang="en">IGSN identifier associated to a physical sample</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to properly described physical samples</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#PhysicalSample"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A59"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:rest rdf:nodeID="A60"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#interpretationReferences">
+    <rdfs:label xml:lang="en">interpretation references</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which Publication(s) is the Interpretation substantiated?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links an interpretation to a reference citation (can be the same as the calibrationReferences for a Dataset)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Publication">
+    <rdfs:label xml:lang="en">Publication</rdfs:label>
+    <rdfs:comment xml:lang="en">A document that serves as reference for a Dataset or its components</rdfs:comment>
+    <vaem:rationale xml:lang="en">Can be used to credit the contributor of the dataset as well as linking toward the conclusions of the study and relevant methods</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1029/2012GC004293"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#generatedByModel">
+    <rdfs:label xml:lang="en">generated by model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: which model was used to generated this data table?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to link the model to the data tables it generates</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/version">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#description">
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What additional details would you give about the resource?</rdfs:comment>
+    <vaem:rationale xml:lang="en">This property may be used to provide further details on instrument descriptions, uncertainty description,etc.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#datasetLicense">
+    <rdfs:label xml:lang="en">dataset license</rdfs:label>
+    <rdfs:comment xml:lang="en">License associated to a dataset</rdfs:comment>
+    <vaem:rationale xml:lang="en">Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/license"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/license"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:rest rdf:nodeID="A52"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#datasetCitation">
+    <rdfs:label xml:lang="en">dataset citation</rdfs:label>
+    <rdfs:comment xml:lang="en">Sentence indicating how a dataset should be cited</rdfs:comment>
+    <vaem:rationale xml:lang="en">The need for providing appropriate credit to the datasets</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/citation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/bibliographicCitation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Variable">
+    <rdfs:label xml:lang="en">Variable</rdfs:label>
+    <rdfs:comment xml:lang="en">Quantities that may change from value to value. They are usually represented as column of values in a data table</rdfs:comment>
+    <vaem:rationale xml:lang="en">Basic definition of the values in the columns of the csv file</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Model">
+    <rdfs:label xml:lang="en">Model</rdfs:label>
+    <rdfs:comment xml:lang="en">A mathematical construct that is at least partially isomorphic to the target system, and is used to derive information about the structure and/or dynamics of the target system</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to describe models whose outputs are stored in the Dataset. One example of is Bchron for age modeling</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Uncertainty">
+    <rdfs:label xml:lang="en">Uncertainty</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf"/>
+    <rdfs:comment xml:lang="en">A state of incomplete knowledge that results from a lack of information or from different modeling choices. Uncertainty may come from many sources, from imprecision in the data to ambigously defined concepts or terminology. Uncertainty can be represented by quantitative measures (e.g., probability density function) or by qualitative statements (e.g., reflecting the judgement of a team of experts). Sensu IPCC AR5</rdfs:comment>
+    <vaem:rationale xml:lang="en">To allow to describe the uncertainty on a Variable or a Model, would it be a single number (e.g., the uncertainty on the measurements are 0.1 per mil, one sigma confidence level, or reportedIn an EnsembleTable and/or SummaryTable)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.Uncertainty"/>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ChronProxySystem">
+    <rdfs:label xml:lang="en">Chron proxy system</rdfs:label>
+    <rdfs:comment xml:lang="en">The combination of ProxyArchive, ProxySensor, and ProxyObservations pertaining to chronological information. For instance, measurements of radiocarbon on foraminiferal shells would have a ChronProxySystem consisting of ProxyArchive: marine sediment, ProxySensor: Foraminifera, ProxyObservations: Radiocarbon. (ref: Evans et al. [2013])</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components.
+
+Agreed that the ProxySystem concept applies to both Chron and PaleoData</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/example">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#book">
+    <rdfs:label xml:lang="en">book</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which book was the resource published?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Separate between journal and book publication</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#sensorSpecies">
+    <rdfs:label xml:lang="en">sensor species</rdfs:label>
+    <rdfs:comment>Answers the question: What is the species of the Organic ProxySensor</rdfs:comment>
+    <vaem:rationale xml:lang="en">Scientific Name of the organic ProxySensor</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/Globigerinoides_ruber"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#OrganicProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Person">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxyArchive">
+    <rdfs:label xml:lang="en">Proxy archive</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">According to the Evans et al. (2013), the medium in which the response of a ProxySensor to environmental forcing is recorded. Example of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice</rdfs:comment>
+    <vaem:rationale xml:lang="en">"See ProxyArchive ontology for details about the concept. 
+
+We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community"</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund.MarineSediment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#PaleoData">
+    <rdfs:label xml:lang="en">Paleo data</rdfs:label>
+    <rdfs:comment xml:lang="en">The Data pertaining to past environmental variability</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <owl:unionOf rdf:nodeID="A47"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasVariableID">
+    <rdfs:label xml:lang="en">has variable ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the unique identifier for the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">LiPD assigns a unique identifier (TSid) to each table column described in a LiPD file.
+
+Allows to assign a unique identifier to each series, facilitating data citation and recognition
+
+This allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. It’s fundamental to working with LiPD data.</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasLink">
+    <rdfs:label xml:lang="en">has link</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the universal resource locator to a resource?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to point to the original source of a resource</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MeasuredVariable">
+    <rdfs:label xml:lang="en">Measured variable</rdfs:label>
+    <rdfs:comment xml:lang="en">Variables that are measured by an Instrument. MeasuredVariables are ssn: Observations. They represent the values of a certain type of ProxyObservations</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of Variables. Allows to make the disctinction between raw measurements (e.g., tree ring width, oxygen isotopes, trace elements) and the variables being reconstructed (e.g., moisture, temperature)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:subClassOf rdf:nodeID="A58"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/author">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/author"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <owl:unionOf rdf:nodeID="A48"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#IntegrationTime">
+    <rdfs:label xml:lang="en">Integration time</rdfs:label>
+    <rdfs:comment>The time it takes for the ProxySensor to imprint environmental information on the ProxyArchive. It may be further qualified with time periods and units</rdfs:comment>
+    <vaem:rationale xml:lang="en">Soilwater mixing above speleothems: Although the sample might only represent 5 years of calcification, it can record 30 years of water mixing.</vaem:rationale>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxySensorModel">
+    <rdfs:label xml:lang="en">Proxy sensor model</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">A Model of the ProxySensor. Sensu Evans et al. (2013)</rdfs:comment>
+    <vaem:rationale xml:lang="en">One component of the ProxySystemModel</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasExecutionEnvironment">
+    <rdfs:label xml:lang="en">has execution environment</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which environment is the script meant to be run in?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides information about the operating system version in which the software code was exceuted?</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/citation">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#datasetDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/dateCreated"/>
+    <vann:example xml:lang="en">http://wiki.linked.earth/MD982181.Khider.2014</vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:label xml:lang="en">dataset date</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <vaem:rationale xml:lang="en">Separate dataset date from the publication year. An example is LR04 (datsetdate in 2004) but published in 2005</vaem:rationale>
+    <rdfs:comment xml:lang="en">Answers the question: At what date was the Dataset created?</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <rdf:rest rdf:nodeID="A65"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#OrganicProxySensor">
+    <rdfs:label xml:lang="en">Organic proxy sensor</rdfs:label>
+    <rdfs:comment xml:lang="en">Biologically-mediated ProxySensor. Examples include: foraminifera, trees, mollusks, polyps</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subclass of ProxySensor. Makes the distinction between organic and inorganic. See the ProxySensor ontology for concepts</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Globigerinoides_ruber"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxySensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#EnsembleTable">
+    <rdfs:label xml:lang="en">Ensemble table</rdfs:label>
+    <rdfs:comment xml:lang="en">DataTable constaining many possible series of how the Variable is modeled. Output of a Model</rdfs:comment>
+    <vaem:rationale xml:lang="en">Added to allow outputs from Bayesian model to be saved as part of a dataset</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/ODP1098B12.Chron1.Model1.EnsembleTable"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:nodeID="A64"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#collectedFrom">
+    <rdfs:label xml:lang="en">collected from</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Where (in the world) was the data in the Dataset collected? Refers to the location of the ProxyArchive</rdfs:comment>
+    <vaem:rationale xml:lang="en">Describe the geographical coordinates for the provenance of the ProxyArchive where the dataset was collected from</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Location"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/contentLocation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasColumnNumber">
+    <rdfs:label xml:lang="en">has column number</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which column of the csv file can the Variable be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the Variable metadata to the values stored in the csv file</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#compilationVersion">
+    <rdfs:label xml:lang="en">compilation version</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the version of the Compilation?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to state the version associated to a compilation, which may not be the same as the datasets it contains</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/version"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#includesChronData">
+    <rdfs:label xml:lang="en">includes chron data</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ChronData are included in the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subproperty of includesData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ChronData"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#includesData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#measuredBy">
+    <rdfs:label xml:lang="en">measured by</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which Instrument was used to produce the MeasuredVariable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the MeasuredVariable to the Instrument responsible for its creation</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:rest rdf:nodeID="A67"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#grantNumber">
+    <rdfs:label xml:lang="en">grant number</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the unique identifier associated with the Funding for the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides information about the grant number</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.Funding1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Funding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#seasonality">
+    <rdfs:label xml:lang="en">seasonality</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: To which part of the year is the Interpretation or ProxySensor restricted to? Acceptable answers may be "MJJA", "growing season",or [5,6,7,8]</rdfs:comment>
+    <vaem:rationale xml:lang="en">Seasonality is critical to properly related measuredVariable and innferredVariable, as the former only senses part of the range of the latter.</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Ocean2kHR_119.d18O.ClimateInterpretation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasResolution">
+    <rdfs:label xml:lang="en">has resolution</rdfs:label>
+    <rdfs:comment>Answers the question: What is the Resolution of the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Needed to link a Variable to Resolution</vaem:rationale>
+    <vann:example xml:lang="en">http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</vann:example>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Resolution"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#compilationDate">
+    <rdfs:label xml:lang="en">compilation date</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: At what date was the Compilation created?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Separate compilation date from the publication year. An example is LR04 (datsetdate in 2004) but published in 2005</vaem:rationale>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/dateCreated"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:unionOf rdf:nodeID="A69"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#reportedIn">
+    <rdfs:label xml:lang="en">reported in</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which EnsembleTable, DistributionTable, and/or SummaryTable is the Uncertainty reported?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the uncertainty to the model output</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.Uncertainty"/>
+    <rdfs:range rdf:nodeID="A30"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Uncertainty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasMedianValue">
+    <rdfs:label xml:lang="en">has median value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the median value of the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</vaem:rationale>
+    <vann:example xml:lang="en">http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</vann:example>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/dateCreated">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#includesPaleoData">
+    <rdfs:label xml:lang="en">includes paleo data</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which PaleoData are included in the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subproperty of includesData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#PaleoData"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#includesData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/DataCatalog">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:unionOf rdf:nodeID="A66"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ChronModel">
+    <rdfs:label xml:lang="en">Chron model</rdfs:label>
+    <rdfs:comment xml:lang="en">Model used to derive a time (or age) axis from the ChronDataModel</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.ChronData1.Model1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ChronData">
+    <rdfs:label xml:lang="en">Chron data</rdfs:label>
+    <rdfs:comment xml:lang="en">The data, metadata, and Model that describe the set of Variables used to relate depth/position to time (chronological information)</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.ChronData1"/>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Place">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/contributor">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontosoft.org/software#Software">
+    <rdfs:isDefinedBy rdf:resource="http://ontosoft.org/software#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ProxySensor">
+    <rdfs:label xml:lang="en">Proxy sensor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.sciencedirect.com/science/article/pii/S0277379113002011"/>
+    <rdfs:comment xml:lang="en">The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013)). Signals recorded by the ProxySensor are imprinted onto the ProxyArchive.</rdfs:comment>
+    <vaem:rationale xml:lang="en">See ProxySensor ontology for details about the concept. 
+
+We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Cibicidoides_mundulus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontosoft.org/software#hasImplementationLanguage">
+    <rdfs:isDefinedBy rdf:resource="http://ontosoft.org/software#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#housedAt">
+    <rdfs:label xml:lang="en">housed at</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which laboratory/repository is the Instrument/PhysicalSample located?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Link to a particular laboratory. Provides circumstantial information about the measurement technique and how it was applied. Allows to give some information about the actual location of the sample</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A45"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Dataset">
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <rdfs:comment xml:lang="en">A structured collection of related information, including -but not limited to -measured and/or modelled geograhical, chronological, and environmental data</rdfs:comment>
+    <vaem:rationale xml:lang="en">Fundamental unit at which we think about paleoclimate data. Also tends to correspond to the scope of the study</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PaleoModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Resolution">
+    <rdfs:label xml:lang="en">Resolution</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the distance (physical or temporal) between each point on the archive. May or May not be related to sampling. Value with units</rdfs:comment>
+    <vaem:rationale xml:lang="en">Class added to describe the annual resolution of the archives</vaem:rationale>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:rest rdf:nodeID="A68"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PaleoData"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+    <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasProxySystem">
+    <rdfs:label xml:lang="en">has proxy system</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the ProxySystem associated with this MeasuredVariable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the MeasuredVariable to its ProxySystem. For instance, Mg/Ca measurements on foraminiferal shells have ProxySystem: MarineSediment.Foraminifera.Mg/Ca</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#MeasuredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#summaryTableGeneratedByModel">
+    <rdfs:label xml:lang="en">summary table enerated by model</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which SummaryTable can the statistics on the Model Output be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Subproperty of foundinTable to link the Model to its outputs</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1"/>
+    <rdfs:range rdf:nodeID="A63"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#SummaryTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#generatedByModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#detail">
+    <rdfs:label xml:lang="en">detail</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the  "of what" question for an Interpretation. For intance, sea surface in sea surface temperature.</rdfs:comment>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Interpretation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:rest rdf:nodeID="A61"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#programmedIn">
+    <rdfs:label xml:lang="en">programmed in</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which language was the software code written in?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Provides the user with information about the software</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Pyleoclim"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#SoftwareCode"/>
+    <rdfs:subPropertyOf rdf:resource="http://ontosoft.org/software#hasImplementationLanguage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#proxyArchiveType">
+    <rdfs:label xml:lang="en">proxy archive type</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which ProxyArchive underlies this ProxySystem?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links ProxySystem to ProxyArchive</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#ProxyArchive"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#ProxySystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A62"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Compilation">
+    <rdfs:label xml:lang="en">Compilation</rdfs:label>
+    <rdfs:comment xml:lang="en">A curated aggregation of datasets</rdfs:comment>
+    <vaem:rationale xml:lang="en">Encodes what Data/Metadata gathering effort/scientific project led to the curation of the Datasets. Examples: PAGES2k, Iso2k, LR04, OC3, MARGO</vaem:rationale>
+    <rdfs:subClassOf rdf:resource="http://schema.org/DataCatalog"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#relevantQuote">
+    <rdfs:label xml:lang="en">relevant quote</rdfs:label>
+    <rdfs:comment>Answers the question: Which part of the publication describes the Calibration or Interpretation?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Often it's useful to put a quote from the paper that describes the interpretation</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/Ocean2kHR_119.d18O.ClimateInterpretation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://linked.earth/ontology#description"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasMissingValue">
+    <rdfs:label xml:lang="en">has missing value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: How are the missing values of the Variable identified in the DataTable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Useful for coding around the missing values</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub"/>
+    <owl:propertyDisjointWith rdf:resource="http://linked.earth/ontology#hasValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.isi.edu/~gil/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#email">
+    <rdfs:label xml:lang="en">email</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the email address of the Person?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allow to store contact information</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/D._Khider"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#inferredVariableType">
+    <rdfs:label xml:lang="en">inferred variable type</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What type of InferredVariable does the InferredVariable belongs to?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the InferredVariable values to their type. For instance, the value of 29.1 degC is of type SST. This is important to normalize the variations in VariableNames (e.g. SST, sst, sea-surface temp)</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#InferredVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#partOfCompilation">
+    <rdfs:label xml:lang="en">part of compilation</rdfs:label>
+    <rdfs:comment xml:lang="en">Answer the question: Which compilation does a dataset belong to?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links the dataset to the compilation</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Compilation"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/includedInDataCatalog"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#PaleoModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasValue">
+    <rdfs:label xml:lang="en">has value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What are the numerical values of the Variable, Uncertainty, and Model outputs?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A31"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:unionOf rdf:nodeID="A70"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://orcid.org/0000-0001-5920-4751">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasFileName">
+    <rdfs:label xml:lang="en">has file name</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the name of the csv file in which the Variable values are stored?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links a DataTable with its appropriate csv file</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#includesData">
+    <rdfs:label xml:lang="en">includes data</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Which Data are included in the Dataset?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Links Dataset to Data</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#Data"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#foundInTable">
+    <rdfs:label xml:lang="en">found in table</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: In which DataTable can the information/data be found?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Allows to link the data to the csv table and the models to its output</vaem:rationale>
+    <rdfs:range rdf:resource="http://linked.earth/ontology#DataTable"/>
+    <rdfs:domain rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#name">
+    <rdfs:label xml:lang="en">name</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: How is the resource called?</rdfs:comment>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982176.Stott.2004.paleo1measurement1.Mg/Ca-g.rub"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:rest rdf:nodeID="A71"/>
+    <rdf:first rdf:resource="http://linked.earth/ontology#ChronModel"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/funder">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Dataset">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#hasMinValue">
+    <rdfs:label xml:lang="en">has min value</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the minimum value of the Variable?</rdfs:comment>
+    <vaem:rationale xml:lang="en">property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#interpretationDirection">
+    <rdfs:label xml:lang="en">interpretation direction</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: Is the InferredVariable value increasing or decreasing as the value of the MeasuredVariable is increasing?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Answer is only positive or negative. Useful metadata when the calibration equation is not readily available.
+Also applies to InferredVariable to faciliate the search in database</vaem:rationale>
+    <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Interpretation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#title">
+    <rdfs:label xml:lang="en">title</rdfs:label>
+    <rdfs:comment xml:lang="en">Answers the question: What is the title of the Publication?</rdfs:comment>
+    <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+    <vaem:rationale rdf:resource="http://wiki.linked.earth/Publication.10.1029/98PA00070"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,188 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns="http://linked.earth/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://linked.earth/ontology#SpectroscopeInstrument">
+    <rdfs:label xml:lang="en">Spectroscope</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectroscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#CFAMS">
+    <rdfs:label xml:lang="en">Continuous-flow AMS system</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AcceleratorMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Microscope">
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SIMS">
+    <rdfs:label xml:lang="en">Secondary ion mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#SecondaryIonMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#GC-IR-MS">
+    <rdfs:label xml:lang="en">Gas Chromatography - Isotope ratio -Mass Spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#GasChromatographyMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Spectrometer">
+    <rdfs:label xml:lang="en">Spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#GasChromatographyMassSpectrometer">
+    <rdfs:label xml:lang="en">Gas chromatography - mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#MassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ICP-MS">
+    <rdfs:label xml:lang="en">Inductively coupled plasma mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopeRatioMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#NOSAMSTandetron">
+    <rdfs:label xml:lang="en">NOSAMS tandetron</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AcceleratorMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MC-ICP-MS">
+    <rdfs:label xml:lang="en">Multi-collector (MC) Inductively coupled plasma mass spectrometry (ICPMS)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopeRatioMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#BinocularMicroscope">
+    <rdfs:label xml:lang="en">Binocular microscope</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Microscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#LA-ICP-MS">
+    <rdfs:label xml:lang="en">Laser-ablation (LA) Inductively coupled plasma mass spectrometry (ICP-MS)</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopeRatioMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MicroscopeInstrument">
+    <rdfs:label xml:lang="en">Microscope</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Microscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#AcceleratorMassSpectrometerInstrument">
+    <rdfs:label xml:lang="en">Accelerator mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#AcceleratorMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Instrument">
+    <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    <rdfs:comment xml:lang="en">A tool or implement used to produce MeasuredVariables</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#GasChromatograph">
+    <rdfs:label xml:lang="en">Gas chromatograph</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#EnergyDispersiveSpectrometer">
+    <rdfs:label xml:lang="en">Energy dispersive spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MassSpectrometerInstrument">
+    <rdfs:label xml:lang="en">Mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#MassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#CRDS">
+    <rdfs:label xml:lang="en">Cavity Ring-Down Spectroscopy</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectroscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#RockHammer">
+    <rdfs:label xml:lang="en">Rock hammer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#IRMS">
+    <rdfs:label xml:lang="en">Isotope ratio mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#IsotopeRatioMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ZeissPetrographicMicroscope">
+    <rdfs:label xml:lang="en">Zeiss petrographic microscope</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Microscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#">
+    <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+    <dcterms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+    <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+    <owl:versionIRI rdf:resource="http://linked.earth/ontology/instrument"/>
+    <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
+    <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+    <dcterms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</dcterms:license>
+    <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+    <dcterms:title xml:lang="en">The Linked Earth Instrument Ontology</dcterms:title>
+    <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo xml:lang="en">0.0.1</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SpectrometerInstrument">
+    <rdfs:label xml:lang="en">Spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#WavelengthDispersiveSpectrometer">
+    <rdfs:label xml:lang="en">Wavelength dispersive spectrometry</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SecondaryIonMassSpectrometer">
+    <rdfs:label xml:lang="en">Secondary ion mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#MassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#AcceleratorMassSpectrometer">
+    <rdfs:label xml:lang="en">Accelerator mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#MassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ICP-OES">
+    <rdfs:label xml:lang="en">Inductively coupled plasma optical emission spectrometry</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectroscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#GCMS">
+    <rdfs:label xml:lang="en">Gas chromatography mass spectrometer</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#GasChromatographyMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#SHRIMP">
+    <rdfs:label xml:lang="en">Sensitive high-resolution ion microprobe</rdfs:label>
+    <rdf:type rdf:resource="http://linked.earth/ontology#SecondaryIonMassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#IsotopeRatioMassSpectrometer">
+    <rdfs:label xml:lang="en">Isotope ratio mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#MassSpectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#ICP-AES">
+    <rdfs:label xml:lang="en">Inductively coupled plasma atomic emission spectroscope</rdfs:label>
+    <owl:sameAs rdf:resource="http://linked.earth/ontology#ICP-OES"/>
+    <rdf:type rdf:resource="http://linked.earth/ontology#Spectroscope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#Spectroscope">
+    <rdfs:label xml:lang="en">Spectroscope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Instrument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linked.earth/ontology#MassSpectrometer">
+    <rdfs:label xml:lang="en">Mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#Spectrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

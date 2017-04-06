@@ -1992,12 +1992,12 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       rdfs:label "Mineral matter"@en .
 
 :     a       owl:Ontology , owl:NamedIndividual ;
-      rdfs:comment "The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+      rdfs:comment "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
       dcterms:contributor <http://www.isi.edu/~gil/> , <http://w3id.org/people/dgarijo> ;
       dcterms:creator <http://orcid.org/0000-0001-5920-4751> , <http://www.cefns.nau.edu/~npm4/> , <http://earth.usc.edu/~khider/> ;
-      dcterms:description "The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+      dcterms:description "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
       dcterms:license <http://creativecommons.org/licenses/by/2.0/> , "http://creativecommons.org/licenses/by/2.0/" ;
-      dcterms:title "The Proxy Observation Ontology"@en , "The Inferred Variable Ontology"@en , "The Linked Earth LIPID Ontology"@en , "The Linked Earth Instrument Ontology"@en , "The Proxy Archive Ontology"@en , "The Proxy Sensor Ontology"@en ;
+      dcterms:title "The Proxy Observation Ontology"@en , "The Inferred Variable Ontology"@en , "The Linked Earth LiPD Ontology"@en , "The Linked Earth Instrument Ontology"@en , "The Proxy Archive Ontology"@en , "The Proxy Sensor Ontology"@en ;
       vann:preferredNamespacePrefix
               "le" ;
       vann:preferredNamespaceUri
@@ -2259,11 +2259,11 @@ where GDGTs 1-3 indicate compounds containing 1-3 cyclopentyl moieties, respecti
 Experimental evidence suggests that archaea produce GDGTs with more rings warmer waters, a response observed in cultures of hyperthermophile archaea [2] [3] and mesocosm experiments with natural seawater containing heterogenous archaeal population [4] [5].
 References
 
-[1] Schouten, S., Hopmans, E. C., Schefuß, E., & Sinninghe Damsté, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipids: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.
+[1] Schouten, S., Hopmans, E. C., Schefuß, E., & Sinninghe Damsté, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipid: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.
 
 [2] de Rosa, M., Esposito, E., Gambacorta, A., Nicolaus, B., & Bu'Lock, J. (1980). Effects of temperature on ether lipid composition of Caldariella acidophilia. Phytochemistry, 19, 827-831.
 
-[3] Uda, I., Sugai, A., Itoh, Y., & Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. Lipids, 36, 103-105.
+[3] Uda, I., Sugai, A., Itoh, Y., & Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. lipid, 36, 103-105.
 
 [4] Wuchter, C., Schouten, S., Coolen, M. J. L., & Sinninghe Damsté, J. S. (2004). Temperature-dependent variation in the distribution of tetraether membrane lipids of marine Crenarchaeota: implications for TEX86 paleothermometry. Paleoceanography, 19, PA4028. doi:10.1029/2004PA001041
 

@@ -20,7 +20,8 @@
       rdfs:label "publication year"@en ;
       rdfs:range xsd:int ;
       rdfs:subPropertyOf <http://schema.org/dateCreated> , dcterms:created ;
-      vaem:rationale "Part of standard metadata for Publications"@en , <http://wiki.linked.earth/Publication.10.1002/2013PA002534> .
+      vann:example <http://wiki.linked.earth/Publication.10.1002/2013PA002534> ;
+      vaem:rationale "Part of standard metadata for Publications"@en .
 
 :CalibrationModel
       a       owl:Class ;
@@ -201,11 +202,35 @@ Subclass of ProxySystem, pertaining to climate information"""@en .
 
 :ProxySystem
       a       owl:Class ;
-      rdfs:comment """Climate monitoring prior to the instrumental era are necessarily indirect. 
-This indirect assessment is made on proxies. According to Evans et al. (2013), a proxy system is comprised of three components:
-- A ProxySensor
-- A ProxyArchive
-- A ProxyObservation"""@en ;
+      rdfs:comment """<p>Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate <b>proxies</b> in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of data can often be collected from each archives, each <b>sensing</b> a different aspect of the environment (sometimes, several aspects at once).  A paleoclimate dataset is almost always a <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Time_series\">time series</a> of observations made on an archive.</p>
+<p>
+Evans et al. (2013) <sup id=\"cite_ref-evans2013_1-0\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> define a proxy system as comprised of three components (Fig 1).:
+</p>
+<ul><li> The <a href=\"#ProxySensor\" title=\"Category:ProxySensor\"> sensor</a> comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a>, and may have complex responses to the environment they sense, including thresholds  (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or  nonlinear responses. For instance, <a href=\"#Foraminifera\" title=\"Category:Foraminifera\"> foraminifera</a> are an often used sensor for oceanic conditions. Multiple observations can be made on this sensor, recording different environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variables</a>. Similarly, picking foraminifera of a given species to conduct the measurements is part of the observation process, though it does affect the sensor definition&nbsp;: the habitat of these forams determines with environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a> (e.g. surface, sub-surface, or thermocline temperature) they are most sensitive to.  </li></ul>
+<ul><li> The <a href=\"#ProxyArchive\" title=\"Category:ProxyArchive Â©\"> archive</a> is the medium in which the response of a sensor to environmental forcing is recorded.  Marine sediments are a type of archive, on which many sensors and observations may be recorded (e.g. Foraminifera Mg/Ca, Î´<sup>18</sup>O, TEX86)</li></ul>
+<ul><li> <a href=\"#ProxyObservation\" title=\"Category:ProxyObservation\"> Observations</a> are made on archives and are  generally referred to as \"proxies\". The term \"proxy\" used ubiquitously, and often ambiguously, throughout the paleoclimate literature, is most commonly equivalent to \"sensor + observation\". \"Observation\" is the more explicit, and thus, preferred term, however \"proxy\" can be treated as a synonym of \"observation\". For instance, Foraminifera Mg/Ca is often used to investigate past changes in sea-surface temperature but depends also on sea-surface salinity and deep-ocean carbonate saturation <sup id=\"cite_ref-2\" class=\"reference\"><a href=\"#cite_note-2\">[2]</a></sup>.  Furthermore, its temperature and salinity dependence is exponential <sup id=\"cite_ref-3\" class=\"reference\"><a href=\"#cite_note-3\">[3]</a></sup> <sup id=\"cite_ref-4\" class=\"reference\"><a href=\"#cite_note-4\">[4]</a></sup> <sup id=\"cite_ref-5\" class=\"reference\"><a href=\"#cite_note-5\">[5]</a></sup> while its response to carbonate saturation is thresholded <sup id=\"cite_ref-6\" class=\"reference\"><a href=\"#cite_note-6\">[6]</a></sup>.  </li></ul>
+
+<p>These three major components may be individually modeled, and linked together within a <a href=\"/Category:ProxySystemModel_%C2%A9\" title=\"Category:ProxySystemModel Â©\">Proxy System Model</a> <sup id=\"cite_ref-evans2013_1-2\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> <sup id=\"cite_ref-7\" class=\"reference\"><a href=\"#cite_note-7\">[7]</a></sup>. Some sensors are common to multiple archives (e.g. Î´<sup>18</sup>O), and all archives support more than one possible sensor. 
+</p>
+
+<h2><span class=\"mw-headline\" id=\"References\">References</span></h2>
+
+<ol class=\"references\">
+<li id=\"cite_note-evans2013-1\"><span class=\"mw-cite-backlink\">â†‘ <sup><a href=\"#cite_ref-evans2013_1-0\"><span class=\"cite-accessibility-label\">Jump up to: </span>1.0</a></sup> <sup><a href=\"#cite_ref-evans2013_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-evans2013_1-2\">1.2</a></sup></span> <span class=\"reference-text\"> Evans, M. N., Tolwinski-Ward, S. E., Thompson, D. M., &amp; Anchukaitis, K. J. (2013). Applications of proxy system modeling in high resolution paleoclimatology. Quaternary Science Reviews, 76, 16-28. doi:10.1016/j.quascirev.2013.05.024 </span>
+</li>
+<li id=\"cite_note-2\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-2\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> Khider, D., Huerta, G., Jackson, C., Stott, L. D., &amp; Emile-Geay, J. (2015). A Bayesian, multivariate calibration for Globigerinoides ruber Mg/Ca. Geochemistry Geophysics Geosystems, 16(9), 2916-2932. doi:10.1002/2015GC005844 </span>
+</li>
+<li id=\"cite_note-3\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-3\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> Anand, P., Elderfield, H., &amp; Conte, M. H. (2003). Calibration of Mg/Ca thermometry in planktonic foraminifera from a sediment trap time series. Paleoceanography, 18(2), 1050. doi:10.1029/2002PA000846 </span>
+</li>
+<li id=\"cite_note-4\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-4\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> Lea, D. W., Mashiotta, T. A., &amp; Spero, H. J. (1999). Controls on magnesium and strontium uptake in planktonic foraminifera determined by live culturing. Geochimica et cosmochimica acta, 63(16), 2369-2379. </span>
+</li>
+<li id=\"cite_note-5\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-5\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> KisakÃ¼rek, B., Eisenhauer, A., BÃ¶hm, F., Garbe-SchÃ¶nberg, D., &amp; Erez, J. (2008). Controls on shell Mg/Ca and Sr/Ca in cultured planktonic foraminiferan, Globigeriniodes ruber (white). Earth and Planetary Science Letters, 273, 260-269. doi:10.1016/j.epsl.2008.06.026 </span>
+</li>
+<li id=\"cite_note-6\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-6\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> Regenberg, M., Regenberg, A., Garbe-Schonberg, D., &amp; Lea, D. W. (2014). Global dissolution effects on planktonic foraminiferal Mg/Ca ratios controlled by the calcite-saturation state of bottom waters. Paleoceanography, 29, 127-142. doi:10.1002/2013PA002492 </span>
+</li>
+<li id=\"cite_note-7\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-7\"><span class=\"cite-accessibility-label\">Jump up </span>â†‘</a></span> <span class=\"reference-text\"> Dee, S., Emile-Geay, J., Evans, M. N., Allam, A., Steig, E. J., &amp; Thompson, D. M. (2015). PRYSM: An open-source framework  for PRoxy System Modeling, with applications to oxygen-isotope systems. Journal of Advances in Modeling Earth Systems, 7, 1220-1247. doi:10.1002/2015MS000447</span>
+</li>
+</ol>"""@en ;
       rdfs:isDefinedBy <http://www.sciencedirect.com/science/article/pii/S0277379113002011> ;
       rdfs:label "Proxy system"@en ;
       vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca> ;
@@ -252,7 +277,8 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       rdfs:domain :OrganicProxySensor ;
       rdfs:label "sensor genus"@en ;
       rdfs:range xsd:string ;
-      vaem:rationale <http://wiki.linked.earth/Globigerinoides_ruber> , "Scientific Name of the organic ProxySensor"@en .
+      vann:example <http://wiki.linked.earth/Globigerinoides_ruber> ;
+      vaem:rationale "Scientific Name of the organic ProxySensor"@en .
 
 :ProxyObservation
       a       owl:Class ;
@@ -334,7 +360,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
       a       owl:DatatypeProperty ;
       rdfs:comment """Answers the question: What parameter of the error distribution is the Uncertainty value referring to?
 
-Examples include 1-sigma, 2-sigma, 95% confidence bounds""" ;
+Examples include 1-sigma, 2-sigma, 95% confidence bounds"""@en ;
       rdfs:domain :Uncertainty ;
       rdfs:label "uncertainty level"@en ;
       rdfs:range xsd:string ;
@@ -406,7 +432,7 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds""" ;
       rdfs:label "calibrated via"@en ;
       rdfs:range :CalibrationModel ;
       vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> ;
-      vaem:rationale "Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets. If both raw and calibrated data are present, calibratedWith and calibratedFrom should link to the same Calibration instance"@en .
+      vaem:rationale "Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets."@en .
 
 dcterms:created
       a       owl:DatatypeProperty ;
@@ -566,22 +592,26 @@ dcterms:created
 
 :modeledBy
       a       owl:ObjectProperty ;
-      rdfs:comment "Answers the question: What is the Model for the Data or ProxySystem under consideration?"@en ;
+      rdfs:comment "Answers the question: What is the Model for the Data, Compilation or ProxySystem under consideration?"@en ;
       rdfs:domain
               [ a       owl:Class ;
                 owl:unionOf
                         [ a       rdf:List ;
-                          rdf:first :Data ;
+                          rdf:first :Compilation ;
                           rdf:rest
                                   [ a       rdf:List ;
-                                    rdf:first :ProxySystem ;
-                                    rdf:rest ()
+                                    rdf:first :Data ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first :ProxySystem ;
+                                              rdf:rest ()
+                                            ]
                                   ]
                         ]
               ] ;
       rdfs:label "modeled by"@en ;
       rdfs:range :Model ;
-      vaem:rationale "Links Data or ProxySystem to Model"@en .
+      vaem:rationale "Links Data, Compilation or ProxySystem to Model"@en .
 
 dcterms:contributor
       a       owl:ObjectProperty ;
@@ -651,6 +681,8 @@ dcterms:identifier
 
 :MarineSediment
       a       owl:Class ;
+      rdfs:comment """<p><a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/w/index.php?title=Pelagic_sediment&amp;redirect=no\">Marine sediments</a> are a type of <a href=\"#ProxyArchive\" title=\"Category:ProxyArchive\"> proxy archives&rlm;&lrm;</a> that provide long, continuous records of past <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Ocean\">ocean</a> variability. The timescales associated with this <a href=\"#ProxyArchive\" title=\"Category:ProxyArchive\">archive&rlm;&lrm;</a> are usually in the order of several tens to millions of years. The resolution of the sedimentary archive varies from annual to multi-century. <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Paleoceanography\">Paleoceanographic</a> data are derived from many sensors found in deep-sea sediments including trace metal and isotopic composition of foraminifera, alkenones, and TEX86.
+</p>"""@en ;
       rdfs:label "Marine sediment"@en ;
       rdfs:subClassOf :ProxyArchive .
 
@@ -745,13 +777,13 @@ dcterms:identifier
 However, the U_{37}^{k'} proxy is subject to non-temperature effects, such as lateral transport through oceanic currents (Ohkouchi et al. (2002)) and preferential post-depositional oxidation of C37:3 compared to C37:2 [1] [2]. Furthermore, changes in the seasonality of the proxy (i.e., which part of the seasonal cycle the proxy is recording) may bias the inferred temperatures toward winter or summer conditions [3]. Finally in oceanic regions where the photic zone extends below the surface mixed layer, the sedimentary signal may not strictly represent sea surface temperatures but rather a composite temperature of the mixed layer and the thermocline [4][5].
 References
 
-[1] Hoefs, M. J. L., Versteegh, G. J. M., Rijpstra, W. I. C., de Leeuw, J. W., & Damsté, J. S. S. (1998). Postdepositional oxic degradation of alkenones: Implications for the measurement of palaeo sea surface temperatures. Paleoceanography, 13(1), 42-49. doi:10.1029/97pa02893
+[1] Hoefs, M. J. L., Versteegh, G. J. M., Rijpstra, W. I. C., de Leeuw, J. W., & DamstÃ©, J. S. S. (1998). Postdepositional oxic degradation of alkenones: Implications for the measurement of palaeo sea surface temperatures. Paleoceanography, 13(1), 42-49. doi:10.1029/97pa02893
 
 [2] Ohkouchi, N., Eglinton, T. I., Keigwin, L. D., & Hayes, J. M. (2002). Spatial and temporal offsets between proxy records in a sediment drift. Science, 298(5596), 1224-1227. doi:10.1126/science.1075287
 
-[3] Herfort, L., Schouten, S., Boon, J. P., & Sinninghe Damsté, J. S. (2006). Application of the TEX86 temperature proxy in the southern North Sea. Organic Geochemistry, 37, 1715-1726.
+[3] Herfort, L., Schouten, S., Boon, J. P., & Sinninghe DamstÃ©, J. S. (2006). Application of the TEX86 temperature proxy in the southern North Sea. Organic Geochemistry, 37, 1715-1726.
 
-[4] Müller, P. J., Kirst, G., Ruhland, G., von Storch, I., & Rosell-Melé, A. (1998). Calibration of the alkenone paleotemperature index U_{37}^{k'} based on core-tops from the eastern South Atlantic and the global ocean (60°N-60°S). Geochimica et cosmochimica acta, 62, 1757-1772.
+[4] MÃ¼ller, P. J., Kirst, G., Ruhland, G., von Storch, I., & Rosell-MelÃ©, A. (1998). Calibration of the alkenone paleotemperature index U_{37}^{k'} based on core-tops from the eastern South Atlantic and the global ocean (60Â°N-60Â°S). Geochimica et cosmochimica acta, 62, 1757-1772.
 
 [5] Prahl, F. G., Mix, A. C., & Sparrow, M. A. (2006). Alkenone paleothermometry: biological lessons from amrine sediment records off Western South America. Geochimica and Cosmochimica Acta, 70, 101-117."""@en ;
       rdfs:label "Uk37"@en .
@@ -852,11 +884,12 @@ References
 
 :sensorSpecies
       a       owl:DatatypeProperty ;
-      rdfs:comment "Answers the question: What is the species of the Organic ProxySensor" ;
+      rdfs:comment "Answers the question: What is the species of the Organic ProxySensor?"@en ;
       rdfs:domain :OrganicProxySensor ;
       rdfs:label "sensor species"@en ;
       rdfs:range xsd:string ;
-      vaem:rationale <http://wiki.linked.earth/Globigerinoides_ruber> , "Scientific Name of the organic ProxySensor"@en .
+      vann:example <http://wiki.linked.earth/Globigerinoides_ruber> ;
+      vaem:rationale "Scientific Name of the organic ProxySensor"@en .
 
 :d13C
       a       :StableCarbonIsotope , owl:NamedIndividual ;
@@ -918,7 +951,7 @@ dcterms:bibliographicCitation
 
 Allows to assign a unique identifier to each series, facilitating data citation and recognition
 
-This allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. It’s fundamental to working with LiPD data."""@en .
+This allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. Itâ€™s fundamental to working with LiPD data."""@en .
 
 :Chemical
       a       owl:Class ;
@@ -1133,8 +1166,8 @@ dcterms:references
       rdfs:domain :Variable ;
       rdfs:label "has median value"@en ;
       rdfs:range xsd:float ;
-      vann:example "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES"@en ;
-      vaem:rationale "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+      vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES> ;
+      vaem:rationale "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 
 :MassSpectrometerInstrument
       a       owl:Class ;
@@ -1340,7 +1373,7 @@ dcterms:title
       rdfs:label "has min value"@en ;
       rdfs:range xsd:float ;
       vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> ;
-      vaem:rationale "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+      vaem:rationale "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 
 :MolluskShells
       a       owl:Class ;
@@ -1354,7 +1387,8 @@ dcterms:title
       rdfs:label "title"@en ;
       rdfs:range xsd:string ;
       rdfs:subPropertyOf dcterms:title ;
-      vaem:rationale "Part of standard metadata for Publications"@en , <http://wiki.linked.earth/Publication.10.1029/98PA00070> .
+      vann:example <http://wiki.linked.earth/Publication.10.1029/98PA00070> ;
+      vaem:rationale "Part of standard metadata for Publications"@en .
 
 :takenAtDepth
       a       owl:ObjectProperty ;
@@ -1420,7 +1454,7 @@ dcterms:title
 
 :measuredOn
       a       owl:ObjectProperty ;
-      rdfs:comment "Answers the question: On which ProxyArchive was the MeasuredVariable measured?"@en ;
+      rdfs:comment "Answers the question: On which PhysicalSample was the MeasuredVariable measured?"@en ;
       rdfs:domain :MeasuredVariable ;
       rdfs:label "measured on"@en ;
       rdfs:range :PhysicalSample ;
@@ -1555,7 +1589,8 @@ dcterms:isPartOf
       rdfs:domain :MeasuredVariable ;
       rdfs:label "standard"@en ;
       rdfs:range xsd:string ;
-      vaem:rationale <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v> , "Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))"@en .
+      vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v> ;
+      vaem:rationale "Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))"@en .
 
 :Hybrid
       a       owl:Class ;
@@ -1674,7 +1709,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
       rdfs:label "has max value"@en ;
       rdfs:range xsd:float ;
       vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> ;
-      vaem:rationale "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+      vaem:rationale "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 
 <http://purl.oclc.org/NET/ssnx/ssn#observedBy>
       a       owl:ObjectProperty ;
@@ -1690,7 +1725,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
 
 :contributor
       a       owl:ObjectProperty ;
-      rdfs:comment "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a LinkedMember may contribute a previously-published dataset that he/she may not have authored"@en ;
+      rdfs:comment "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored"@en ;
       rdfs:domain :Dataset ;
       rdfs:label "contributor"@en ;
       rdfs:range :Person ;
@@ -1700,7 +1735,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
 
 :hasRank
       a       owl:DatatypeProperty , owl:FunctionalProperty ;
-      rdfs:comment "Answers the question: What is the importance of the ClimateInterpretation or IsotopeInterpretation?" ;
+      rdfs:comment "Answers the question: What is the importance of the Interpretation?"@en ;
       rdfs:domain :Interpretation ;
       rdfs:label "has rank"@en ;
       rdfs:range xsd:int ;
@@ -1753,8 +1788,8 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
 
 :OrganicIndex
       a       owl:Class ;
-      rdfs:comment """<p>Paleoceanographers use the term <b>biomarker</b> to describe organic molecules found in <a href=\"/Category:MarineSediment\" title=\"Category:MarineSediment\"> marine sediments</a>, initially produced by a variety of organisms either on land or in the marine environment <sup id=\"cite_ref-rosell2007_1-0\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. A key characteristic of biomarkers is their ability to survive deposition in the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive ©\"> archive</a> in terms of their original structure and steroidal configuration (i.e., spatial distribution of the atoms) <sup id=\"cite_ref-rosell2007_1-1\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. Their usefulness for paleoceanographic reconstructions largely depends on their <a href=\"/wiki/index.php?title=Degradation&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Degradation (page does not exist)\">degradation</a> within the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive ©\"> archive</a> <sup id=\"cite_ref-rosell2007_1-2\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>.<ol class=\"references\">
-<li id=\"cite_note-rosell2007-1\"><span class=\"mw-cite-backlink\">? <sup><a href=\"#cite_ref-rosell2007_1-0\">1.0</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-2\">1.2</a></sup></span> <span class=\"reference-text\">Rosell-Melé, A., &amp; McClymont, E. L. (2007). Biomarkers as Paleoceanographic proxies. Developments in Marine Geology, 1, 441-490. doi:10.1016/S1572-5480(07)01016-0 </span>
+      rdfs:comment """<p>Paleoceanographers use the term <b>biomarker</b> to describe organic molecules found in <a href=\"/Category:MarineSediment\" title=\"Category:MarineSediment\"> marine sediments</a>, initially produced by a variety of organisms either on land or in the marine environment <sup id=\"cite_ref-rosell2007_1-0\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. A key characteristic of biomarkers is their ability to survive deposition in the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive Â©\"> archive</a> in terms of their original structure and steroidal configuration (i.e., spatial distribution of the atoms) <sup id=\"cite_ref-rosell2007_1-1\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. Their usefulness for paleoceanographic reconstructions largely depends on their <a href=\"/wiki/index.php?title=Degradation&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Degradation (page does not exist)\">degradation</a> within the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive Â©\"> archive</a> <sup id=\"cite_ref-rosell2007_1-2\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>.<ol class=\"references\">
+<li id=\"cite_note-rosell2007-1\"><span class=\"mw-cite-backlink\">? <sup><a href=\"#cite_ref-rosell2007_1-0\">1.0</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-2\">1.2</a></sup></span> <span class=\"reference-text\">Rosell-MelÃ©, A., &amp; McClymont, E. L. (2007). Biomarkers as Paleoceanographic proxies. Developments in Marine Geology, 1, 441-490. doi:10.1016/S1572-5480(07)01016-0 </span>
 </li>
 </ol>"""@en ;
       rdfs:label "Organic index"@en ;
@@ -1868,7 +1903,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
       rdfs:label "has mean value"@en ;
       rdfs:range xsd:float ;
       vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> ;
-      vaem:rationale "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+      vaem:rationale "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 
 :nino1
       a       owl:NamedIndividual , :ElNinoIndex ;
@@ -1916,7 +1951,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
 Two international reference standards are used to report variations in oxygen isotope standards: PDB and SMOW. The use of the PDB standard in reporting oxygen isotope composition is restricted to carbonates of low-temperature origins (e.g., oceanic, lacustrine ). The conversion between SMOW and PDB scales is given by:
 \\delta^{18}O_{SMOW} = 1.03091 (\\delta^{18}O_{PDB}) +30.91
 
-δ18O may be measured on the shells of foraminifera"""@en ;
+Î´18O may be measured on the shells of foraminifera"""@en ;
       rdfs:label "d180"@en .
 
 :chronModeledBy
@@ -1929,7 +1964,7 @@ Two international reference standards are used to report variations in oxygen is
                           rdf:first :ChronData ;
                           rdf:rest
                                   [ a       rdf:List ;
-                                    rdf:first :ProxySystem ;
+                                    rdf:first :ChronProxySystem ;
                                     rdf:rest ()
                                   ]
                         ]
@@ -1997,12 +2032,12 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       dcterms:creator <http://orcid.org/0000-0001-5920-4751> , <http://www.cefns.nau.edu/~npm4/> , <http://earth.usc.edu/~khider/> ;
       dcterms:description "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
       dcterms:license <http://creativecommons.org/licenses/by/2.0/> , "http://creativecommons.org/licenses/by/2.0/" ;
-      dcterms:title "The Proxy Observation Ontology"@en , "The Inferred Variable Ontology"@en , "The Linked Earth LiPD Ontology"@en , "The Linked Earth Instrument Ontology"@en , "The Proxy Archive Ontology"@en , "The Proxy Sensor Ontology"@en ;
+      dcterms:title "The Proxy Observation Ontology"@en , "The Inferred Variable Ontology"@en , "The Linked Earth Instrument Ontology"@en , "The Proxy Archive Ontology"@en , "The Linked Earth LiPD Ontology"@en , "The Proxy Sensor Ontology"@en ;
       vann:preferredNamespacePrefix
               "le" ;
       vann:preferredNamespaceUri
               "http://linked.earth/ontology#" ;
-      owl:versionInfo "1.2.0"@en .
+      owl:versionInfo "1.2.0"@en.
 
 :CarbonateIonConcentration
       a       owl:NamedIndividual , :OceanChemistry ;
@@ -2154,6 +2189,14 @@ vann:example
       a       owl:Class ;
       rdfs:isDefinedBy <http://schema.org/> .
 
+:scope
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Answers the question: how would you classify the Interpretation? Examples include Isotope, Climateâ€¦"@en ;
+      rdfs:domain :Interpretation ;
+      rdfs:label "scope"@en ;
+      rdfs:range xsd:string ;
+      vaem:rationale "Allows to separate the various types of interpretation"@en .
+
 <http://www.w3.org/2003/01/geo/wgs84_pos#long>
       a       owl:DatatypeProperty ;
       rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
@@ -2259,15 +2302,15 @@ where GDGTs 1-3 indicate compounds containing 1-3 cyclopentyl moieties, respecti
 Experimental evidence suggests that archaea produce GDGTs with more rings warmer waters, a response observed in cultures of hyperthermophile archaea [2] [3] and mesocosm experiments with natural seawater containing heterogenous archaeal population [4] [5].
 References
 
-[1] Schouten, S., Hopmans, E. C., Schefuß, E., & Sinninghe Damsté, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipid: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.
+[1] Schouten, S., Hopmans, E. C., SchefuÃŸ, E., & Sinninghe DamstÃ©, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipids: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.
 
 [2] de Rosa, M., Esposito, E., Gambacorta, A., Nicolaus, B., & Bu'Lock, J. (1980). Effects of temperature on ether lipid composition of Caldariella acidophilia. Phytochemistry, 19, 827-831.
 
-[3] Uda, I., Sugai, A., Itoh, Y., & Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. lipid, 36, 103-105.
+[3] Uda, I., Sugai, A., Itoh, Y., & Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. Lipids, 36, 103-105.
 
-[4] Wuchter, C., Schouten, S., Coolen, M. J. L., & Sinninghe Damsté, J. S. (2004). Temperature-dependent variation in the distribution of tetraether membrane lipids of marine Crenarchaeota: implications for TEX86 paleothermometry. Paleoceanography, 19, PA4028. doi:10.1029/2004PA001041
+[4] Wuchter, C., Schouten, S., Coolen, M. J. L., & Sinninghe DamstÃ©, J. S. (2004). Temperature-dependent variation in the distribution of tetraether membrane lipids of marine Crenarchaeota: implications for TEX86 paleothermometry. Paleoceanography, 19, PA4028. doi:10.1029/2004PA001041
 
-[5]Schouten, S., Forster, A., Panato, E., & Sinninghe Damsté, J. S. (2007). Towards the calibration of the TEX86 paleothermometer on ancient greenhouse worlds. Organic Geochemistry. doi:10.1016/j.orggeochem.2007.05.014"""@en ;
+[5]Schouten, S., Forster, A., Panato, E., & Sinninghe DamstÃ©, J. S. (2007). Towards the calibration of the TEX86 paleothermometer on ancient greenhouse worlds. Organic Geochemistry. doi:10.1016/j.orggeochem.2007.05.014"""@en ;
       rdfs:label "TEX86"@en .
 
 :includesChronData
@@ -2429,7 +2472,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
 
 :Resolution
       a       owl:Class ;
-      rdfs:comment "Refers to the distance (physical or temporal) between each point on the archive. May or May not be related to sampling. Value with units"@en ;
+      rdfs:comment "Refers to the time difference between two adjacent values of a Variable."@en ;
       rdfs:label "Resolution"@en ;
       vaem:rationale "Class added to describe the annual resolution of the archives"@en .
 
@@ -2450,7 +2493,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
       a       owl:FunctionalProperty , owl:ObjectProperty ;
       rdfs:comment "Answers the question: In which SummaryTable can the statistics on the Model Output be found?"@en ;
       rdfs:domain :SummaryTable ;
-      rdfs:label "summary table enerated by model"@en ;
+      rdfs:label "summary table generated by model"@en ;
       rdfs:range
               [ a       owl:Class ;
                 owl:unionOf
@@ -2549,7 +2592,8 @@ The polyp portion of the coral secretes calcium carbonate (CaCO<sub>3</sub>) as 
               ] ;
       rdfs:label "has value"@en ;
       rdfs:range xsd:string ;
-      vaem:rationale <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty> , "Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE"@en .
+      vann:example <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty> ;
+      vaem:rationale "Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE"@en .
 
 :Ostracods
       a       owl:Class ;

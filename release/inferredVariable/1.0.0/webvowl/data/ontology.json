@@ -1,0 +1,560 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://linked.earth/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Inferred Variable Ontology"
+    },
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "1.0.0",
+    "author" : [ "http://www.cefns.nau.edu/~npm4/", "http://orcid.org/0000-0001-5920-4751", "http://earth.usc.edu/~khider/" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://earth.usc.edu/~khider/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0001-5920-4751",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://www.cefns.nau.edu/~npm4/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://w3id.org/people/dgarijo",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://www.isi.edu/~gil/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Inferred Variable Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 10,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 35
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#Hydrology",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hydrology",
+      "en" : "Hydrology"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#moistureContent",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "moistureContent",
+        "en" : "Moisture content"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#palmerDroughtSeverityIndex",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "palmerDroughtSeverityIndex",
+        "en" : "Palmer Drought Severity Index (PDSI)"
+      }
+    } ],
+    "subClasses" : [ "2" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ClimateIndex",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClimateIndex",
+      "en" : "Climate index"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#northAtlanticOscillation",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "northAtlanticOscillation",
+        "en" : "North Atlantic Oscillation (NAO)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#arcticOscillation",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "arcticOscillation",
+        "en" : "Arctic Oscillation (AO, AAO)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#atlanticMultiDecadalOscillation",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "atlanticMultiDecadalOscillation",
+        "en" : "Atlantic Multi-decadal Oscillation (AMO)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#palmerDroughtSeverityIndex",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "palmerDroughtSeverityIndex",
+        "en" : "Palmer Drought Severity Index (PDSI)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#palmerDroughtIndex",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "palmerDroughtIndex",
+        "en" : "Palmer Drought Index"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#southernAnnularMode",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "southernAnnularMode",
+        "en" : "Southern Annular Mode (SAM)"
+      }
+    } ],
+    "subClasses" : [ "9" ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#OceanChemistry",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OceanChemistry",
+      "en" : "Ocean chemistry"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#carbonateSaturation",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "carbonateSaturation",
+        "en" : "Carbonate saturation"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#pH",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "pH",
+        "en" : "PH"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#CarbonateIonConcentration",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "CarbonateIonConcentration",
+        "en" : "Carbonate ion concentration"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#salinity",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "salinity",
+        "en" : "Salinity"
+      }
+    } ],
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#IsotopicComposition",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IsotopicComposition",
+      "en" : "Isotopic composition"
+    },
+    "union" : [ "0", "12" ],
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#dD",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "dD",
+        "en" : "DD"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#deuteriumExcess",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "deuteriumExcess",
+        "en" : "Deuterium excess (excessD)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#d180",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "d180",
+        "en" : "d180"
+      }
+    } ],
+    "attributes" : [ "union" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://linked.earth/ontology#AtmosphericChemistry",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AtmosphericChemistry",
+      "en" : "Atmospheric chemistry"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#freeOxygenLevels",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "freeOxygenLevels",
+        "en" : "Free oxygen levels"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#carbonDioxideConcentration",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "carbonDioxideConcentration",
+        "en" : "Carbon dioxide concentration"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#methaneConcentration",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "methaneConcentration",
+        "en" : "Methane concentration"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nitrousOxideConcentration",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nitrousOxideConcentration",
+        "en" : "Nitrous oxide concentration"
+      }
+    } ],
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Temperature",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temperature",
+      "en" : "Temperature"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#surfaceAirTemperature",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "surfaceAirTemperature",
+        "en" : "Surface air temperature"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#seaSurfaceTemperature",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "The temperature close to the ocean's surface"
+      },
+      "labels" : {
+        "IRI-based" : "seaSurfaceTemperature",
+        "en" : "Sea surface temperature"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#oceanMixedLayerTemperature",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "oceanMixedLayerTemperature",
+        "en" : "Ocean mixed layer temperature"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#temperature",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "Thermodynamic property which quantifies how cold or warm an object, a fluid, or a substance is."
+      },
+      "labels" : {
+        "IRI-based" : "temperature",
+        "en" : "Temperature"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#bottomWaterTemperature",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "bottomWaterTemperature",
+        "en" : "Bottom water temperature"
+      }
+    } ],
+    "comment" : {
+      "en" : "Thermodynamic property allowing to quantitatively measure how warm or cold a material, fluid is."
+    },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#InferredVariable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology/core/1.2.0",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InferredVariable",
+      "en" : "Inferred variable"
+    },
+    "subClasses" : [ "0", "5", "7", "8", "12", "14" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://linked.earth/ontology#Time",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Time",
+      "en" : "Time"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#year",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "year",
+        "en" : "Year"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#julianDay",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "julianDay",
+        "en" : "Julian day"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#age",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "The age of a sample"
+      },
+      "labels" : {
+        "IRI-based" : "age",
+        "en" : "Age"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#radiocarbonAge",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "radiocarbonAge",
+        "en" : "Radiocarbon age"
+      }
+    } ],
+    "id" : "14",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Precipitation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Precipitation",
+      "en" : "Precipitation"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#precipitationAmount",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "precipitationAmount",
+        "en" : "Precipitation amount"
+      }
+    } ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ElNinoIndex",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElNinoIndex"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Nino1Plus2",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Nino1Plus2",
+        "en" : "Nino 1+2"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nino3_4",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nino3_4",
+        "en" : "Nino 3.4"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#southernOscillationIndex",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "southernOscillationIndex",
+        "en" : "Southern oscillation index (SOI)"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nino4",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nino4",
+        "en" : "Nino 4"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nino3",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nino3",
+        "en" : "Nino 3"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nino2",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nino2",
+        "en" : "Nino 2"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#nino1",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "nino1",
+        "en" : "Nino 1"
+      }
+    } ],
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  } ]
+}

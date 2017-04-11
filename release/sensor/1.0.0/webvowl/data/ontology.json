@@ -1,0 +1,531 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://linked.earth/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Proxy Sensor Ontology"
+    },
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "1.0.0",
+    "author" : [ "http://www.cefns.nau.edu/~npm4/", "http://orcid.org/0000-0001-5920-4751", "http://earth.usc.edu/~khider/" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://www.cefns.nau.edu/~npm4/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://earth.usc.edu/~khider/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0001-5920-4751",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://www.isi.edu/~gil/",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://w3id.org/people/dgarijo",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Proxy Sensor Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 19,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#Vegetation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vegetation",
+      "en" : "Vegetation"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Karst",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Karst",
+      "en" : "Karst"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxySensor",
+      "en" : "Proxy sensor"
+    },
+    "subClasses" : [ "3", "1" ],
+    "comment" : {
+      "en" : "The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013))"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://linked.earth/ontology#Gastropods",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gastropods",
+      "en" : "Gastropods"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Tree",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Tree",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tree",
+      "en" : "Tree"
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Coccolithophores",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coccolithophores",
+      "en" : "Coccolithophores"
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Foraminifera",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Foraminifera",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Foraminifera",
+      "en" : "Foraminifera"
+    },
+    "comment" : {
+      "en" : "Because of their population size, foraminifera produce a significant amount of oceanic carbonate, making them a valuable source of paleoceanographic information.\r\n\r\nThe following parameters are used in paleoceanographic applications:\r\n\r\n* Faunal Assemblage\r\n* Geochemical measurements:\r\n *  Isotopes\r\n * Stable oxygen isotopes\r\n * Stable carbon isotopes\r\n * Radiocarbon\r\n* Trace Elements"
+    },
+    "id" : "23",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Rock",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rock",
+      "en" : "Rock"
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Bivalves",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bivalves",
+      "en" : "Bivalves"
+    },
+    "id" : "22",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Ostracods",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ostracods",
+      "en" : "Ostracods"
+    },
+    "id" : "20",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#InorganicProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology/core/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InorganicProxySensor",
+      "en" : "Inorganic proxy sensor"
+    },
+    "subClasses" : [ "2", "6", "8", "10", "12" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Archea",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Archea",
+      "en" : "Archea"
+    },
+    "id" : "26",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Snow",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Snow",
+      "en" : "Snow"
+    },
+    "id" : "8",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Watershed",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Watershed",
+      "en" : "Watershed"
+    },
+    "id" : "12",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Polyp",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Polyp",
+      "en" : "Polyp"
+    },
+    "id" : "27",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Mollusk",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mollusk",
+      "en" : "Mollusk"
+    },
+    "subClasses" : [ "20", "22", "14" ],
+    "id" : "15",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Chironomids",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chironomids",
+      "en" : "Chironomids"
+    },
+    "id" : "31",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#IceSheet",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IceSheet",
+      "en" : "Ice sheet"
+    },
+    "id" : "10",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#OrganicProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology/core/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganicProxySensor",
+      "en" : "Organic proxy sensor"
+    },
+    "subClasses" : [ "23", "26", "0", "31", "15", "27", "16", "18" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "3",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "3",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "15",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "15",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "1",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  } ]
+}

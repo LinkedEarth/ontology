@@ -1,0 +1,890 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://linked.earth/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Proxy Observation Ontology"
+    },
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "1.0.0",
+    "author" : [ "http://www.cefns.nau.edu/~npm4/", "http://orcid.org/0000-0001-5920-4751", "http://earth.usc.edu/~khider/" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://www.cefns.nau.edu/~npm4/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://earth.usc.edu/~khider/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0001-5920-4751",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://w3id.org/people/dgarijo",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://www.isi.edu/~gil/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Proxy Observation Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 20,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 49
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#MajorElement",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MajorElement",
+      "en" : "Major element"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#C",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "C",
+        "en" : "C"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#P",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "P",
+        "en" : "P"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#N",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "N",
+        "en" : "N"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Si",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Si",
+        "en" : "Si"
+      }
+    } ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Physical",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Physical",
+      "en" : "Physical observation"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Density",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Density",
+        "en" : "Density"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#MoistureContent",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "MoistureContent",
+        "en" : "Moisture Content"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Resistivity",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Resistivity",
+        "en" : "Resistivity"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#GrainSize",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "GrainSize",
+        "en" : "Grain size"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#LayerThickness",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "LayerThickness",
+        "en" : "Layer thickness"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Color",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Color",
+        "en" : "Color"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Lithics",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Lithics",
+        "en" : "Lithics"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#MagneticSusceptibility",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "MagneticSusceptibility",
+        "en" : "Magnetic susceptibility\r\n"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Permeability",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Permeability",
+        "en" : "Permeability"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Porosity",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Porosity",
+        "en" : "Porosity"
+      }
+    } ],
+    "subClasses" : [ "4" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#StableSulfurIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableSulfurIsotope",
+      "en" : "Stable sulfur isotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#d34S",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "d34S",
+        "en" : "d34S"
+      }
+    } ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#OrganicIndex",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrganicIndex",
+      "en" : "Organic index"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#TEX86",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "The use of TEX86 (TetraEther indeX of 86 carbons) as a tool to reconstruct past sea surface temperature variability is based on the relative cyclization of isoprenoidal glycerol dialkyl glycerol tetra ethers (GDGTs) produced by marine archaea. TEX86 is defined as [1]:\n\nTEX_{86}=\\frac{GDGT-2+GDGT-3+Cren'}{GDGT-1+GDGT-2+GDGT-3+Cren'}\n\nwhere GDGTs 1-3 indicate compounds containing 1-3 cyclopentyl moieties, respectively, and Cren' denotes the regioisomer of crenarchaeol, a diagnostic biomarker for the Thaumarchaeota, the primary producers of GDGTs in the marine realm. By definition, values of the TEX86 index are comprised between 0 and 1.\n\nExperimental evidence suggests that archaea produce GDGTs with more rings warmer waters, a response observed in cultures of hyperthermophile archaea [2] [3] and mesocosm experiments with natural seawater containing heterogenous archaeal population [4] [5].\nReferences\n\n[1] Schouten, S., Hopmans, E. C., Schefuß, E., & Sinninghe Damsté, J. S. (2002). Distributional variations in marine crenarchaeotal membrane lipids: a new organic proxy for reconstructing ancient sea water temperatures? . Earth and Planetary Science Letters, 204, 265-274.\n\n[2] de Rosa, M., Esposito, E., Gambacorta, A., Nicolaus, B., & Bu'Lock, J. (1980). Effects of temperature on ether lipid composition of Caldariella acidophilia. Phytochemistry, 19, 827-831.\n\n[3] Uda, I., Sugai, A., Itoh, Y., & Itoh, T. (2001). Variation in molecular species of polar liipds from Thermoplasma acidophilum depends on growth temperature. Lipids, 36, 103-105.\n\n[4] Wuchter, C., Schouten, S., Coolen, M. J. L., & Sinninghe Damsté, J. S. (2004). Temperature-dependent variation in the distribution of tetraether membrane lipids of marine Crenarchaeota: implications for TEX86 paleothermometry. Paleoceanography, 19, PA4028. doi:10.1029/2004PA001041\n\n[5]Schouten, S., Forster, A., Panato, E., & Sinninghe Damsté, J. S. (2007). Towards the calibration of the TEX86 paleothermometer on ancient greenhouse worlds. Organic Geochemistry. doi:10.1016/j.orggeochem.2007.05.014"
+      },
+      "labels" : {
+        "IRI-based" : "TEX86",
+        "en" : "TEX86"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Uk37Prime",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "The currently accepted U37kprime (Prahl and Wakeman, 1987) varies positively with temperature, and is defines as C(37:2)/(C(37:2)+C(37:3), where C(37:2) represents the quantity of the di-unsaturated ketone and C(37:3) the quantity of the tri-unsaturated form.\n\nHerbet, T.D., 2003, Alkenone paleotemperature determinations in Treatise on Geochemistry, Volume 6, pp 391-432"
+      },
+      "labels" : {
+        "IRI-based" : "Uk37Prime",
+        "en" : "Uk 37'"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Uk37",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "The C37 alkenone unsaturation index ( U_{37}^{k'} ) is a firmly established tool for past sea surface temperatures reconstruction and is based on the relative abundance of di- (C37:2) and tri- (C37:3) unsaturated ketones with 37 carbon atoms. The index varies between 0 and 1, thus it may saturate in the temperature extremes as it becomes more challenging to determine since C37:3 and C37:2 alkenones approach their detection limits. Since alkenones come exclusively from a few species of haptophyte algae which require sunlight, alkenone thermometry offers the advantage of direct estimate of near-surface ocean temperatures. The ubiquitous presence of alkenone-synthesizing organisms (most commonly the coccolithophorids Emiliania huxleyi and Gephyrocapsa oceanic through the world's ocean and the rapidity and high-precision of the alkenone analyses had made U_{37}^{k'} a valuable proxy for paleoceanographic reconstructions.\n\nHowever, the U_{37}^{k'} proxy is subject to non-temperature effects, such as lateral transport through oceanic currents (Ohkouchi et al. (2002)) and preferential post-depositional oxidation of C37:3 compared to C37:2 [1] [2]. Furthermore, changes in the seasonality of the proxy (i.e., which part of the seasonal cycle the proxy is recording) may bias the inferred temperatures toward winter or summer conditions [3]. Finally in oceanic regions where the photic zone extends below the surface mixed layer, the sedimentary signal may not strictly represent sea surface temperatures but rather a composite temperature of the mixed layer and the thermocline [4][5].\nReferences\n\n[1] Hoefs, M. J. L., Versteegh, G. J. M., Rijpstra, W. I. C., de Leeuw, J. W., & Damsté, J. S. S. (1998). Postdepositional oxic degradation of alkenones: Implications for the measurement of palaeo sea surface temperatures. Paleoceanography, 13(1), 42-49. doi:10.1029/97pa02893\n\n[2] Ohkouchi, N., Eglinton, T. I., Keigwin, L. D., & Hayes, J. M. (2002). Spatial and temporal offsets between proxy records in a sediment drift. Science, 298(5596), 1224-1227. doi:10.1126/science.1075287\n\n[3] Herfort, L., Schouten, S., Boon, J. P., & Sinninghe Damsté, J. S. (2006). Application of the TEX86 temperature proxy in the southern North Sea. Organic Geochemistry, 37, 1715-1726.\n\n[4] Müller, P. J., Kirst, G., Ruhland, G., von Storch, I., & Rosell-Melé, A. (1998). Calibration of the alkenone paleotemperature index U_{37}^{k'} based on core-tops from the eastern South Atlantic and the global ocean (60°N-60°S). Geochimica et cosmochimica acta, 62, 1757-1772.\n\n[5] Prahl, F. G., Mix, A. C., & Sparrow, M. A. (2006). Alkenone paleothermometry: biological lessons from amrine sediment records off Western South America. Geochimica and Cosmochimica Acta, 70, 101-117."
+      },
+      "labels" : {
+        "IRI-based" : "Uk37",
+        "en" : "Uk37"
+      }
+    } ],
+    "comment" : {
+      "en" : "<p>Paleoceanographers use the term <b>biomarker</b> to describe organic molecules found in <a href=\"/Category:MarineSediment\" title=\"Category:MarineSediment\"> marine sediments</a>, initially produced by a variety of organisms either on land or in the marine environment <sup id=\"cite_ref-rosell2007_1-0\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. A key characteristic of biomarkers is their ability to survive deposition in the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive ©\"> archive</a> in terms of their original structure and steroidal configuration (i.e., spatial distribution of the atoms) <sup id=\"cite_ref-rosell2007_1-1\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>. Their usefulness for paleoceanographic reconstructions largely depends on their <a href=\"/wiki/index.php?title=Degradation&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Degradation (page does not exist)\">degradation</a> within the <a href=\"/Category:ProxyArchive_%C2%A9\" title=\"Category:ProxyArchive ©\"> archive</a> <sup id=\"cite_ref-rosell2007_1-2\" class=\"reference\"><a href=\"#cite_note-rosell2007-1\">[1]</a></sup>.<ol class=\"references\">\n<li id=\"cite_note-rosell2007-1\"><span class=\"mw-cite-backlink\">? <sup><a href=\"#cite_ref-rosell2007_1-0\">1.0</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-rosell2007_1-2\">1.2</a></sup></span> <span class=\"reference-text\">Rosell-Melé, A., &amp; McClymont, E. L. (2007). Biomarkers as Paleoceanographic proxies. Developments in Marine Geology, 1, 441-490. doi:10.1016/S1572-5480(07)01016-0 </span>\n</li>\n</ol>"
+    },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#StableCarbonIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableCarbonIsotope",
+      "en" : "Stable Carbon isotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#d13C",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "d13C",
+        "en" : "d13C"
+      }
+    } ],
+    "comment" : {
+      "en" : "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Carbon\">Carbon</a> in nature exists in oxidized (i.e., <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Carbon_dioxide\">CO<sub>2</sub></a> and <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Carbonate\">carbonates</a>), elemental (i.e., <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Graphite\">graphite</a> and <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Diamond\">diamond</a>), and reduced (i.e., <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Methane\">methane</a> and organic matter]) forms. Carbon has two <a href=\"/Category:StableIsotope\" title=\"Category:StableIsotope\"> stable isotopes</a>: the light isotope <sup>12</sup>C (abundance: 98.9%, mass: 12.000000 amu) and the heavy isotope <sup>13</sup>C (abundance: 1.1%, mass: 13.003355 amu). Since the mass of <sup>13</sup>C is higher than the mass of <sup>12</sup>C, the carbon isotopes are fractionated by chemical and biological processes. In general, <sup>12</sup>C is strongly partitioned into organic matter (reduced form) while the heavy isotope is concentrated in the oxidized forms of carbon.\n</p>"
+    },
+    "id" : "10",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#StableHydrogenIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableHydrogenIsotope",
+      "en" : "Stable Hydrogen isotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#dD",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "dD",
+        "en" : "dD"
+      }
+    } ],
+    "id" : "12",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Reflectance",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reflectance",
+      "en" : "Reflectance"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#DiffuseSpectralReflectance",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "DiffuseSpectralReflectance",
+        "en" : "Diffuse spectral reflectance"
+      }
+    } ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Spectral",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spectral",
+      "en" : "Spectral observation"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Luminescence",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Luminescence",
+        "en" : "Luminescence"
+      }
+    } ],
+    "subClasses" : [ "14", "21", "22" ],
+    "id" : "15",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Assemblage",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assemblage",
+      "en" : "Assemblage"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Floral",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Floral",
+        "en" : "Floral"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Faunal",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Faunal",
+        "en" : "Faunal"
+      }
+    } ],
+    "id" : "9",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Radioisotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Radioisotope",
+      "en" : "Radioisotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Ar-Ar",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Ar-Ar",
+        "en" : "Ar-Ar"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Neodymium",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Neodymium",
+        "en" : "Neodymium"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#LeadIsotope",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "LeadIsotope",
+        "en" : "Lead Isotope"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Radiocarbon",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Radiocarbon",
+        "en" : "Radiocarbon"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#U-Th",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "U-Th",
+        "en" : "U-Th"
+      }
+    } ],
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#TraceElement",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TraceElement",
+      "en" : "Trace element"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Li/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Li/Ca",
+        "en" : "Li/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Al/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Al/Ca",
+        "en" : "Al/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Mg/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Mg/Ca",
+        "en" : "Mg/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Mn/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Mn/Ca",
+        "en" : "Mn/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Ba/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Ba/Ca",
+        "en" : "Ba/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Sr/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Sr/Ca",
+        "en" : "Sr/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Fe/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Fe/Ca",
+        "en" : "Fe/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#Zn/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Zn/Ca",
+        "en" : "Zn/Ca"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#B/Ca",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "B/Ca",
+        "en" : "B/Ca"
+      }
+    } ],
+    "id" : "29",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Composition",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composition",
+      "en" : "Composition"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#SandFraction",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "SandFraction",
+        "en" : "Sand fraction\r\n"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#ClayFraction",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "ClayFraction",
+        "en" : "Clay fraction"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#SiltFraction",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "SiltFraction",
+        "en" : "Silt fraction"
+      }
+    } ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Chemical",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chemical",
+      "en" : "Chemical"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#MineralMatter",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "MineralMatter",
+        "en" : "Mineral matter"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#OrganicMatter",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "OrganicMatter",
+        "en" : "Organic matter"
+      }
+    } ],
+    "subClasses" : [ "0", "26", "7", "29" ],
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Diffraction",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diffraction",
+      "en" : "Diffraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#X-RayDiffraction",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "X-RayDiffraction",
+        "en" : "X-Ray diffraction"
+      }
+    } ],
+    "id" : "22",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyObservation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology/core/1.2.0/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyObservation",
+      "en" : "Proxy observation"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#Historic",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "Historic",
+        "en" : "Historic"
+      }
+    } ],
+    "subClasses" : [ "2", "15", "9", "1" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://linked.earth/ontology#StableOxygenIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableOxygenIsotope",
+      "en" : "Stable Oxygen isotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#d180",
+      "baseIri" : "http://linked.earth/ontology",
+      "comment" : {
+        "en" : "Oxygen has three naturally-occuring stable isotopes: 16O, 17O, 18O, with 16O being the most abundant (99.762%).\n\nTwo international reference standards are used to report variations in oxygen isotope standards: PDB and SMOW. The use of the PDB standard in reporting oxygen isotope composition is restricted to carbonates of low-temperature origins (e.g., oceanic, lacustrine ). The conversion between SMOW and PDB scales is given by:\n\\delta^{18}O_{SMOW} = 1.03091 (\\delta^{18}O_{PDB}) +30.91\n\n?18O may be measured on the shells of foraminifera"
+      },
+      "labels" : {
+        "IRI-based" : "d180",
+        "en" : "d180"
+      }
+    }, {
+      "iri" : "http://linked.earth/ontology#d170",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "d170",
+        "en" : "d170"
+      }
+    } ],
+    "id" : "20",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#StableNitrogenIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableNitrogenIsotope",
+      "en" : "Stable Nitrogen isotope"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#d15N",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "d15N",
+        "en" : "d15N"
+      }
+    } ],
+    "id" : "18",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#StableIsotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StableIsotope",
+      "en" : "Stable isotope"
+    },
+    "subClasses" : [ "5", "18", "20", "10", "12" ],
+    "id" : "6",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Isotope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Isotope",
+      "en" : "Isotope"
+    },
+    "subClasses" : [ "25", "6" ],
+    "comment" : {
+      "en" : "<p>Atoms can be simply described as consisting of <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Proton\">protons</a>, <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Electron\">electrons</a>, and <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Neutron\">neutrons</a>. Isotopes of the same element differ by the number of neutrons in the nucleus, resulting in different mass.\n</p>"
+    },
+    "id" : "26",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Fluorescence",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fluorescence",
+      "en" : "Fluorescence"
+    },
+    "individuals" : [ {
+      "iri" : "http://linked.earth/ontology#X-rayFluorescence",
+      "baseIri" : "http://linked.earth/ontology",
+      "labels" : {
+        "IRI-based" : "X-rayFluorescence",
+        "en" : "X-ray fluorescence"
+      }
+    } ],
+    "id" : "21",
+    "superClasses" : [ "15" ]
+  } ],
+  "property" : [ {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "6",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "6",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "3",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "1",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "26",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "15",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "15",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  } ]
+}

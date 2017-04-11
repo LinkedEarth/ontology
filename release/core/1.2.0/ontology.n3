@@ -1,9 +1,3 @@
-<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement table"@en .
-<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#comment> "DataTable that contains the Variables (both measured and inferred)"@en .
-<http://linked.earth/ontology#MeasurementTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of DataTable. Allows InferredVariables (despite the name) for practical purposes"@en .
-<http://linked.earth/ontology#MeasurementTable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1> .
-<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#DataTable> .
-<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <http://linked.earth/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual who has participated directly or indirectly in the authoring of any resources on the LinkedEarth wiki"@en .
 <http://linked.earth/ontology#Person> <http://www.linkedmodel.org/schema/vaem#rationale> "The researcher, author on a publication."@en .
@@ -11,27 +5,33 @@
 <http://linked.earth/ontology#Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
 <http://linked.earth/ontology#Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Person> .
 <http://linked.earth/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffa .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Compilation> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement table"@en .
+<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#comment> "DataTable that contains the Variables (both measured and inferred)"@en .
+<http://linked.earth/ontology#MeasurementTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of DataTable. Allows InferredVariables (despite the name) for practical purposes"@en .
+<http://linked.earth/ontology#MeasurementTable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1> .
+<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#MeasurementTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff7 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd9 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#DataTable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd6 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb6 <http://www.w3.org/2002/07/owl#intersectionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb5 .
 <http://linked.earth/ontology#PaleoDataTable> <http://www.w3.org/2000/01/rdf-schema#label> "PaleoData table"@en .
 <http://linked.earth/ontology#PaleoDataTable> <http://www.w3.org/2000/01/rdf-schema#comment> "DataTable containing PaleoData Variables"@en .
 <http://linked.earth/ontology#PaleoDataTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
 <http://linked.earth/ontology#PaleoDataTable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1> .
 <http://linked.earth/ontology#PaleoDataTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#DataTable> .
 <http://linked.earth/ontology#PaleoDataTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffb .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fba <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Publication> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fda .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#DataTable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://schema.org/includedInDataCatalog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/includedInDataCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#calibrationReferences> <http://www.w3.org/2000/01/rdf-schema#label> "calibration references"@en .
 <http://linked.earth/ontology#calibrationReferences> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In what Reference(s) is the Calibration described/justified?"@en .
 <http://linked.earth/ontology#calibrationReferences> <http://www.linkedmodel.org/schema/vaem#rationale> "Relationship needed to link to a Publication desribing the calibration being applied to the dataset"@en .
@@ -40,8 +40,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#calibrationReferences> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#CalibrationModel> .
 <http://linked.earth/ontology#calibrationReferences> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/references> .
 <http://linked.earth/ontology#calibrationReferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb7 <http://www.w3.org/2002/07/owl#intersectionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb6 .
 <http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#Interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation"@en .
@@ -53,29 +51,28 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb7 <http://www.w3.org/2002/07/owl#inters
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which EnsembleTable is the Model output found?"@en .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.linkedmodel.org/schema/vaem#rationale> "\"Subproperty of foundinTable to link the Model to its outputs\""@en .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1> .
-<http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff2 .
+<http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff2 .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#EnsembleTable> .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://linked.earth/ontology#generatedByModel> .
 <http://linked.earth/ontology#ensembleTableGeneratedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#Resolution> <http://www.w3.org/2000/01/rdf-schema#label> "Resolution"@en .
-<http://linked.earth/ontology#Resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the distance (physical or temporal) between each point on the archive. May or May not be related to sampling. Value with units"@en .
+<http://linked.earth/ontology#Resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the time difference between two adjacent values of a Variable."@en .
 <http://linked.earth/ontology#Resolution> <http://www.linkedmodel.org/schema/vaem#rationale> "Class added to describe the annual resolution of the archives"@en .
 <http://linked.earth/ontology#Resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe5 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe4 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc3 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Instrument> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Instrument> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy sensor"@en .
 <http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 <http://linked.earth/ontology#ProxySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013)). Signals recorded by the ProxySensor are imprinted onto the ProxyArchive."@en .
-<http://linked.earth/ontology#ProxySensor> <http://www.linkedmodel.org/schema/vaem#rationale> "See ProxySensor ontology for details about the concept. \n\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community"@en .
+<http://linked.earth/ontology#ProxySensor> <http://www.linkedmodel.org/schema/vaem#rationale> "See ProxySensor ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community"@en .
 <http://linked.earth/ontology#ProxySensor> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Cibicidoides_mundulus> .
 <http://linked.earth/ontology#ProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
@@ -94,6 +91,15 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.oclc.org/NET/ssnx/ssn#observedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.oclc.org/NET/ssnx/ssn#> .
 <http://purl.oclc.org/NET/ssnx/ssn#observedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#SoftwareCode> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://schema.org/DataCatalog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/DataCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasISBN> <http://www.w3.org/2000/01/rdf-schema#label> "has ISBN"@en .
@@ -103,9 +109,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasISBN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#hasISBN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://linked.earth/ontology#hasISBN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff3 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#principalInvestigator> <http://www.w3.org/2000/01/rdf-schema#label> "principal investigator"@en .
 <http://linked.earth/ontology#principalInvestigator> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Who was the lead on the source of Funding for the Dataset?"@en .
 <http://linked.earth/ontology#principalInvestigator> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the source of Funding to the PI (a Person)"@en .
@@ -115,11 +118,8 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#principalInvestigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#SoftwareCode> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#datasetVersion> <http://www.w3.org/2000/01/rdf-schema#label> "dataset version"@en .
-<http://linked.earth/ontology#datasetVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the version of the Dataset?\n\nIt should follow the x.y.z notation where x refers to changes in metadata and data following a publication (for instance, the creation of a new age model using a different code), y refers to changes to the data following a publication (for instance, adding data further back in time without changing the model underlying the interpretation), and z refers to changes not associated with a publication (for instance, typos)."@en .
+<http://linked.earth/ontology#datasetVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the version of the Dataset?\r\n\r\nIt should follow the x.y.z notation where x refers to changes in metadata and data following a publication (for instance, the creation of a new age model using a different code), y refers to changes to the data following a publication (for instance, adding data further back in time without changing the model underlying the interpretation), and z refers to changes not associated with a publication (for instance, typos)."@en .
 <http://linked.earth/ontology#datasetVersion> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to update a dataset if Data/Models are added and keep track of the various versions"@en .
 <http://linked.earth/ontology#datasetVersion> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
 <http://linked.earth/ontology#datasetVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -133,14 +133,14 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasUncertainty> <http://www.linkedmodel.org/schema/vaem#rationale> "Links to the Uncertainty class"@en .
 <http://linked.earth/ontology#hasUncertainty> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub> .
 <http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Uncertainty> .
-<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe9 .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe9 .
 <http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "funded by"@en .
 <http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What was the Funding source for the Dataset?"@en .
 <http://linked.earth/ontology#fundedBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Links a dataset to its source of funding"@en .
 <http://linked.earth/ontology#fundedBy> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
 <http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Funding> .
-<http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fec .
+<http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fec .
 <http://linked.earth/ontology#fundedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/funder> .
 <http://linked.earth/ontology#fundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#ProxySystemModel> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy system model"@en .
@@ -154,9 +154,10 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasUnits> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the units and the values of the Variable"@en .
 <http://linked.earth/ontology#hasUnits> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub> .
 <http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcf .
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fce .
 <http://linked.earth/ontology#hasUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#hasUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/people/dgarijo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://linked.earth/ontology#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en .
 <http://linked.earth/ontology#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "A mathematical construct that is at least partially isomorphic to the target system, and is used to derive information about the structure and/or dynamics of the target system"@en .
 <http://linked.earth/ontology#Model> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to describe models whose outputs are stored in the Dataset. One example of is Bchron for age modeling"@en .
@@ -170,14 +171,24 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#ProxyObservationModel> <http://www.linkedmodel.org/schema/vaem#rationale> "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community"@en .
 <http://linked.earth/ontology#ProxyObservationModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#ProxyObservationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/people/dgarijo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdc .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdf .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoData> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/2000/01/rdf-schema#label> "uncertainty level"@en .
-<http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What parameter of the error distribution is the Uncertainty value referring to?\n\nExamples include 1-sigma, 2-sigma, 95% confidence bounds" .
+<http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What parameter of the error distribution is the Uncertainty value referring to?\r\n\r\nExamples include 1-sigma, 2-sigma, 95% confidence bounds"@en .
 <http://linked.earth/ontology#uncertaintyLevel> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to properly make use of the reported Uncertainty values"@en .
 <http://linked.earth/ontology#uncertaintyLevel> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty> .
 <http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Uncertainty> .
 <http://linked.earth/ontology#uncertaintyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbb .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb9 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb8 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#programmedIn> <http://www.w3.org/2000/01/rdf-schema#label> "programmed in"@en .
 <http://linked.earth/ontology#programmedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which language was the software code written in?"@en .
 <http://linked.earth/ontology#programmedIn> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides the user with information about the software"@en .
@@ -186,18 +197,14 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#programmedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#SoftwareCode> .
 <http://linked.earth/ontology#programmedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontosoft.org/software#hasImplementationLanguage> .
 <http://linked.earth/ontology#programmedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdd .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe0 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoData> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbc .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PhysicalSample> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fea .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Compilation> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#inferredFrom> <http://www.w3.org/2000/01/rdf-schema#label> "inferred from"@en .
 <http://linked.earth/ontology#inferredFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: From which MeasuredVariable(s) is (are) the InferredVariable inferred from?"@en .
 <http://linked.earth/ontology#inferredFrom> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides a link between the Measured and Inferred Variables. For instance, SST is inferred from Mg/Ca measurements"@en .
@@ -205,11 +212,12 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#inferredFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#MeasuredVariable> .
 <http://linked.earth/ontology#inferredFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#InferredVariable> .
 <http://linked.earth/ontology#inferredFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe7 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Instrument> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#grantNumber> <http://www.w3.org/2000/01/rdf-schema#label> "grant number"@en .
 <http://linked.earth/ontology#grantNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the unique identifier associated with the Funding for the Dataset?"@en .
 <http://linked.earth/ontology#grantNumber> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides information about the grant number"@en .
@@ -217,10 +225,11 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#grantNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#grantNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Funding> .
 <http://linked.earth/ontology#grantNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc6 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://ontosoft.org/software#hasImplementationLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ontosoft.org/software#> .
 <http://ontosoft.org/software#hasImplementationLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fec <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7feb .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#label> "has file name"@en .
 <http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the name of the csv file in which the Variable values are stored?"@en .
 <http://linked.earth/ontology#hasFileName> <http://www.linkedmodel.org/schema/vaem#rationale> "Links a DataTable with its appropriate csv file"@en .
@@ -229,31 +238,23 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DataTable> .
 <http://linked.earth/ontology#hasFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#hasFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe8 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#MeasuredVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Measured variable"@en .
 <http://linked.earth/ontology#MeasuredVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variables that are measured by an Instrument. MeasuredVariables are ssn: Observations. They represent the values of a certain type of ProxyObservations"@en .
 <http://linked.earth/ontology#MeasuredVariable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of Variables. Allows to make the disctinction between raw measurements (e.g., tree ring width, oxygen isotopes, trace elements) and the variables being reconstructed (e.g., moisture, temperature)"@en .
 <http://linked.earth/ontology#MeasuredVariable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub> .
-<http://linked.earth/ontology#MeasuredVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb7 .
+<http://linked.earth/ontology#MeasuredVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb6 .
 <http://linked.earth/ontology#MeasuredVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc7 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#label> "summary table enerated by model"@en .
+<http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#label> "summary table generated by model"@en .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which SummaryTable can the statistics on the Model Output be found?"@en .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of foundinTable to link the Model to its outputs"@en .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1> .
-<http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd9 .
+<http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd8 .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#SummaryTable> .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://linked.earth/ontology#generatedByModel> .
 <http://linked.earth/ontology#summaryTableGeneratedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#measuredOn> <http://www.w3.org/2000/01/rdf-schema#label> "measured on"@en .
-<http://linked.earth/ontology#measuredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: On which ProxyArchive was the MeasuredVariable measured?"@en .
+<http://linked.earth/ontology#measuredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: On which PhysicalSample was the MeasuredVariable measured?"@en .
 <http://linked.earth/ontology#measuredOn> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the MeasuredVariable to the ProxyArchive. Refers to the specific archive (i.e. the specific coral head, lake sediment...) and a specific Variable since ProxyArchive provides a link to the ProxySensor. In some instances, two MeasuredVariables on the same PhysicalSample may have different ProxyArchive page. This would be the case for measurements on various species of foraminifera in a MarineSediment"@en .
 <http://linked.earth/ontology#measuredOn> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub> .
 <http://linked.earth/ontology#measuredOn> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund> .
@@ -261,27 +262,24 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#measuredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#MeasuredVariable> .
 <http://linked.earth/ontology#measuredOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://linked.earth/ontology#measuredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronProxySystem> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#includesData> <http://www.w3.org/2000/01/rdf-schema#label> "includes data"@en .
 <http://linked.earth/ontology#includesData> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which Data are included in the Dataset?"@en .
 <http://linked.earth/ontology#includesData> <http://www.linkedmodel.org/schema/vaem#rationale> "Links Dataset to Data"@en .
 <http://linked.earth/ontology#includesData> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Data> .
 <http://linked.earth/ontology#includesData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
 <http://linked.earth/ontology#includesData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd5 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd4 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff9 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff6 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronData> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.oclc.org/NET/ssnx/ssn#Observation> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.oclc.org/NET/ssnx/ssn#Observation> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#Data> <http://www.w3.org/2000/01/rdf-schema#label> "Data"@en .
 <http://linked.earth/ontology#Data> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggregation of DataTables and Models with their supporting paleoenvironmental and/or chronological information"@en .
 <http://linked.earth/ontology#Data> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to describe the paleoenvironmental and/or chronological data comprising the dataset as opposed to the Publication, Funding and Location information"@en .
@@ -290,7 +288,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the ChronModel for the ChronData or ProxySystem under consideration?"@en .
 <http://linked.earth/ontology#chronModeledBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of modeledBy. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
 <http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ChronModel> .
-<http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff8 .
+<http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff8 .
 <http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://linked.earth/ontology#modeledBy> .
 <http://linked.earth/ontology#chronModeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#Uncertainty> <http://www.w3.org/2000/01/rdf-schema#label> "Uncertainty"@en .
@@ -302,17 +300,20 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#Uncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/2000/01/rdf-schema#label> "model references"@en .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which Publication is the model described/applied?"@en .
-<http://linked.earth/ontology#modelReferences> <http://www.linkedmodel.org/schema/vaem#rationale> "Links a Model to its Publication. \nNote: calibrationReferences and modelReferences in the Calibration may not need to be the same. For instance, the calibration data and one mathematical formulation can be provided in one Publication (answering the calibrationReferences) but a different mathematical Model may be applied in another Publication (answering the modelReferences)"@en .
+<http://linked.earth/ontology#modelReferences> <http://www.linkedmodel.org/schema/vaem#rationale> "Links a Model to its Publication. \r\nNote: calibrationReferences and modelReferences in the Calibration may not need to be the same. For instance, the calibration data and one mathematical formulation can be provided in one Publication (answering the calibrationReferences) but a different mathematical Model may be applied in another Publication (answering the modelReferences)"@en .
 <http://linked.earth/ontology#modelReferences> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration> .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/references> .
 <http://linked.earth/ontology#modelReferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe3 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Data> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc3 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe2 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Data> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PhysicalSample> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc2 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc1 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#DataTable> <http://www.w3.org/2000/01/rdf-schema#label> "Data table"@en .
 <http://linked.earth/ontology#DataTable> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of Variables organized in columns"@en .
 <http://linked.earth/ontology#DataTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Connects to the csv file where the data values are stored"@en .
@@ -331,12 +332,24 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#foundInTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which DataTable can the information/data be found?"@en .
 <http://linked.earth/ontology#foundInTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to link the data to the csv table and the models to its output"@en .
 <http://linked.earth/ontology#foundInTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#DataTable> .
-<http://linked.earth/ontology#foundInTable> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fef .
+<http://linked.earth/ontology#foundInTable> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fef .
 <http://linked.earth/ontology#foundInTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fed .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Data> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff0 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcc .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcf .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#label> "has median value"@en .
 <http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the median value of the Variable?"@en .
-<http://linked.earth/ontology#hasMedianValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
-<http://linked.earth/ontology#hasMedianValue> <http://purl.org/vocab/vann/example> "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES"@en .
+<http://linked.earth/ontology#hasMedianValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
+<http://linked.earth/ontology#hasMedianValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES> .
 <http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -346,18 +359,8 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#ChronModel> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.ChronData1.Model1> .
 <http://linked.earth/ontology#ChronModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#ChronModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fef <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fee .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff1 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fce <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcd .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fce <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd0 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#UncertaintyModel> <http://www.w3.org/2000/01/rdf-schema#label> "Uncertainty model"@en .
 <http://linked.earth/ontology#UncertaintyModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A Model quantifiying the Uncertainty"@en .
 <http://linked.earth/ontology#UncertaintyModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows description of how uncertainty was calculated"@en .
@@ -381,13 +384,16 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://ontosoft.org/software#Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ontosoft.org/software#> .
 <http://ontosoft.org/software#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://earth.usc.edu/~khider/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://linked.earth/ontology#standard> <http://www.w3.org/2000/01/rdf-schema#label> "standard"@en .
 <http://linked.earth/ontology#standard> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Reference material against which the MeasuredVariable is reported?"@en .
 <http://linked.earth/ontology#standard> <http://www.linkedmodel.org/schema/vaem#rationale> "Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))"@en .
-<http://linked.earth/ontology#standard> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v> .
+<http://linked.earth/ontology#standard> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v> .
 <http://linked.earth/ontology#standard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#standard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#MeasuredVariable> .
 <http://linked.earth/ontology#standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffb .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#label> "has resolution"@en .
 <http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the Resolution of the Variable?" .
 <http://linked.earth/ontology#hasResolution> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to link a Variable to Resolution"@en .
@@ -395,25 +401,27 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Resolution> .
 <http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#hasResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://earth.usc.edu/~khider/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Publication> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdb <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fda .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd8 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd7 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySensor> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
 <http://linked.earth/ontology#title> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the title of the Publication?"@en .
 <http://linked.earth/ontology#title> <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en .
-<http://linked.earth/ontology#title> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/Publication.10.1029/98PA00070> .
+<http://linked.earth/ontology#title> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1029/98PA00070> .
 <http://linked.earth/ontology#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
 <http://linked.earth/ontology#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdc <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdb .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd9 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd8 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySensor> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#Instrument> <http://www.w3.org/2000/01/rdf-schema#label> "Instrument"@en .
 <http://linked.earth/ontology#Instrument> <http://www.w3.org/2000/01/rdf-schema#comment> "A tool  used to produce MeasuredVariables"@en .
 <http://linked.earth/ontology#Instrument> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to categorize types of instruments used for taking the different measurements. See Instrument Ontology for concept description."@en .
@@ -421,7 +429,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#Instrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasVariableID> <http://www.w3.org/2000/01/rdf-schema#label> "has variable ID"@en .
 <http://linked.earth/ontology#hasVariableID> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the unique identifier for the Variable?"@en .
-<http://linked.earth/ontology#hasVariableID> <http://www.linkedmodel.org/schema/vaem#rationale> "LiPD assigns a unique identifier (TSid) to each table column described in a LiPD file.\n\nAllows to assign a unique identifier to each series, facilitating data citation and recognition\n\nThis allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. It\u2019s fundamental to working with LiPD data."@en .
+<http://linked.earth/ontology#hasVariableID> <http://www.linkedmodel.org/schema/vaem#rationale> "LiPD assigns a unique identifier (TSid) to each table column described in a LiPD file.\r\n\r\nAllows to assign a unique identifier to each series, facilitating data citation and recognition\r\n\r\nThis allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. It\u2019s fundamental to working with LiPD data."@en .
 <http://linked.earth/ontology#hasVariableID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#hasVariableID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#hasVariableID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
@@ -441,12 +449,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#equation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#equation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#equation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#label> "proxy archive model"@en .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which ProxyArchiveModel is used in the ProxySystemModel?"@en .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Links ProxySystemModel to ProxyArchiveModel"@en .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxyArchiveModel> .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySystemModel> .
-<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#proxySensorType> <http://www.w3.org/2000/01/rdf-schema#label> "proxy sensor type"@en .
 <http://linked.earth/ontology#proxySensorType> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which ProxySensor underlies this ProxySystem?"@en .
 <http://linked.earth/ontology#proxySensorType> <http://www.linkedmodel.org/schema/vaem#rationale> "Links ProxySensor to ProxyArchive"@en .
@@ -454,12 +456,23 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#proxySensorType> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxySensor> .
 <http://linked.earth/ontology#proxySensorType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySystem> .
 <http://linked.earth/ontology#proxySensorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#label> "proxy archive model"@en .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which ProxyArchiveModel is used in the ProxySystemModel?"@en .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Links ProxySystemModel to ProxyArchiveModel"@en .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxyArchiveModel> .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySystemModel> .
+<http://linked.earth/ontology#proxyArchiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Organic proxy sensor"@en .
 <http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Biologically-mediated ProxySensor. Examples include: foraminifera, trees, mollusks, polyps"@en .
 <http://linked.earth/ontology#OrganicProxySensor> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of ProxySensor. Makes the distinction between organic and inorganic. See the ProxySensor ontology for concepts"@en .
 <http://linked.earth/ontology#OrganicProxySensor> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Globigerinoides_ruber> .
 <http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySensor> .
 <http://linked.earth/ontology#OrganicProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc5 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc4 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#pages> <http://www.w3.org/2000/01/rdf-schema#label> "pages"@en .
 <http://linked.earth/ontology#pages> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In what pages of the Publication can the reference to the resource be found?"@en .
 <http://linked.earth/ontology#pages> <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en .
@@ -468,9 +481,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#pages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#pages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#pages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#generatedByModel> <http://www.w3.org/2000/01/rdf-schema#label> "generated by model"@en .
 <http://linked.earth/ontology#generatedByModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: which model was used to generated this data table?"@en .
 <http://linked.earth/ontology#generatedByModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to link the model to the data tables it generates"@en .
@@ -478,24 +488,25 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#generatedByModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DataTable> .
 <http://linked.earth/ontology#generatedByModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
 <http://linked.earth/ontology#generatedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe6 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://linked.earth/ontology#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+<http://linked.earth/ontology#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: how would you classify the Interpretation? Examples include Isotope, Climate\u2026"@en .
+<http://linked.earth/ontology#scope> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to separate the various types of interpretation"@en .
+<http://linked.earth/ontology#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "has execution environment"@en .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which environment is the script meant to be run in?"@en .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides information about the operating system version in which the software code was exceuted?"@en .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#SoftwareCode> .
 <http://linked.earth/ontology#hasExecutionEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc6 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc5 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#label> "distribution table generated by Model"@en .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which DistributionTable is the Model output found?"@en .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.linkedmodel.org/schema/vaem#rationale> "\"Subproperty of foundinTable to Link the Model to its outputs\""@en .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1> .
-<http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff5 .
+<http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#range> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff5 .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DistributionTable> .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#distributionTableGeneratedByModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://linked.earth/ontology#generatedByModel> .
@@ -535,7 +546,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#notes> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to add notes to specific cells in the DataTable"@en .
 <http://linked.earth/ontology#notes> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/A7.Sun.2005.chron1measurement1> .
 <http://linked.earth/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbf .
+<http://linked.earth/ontology#notes> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbe .
 <http://linked.earth/ontology#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#proxySensorModel> <http://www.w3.org/2000/01/rdf-schema#label> "proxy sensor model"@en .
 <http://linked.earth/ontology#proxySensorModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which ProxySensorModel is used in the ProxySystemModel?"@en .
@@ -543,33 +554,34 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#proxySensorModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxySensorModel> .
 <http://linked.earth/ontology#proxySensorModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySystemModel> .
 <http://linked.earth/ontology#proxySensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff3 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd2 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Publication> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Geometry> .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff4 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#method> <http://www.w3.org/2000/01/rdf-schema#label> "method"@en .
 <http://linked.earth/ontology#method> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: How is the information obtained from the resource?"@en .
 <http://linked.earth/ontology#method> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to describe methods."@en .
 <http://linked.earth/ontology#method> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/A7.Sun.2005.paleo1measurement1.d18og> .
 <http://linked.earth/ontology#method> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#method> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc3 .
+<http://linked.earth/ontology#method> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc2 .
 <http://linked.earth/ontology#method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd3 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Publication> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "paleo modeled by"@en .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the PaleoModel for the PaleoData or ProxySytem under consideration?"@en .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of modeledBy, pertaining to paleoenvironmental information"@en .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#PaleoModel> .
-<http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe2 .
+<http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe1 .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://linked.earth/ontology#modeledBy> .
 <http://linked.earth/ontology#paleoModeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#sensorGenus> <http://www.w3.org/2000/01/rdf-schema#label> "sensor genus"@en .
 <http://linked.earth/ontology#sensorGenus> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the Genus of the Organic ProxySensor?" .
 <http://linked.earth/ontology#sensorGenus> <http://www.linkedmodel.org/schema/vaem#rationale> "Scientific Name of the organic ProxySensor"@en .
-<http://linked.earth/ontology#sensorGenus> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/Globigerinoides_ruber> .
+<http://linked.earth/ontology#sensorGenus> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Globigerinoides_ruber> .
 <http://linked.earth/ontology#sensorGenus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#sensorGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#OrganicProxySensor> .
 <http://linked.earth/ontology#sensorGenus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -595,7 +607,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasMissingValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub> .
 <http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://linked.earth/ontology#hasValue> .
 <http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 .
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd1 .
 <http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
@@ -619,6 +631,16 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#EnsembleTable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/ODP1098B12.Chron1.Model1.EnsembleTable> .
 <http://linked.earth/ontology#EnsembleTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#DataTable> .
 <http://linked.earth/ontology#EnsembleTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbc .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#DataTable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fde <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdd .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe1 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe0 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbf .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#datasetCitation> <http://www.w3.org/2000/01/rdf-schema#label> "dataset citation"@en .
 <http://linked.earth/ontology#datasetCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Sentence indicating how a dataset should be cited"@en .
 <http://linked.earth/ontology#datasetCitation> <http://www.linkedmodel.org/schema/vaem#rationale> "The need for providing appropriate credit to the datasets"@en .
@@ -636,8 +658,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdf <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fde .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#datasetDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://linked.earth/ontology#datasetDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/dateCreated> .
 <http://linked.earth/ontology#datasetDate> <http://purl.org/vocab/vann/example> "http://wiki.linked.earth/MD982181.Khider.2014"@en .
@@ -648,14 +668,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#datasetDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#datasetDate> <http://www.linkedmodel.org/schema/vaem#rationale> "Separate dataset date from the publication year. An example is LR04 (datsetdate in 2004) but published in 2005"@en .
 <http://linked.earth/ontology#datasetDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: At what date was the Dataset created?"@en .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe1 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbd .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#DataTable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc0 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable"@en .
 <http://linked.earth/ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantities that may change from value to value. They are usually represented as column of values in a data table"@en .
 <http://linked.earth/ontology#Variable> <http://www.linkedmodel.org/schema/vaem#rationale> "Basic definition of the values in the columns of the csv file"@en .
@@ -697,8 +709,12 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#housedAt> <http://www.linkedmodel.org/schema/vaem#rationale> "Link to a particular laboratory. Provides circumstantial information about the measurement technique and how it was applied. Allows to give some information about the actual location of the sample"@en .
 <http://linked.earth/ontology#housedAt> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub> .
 <http://linked.earth/ontology#housedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#housedAt> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc6 .
+<http://linked.earth/ontology#housedAt> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc5 .
 <http://linked.earth/ontology#housedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fec <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7feb .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe9 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe8 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#label> "has IGSN"@en .
 <http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#comment> "IGSN identifier associated to a physical sample"@en .
 <http://linked.earth/ontology#hasIGSN> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to properly described physical samples"@en .
@@ -706,25 +722,19 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#PhysicalSample> .
 <http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://linked.earth/ontology#hasIGSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fca .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc7 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.linkedmodel.org/schema/vaem#rationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcb .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Uncertainty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#SoftwareCode> <http://www.w3.org/2000/01/rdf-schema#label> "Software code"@en .
 <http://linked.earth/ontology#SoftwareCode> <http://www.w3.org/2000/01/rdf-schema#comment> "A script that describes the model, in any programming language (e.g., Excel, Matlab, Python, R)"@en .
 <http://linked.earth/ontology#SoftwareCode> <http://www.linkedmodel.org/schema/vaem#rationale> "Added to allow for a link towards the code if on a public repository like GitHub"@en .
 <http://linked.earth/ontology#SoftwareCode> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Pyleoclim> .
 <http://linked.earth/ontology#SoftwareCode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontosoft.org/software#Software> .
 <http://linked.earth/ontology#SoftwareCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc8 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#PhysicalSample> <http://www.w3.org/2000/01/rdf-schema#label> "Physical sample"@en .
 <http://linked.earth/ontology#PhysicalSample> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual sample on which the measurements are made. For instance, the lake core analyzed in the lab is the physical sample."@en .
 <http://linked.earth/ontology#PhysicalSample> <http://www.linkedmodel.org/schema/vaem#rationale> "Used to differentiate between the concept of a ProxyArchive and its physical (real) manifestation"@en .
@@ -734,12 +744,12 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#reportedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which EnsembleTable, DistributionTable, and/or SummaryTable is the Uncertainty reported?"@en .
 <http://linked.earth/ontology#reportedIn> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the uncertainty to the model output"@en .
 <http://linked.earth/ontology#reportedIn> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.Uncertainty> .
-<http://linked.earth/ontology#reportedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdc .
+<http://linked.earth/ontology#reportedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdb .
 <http://linked.earth/ontology#reportedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Uncertainty> .
 <http://linked.earth/ontology#reportedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#ProxySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy system"@en .
 <http://linked.earth/ontology#ProxySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
-<http://linked.earth/ontology#ProxySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Climate monitoring prior to the instrumental era are necessarily indirect. \r\nThis indirect assessment is made on proxies. According to Evans et al. (2013), a proxy system is comprised of three components:\r\n- A ProxySensor\r\n- A ProxyArchive\r\n- A ProxyObservation"@en .
+<http://linked.earth/ontology#ProxySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "<p>Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate <b>proxies</b> in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of data can often be collected from each archives, each <b>sensing</b> a different aspect of the environment (sometimes, several aspects at once).  A paleoclimate dataset is almost always a <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Time_series\">time series</a> of observations made on an archive.</p>\n<p>\nEvans et al. (2013) <sup id=\"cite_ref-evans2013_1-0\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> define a proxy system as comprised of three components (Fig 1).:\n</p>\n<ul><li> The <a href=\"#ProxySensor\" title=\"Category:ProxySensor\"> sensor</a> comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a>, and may have complex responses to the environment they sense, including thresholds  (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or  nonlinear responses. For instance, <a href=\"#Foraminifera\" title=\"Category:Foraminifera\"> foraminifera</a> are an often used sensor for oceanic conditions. Multiple observations can be made on this sensor, recording different environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variables</a>. Similarly, picking foraminifera of a given species to conduct the measurements is part of the observation process, though it does affect the sensor definition&nbsp;: the habitat of these forams determines with environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a> (e.g. surface, sub-surface, or thermocline temperature) they are most sensitive to.  </li></ul>\n<ul><li> The <a href=\"#ProxyArchive\" title=\"Category:ProxyArchive \u00A9\"> archive</a> is the medium in which the response of a sensor to environmental forcing is recorded.  Marine sediments are a type of archive, on which many sensors and observations may be recorded (e.g. Foraminifera Mg/Ca, \u03B4<sup>18</sup>O, TEX86)</li></ul>\n<ul><li> <a href=\"#ProxyObservation\" title=\"Category:ProxyObservation\"> Observations</a> are made on archives and are  generally referred to as \"proxies\". The term \"proxy\" used ubiquitously, and often ambiguously, throughout the paleoclimate literature, is most commonly equivalent to \"sensor + observation\". \"Observation\" is the more explicit, and thus, preferred term, however \"proxy\" can be treated as a synonym of \"observation\". For instance, Foraminifera Mg/Ca is often used to investigate past changes in sea-surface temperature but depends also on sea-surface salinity and deep-ocean carbonate saturation <sup id=\"cite_ref-2\" class=\"reference\"><a href=\"#cite_note-2\">[2]</a></sup>.  Furthermore, its temperature and salinity dependence is exponential <sup id=\"cite_ref-3\" class=\"reference\"><a href=\"#cite_note-3\">[3]</a></sup> <sup id=\"cite_ref-4\" class=\"reference\"><a href=\"#cite_note-4\">[4]</a></sup> <sup id=\"cite_ref-5\" class=\"reference\"><a href=\"#cite_note-5\">[5]</a></sup> while its response to carbonate saturation is thresholded <sup id=\"cite_ref-6\" class=\"reference\"><a href=\"#cite_note-6\">[6]</a></sup>.  </li></ul>\n\n<p>These three major components may be individually modeled, and linked together within a <a href=\"/Category:ProxySystemModel_%C2%A9\" title=\"Category:ProxySystemModel \u00A9\">Proxy System Model</a> <sup id=\"cite_ref-evans2013_1-2\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> <sup id=\"cite_ref-7\" class=\"reference\"><a href=\"#cite_note-7\">[7]</a></sup>. Some sensors are common to multiple archives (e.g. \u03B4<sup>18</sup>O), and all archives support more than one possible sensor. \n</p>\n\n<h2><span class=\"mw-headline\" id=\"References\">References</span></h2>\n\n<ol class=\"references\">\n<li id=\"cite_note-evans2013-1\"><span class=\"mw-cite-backlink\">\u2191 <sup><a href=\"#cite_ref-evans2013_1-0\"><span class=\"cite-accessibility-label\">Jump up to: </span>1.0</a></sup> <sup><a href=\"#cite_ref-evans2013_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-evans2013_1-2\">1.2</a></sup></span> <span class=\"reference-text\"> Evans, M. N., Tolwinski-Ward, S. E., Thompson, D. M., &amp; Anchukaitis, K. J. (2013). Applications of proxy system modeling in high resolution paleoclimatology. Quaternary Science Reviews, 76, 16-28. doi:10.1016/j.quascirev.2013.05.024 </span>\n</li>\n<li id=\"cite_note-2\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-2\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Khider, D., Huerta, G., Jackson, C., Stott, L. D., &amp; Emile-Geay, J. (2015). A Bayesian, multivariate calibration for Globigerinoides ruber Mg/Ca. Geochemistry Geophysics Geosystems, 16(9), 2916-2932. doi:10.1002/2015GC005844 </span>\n</li>\n<li id=\"cite_note-3\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-3\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Anand, P., Elderfield, H., &amp; Conte, M. H. (2003). Calibration of Mg/Ca thermometry in planktonic foraminifera from a sediment trap time series. Paleoceanography, 18(2), 1050. doi:10.1029/2002PA000846 </span>\n</li>\n<li id=\"cite_note-4\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-4\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Lea, D. W., Mashiotta, T. A., &amp; Spero, H. J. (1999). Controls on magnesium and strontium uptake in planktonic foraminifera determined by live culturing. Geochimica et cosmochimica acta, 63(16), 2369-2379. </span>\n</li>\n<li id=\"cite_note-5\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-5\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Kisak\u00FCrek, B., Eisenhauer, A., B\u00F6hm, F., Garbe-Sch\u00F6nberg, D., &amp; Erez, J. (2008). Controls on shell Mg/Ca and Sr/Ca in cultured planktonic foraminiferan, Globigeriniodes ruber (white). Earth and Planetary Science Letters, 273, 260-269. doi:10.1016/j.epsl.2008.06.026 </span>\n</li>\n<li id=\"cite_note-6\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-6\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Regenberg, M., Regenberg, A., Garbe-Schonberg, D., &amp; Lea, D. W. (2014). Global dissolution effects on planktonic foraminiferal Mg/Ca ratios controlled by the calcite-saturation state of bottom waters. Paleoceanography, 29, 127-142. doi:10.1002/2013PA002492 </span>\n</li>\n<li id=\"cite_note-7\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-7\"><span class=\"cite-accessibility-label\">Jump up </span>\u2191</a></span> <span class=\"reference-text\"> Dee, S., Emile-Geay, J., Evans, M. N., Allam, A., Steig, E. J., &amp; Thompson, D. M. (2015). PRYSM: An open-source framework  for PRoxy System Modeling, with applications to oxygen-isotope systems. Journal of Advances in Modeling Earth Systems, 7, 1220-1247. doi:10.1002/2015MS000447</span>\n</li>\n</ol>"@en .
 <http://linked.earth/ontology#ProxySystem> <http://www.linkedmodel.org/schema/vaem#rationale> "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"proxy\" in the paleoclimate community"@en .
 <http://linked.earth/ontology#ProxySystem> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca> .
 <http://linked.earth/ontology#ProxySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -749,48 +759,46 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2002/07/owl#disjointWith> <http://linked.earth/ontology#OrganicProxySensor> .
 <http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySensor> .
 <http://linked.earth/ontology#InorganicProxySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#label> "has integration time"@en .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the integration time needed for a ProxySensor to imprint environmental information on the ProxyArchive? Both are included as part of a ProxySystem"@en .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.linkedmodel.org/schema/vaem#rationale> "Property added to link the proxySystem to the IntegrationTime class"@en .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#IntegrationTime> .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySensor> .
-<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#PaleoModel> <http://www.w3.org/2000/01/rdf-schema#label> "Paleo model"@en .
 <http://linked.earth/ontology#PaleoModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Model used to derive an environmental axis from the PaleoDataModel"@en .
 <http://linked.earth/ontology#PaleoModel> <http://www.linkedmodel.org/schema/vaem#rationale> "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
 <http://linked.earth/ontology#PaleoModel> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1> .
 <http://linked.earth/ontology#PaleoModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#PaleoModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#label> "has integration time"@en .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the integration time needed for a ProxySensor to imprint environmental information on the ProxyArchive? Both are included as part of a ProxySystem"@en .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.linkedmodel.org/schema/vaem#rationale> "Property added to link the proxySystem to the IntegrationTime class"@en .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#IntegrationTime> .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySensor> .
+<http://linked.earth/ontology#hasIntegrationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff9 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy observation"@en .
 <http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 <http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of MeasuredVariables measured on the ProxyArchive, whether chemical (e.g. Mg/Ca, D18O, Sr/Ca), physical (e.g. density, layer thickness), or biological (e.g. Species abundance)"@en .
-<http://linked.earth/ontology#ProxyObservation> <http://www.linkedmodel.org/schema/vaem#rationale> "See ProxyObservation ontology for details about the concept. \n\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community"@en .
+<http://linked.earth/ontology#ProxyObservation> <http://www.linkedmodel.org/schema/vaem#rationale> "See ProxyObservation ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community"@en .
 <http://linked.earth/ontology#ProxyObservation> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/D18O> .
 <http://linked.earth/ontology#ProxyObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffa .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Compilation> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff7 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fda <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb5 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff6 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronData> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb4 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#label> "has mean value"@en .
 <http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the mean value of the Variable?"@en .
-<http://linked.earth/ontology#hasMeanValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+<http://linked.earth/ontology#hasMeanValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 <http://linked.earth/ontology#hasMeanValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> .
 <http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#label> "has max value"@en .
 <http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the maximum value of the Variable?"@en .
-<http://linked.earth/ontology#hasMaxValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+<http://linked.earth/ontology#hasMaxValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 <http://linked.earth/ontology#hasMaxValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> .
 <http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
@@ -846,6 +854,9 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#isLocal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
 <http://linked.earth/ontology#isLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#isLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe3 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Compilation> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://schema.org/contentLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/contentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#interpretedAs> <http://www.w3.org/2000/01/rdf-schema#label> "interpreted as"@en .
@@ -855,11 +866,9 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd7 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#interpretedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Interpretation> .
 <http://linked.earth/ontology#interpretedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#interpretedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe5 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe4 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PhysicalSample> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PhysicalSample> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#compilationVersion> <http://www.w3.org/2000/01/rdf-schema#label> "compilation version"@en .
 <http://linked.earth/ontology#compilationVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the version of the Compilation?"@en .
 <http://linked.earth/ontology#compilationVersion> <http://www.linkedmodel.org/schema/vaem#rationale> "Needed to state the version associated to a compilation, which may not be the same as the datasets it contains"@en .
@@ -885,11 +894,15 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#ProxyArchiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#label> "calibrated via"@en .
 <http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What calibration process was used to relate the InferredVariable to the MeasuredVariable?"@en .
-<http://linked.earth/ontology#calibratedVia> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets. If both raw and calibrated data are present, calibratedWith and calibratedFrom should link to the same Calibration instance"@en .
+<http://linked.earth/ontology#calibratedVia> <http://www.linkedmodel.org/schema/vaem#rationale> "Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets."@en .
 <http://linked.earth/ontology#calibratedVia> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> .
 <http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#CalibrationModel> .
 <http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#InferredVariable> .
 <http://linked.earth/ontology#calibratedVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fef <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fee .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff2 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff1 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#journal> <http://www.w3.org/2000/01/rdf-schema#label> "journal"@en .
 <http://linked.earth/ontology#journal> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the name of the journal in which the resource can be found?"@en .
 <http://linked.earth/ontology#journal> <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en .
@@ -897,6 +910,10 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#journal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#journal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fce <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcd .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd1 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd0 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
 <http://linked.earth/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "A document that serves as reference for a Dataset or its components"@en .
 <http://linked.earth/ontology#Publication> <http://www.linkedmodel.org/schema/vaem#rationale> "Can be used to credit the contributor of the dataset as well as linking toward the conclusions of the study and relevant methods"@en .
@@ -909,13 +926,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc4 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#inferredVariableType> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#InferredVariable> .
 <http://linked.earth/ontology#inferredVariableType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#InferredVariable> .
 <http://linked.earth/ontology#inferredVariableType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcf <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fce .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd1 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#foundInMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#label> "found in measurement table"@en .
 <http://linked.earth/ontology#foundInMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which MeasurementTable are the Variables found?"@en .
 <http://linked.earth/ontology#foundInMeasurementTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of foundinTable to link the Data to the Variables"@en .
@@ -926,7 +936,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#foundInMeasurementTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#PaleoProxySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Paleo proxy system"@en .
 <http://linked.earth/ontology#PaleoProxySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate proxies in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of measurements can be made on each archives, each sensing a different aspect of the environment (sometimes, several aspects at once). A paleoclimate dataset is a set of observations made on an archive."@en .
-<http://linked.earth/ontology#PaleoProxySystem> <http://www.linkedmodel.org/schema/vaem#rationale> "Gives a formal definition of climate proxy following the Evans et al. (2013) framework.\nSubclass of ProxySystem, pertaining to climate information"@en .
+<http://linked.earth/ontology#PaleoProxySystem> <http://www.linkedmodel.org/schema/vaem#rationale> "Gives a formal definition of climate proxy following the Evans et al. (2013) framework.\r\nSubclass of ProxySystem, pertaining to climate information"@en .
 <http://linked.earth/ontology#PaleoProxySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySystem> .
 <http://linked.earth/ontology#PaleoProxySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
@@ -938,13 +948,25 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
 <http://linked.earth/ontology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#label> "proxy observation type"@en .
-<http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What type of ProxyObservation does the MeasuredVariable or Proxy System belong to?\nFor example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy observation of the current prpoxy system is Mg/Ca"@en .
+<http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What type of ProxyObservation does the MeasuredVariable or Proxy System belong to?\r\nFor example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy observation of the current prpoxy system is Mg/Ca"@en .
 <http://linked.earth/ontology#proxyObservationType> <http://www.linkedmodel.org/schema/vaem#rationale> "The need to link a measured variable or a proxy system to the proxy observation type being measured."@en .
 <http://linked.earth/ontology#proxyObservationType> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca> .
 <http://linked.earth/ontology#proxyObservationType> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub> .
 <http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxyObservation> .
-<http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdf .
+<http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fde .
 <http://linked.earth/ontology#proxyObservationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb7 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Interpretation> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fba .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#includesVariable> <http://www.w3.org/2000/01/rdf-schema#label> "includes variable"@en .
 <http://linked.earth/ontology#includesVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which Variables are included in the DataTable?"@en .
 <http://linked.earth/ontology#includesVariable> <http://www.linkedmodel.org/schema/vaem#rationale> "Links DataTable to Variable"@en .
@@ -954,7 +976,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#includesVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#interpretationDirection> <http://www.w3.org/2000/01/rdf-schema#label> "interpretation direction"@en .
 <http://linked.earth/ontology#interpretationDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Is the InferredVariable value increasing or decreasing as the value of the MeasuredVariable is increasing?"@en .
-<http://linked.earth/ontology#interpretationDirection> <http://www.linkedmodel.org/schema/vaem#rationale> "Answer is only positive or negative. Useful metadata when the calibration equation is not readily available.\nAlso applies to InferredVariable to faciliate the search in database"@en .
+<http://linked.earth/ontology#interpretationDirection> <http://www.linkedmodel.org/schema/vaem#rationale> "Answer is only positive or negative. Useful metadata when the calibration equation is not readily available.\r\nAlso applies to InferredVariable to faciliate the search in database"@en .
 <http://linked.earth/ontology#interpretationDirection> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1> .
 <http://linked.earth/ontology#interpretationDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#interpretationDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
@@ -965,24 +987,12 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasDOI> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to link to a resource using a digital object identifier"@en .
 <http://linked.earth/ontology#hasDOI> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> .
 <http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd6 .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd5 .
 <http://linked.earth/ontology#hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://linked.earth/ontology#hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbb .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://schema.org/funder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/funder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb8 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Interpretation> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#ChronDataTable> <http://www.w3.org/2000/01/rdf-schema#label> "Chron data table"@en .
 <http://linked.earth/ontology#ChronDataTable> <http://www.w3.org/2000/01/rdf-schema#comment> "DataTable containing Variables pertaining to chronological information"@en .
 <http://linked.earth/ontology#ChronDataTable> <http://www.linkedmodel.org/schema/vaem#rationale> "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
@@ -992,8 +1002,14 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#ChronDataTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/author> .
 <http://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe6 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Model> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#label> "contributor"@en .
-<http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a LinkedMember may contribute a previously-published dataset that he/she may not have authored"@en .
+<http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored"@en .
 <http://linked.earth/ontology#contributor> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows distinction between contributor to a resource and the author"@en .
 <http://linked.earth/ontology#contributor> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
 <http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
@@ -1001,25 +1017,20 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fb9 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/contributor> .
 <http://linked.earth/ontology#contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
 <http://linked.earth/ontology#contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
 <http://linked.earth/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured collection of related information, including -but not limited to -measured and/or modelled geograhical, chronological, and environmental data"@en .
 <http://linked.earth/ontology#Dataset> <http://www.linkedmodel.org/schema/vaem#rationale> "Fundamental unit at which we think about paleoclimate data. Also tends to correspond to the scope of the study"@en .
 <http://linked.earth/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Dataset> .
 <http://linked.earth/ontology#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fea .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Compilation> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#book> <http://www.w3.org/2000/01/rdf-schema#label> "book"@en .
 <http://linked.earth/ontology#book> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: In which book was the resource published?"@en .
 <http://linked.earth/ontology#book> <http://www.linkedmodel.org/schema/vaem#rationale> "Separate between journal and book publication"@en .
 <http://linked.earth/ontology#book> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#book> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe7 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Instrument> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fca <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc9 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasISSN> <http://www.w3.org/2000/01/rdf-schema#label> "has ISSN"@en .
 <http://linked.earth/ontology#hasISSN> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the International Standard Serial Number of the Publication?"@en .
 <http://linked.earth/ontology#hasISSN> <http://www.linkedmodel.org/schema/vaem#rationale> "8-digit code used to identify publications"@en .
@@ -1027,20 +1038,17 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fca <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#hasISSN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#hasISSN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
 <http://linked.earth/ontology#hasISSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
 <http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Who wrote (i.e., created) the resource, such as a Publication?"@en .
 <http://linked.earth/ontology#author> <http://www.linkedmodel.org/schema/vaem#rationale> "Give credit to the original author of the resource"@en .
 <http://linked.earth/ontology#author> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> .
 <http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
-<http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ffc .
+<http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ffc .
 <http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/author> .
 <http://linked.earth/ontology#author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/creator> .
 <http://linked.earth/ontology#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#label> "has rank"@en .
-<http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the importance of the ClimateInterpretation or IsotopeInterpretation?" .
+<http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the importance of the Interpretation?"@en .
 <http://linked.earth/ontology#hasRank> <http://www.linkedmodel.org/schema/vaem#rationale> "Allows to rank the environmental variable controlling the interpretation. For instance, the d18O of coral aragonite responds to both temperature and the d18O of seawater (closely linked to salinity). Depending on the locale and/or timescale, one variable may dominate over the other."@en .
 <http://linked.earth/ontology#hasRank> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1> .
 <http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
@@ -1060,9 +1068,11 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc7 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#InferredVariable> <http://www.w3.org/2002/07/owl#disjointWith> <http://linked.earth/ontology#MeasuredVariable> .
 <http://linked.earth/ontology#InferredVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#InferredVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff4 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd3 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#label> "part of compilation"@en .
 <http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#comment> "Answer the question: Which compilation does a dataset belong to?"@en .
 <http://linked.earth/ontology#partOfCompilation> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the dataset to the compilation"@en .
@@ -1071,15 +1081,12 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/includedInDataCatalog> .
 <http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/isPartOf> .
 <http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd4 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Dataset> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
 <http://linked.earth/ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What are the numerical values of the Variable, Uncertainty, and Model outputs?"@en .
 <http://linked.earth/ontology#hasValue> <http://www.linkedmodel.org/schema/vaem#rationale> "Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE"@en .
-<http://linked.earth/ontology#hasValue> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty> .
+<http://linked.earth/ontology#hasValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty> .
 <http://linked.earth/ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fca .
+<http://linked.earth/ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc9 .
 <http://linked.earth/ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#NonPeerReviewedPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Non peer reviewed publication"@en .
 <http://linked.earth/ontology#NonPeerReviewedPublication> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication that has not undergone a formal review process; for instance, a Dataset attached to a dissertation."@en .
@@ -1088,10 +1095,10 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#NonPeerReviewedPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#NonPeerReviewedPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "modeled by"@en .
-<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the Model for the Data or ProxySystem under consideration?"@en .
-<http://linked.earth/ontology#modeledBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Links Data or ProxySystem to Model"@en .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the Model for the Data, Compilation or ProxySystem under consideration?"@en .
+<http://linked.earth/ontology#modeledBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Links Data, Compilation or ProxySystem to Model"@en .
 <http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Model> .
-<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe5 .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe5 .
 <http://linked.earth/ontology#modeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#fundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "funding agency"@en .
 <http://linked.earth/ontology#fundingAgency> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which entity was the Dataset fundedBy?"@en .
@@ -1115,6 +1122,14 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://schema.org/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://schema.org/dateCreated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbe <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbd .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/dc/terms/references> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://linked.earth/ontology#email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@en .
@@ -1130,6 +1145,9 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#proxyObservationModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ProxyObservationModel> .
 <http://linked.earth/ontology#proxyObservationModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ProxySystemModel> .
 <http://linked.earth/ontology#proxyObservationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc0 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql> .
@@ -1141,9 +1159,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd5 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <http://linked.earth/ontology#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/name> .
 <http://linked.earth/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ProxySystem> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#measuredBy> <http://www.w3.org/2000/01/rdf-schema#label> "measured by"@en .
 <http://linked.earth/ontology#measuredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: Which Instrument was used to produce the MeasuredVariable?"@en .
 <http://linked.earth/ontology#measuredBy> <http://www.linkedmodel.org/schema/vaem#rationale> "Links the MeasuredVariable to the Instrument responsible for its creation"@en .
@@ -1158,11 +1173,6 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fe3 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#ProxySensorModel> <http://www.linkedmodel.org/schema/vaem#rationale> "One component of the ProxySystemModel"@en .
 <http://linked.earth/ontology#ProxySensorModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#Model> .
 <http://linked.earth/ontology#ProxySensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbf <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbe .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc1 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#MeasuredVariable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#PeerReviewedPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Peer reviewed publication"@en .
 <http://linked.earth/ontology#PeerReviewedPublication> <http://www.w3.org/2000/01/rdf-schema#comment> "A Publication that has undergone a formal peer-review process"@en .
 <http://linked.earth/ontology#PeerReviewedPublication> <http://www.linkedmodel.org/schema/vaem#rationale> "Subclass of Publication.Allows to clearly mark datasets generated as part of a peer-reviewed publication."@en .
@@ -1185,7 +1195,7 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#seasonality> <http://www.linkedmodel.org/schema/vaem#rationale> "Seasonality is critical to properly related measuredVariable and innferredVariable, as the former only senses part of the range of the latter."@en .
 <http://linked.earth/ontology#seasonality> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Ocean2kHR_119.d18O.ClimateInterpretation> .
 <http://linked.earth/ontology#seasonality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://linked.earth/ontology#seasonality> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fba .
+<http://linked.earth/ontology#seasonality> <http://www.w3.org/2000/01/rdf-schema#domain> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fb9 .
 <http://linked.earth/ontology#seasonality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#ChronData> <http://www.w3.org/2000/01/rdf-schema#label> "Chron data"@en .
 <http://linked.earth/ontology#ChronData> <http://www.w3.org/2000/01/rdf-schema#comment> "The data, metadata, and Model that describe the set of Variables used to relate depth/position to time (chronological information)"@en .
@@ -1198,65 +1208,64 @@ _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fc2 <http://www.w3.org/1999/02/22-rdf-syn
 <http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
 <http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
-<http://linked.earth/ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/description> "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
 <http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.2.0"@en .
-<http://linked.earth/ontology#> <http://purl.org/dc/terms/description> "The Linked Earth LIPID Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Linked Earth LiPD Ontology"@en .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
 <http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/core/1.2.0> .
-<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Linked Earth LIPID Ontology"@en .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#PaleoModel> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#string> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcb .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Resolution> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fcc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "sensor species"@en .
-<http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the species of the Organic ProxySensor" .
+<http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the species of the Organic ProxySensor?"@en .
 <http://linked.earth/ontology#sensorSpecies> <http://www.linkedmodel.org/schema/vaem#rationale> "Scientific Name of the organic ProxySensor"@en .
-<http://linked.earth/ontology#sensorSpecies> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/Globigerinoides_ruber> .
+<http://linked.earth/ontology#sensorSpecies> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Globigerinoides_ruber> .
 <http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#OrganicProxySensor> .
 <http://linked.earth/ontology#sensorSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc9 <http://www.w3.org/2002/07/owl#unionOf> _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc8 .
+_:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://linked.earth/ontology#publicationYear> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#label> "publication year"@en .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/dateCreated> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/created> .
-<http://linked.earth/ontology#publicationYear> <http://www.linkedmodel.org/schema/vaem#rationale> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
 <http://linked.earth/ontology#publicationYear> <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 <http://linked.earth/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What year was the Publication issued?"@en .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fed .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Data> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff0 .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#ChronModel> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcc .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Resolution> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fcd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://linked.earth/ontology#Variable> .
-_:AX2dX7366658dX3aX15b41c68947X3aXX2dX7fd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#label> "has min value"@en .
 <http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the minimum value of the Variable?"@en .
-<http://linked.earth/ontology#hasMinValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented"@en .
+<http://linked.earth/ontology#hasMinValue> <http://www.linkedmodel.org/schema/vaem#rationale> "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented"@en .
 <http://linked.earth/ontology#hasMinValue> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> .
 <http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
 <http://linked.earth/ontology#hasMinValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://linked.earth/ontology#ChronProxySystem> <http://www.w3.org/2000/01/rdf-schema#label> "Chron proxy system"@en .
 <http://linked.earth/ontology#ChronProxySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The combination of ProxyArchive, ProxySensor, and ProxyObservations pertaining to chronological information. For instance, measurements of radiocarbon on foraminiferal shells would have a ChronProxySystem consisting of ProxyArchive: marine sediment, ProxySensor: Foraminifera, ProxyObservations: Radiocarbon. (ref: Evans et al. [2013])"@en .
-<http://linked.earth/ontology#ChronProxySystem> <http://www.linkedmodel.org/schema/vaem#rationale> "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components.\n\nAgreed that the ProxySystem concept applies to both Chron and PaleoData"@en .
+<http://linked.earth/ontology#ChronProxySystem> <http://www.linkedmodel.org/schema/vaem#rationale> "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components.\r\n\r\nAgreed that the ProxySystem concept applies to both Chron and PaleoData"@en .
 <http://linked.earth/ontology#ChronProxySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linked.earth/ontology#ProxySystem> .
 <http://linked.earth/ontology#ChronProxySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy archive"@en .
 <http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
 <http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/2000/01/rdf-schema#comment> "According to the Evans et al. (2013), the medium in which the response of a ProxySensor to environmental forcing is recorded. Example of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice"@en .
-<http://linked.earth/ontology#ProxyArchive> <http://www.linkedmodel.org/schema/vaem#rationale> "\"See ProxyArchive ontology for details about the concept. \n\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community\""@en .
+<http://linked.earth/ontology#ProxyArchive> <http://www.linkedmodel.org/schema/vaem#rationale> "\"See ProxyArchive ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community\""@en .
 <http://linked.earth/ontology#ProxyArchive> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund.MarineSediment> .
 <http://linked.earth/ontology#ProxyArchive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://linked.earth/ontology#relevantQuote> <http://www.w3.org/2000/01/rdf-schema#label> "relevant quote"@en .

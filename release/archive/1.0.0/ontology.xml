@@ -111,6 +111,8 @@ The polyp portion of the coral secretes calcium carbonate (CaCO&lt;sub&gt;3&lt;/
   </rdf:Description>
   <rdf:Description rdf:about="http://linked.earth/ontology#MarineSediment">
     <rdfs:label xml:lang="en">Marine sediment</rdfs:label>
+    <rdfs:comment xml:lang="en">&lt;p&gt;&lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/w/index.php?title=Pelagic_sediment&amp;amp;redirect=no"&gt;Marine sediments&lt;/a&gt; are a type of &lt;a href="/Category:ProxyArchive_%C2%A9" title="Category:ProxyArchive ©"&gt; proxy archives&amp;rlm;&amp;lrm;&lt;/a&gt; that provide long, continuous records of past &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Ocean"&gt;ocean&lt;/a&gt; variability. The timescales associated with this &lt;a href="/Category:ProxyArchive_%C2%A9" title="Category:ProxyArchive ©"&gt;archive&amp;rlm;&amp;lrm;&lt;/a&gt; are usually in the order of several tens to millions of years. The resolution of the sedimentary archive varies from annual to multi-century. &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Paleoceanography"&gt;Paleoceanographic&lt;/a&gt; data are derived from many sensors found in deep-sea sediments including trace metal and isotopic composition of &lt;a href="/Category:Foraminifera" title="Category:Foraminifera"&gt; foraminifera&lt;/a&gt;, &lt;a href="/Uk37" title="Uk37"&gt; alkenones&lt;/a&gt;, and &lt;a href="/TEX86" title="TEX86"&gt;TEX86&lt;/a&gt;.
+&lt;/p&gt;</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://linked.earth/ontology#ProxyArchive"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>

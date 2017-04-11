@@ -1,0 +1,6146 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2001/XMLSchema", "http://ontosoft.org/software", "http://linked.earth/ontology", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "http://xmlns.com/foaf/0.1", "http://purl.oclc.org/NET/ssnx/ssn", "http://www.opengis.net/ont/geosparql" ],
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "1.2.0",
+    "description" : {
+      "en" : "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"
+    },
+    "comments" : {
+      "en" : "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"
+    },
+    "other" : {
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.2.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 56,
+    "objectPropertyCount" : 55,
+    "datatypePropertyCount" : 70,
+    "individualCount" : 6
+  },
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "192",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "233",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "234",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "226",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "236",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "219",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "269",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "178",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "174",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "278",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "267",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "293",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "247",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#IntegrationTime",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Soilwater mixing above speleothems: Although the sample might only represent 5 years of calcification, it can record 30 years of water mixing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntegrationTime",
+      "en" : "Integration time"
+    },
+    "comment" : {
+      "undefined" : "The time it takes for the ProxySensor to imprint environmental information on the ProxyArchive. It may be further qualified with time periods and units"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://linked.earth/ontology#Model",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to describe models whose outputs are stored in the Dataset. One example of is Bchron for age modeling",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Model",
+      "en" : "Model"
+    },
+    "subClasses" : [ "17", "18", "19", "20", "21", "22", "23", "24" ],
+    "comment" : {
+      "en" : "A mathematical construct that is at least partially isomorphic to the target system, and is used to derive information about the structure and/or dynamics of the target system"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://schema.org/DataCatalog",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataCatalog"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyArchiveModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyArchiveModel",
+      "en" : "Proxy archive model"
+    },
+    "comment" : {
+      "en" : "A Model of how the ProxySensor either creates or emplaces the signal into the ProxyArchive. Sensu Evans et al. (2013)"
+    },
+    "id" : "23",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#InorganicProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Encode the Genus and Species metadata",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InorganicProxySensor",
+      "en" : "Inorganic proxy sensor"
+    },
+    "comment" : {
+      "en" : "An inorganic substrate sensing enviromental changes. Examples: karst, snow, watershed, ice sheet, rock, etc."
+    },
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://ontosoft.org/software#Software",
+    "baseIri" : "http://ontosoft.org/software",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/software#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Software"
+    },
+    "subClasses" : [ "68" ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://linked.earth/ontology#ChronProxySystem",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components.\r\n\r\nAgreed that the ProxySystem concept applies to both Chron and PaleoData",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChronProxySystem",
+      "en" : "Chron proxy system"
+    },
+    "comment" : {
+      "en" : "The combination of ProxyArchive, ProxySensor, and ProxyObservations pertaining to chronological information. For instance, measurements of radiocarbon on foraminiferal shells would have a ChronProxySystem consisting of ProxyArchive: marine sediment, ProxySensor: Foraminifera, ProxyObservations: Radiocarbon. (ref: Evans et al. [2013])"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "subClasses" : [ "71" ],
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyObservationModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyObservationModel",
+      "en" : "Proxy observation model"
+    },
+    "comment" : {
+      "en" : "The Model of how ProxyObservations are made on the archive. Sensu Evans et al. (2013)"
+    },
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#CalibrationModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Make the model behind the calibration explicit",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CalibrationModel",
+      "en" : "Calibration model"
+    },
+    "comment" : {
+      "en" : "Metadata about how the variable was calibrated to reflect an environmental variable"
+    },
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#InferredVariable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "See InferredVariable Ontology for concept description.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InferredVariable",
+      "en" : "Inferred variable"
+    },
+    "comment" : {
+      "en" : "A Variable that is inferred from one or more MeasuredVariable (s)"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Publication",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Can be used to credit the contributor of the dataset as well as linking toward the conclusions of the study and relevant methods",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1029/2012GC004293",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Publication",
+      "en" : "Publication"
+    },
+    "subClasses" : [ "74", "77" ],
+    "comment" : {
+      "en" : "A document that serves as reference for a Dataset or its components"
+    },
+    "id" : "75"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "subClasses" : [ "71" ],
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "subClasses" : [ "71" ],
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://linked.earth/ontology#Location",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Gives information about where the ProxyArchive comes from.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Location",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "comment" : {
+      "en" : "The geographic data and metadata for the dataset"
+    },
+    "id" : "71",
+    "superClasses" : [ "72", "85", "83" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#PaleoData",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaleoData",
+      "en" : "Paleo data"
+    },
+    "comment" : {
+      "en" : "The Data pertaining to past environmental variability"
+    },
+    "id" : "63",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://schema.org/Dataset",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "31" ],
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://linked.earth/ontology#ChronModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.ChronData1.Model1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChronModel",
+      "en" : "Chron model"
+    },
+    "comment" : {
+      "en" : "Model used to derive a time (or age) axis from the ChronDataModel"
+    },
+    "id" : "22",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MeasuredVariable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of Variables. Allows to make the disctinction between raw measurements (e.g., tree ring width, oxygen isotopes, trace elements) and the variables being reconstructed (e.g., moisture, temperature)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasuredVariable",
+      "en" : "Measured variable"
+    },
+    "intersection" : [ "149", "11" ],
+    "comment" : {
+      "en" : "Variables that are measured by an Instrument. MeasuredVariables are ssn: Observations. They represent the values of a certain type of ProxyObservations"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://linked.earth/ontology#PhysicalSample",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Used to differentiate between the concept of a ProxyArchive and its physical (real) manifestation",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD98-2181",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PhysicalSample",
+      "en" : "Physical sample"
+    },
+    "comment" : {
+      "en" : "The actual sample on which the measurements are made. For instance, the lake core analyzed in the lab is the physical sample."
+    },
+    "id" : "150"
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxySensorModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "One component of the ProxySystemModel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxySensorModel",
+      "en" : "Proxy sensor model"
+    },
+    "comment" : {
+      "en" : "A Model of the ProxySensor. Sensu Evans et al. (2013)"
+    },
+    "id" : "24",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#PaleoModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaleoModel",
+      "en" : "Paleo model"
+    },
+    "comment" : {
+      "en" : "Model used to derive an environmental axis from the PaleoDataModel"
+    },
+    "id" : "17",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxySystemModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"proxy\" in the paleoclimate community",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxySystemModel",
+      "en" : "Proxy system model"
+    },
+    "comment" : {
+      "en" : "In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . \"A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information.\""
+    },
+    "id" : "20",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#PaleoProxySystem",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Gives a formal definition of climate proxy following the Evans et al. (2013) framework.\r\nSubclass of ProxySystem, pertaining to climate information",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaleoProxySystem",
+      "en" : "Paleo proxy system"
+    },
+    "comment" : {
+      "en" : "Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate proxies in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of measurements can be made on each archives, each sensing a different aspect of the environment (sometimes, several aspects at once). A paleoclimate dataset is a set of observations made on an archive."
+    },
+    "id" : "8",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#OrganicProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of ProxySensor. Makes the distinction between organic and inorganic. See the ProxySensor ontology for concepts",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Globigerinoides_ruber",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganicProxySensor",
+      "en" : "Organic proxy sensor"
+    },
+    "comment" : {
+      "en" : "Biologically-mediated ProxySensor. Examples include: foraminifera, trees, mollusks, polyps"
+    },
+    "id" : "26",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#PaleoDataTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaleoDataTable",
+      "en" : "PaleoData table"
+    },
+    "comment" : {
+      "en" : "DataTable containing PaleoData Variables"
+    },
+    "id" : "182",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyObservation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "See ProxyObservation ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/D18O",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyObservation",
+      "en" : "Proxy observation"
+    },
+    "comment" : {
+      "en" : "The type of MeasuredVariables measured on the ProxyArchive, whether chemical (e.g. Mg/Ca, D18O, Sr/Ca), physical (e.g. density, layer thickness), or biological (e.g. Species abundance)"
+    },
+    "id" : "112"
+  }, {
+    "iri" : "http://linked.earth/ontology#ChronData",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.ChronData1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChronData",
+      "en" : "Chron data"
+    },
+    "comment" : {
+      "en" : "The data, metadata, and Model that describe the set of Variables used to relate depth/position to time (chronological information)"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#UncertaintyModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows description of how uncertainty was calculated",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UncertaintyModel",
+      "en" : "Uncertainty model"
+    },
+    "comment" : {
+      "en" : "A Model quantifiying the Uncertainty"
+    },
+    "id" : "21",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#PeerReviewedPublication",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of Publication.Allows to clearly mark datasets generated as part of a peer-reviewed publication.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PeerReviewedPublication",
+      "en" : "Peer reviewed publication"
+    },
+    "comment" : {
+      "en" : "A Publication that has undergone a formal peer-review process"
+    },
+    "id" : "77",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MeasurementTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of DataTable. Allows InferredVariables (despite the name) for practical purposes",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurementTable",
+      "en" : "Measurement table"
+    },
+    "comment" : {
+      "en" : "DataTable that contains the Variables (both measured and inferred)"
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Interpretation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Used to describe the interpretation of the Variable. For instance, radiocarbon is interpreted to represent age",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Interpretation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interpretation",
+      "en" : "Interpretation"
+    },
+    "comment" : {
+      "en" : "A suite of metadata that describes which phenomena drove variability in this Variable (e.g. environmental drivers)."
+    },
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Data",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to describe the paleoenvironmental and/or chronological data comprising the dataset as opposed to the Publication, Funding and Location information",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Data",
+      "en" : "Data"
+    },
+    "subClasses" : [ "63", "1" ],
+    "comment" : {
+      "en" : "An aggregation of DataTables and Models with their supporting paleoenvironmental and/or chronological information"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "209",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "206",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "212",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxySystem",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"proxy\" in the paleoclimate community",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxySystem",
+      "en" : "Proxy system"
+    },
+    "subClasses" : [ "4", "8" ],
+    "comment" : {
+      "en" : "<p>Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate <b>proxies</b> in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of data can often be collected from each archives, each <b>sensing</b> a different aspect of the environment (sometimes, several aspects at once).  A paleoclimate dataset is almost always a <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Time_series\">time series</a> of observations made on an archive.</p>\n<p>\nEvans et al. (2013) <sup id=\"cite_ref-evans2013_1-0\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> define a proxy system as comprised of three components (Fig 1).:\n</p>\n<ul><li> The <a href=\"#ProxySensor\" title=\"Category:ProxySensor\"> sensor</a> comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a>, and may have complex responses to the environment they sense, including thresholds  (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or  nonlinear responses. For instance, <a href=\"#Foraminifera\" title=\"Category:Foraminifera\"> foraminifera</a> are an often used sensor for oceanic conditions. Multiple observations can be made on this sensor, recording different environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variables</a>. Similarly, picking foraminifera of a given species to conduct the measurements is part of the observation process, though it does affect the sensor definition&nbsp;: the habitat of these forams determines with environmental <a href=\"#InferredVariable\" title=\"Category:InferredVariable\"> variable</a> (e.g. surface, sub-surface, or thermocline temperature) they are most sensitive to.  </li></ul>\n<ul><li> The <a href=\"#ProxyArchive\" title=\"Category:ProxyArchive ©\"> archive</a> is the medium in which the response of a sensor to environmental forcing is recorded.  Marine sediments are a type of archive, on which many sensors and observations may be recorded (e.g. Foraminifera Mg/Ca, ?<sup>18</sup>O, TEX86)</li></ul>\n<ul><li> <a href=\"#ProxyObservation\" title=\"Category:ProxyObservation\"> Observations</a> are made on archives and are  generally referred to as \"proxies\". The term \"proxy\" used ubiquitously, and often ambiguously, throughout the paleoclimate literature, is most commonly equivalent to \"sensor + observation\". \"Observation\" is the more explicit, and thus, preferred term, however \"proxy\" can be treated as a synonym of \"observation\". For instance, Foraminifera Mg/Ca is often used to investigate past changes in sea-surface temperature but depends also on sea-surface salinity and deep-ocean carbonate saturation <sup id=\"cite_ref-2\" class=\"reference\"><a href=\"#cite_note-2\">[2]</a></sup>.  Furthermore, its temperature and salinity dependence is exponential <sup id=\"cite_ref-3\" class=\"reference\"><a href=\"#cite_note-3\">[3]</a></sup> <sup id=\"cite_ref-4\" class=\"reference\"><a href=\"#cite_note-4\">[4]</a></sup> <sup id=\"cite_ref-5\" class=\"reference\"><a href=\"#cite_note-5\">[5]</a></sup> while its response to carbonate saturation is thresholded <sup id=\"cite_ref-6\" class=\"reference\"><a href=\"#cite_note-6\">[6]</a></sup>.  </li></ul>\n\n<p>These three major components may be individually modeled, and linked together within a <a href=\"/Category:ProxySystemModel_%C2%A9\" title=\"Category:ProxySystemModel ©\">Proxy System Model</a> <sup id=\"cite_ref-evans2013_1-2\" class=\"reference\"><a href=\"#cite_note-evans2013-1\">[1]</a></sup> <sup id=\"cite_ref-7\" class=\"reference\"><a href=\"#cite_note-7\">[7]</a></sup>. Some sensors are common to multiple archives (e.g. ?<sup>18</sup>O), and all archives support more than one possible sensor. \n</p>\n\n<h2><span class=\"mw-headline\" id=\"References\">References</span></h2>\n\n<ol class=\"references\">\n<li id=\"cite_note-evans2013-1\"><span class=\"mw-cite-backlink\">? <sup><a href=\"#cite_ref-evans2013_1-0\"><span class=\"cite-accessibility-label\">Jump up to: </span>1.0</a></sup> <sup><a href=\"#cite_ref-evans2013_1-1\">1.1</a></sup> <sup><a href=\"#cite_ref-evans2013_1-2\">1.2</a></sup></span> <span class=\"reference-text\"> Evans, M. N., Tolwinski-Ward, S. E., Thompson, D. M., &amp; Anchukaitis, K. J. (2013). Applications of proxy system modeling in high resolution paleoclimatology. Quaternary Science Reviews, 76, 16-28. doi:10.1016/j.quascirev.2013.05.024 </span>\n</li>\n<li id=\"cite_note-2\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-2\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Khider, D., Huerta, G., Jackson, C., Stott, L. D., &amp; Emile-Geay, J. (2015). A Bayesian, multivariate calibration for Globigerinoides ruber Mg/Ca. Geochemistry Geophysics Geosystems, 16(9), 2916-2932. doi:10.1002/2015GC005844 </span>\n</li>\n<li id=\"cite_note-3\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-3\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Anand, P., Elderfield, H., &amp; Conte, M. H. (2003). Calibration of Mg/Ca thermometry in planktonic foraminifera from a sediment trap time series. Paleoceanography, 18(2), 1050. doi:10.1029/2002PA000846 </span>\n</li>\n<li id=\"cite_note-4\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-4\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Lea, D. W., Mashiotta, T. A., &amp; Spero, H. J. (1999). Controls on magnesium and strontium uptake in planktonic foraminifera determined by live culturing. Geochimica et cosmochimica acta, 63(16), 2369-2379. </span>\n</li>\n<li id=\"cite_note-5\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-5\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Kisakürek, B., Eisenhauer, A., Böhm, F., Garbe-Schönberg, D., &amp; Erez, J. (2008). Controls on shell Mg/Ca and Sr/Ca in cultured planktonic foraminiferan, Globigeriniodes ruber (white). Earth and Planetary Science Letters, 273, 260-269. doi:10.1016/j.epsl.2008.06.026 </span>\n</li>\n<li id=\"cite_note-6\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-6\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Regenberg, M., Regenberg, A., Garbe-Schonberg, D., &amp; Lea, D. W. (2014). Global dissolution effects on planktonic foraminiferal Mg/Ca ratios controlled by the calcite-saturation state of bottom waters. Paleoceanography, 29, 127-142. doi:10.1002/2013PA002492 </span>\n</li>\n<li id=\"cite_note-7\"><span class=\"mw-cite-backlink\"><a href=\"#cite_ref-7\"><span class=\"cite-accessibility-label\">Jump up </span>?</a></span> <span class=\"reference-text\"> Dee, S., Emile-Geay, J., Evans, M. N., Allam, A., Steig, E. J., &amp; Thompson, D. M. (2015). PRYSM: An open-source framework  for PRoxy System Modeling, with applications to oxygen-isotope systems. Journal of Advances in Modeling Earth Systems, 7, 1220-1247. doi:10.1002/2015MS000447</span>\n</li>\n</ol>"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "227",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "192"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "48" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "22" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "233"
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "11", "204" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "235"
+  }, {
+    "instances" : 0,
+    "union" : [ "63", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "226"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "2", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "236"
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "147", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Resolution",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Class added to describe the annual resolution of the archives",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resolution",
+      "en" : "Resolution"
+    },
+    "comment" : {
+      "en" : "Refers to the time difference between two adjacent values of a Variable."
+    },
+    "id" : "197"
+  }, {
+    "iri" : "http://linked.earth/ontology#NonPeerReviewedPublication",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of Publication.Allows to clearly mark datasets not generated as part of a peer-reviewed publication.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NonPeerReviewedPublication",
+      "en" : "Non peer reviewed publication"
+    },
+    "comment" : {
+      "en" : "A publication that has not undergone a formal review process; for instance, a Dataset attached to a dissertation."
+    },
+    "id" : "74",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyArchive",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "\"See ProxyArchive ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community\"",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund.MarineSediment",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyArchive",
+      "en" : "Proxy archive"
+    },
+    "comment" : {
+      "en" : "According to the Evans et al. (2013), the medium in which the response of a ProxySensor to environmental forcing is recorded. Example of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice"
+    },
+    "id" : "119"
+  }, {
+    "iri" : "http://linked.earth/ontology#Variable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      }, {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Basic definition of the values in the columns of the csv file",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Variable",
+      "en" : "Variable"
+    },
+    "subClasses" : [ "10" ],
+    "comment" : {
+      "en" : "Quantities that may change from value to value. They are usually represented as column of values in a data table"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "251",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "220",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "147", "11", "197", "48" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "253",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "254",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "147", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "255",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#EnsembleTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Added to allow outputs from Bayesian model to be saved as part of a dataset",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/ODP1098B12.Chron1.Model1.EnsembleTable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnsembleTable",
+      "en" : "Ensemble table"
+    },
+    "comment" : {
+      "en" : "DataTable constaining many possible series of how the Variable is modeled. Output of a Model"
+    },
+    "id" : "163",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "229",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "263",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "265",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "68", "31", "75" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "269"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "270",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "179",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "13" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxySensor",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "See ProxySensor ontology for details about the concept. \r\n\r\nWe adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as \"\"proxy\"\" in the paleoclimate community",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Cibicidoides_mundulus",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxySensor",
+      "en" : "Proxy sensor"
+    },
+    "subClasses" : [ "15", "26" ],
+    "comment" : {
+      "en" : "The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013)). Signals recorded by the ProxySensor are imprinted onto the ProxyArchive."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://linked.earth/ontology#Instrument",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to categorize types of instruments used for taking the different measurements. See Instrument Ontology for concept description.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Instrument",
+      "en" : "Instrument"
+    },
+    "comment" : {
+      "en" : "A tool  used to produce MeasuredVariables"
+    },
+    "id" : "204"
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "273"
+  }, {
+    "iri" : "http://linked.earth/ontology#Funding",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to associate a grant number following U.S. federal regulation",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Funding1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Funding",
+      "en" : "Funding"
+    },
+    "comment" : {
+      "en" : "Source of monetary support underlying the collection/creation/analysis/curation of the Dataset"
+    },
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "239",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "259",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "16", "11", "31" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://linked.earth/ontology#Person",
+    "equivalent" : [ "273", "235" ],
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "The researcher, author on a publication.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/D._Khider",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "An individual who has participated directly or indirectly in the authoring of any resources on the LinkedEarth wiki"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://linked.earth/ontology#Compilation",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Encodes what Data/Metadata gathering effort/scientific project led to the curation of the Datasets. Examples: PAGES2k, Iso2k, LR04, OC3, MARGO",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Compilation",
+      "en" : "Compilation"
+    },
+    "comment" : {
+      "en" : "A curated aggregation of datasets"
+    },
+    "id" : "32",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://purl.oclc.org/NET/ssnx/ssn#Observation",
+    "baseIri" : "http://purl.oclc.org/NET/ssnx/ssn",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.oclc.org/NET/ssnx/ssn",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation"
+    },
+    "comment" : {
+      "en" : "The class ssn:Observation provides the structure to represent a single observation. An observation is a situation that describes an observed feature, an observed property, a sensor and method of sensing used and a value observed for the property: that is, an observation describes a single value attributed to a single property by a particular sensor. Observations of multiple features or multiple properties of the one feature should be represented as either compound properties, features and values or as multiple observations, grouped in some appropriate structure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://linked.earth/ontology#DataTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Connects to the csv file where the data values are stored",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataTable",
+      "en" : "Data table"
+    },
+    "subClasses" : [ "28", "36", "182", "163", "201", "79" ],
+    "comment" : {
+      "en" : "A set of Variables organized in columns"
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Geometry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "278"
+  }, {
+    "iri" : "http://linked.earth/ontology#Uncertainty",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf",
+        "type" : "iri"
+      } ],
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "To allow to describe the uncertainty on a Variable or a Model, would it be a single number (e.g., the uncertainty on the measurements are 0.1 per mil, one sigma confidence level, or reportedIn an EnsembleTable and/or SummaryTable)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Uncertainty",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.Uncertainty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Uncertainty",
+      "en" : "Uncertainty"
+    },
+    "comment" : {
+      "en" : "A state of incomplete knowledge that results from a lack of information or from different modeling choices. Uncertainty may come from many sources, from imprecision in the data to ambigously defined concepts or terminology. Uncertainty can be represented by quantitative measures (e.g., probability density function) or by qualitative statements (e.g., reflecting the judgement of a team of experts). Sensu IPCC AR5"
+    },
+    "id" : "147"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "48", "150" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "268",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "204", "150" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "267"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "283",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "189",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "285",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "289",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "281",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "75", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "293"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "38"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "22" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "80"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "22" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "164"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "95"
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://linked.earth/ontology#ChronDataTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.chron1measurement1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChronDataTable",
+      "en" : "Chron data table"
+    },
+    "comment" : {
+      "en" : "DataTable containing Variables pertaining to chronological information"
+    },
+    "id" : "201",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "232",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "41",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "242",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "214",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "257",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#SoftwareCode",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Added to allow for a link towards the code if on a public repository like GitHub",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Pyleoclim",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SoftwareCode",
+      "en" : "Software code"
+    },
+    "comment" : {
+      "en" : "A script that describes the model, in any programming language (e.g., Excel, Matlab, Python, R)"
+    },
+    "id" : "68",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "261",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#SummaryTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to represent a summary of basic statistics such as median, mean, standard deviation, and various quantiles from the output of the Model",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1model1summary1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SummaryTable",
+      "en" : "Summary table"
+    },
+    "comment" : {
+      "en" : "A DataTable that contains summary information for the Variable and is output from a Model."
+    },
+    "id" : "36",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "302",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Dataset",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Fundamental unit at which we think about paleoclimate data. Also tends to correspond to the scope of the study",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "comment" : {
+      "en" : "A structured collection of related information, including -but not limited to -measured and/or modelled geograhical, chronological, and environmental data"
+    },
+    "id" : "31",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "250",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#DistributionTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Added to allow outputs from Bayesian model (especially Bchron) to be saved as part of a dataset. Required to encode irregular probability distributions",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/ODP1098B12.Chron1.Model1.distributionTable.1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DistributionTable",
+      "en" : "Distribution table"
+    },
+    "comment" : {
+      "en" : "DataTable containing the probability distribution of a single value of a Variable. Output of a Model"
+    },
+    "id" : "79",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "241",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "248",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "249",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "252",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "258",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "260",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "262",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "264",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "266",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "271",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "272",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "274",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "275",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "276",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "277",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "279",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "280",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "284",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "294",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "246",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "295",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "296",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "298",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "299",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "301",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "300",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "303",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasIntegrationTime",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "6",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Property added to link the proxySystem to the IntegrationTime class",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntegrationTime",
+      "en" : "has integration time"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Answers the question: What is the integration time needed for a ProxySensor to imprint environmental information on the ProxyArchive? Both are included as part of a ProxySystem"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "13",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://linked.earth/ontology#partOfCompilation",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "32",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the dataset to the compilation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "partOfCompilation",
+      "en" : "part of compilation"
+    },
+    "superproperty" : [ "33", "34" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answer the question: Which compilation does a dataset belong to?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "29",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://linked.earth/ontology#chronModeledBy",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "22",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subproperty of modeledBy. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "chronModeledBy",
+      "en" : "chron modeled by"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "38",
+    "comment" : {
+      "en" : "Answers the question: What is the ChronModel for the ChronData or ProxySystem under consideration?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/ssnx/ssn#observedBy",
+    "baseIri" : "http://purl.oclc.org/NET/ssnx/ssn",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.oclc.org/NET/ssnx/ssn#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "observedBy"
+    },
+    "domain" : "41",
+    "subproperty" : [ "42" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://linked.earth/ontology#equation",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "44",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to provide the equation as part of the metadata",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982176.Stott.2004.paleo1measurement1.Mg/Ca-g.rub.Calibration",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "equation",
+      "en" : "equation"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Answers the question: What is the mathematical formulation of the Model?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://linked.earth/ontology#compilationVersion",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "46",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to state the version associated to a compilation, which may not be the same as the datasets it contains",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "compilationVersion",
+      "en" : "compilation version"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Answers the question: What is the version of the Compilation?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://linked.earth/ontology#standard",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "49",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standard",
+      "en" : "standard"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Answers the question: Reference material against which the MeasuredVariable is reported?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://linked.earth/ontology#inferredFrom",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "48",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides a link between the Measured and Inferred Variables. For instance, SST is inferred from Mg/Ca measurements",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inferredFrom",
+      "en" : "inferred from"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Answers the question: From which MeasuredVariable(s) is (are) the InferredVariable inferred from?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "41",
+    "subproperty" : [ "52" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://linked.earth/ontology#includesVariable",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "11",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links DataTable to Variable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "includesVariable",
+      "en" : "includes variable"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Answers the question: Which Variables are included in the DataTable?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasColumnNumber",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "55",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the Variable metadata to the values stored in the csv file",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasColumnNumber",
+      "en" : "has column number"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: In which column of the csv file can the Variable be found?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://linked.earth/ontology#fundingCountry",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "59",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Funding1",
+        "type" : "iri"
+      }, {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides information about the country the agency is from",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fundingCountry",
+      "en" : "funding country"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Answers the question: Which nation funded the Dataset?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "57"
+  }, {
+    "range" : "61",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "16",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "16",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "56",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "75",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://linked.earth/ontology#distributionTableGeneratedByModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "80",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "\"Subproperty of foundinTable to Link the Model to its outputs\"",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "distributionTableGeneratedByModel",
+      "en" : "distribution table generated by Model"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "Answers the question: In which DistributionTable is the Model output found?"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "83",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "85",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://linked.earth/ontology#compilationDate",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "87",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Separate compilation date from the publication year. An example is LR04 (datsetdate in 2004) but published in 2005",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "compilationDate",
+      "en" : "compilation date"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Answers the question: At what date was the Compilation created?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://linked.earth/ontology#includesChronData",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "1",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subproperty of includesData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "includesChronData",
+      "en" : "includes chron data"
+    },
+    "superproperty" : [ "89" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: Which ChronData are included in the Dataset?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://linked.earth/ontology#interpretedAs",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "91",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the Variable to its Interpretation",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interpretedAs",
+      "en" : "interpreted as"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the Variable's Interpretation?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/dc/terms/created",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "93",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "created"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://linked.earth/ontology#foundInTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "29",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to link the data to the csv table and the models to its output",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "foundInTable",
+      "en" : "found in table"
+    },
+    "domain" : "95",
+    "subproperty" : [ "96" ],
+    "comment" : {
+      "en" : "Answers the question: In which DataTable can the information/data be found?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "range" : "16",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "16",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "16",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://linked.earth/ontology#publicationYear",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "102",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publicationYear",
+      "en" : "publication year"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: What year was the Publication issued?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://linked.earth/ontology#calibrationReferences",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "75",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Relationship needed to link to a Publication desribing the calibration being applied to the dataset",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "calibrationReferences",
+      "en" : "calibration references"
+    },
+    "superproperty" : [ "104" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Answers the question: In what Reference(s) is the Calibration described/justified?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://linked.earth/ontology#modelReferences",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "75",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links a Model to its Publication. \r\nNote: calibrationReferences and modelReferences in the Calibration may not need to be the same. For instance, the calibration data and one mathematical formulation can be provided in one Publication (answering the calibrationReferences) but a different mathematical Model may be applied in another Publication (answering the modelReferences)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "modelReferences",
+      "en" : "model references"
+    },
+    "superproperty" : [ "104" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Answers the question: In which Publication is the model described/applied?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasExecutionCommand",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "107",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to store the execution command of a script",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasExecutionCommand",
+      "en" : "has execution command"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Answers the question: What is the command to run the script or the code?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://linked.earth/ontology#description",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "109",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "This property may be used to provide further details on instrument descriptions, uncertainty description,etc.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "Answers the question: What additional details would you give about the resource?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxyObservationType",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "112",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "The need to link a measured variable or a proxy system to the proxy observation type being measured.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxyObservationType",
+      "en" : "proxy observation type"
+    },
+    "domain" : "111",
+    "comment" : {
+      "en" : "Answers the question: What type of ProxyObservation does the MeasuredVariable or Proxy System belong to?\r\nFor example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy observation of the current prpoxy system is Mg/Ca"
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/dc/terms/contributor",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contributor"
+    },
+    "domain" : "41",
+    "subproperty" : [ "114" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://linked.earth/ontology#notes",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "117",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to add notes to specific cells in the DataTable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/A7.Sun.2005.chron1measurement1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notes",
+      "en" : "notes"
+    },
+    "domain" : "116",
+    "comment" : {
+      "en" : "Answers the question: What additional information would you give about the Variable or DataTable ?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxyArchiveType",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "119",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links ProxySystem to ProxyArchive",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxyArchiveType",
+      "en" : "proxy archive type"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Answers the question: Which ProxyArchive underlies this ProxySystem?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://linked.earth/ontology#collectedFrom",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "71",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Describe the geographical coordinates for the provenance of the ProxyArchive where the dataset was collected from",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "collectedFrom",
+      "en" : "collected from"
+    },
+    "superproperty" : [ "121" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: Where (in the world) was the data in the Dataset collected? Refers to the location of the ProxyArchive"
+    },
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasISBN",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "125",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Link to the ISBN: Identifier used commonly to refer to publications",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasISBN",
+      "en" : "has ISBN"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: What is the international book number of the Publication?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://linked.earth/ontology#sensorGenus",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "127",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Scientific Name of the organic ProxySensor",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Globigerinoides_ruber",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sensorGenus",
+      "en" : "sensor genus"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Answers the question: What is the Genus of the Organic ProxySensor?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://linked.earth/ontology#book",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "129",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Separate between journal and book publication",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "book",
+      "en" : "book"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: In which book was the resource published?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://linked.earth/ontology#publishedIn",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "75",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the resource to its Publication",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publishedIn",
+      "en" : "published in"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: In which Publication was the Dataset or Compilation issued?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://linked.earth/ontology#interpretationReferences",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "75",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links an interpretation to a reference citation (can be the same as the calibrationReferences for a Dataset)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Calibration",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interpretationReferences",
+      "en" : "interpretation references"
+    },
+    "superproperty" : [ "104" ],
+    "domain" : "91",
+    "comment" : {
+      "en" : "Answers the question: In which Publication(s) is the Interpretation substantiated?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasDerivedFrom"
+    },
+    "domain" : "41",
+    "subproperty" : [ "81" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://linked.earth/ontology#method",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "137",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to describe methods.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/A7.Sun.2005.paleo1measurement1.d18og",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "method",
+      "en" : "method"
+    },
+    "domain" : "136",
+    "comment" : {
+      "en" : "Answers the question: How is the information obtained from the resource?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://linked.earth/ontology#grantNumber",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "139",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides information about the grant number",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Funding1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "grantNumber",
+      "en" : "grant number"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Answers the question: What is the unique identifier associated with the Funding for the Dataset?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.org/dc/terms/bibliographicCitation",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "141",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bibliographicCitation"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasISSN",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "143",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "8-digit code used to identify publications",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasISSN",
+      "en" : "has ISSN"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: What is the International Standard Serial Number of the Publication?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://linked.earth/ontology#interpretationDirection",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "145",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Answer is only positive or negative. Useful metadata when the calibration equation is not readily available.\r\nAlso applies to InferredVariable to faciliate the search in database",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interpretationDirection",
+      "en" : "interpretation direction"
+    },
+    "domain" : "91",
+    "comment" : {
+      "en" : "Answers the question: Is the InferredVariable value increasing or decreasing as the value of the MeasuredVariable is increasing?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://linked.earth/ontology#uncertaintyLevel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "148",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to properly make use of the reported Uncertainty values",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "uncertaintyLevel",
+      "en" : "uncertainty level"
+    },
+    "domain" : "147",
+    "comment" : {
+      "en" : "Answers the question: What parameter of the error distribution is the Uncertainty value referring to?\r\n\r\nExamples include 1-sigma, 2-sigma, 95% confidence bounds"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "152",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasMaxValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "154",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMaxValue",
+      "en" : "has max value"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the maximum value of the Variable?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "156",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasUnits",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "159",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the units and the values of the Variable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnits",
+      "en" : "has units"
+    },
+    "domain" : "158",
+    "comment" : {
+      "en" : "Answers the question: In what unit of measure is (are) the Variable(s) expressed?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://linked.earth/ontology#issue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "161",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "issue",
+      "en" : "issue"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: In what issue of the journal can the resource be found?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://linked.earth/ontology#ensembleTableGeneratedByModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "164",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/ODP1098B1_2.ChronData1.Model1",
+        "type" : "iri"
+      }, {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "\"Subproperty of foundinTable to link the Model to its outputs\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ensembleTableGeneratedByModel",
+      "en" : "ensemble table generated by model"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "163",
+    "comment" : {
+      "en" : "Answers the question: In which EnsembleTable is the Model output found?"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "167",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "en" : "has value"
+    },
+    "domain" : "166",
+    "comment" : {
+      "en" : "Answers the question: What are the numerical values of the Variable, Uncertainty, and Model outputs?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://linked.earth/ontology#inferredVariableType",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "10",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the InferredVariable values to their type. For instance, the value of 29.1 degC is of type SST. This is important to normalize the variations in VariableNames (e.g. SST, sst, sea-surface temp)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inferredVariableType",
+      "en" : "inferred variable type"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Answers the question: What type of InferredVariable does the InferredVariable belongs to?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://linked.earth/ontology#name",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "170",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982176.Stott.2004.paleo1measurement1.Mg/Ca-g.rub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "Answers the question: How is the resource called?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://linked.earth/ontology#journal",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "172",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "journal",
+      "en" : "journal"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: What is the name of the journal in which the resource can be found?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://linked.earth/ontology#principalInvestigator",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "174",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the source of Funding to the PI (a Person)",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Funding1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "principalInvestigator",
+      "en" : "principal investigator"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Answers the question: Who was the lead on the source of Funding for the Dataset?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://linked.earth/ontology#orcidNumber",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "176",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "LinkedEarth uses ORCID number for membership",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/D._Khider",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "orcidNumber",
+      "en" : "orcid number"
+    },
+    "domain" : "174",
+    "comment" : {
+      "undefined" : "Answers the question: What is the persistent digital identifier of the Person?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://linked.earth/ontology#seasonality",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "179",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Seasonality is critical to properly related measuredVariable and innferredVariable, as the former only senses part of the range of the latter.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Ocean2kHR_119.d18O.ClimateInterpretation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "seasonality",
+      "en" : "seasonality"
+    },
+    "domain" : "178",
+    "comment" : {
+      "en" : "Answers the question: To which part of the year is the Interpretation or ProxySensor restricted to? Acceptable answers may be \"MJJA\", \"growing season\",or [5,6,7,8]"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://linked.earth/ontology#detail",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "181",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.Interpretation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "detail",
+      "en" : "detail"
+    },
+    "domain" : "91",
+    "comment" : {
+      "en" : "Answers the  \"of what\" question for an Interpretation. For intance, sea surface in sea surface temperature."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxyObservationModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "18",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links ProxySystemModel to ProxyObservationModel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxyObservationModel",
+      "en" : "proxy observation model"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Answers the question: Which ProxyObservationModel is used in the ProxySystemModel?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://schema.org/funder",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "funder"
+    },
+    "domain" : "41",
+    "subproperty" : [ "185" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://linked.earth/ontology#programmedIn",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "187",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides the user with information about the software",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Pyleoclim",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "programmedIn",
+      "en" : "programmed in"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Answers the question: In which language was the software code written in?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://schema.org/citation",
+    "baseIri" : "http://schema.org",
+    "range" : "189",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "citation"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://schema.org/contentLocation",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contentLocation"
+    },
+    "domain" : "41",
+    "subproperty" : [ "120" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "29",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://linked.earth/ontology#reportedIn",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "192",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the uncertainty to the model output",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.Uncertainty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportedIn",
+      "en" : "reported in"
+    },
+    "domain" : "147",
+    "comment" : {
+      "en" : "Answers the question: In which EnsembleTable, DistributionTable, and/or SummaryTable is the Uncertainty reported?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://linked.earth/ontology#datasetCitation",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "194",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "The need for providing appropriate credit to the datasets",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "datasetCitation",
+      "en" : "dataset citation"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Sentence indicating how a dataset should be cited"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasProxySystem",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "5",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the MeasuredVariable to its ProxySystem. For instance, Mg/Ca measurements on foraminiferal shells have ProxySystem: MarineSediment.Foraminifera.Mg/Ca",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasProxySystem",
+      "en" : "has proxy system"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Answers the question: What is the ProxySystem associated with this MeasuredVariable?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasResolution",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "197",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to link a Variable to Resolution",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResolution",
+      "en" : "has resolution"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Answers the question: What is the Resolution of the Variable?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "196"
+  }, {
+    "range" : "29",
+    "domain" : "182",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "29",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "29",
+    "domain" : "201",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://linked.earth/ontology#relevantQuote",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "203",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Often it's useful to put a quote from the paper that describes the interpretation",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Ocean2kHR_119.d18O.ClimateInterpretation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relevantQuote",
+      "en" : "relevant quote"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Answers the question: Which part of the publication describes the Calibration or Interpretation?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://linked.earth/ontology#measuredBy",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "204",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the MeasuredVariable to the Instrument responsible for its creation",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuredBy",
+      "en" : "measured by"
+    },
+    "superproperty" : [ "40" ],
+    "domain" : "48",
+    "comment" : {
+      "en" : "Answers the question: Which Instrument was used to produce the MeasuredVariable?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://linked.earth/ontology#datasetVersion",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "206",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to update a dataset if Data/Models are added and keep track of the various versions",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "datasetVersion",
+      "en" : "dataset version"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: What is the version of the Dataset?\r\n\r\nIt should follow the x.y.z notation where x refers to changes in metadata and data following a publication (for instance, the creation of a new age model using a different code), y refers to changes to the data following a publication (for instance, adding data further back in time without changing the model underlying the interpretation), and z refers to changes not associated with a publication (for instance, typos)."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://linked.earth/ontology#foundInMeasurementTable",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "28",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subproperty of foundinTable to link the Data to the Variables",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "foundInMeasurementTable",
+      "en" : "found in measurement table"
+    },
+    "superproperty" : [ "94" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "Answers the question: In which MeasurementTable are the Variables found?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://linked.earth/ontology#takenAtDepth",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "11",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides depth information. Can link to the depth Variable in the DataTable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "takenAtDepth",
+      "en" : "taken at depth"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: At which depth in the ProxyArchive is the Variable measured or inferred?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://linked.earth/ontology#includesPaleoData",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "63",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subproperty of includesData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "includesPaleoData",
+      "en" : "includes paleo data"
+    },
+    "superproperty" : [ "89" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: Which PaleoData are included in the Dataset?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://purl.org/dc/terms/license",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "214",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "license"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxySensorModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "24",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links ProxySystemModel to ProxySensorModel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxySensorModel",
+      "en" : "proxy sensor model"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Answers the question: Which ProxySensorModel is used in the ProxySystemModel?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasMinValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "217",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMinValue",
+      "en" : "has min value"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the minimum value of the Variable?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasMissingValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "220",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Useful for coding around the missing values",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMissingValue",
+      "en" : "has missing value"
+    },
+    "domain" : "219",
+    "comment" : {
+      "en" : "Answers the question: How are the missing values of the Variable identified in the DataTable?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://linked.earth/ontology#sensorSpecies",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "222",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Scientific Name of the organic ProxySensor",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Globigerinoides_ruber",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sensorSpecies",
+      "en" : "sensor species"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Answers the question: What is the species of the Organic ProxySensor?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://linked.earth/ontology#volume",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "224",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1029/98PA00070",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "volume",
+      "en" : "volume"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: In which volume of the Publication does the reference to the Datatset appear?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://schema.org/includedInDataCatalog",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "includedInDataCatalog"
+    },
+    "domain" : "41",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://linked.earth/ontology#paleoModeledBy",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "17",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subclass of modeledBy, pertaining to paleoenvironmental information",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "paleoModeledBy",
+      "en" : "paleo modeled by"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "226",
+    "comment" : {
+      "en" : "Answers the question: What is the PaleoModel for the PaleoData or ProxySytem under consideration?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasFileName",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "229",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links a DataTable with its appropriate csv file",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFileName",
+      "en" : "has file name"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Answers the question: What is the name of the csv file in which the Variable values are stored?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxyArchiveModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "23",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links ProxySystemModel to ProxyArchiveModel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxyArchiveModel",
+      "en" : "proxy archive model"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Answers the question: Which ProxyArchiveModel is used in the ProxySystemModel?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://schema.org/version",
+    "baseIri" : "http://schema.org",
+    "range" : "232",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "version"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://linked.earth/ontology#scope",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "239",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to separate the various types of interpretation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "scope",
+      "en" : "scope"
+    },
+    "domain" : "91",
+    "comment" : {
+      "en" : "Answers the question: how would you classify the Interpretation? Examples include Isotope, Climate…"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "238"
+  }, {
+    "iri" : "http://linked.earth/ontology#modeledBy",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "16",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links Data, Compilation or ProxySystem to Model",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "modeledBy",
+      "en" : "modeled by"
+    },
+    "domain" : "236",
+    "subproperty" : [ "225", "37" ],
+    "comment" : {
+      "en" : "Answers the question: What is the Model for the Data, Compilation or ProxySystem under consideration?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://linked.earth/ontology#calibratedVia",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "19",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "calibratedVia",
+      "en" : "calibrated via"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Answers the question: What calibration process was used to relate the InferredVariable to the MeasuredVariable?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "242",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "long"
+    },
+    "domain" : "83",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "241"
+  }, {
+    "iri" : "http://linked.earth/ontology#proxySensorType",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "13",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links ProxySensor to ProxyArchive",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.MarineSediment.Globigerinoides_ruber.Mg/Ca",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "proxySensorType",
+      "en" : "proxy sensor type"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Answers the question: Which ProxySensor underlies this ProxySystem?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://schema.org/author",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/author",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "domain" : "41",
+    "subproperty" : [ "245" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://linked.earth/ontology#contributor",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "174",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows distinction between contributor to a resource and the author",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contributor",
+      "en" : "contributor"
+    },
+    "superproperty" : [ "113", "246" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored"
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://linked.earth/ontology#fundedBy",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "58",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links a dataset to its source of funding",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fundedBy",
+      "en" : "funded by"
+    },
+    "superproperty" : [ "184" ],
+    "domain" : "247",
+    "comment" : {
+      "en" : "Answers the question: What was the Funding source for the Dataset?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://linked.earth/ontology#summaryTableGeneratedByModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "233",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Subproperty of foundinTable to link the Model to its outputs",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.PaleoData1.Model1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "summaryTableGeneratedByModel",
+      "en" : "summary table generated by model"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "36",
+    "comment" : {
+      "en" : "Answers the question: In which SummaryTable can the statistics on the Model Output be found?"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://linked.earth/ontology#title",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "250",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1029/98PA00070",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "title"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: What is the title of the Publication?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://linked.earth/ontology#fundingAgency",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "207",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides information about the Agency funding the study",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.Funding1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fundingAgency",
+      "en" : "funding agency"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Answers the question: Which entity was the Dataset fundedBy?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://purl.org/dc/terms/isPartOf",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "41",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "257",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lat"
+    },
+    "domain" : "83",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://linked.earth/ontology#pages",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "259",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Part of standard metadata for Publications",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pages",
+      "en" : "pages"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Answers the question: In what pages of the Publication can the reference to the resource be found?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "258"
+  }, {
+    "iri" : "http://linked.earth/ontology#generatedByModel",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "16",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to link the model to the data tables it generates",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "generatedByModel",
+      "en" : "generated by model"
+    },
+    "superproperty" : [ "134" ],
+    "domain" : "29",
+    "subproperty" : [ "248", "78", "162" ],
+    "comment" : {
+      "en" : "Answers the question: which model was used to generated this data table?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "261",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "alt"
+    },
+    "domain" : "83",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "260"
+  }, {
+    "iri" : "http://linked.earth/ontology#datasetDate",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "210",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Separate dataset date from the publication year. An example is LR04 (datsetdate in 2004) but published in 2005",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "datasetDate",
+      "en" : "dataset date"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Answers the question: At what date was the Dataset created?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "262"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasIGSN",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "265",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Needed to properly described physical samples",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIGSN",
+      "en" : "has IGSN"
+    },
+    "domain" : "150",
+    "comment" : {
+      "en" : "IGSN identifier associated to a physical sample"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "264"
+  }, {
+    "iri" : "http://linked.earth/ontology#housedAt",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "268",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Link to a particular laboratory. Provides circumstantial information about the measurement technique and how it was applied. Allows to give some information about the actual location of the sample",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "housedAt",
+      "en" : "housed at"
+    },
+    "domain" : "267",
+    "comment" : {
+      "en" : "Answers the question: In which laboratory/repository is the Instrument/PhysicalSample located?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "266"
+  }, {
+    "iri" : "http://linked.earth/ontology#datasetLicense",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "212",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "datasetLicense",
+      "en" : "dataset license"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "License associated to a dataset"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasMeanValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "254",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeanValue",
+      "en" : "has mean value"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the mean value of the Variable?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "272"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasVariableID",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "237",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "LiPD assigns a unique identifier (TSid) to each table column described in a LiPD file.\r\n\r\nAllows to assign a unique identifier to each series, facilitating data citation and recognition\r\n\r\nThis allows someone to change every piece of metadata about column or dataset, including its names (both dataset and variable) and still get back to the right spot. It’s fundamental to working with LiPD data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVariableID",
+      "en" : "has variable ID"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the unique identifier for the Variable?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "274"
+  }, {
+    "iri" : "http://linked.earth/ontology#includesData",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "2",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links Dataset to Data",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "includesData",
+      "en" : "includes data"
+    },
+    "domain" : "31",
+    "subproperty" : [ "88", "211" ],
+    "comment" : {
+      "en" : "Answers the question: Which Data are included in the Dataset?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://linked.earth/ontology#measuredOn",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "150",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links the MeasuredVariable to the ProxyArchive. Refers to the specific archive (i.e. the specific coral head, lake sediment...) and a specific Variable since ProxyArchive provides a link to the ProxySensor. In some instances, two MeasuredVariables on the same PhysicalSample may have different ProxyArchive page. This would be the case for measurements on various species of foraminifera in a MarineSediment",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18omund",
+        "type" : "iri"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuredOn",
+      "en" : "measured on"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "48",
+    "comment" : {
+      "en" : "Answers the question: On which PhysicalSample was the MeasuredVariable measured?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasCode",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "68",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links a Model to its SoftwareCode.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCode",
+      "en" : "has code"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Answers the question: What SoftwareCode was used to generate the Model output?"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "275"
+  }, {
+    "iri" : "http://purl.org/dc/terms/references",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "references"
+    },
+    "domain" : "41",
+    "subproperty" : [ "133", "103", "105" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasLink",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "255",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to point to the original source of a resource",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLink",
+      "en" : "has link"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "Answers the question: What is the universal resource locator to a resource?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "276"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "278",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "72",
+    "attributes" : [ "external", "object" ],
+    "id" : "277"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasDOI",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "270",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to link to a resource using a digital object identifier",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDOI",
+      "en" : "has DOI"
+    },
+    "domain" : "269",
+    "comment" : {
+      "en" : "Answers the question: What is the digital object identifier associated with the resource?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "279"
+  }, {
+    "iri" : "http://ontosoft.org/software#hasImplementationLanguage",
+    "baseIri" : "http://ontosoft.org/software",
+    "range" : "281",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://ontosoft.org/software#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasImplementationLanguage"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "280"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasMedianValue",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "253",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMedianValue",
+      "en" : "has median value"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Answers the question: What is the median value of the Variable?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasExecutionEnvironment",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "263",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Provides information about the operating system version in which the software code was exceuted?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasExecutionEnvironment",
+      "en" : "has execution environment"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Answers the question: In which environment is the script meant to be run in?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "284"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "iri" : "http://linked.earth/ontology#isLocal",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "283",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Added to allow data analysis. Is the interpretation relevant to these coordinates? Does putting a colored dot on the map here make sense?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocal",
+      "en" : "is local"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Answers the question: Does the Interpretation describe local variability, or far-field variability that may not reflect local conditions?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "287"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "range" : "26",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "74",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "iri" : "http://linked.earth/ontology#email",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "209",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allow to store contact information",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/D._Khider",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "email"
+    },
+    "domain" : "174",
+    "comment" : {
+      "en" : "Answers the question: What is the email address of the Person?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "292"
+  }, {
+    "iri" : "http://linked.earth/ontology#compilationCitation",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "227",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Data property needed to specify how to cite compilations, in order to provide appropriate credit to all contributors",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "compilationCitation",
+      "en" : "compilation citation"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Answers the question: How should someone cite the compilation?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "294"
+  }, {
+    "iri" : "http://schema.org/contributor",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contributor"
+    },
+    "domain" : "41",
+    "subproperty" : [ "114" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "201",
+    "domain" : "182",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "48",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "iri" : "http://schema.org/license",
+    "baseIri" : "http://schema.org",
+    "range" : "289",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "license"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "297"
+  }, {
+    "iri" : "http://schema.org/dateCreated",
+    "baseIri" : "http://schema.org",
+    "range" : "285",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateCreated"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "298"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasRank",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "251",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Allows to rank the environmental variable controlling the interpretation. For instance, the d18O of coral aragonite responds to both temperature and the d18O of seawater (closely linked to salinity). Depending on the locale and/or timescale, one variable may dominate over the other.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Interpretation1",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRank",
+      "en" : "has rank"
+    },
+    "domain" : "91",
+    "comment" : {
+      "en" : "Answers the question: What is the importance of the Interpretation?"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "299"
+  }, {
+    "iri" : "http://linked.earth/ontology#author",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "174",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Give credit to the original author of the resource",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Publication.10.1002/2013PA002534",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "author",
+      "en" : "author"
+    },
+    "superproperty" : [ "300", "244" ],
+    "domain" : "293",
+    "comment" : {
+      "en" : "Answers the question: Who wrote (i.e., created) the resource, such as a Publication?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#asWKT",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "302",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "asWKT"
+    },
+    "domain" : "278",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "301"
+  }, {
+    "iri" : "http://purl.org/dc/terms/creator",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "creator"
+    },
+    "domain" : "41",
+    "subproperty" : [ "245" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "300"
+  }, {
+    "iri" : "http://linked.earth/ontology#hasUncertainty",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "147",
+    "annotations" : {
+      "rationale" : [ {
+        "identifier" : "rationale",
+        "language" : "en",
+        "value" : "Links to the Uncertainty class",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUncertainty",
+      "en" : "has uncertainty"
+    },
+    "domain" : "234",
+    "comment" : {
+      "en" : "Answers the question: What is the Uncertainty associated with the Variable, Model, or Instrument?"
+    },
+    "attributes" : [ "object" ],
+    "id" : "303"
+  } ]
+}

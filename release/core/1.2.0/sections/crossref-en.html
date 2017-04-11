@@ -1,5 +1,5 @@
-<h2  id="crossreference" class="list">Cross reference for The Linked Earth LIPID Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by The Linked Earth LIPID Ontology.
+<h2  id="crossreference" class="list">Cross reference for The Linked Earth LiPD Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Linked Earth LiPD Ontology.
 <div id="classes">
    <h3 id="classes" class="list">Classes</h3>
    <ul class="hlist">
@@ -854,6 +854,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#interpretationReferences"
                title="http://linked.earth/ontology#interpretationReferences">interpretation references</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isLocal" title="http://linked.earth/ontology#isLocal">is local</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#scope" title="http://linked.earth/ontology#scope">scope</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1637,11 +1638,35 @@ We adopted the Evans et al. (2013) framework since this is the only published de
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#ProxySystem</p>
       <div class="comment">
-         <span class="markdown">Climate monitoring prior to the instrumental era are necessarily indirect. 
-This indirect assessment is made on proxies. According to Evans et al. (2013), a proxy system is comprised of three components:
-- A ProxySensor
-- A ProxyArchive
-- A ProxyObservation</span>
+         <span class="markdown">&lt;p&gt;Climate observations prior to the instrumental era are necessarily indirect. These observations are made on climate &lt;b&gt;proxies&lt;/b&gt; in various geological (e.g. lake or marine sediments, living or fossil coral reefs, cave deposits), glaciological (ice cores or snow pits) or biological (trees) archives. Many types of data can often be collected from each archives, each &lt;b&gt;sensing&lt;/b&gt; a different aspect of the environment (sometimes, several aspects at once).  A paleoclimate dataset is almost always a &lt;a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Time_series"&gt;time series&lt;/a&gt; of observations made on an archive.&lt;/p&gt;
+&lt;p&gt;
+Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt;a href="#cite_note-evans2013-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; define a proxy system as comprised of three components (Fig 1).:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt; The &lt;a href="#ProxySensor" title="Category:ProxySensor"&gt; sensor&lt;/a&gt; comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental &lt;a href="#InferredVariable" title="Category:InferredVariable"&gt; variable&lt;/a&gt;, and may have complex responses to the environment they sense, including thresholds  (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or  nonlinear responses. For instance, &lt;a href="#Foraminifera" title="Category:Foraminifera"&gt; foraminifera&lt;/a&gt; are an often used sensor for oceanic conditions. Multiple observations can be made on this sensor, recording different environmental &lt;a href="#InferredVariable" title="Category:InferredVariable"&gt; variables&lt;/a&gt;. Similarly, picking foraminifera of a given species to conduct the measurements is part of the observation process, though it does affect the sensor definition&amp;nbsp;: the habitat of these forams determines with environmental &lt;a href="#InferredVariable" title="Category:InferredVariable"&gt; variable&lt;/a&gt; (e.g. surface, sub-surface, or thermocline temperature) they are most sensitive to.  &lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt; The &lt;a href="#ProxyArchive" title="Category:ProxyArchive ©"&gt; archive&lt;/a&gt; is the medium in which the response of a sensor to environmental forcing is recorded.  Marine sediments are a type of archive, on which many sensors and observations may be recorded (e.g. Foraminifera Mg/Ca, δ&lt;sup&gt;18&lt;/sup&gt;O, TEX86)&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt; &lt;a href="#ProxyObservation" title="Category:ProxyObservation"&gt; Observations&lt;/a&gt; are made on archives and are  generally referred to as "proxies". The term "proxy" used ubiquitously, and often ambiguously, throughout the paleoclimate literature, is most commonly equivalent to "sensor + observation". "Observation" is the more explicit, and thus, preferred term, however "proxy" can be treated as a synonym of "observation". For instance, Foraminifera Mg/Ca is often used to investigate past changes in sea-surface temperature but depends also on sea-surface salinity and deep-ocean carbonate saturation &lt;sup id="cite_ref-2" class="reference"&gt;&lt;a href="#cite_note-2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;.  Furthermore, its temperature and salinity dependence is exponential &lt;sup id="cite_ref-3" class="reference"&gt;&lt;a href="#cite_note-3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-4" class="reference"&gt;&lt;a href="#cite_note-4"&gt;[4]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-5" class="reference"&gt;&lt;a href="#cite_note-5"&gt;[5]&lt;/a&gt;&lt;/sup&gt; while its response to carbonate saturation is thresholded &lt;sup id="cite_ref-6" class="reference"&gt;&lt;a href="#cite_note-6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;.  &lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;These three major components may be individually modeled, and linked together within a &lt;a href="/Category:ProxySystemModel_%C2%A9" title="Category:ProxySystemModel ©"&gt;Proxy System Model&lt;/a&gt; &lt;sup id="cite_ref-evans2013_1-2" class="reference"&gt;&lt;a href="#cite_note-evans2013-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-7" class="reference"&gt;&lt;a href="#cite_note-7"&gt;[7]&lt;/a&gt;&lt;/sup&gt;. Some sensors are common to multiple archives (e.g. δ&lt;sup&gt;18&lt;/sup&gt;O), and all archives support more than one possible sensor. 
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;span class="mw-headline" id="References"&gt;References&lt;/span&gt;&lt;/h2&gt;
+
+&lt;ol class="references"&gt;
+&lt;li id="cite_note-evans2013-1"&gt;&lt;span class="mw-cite-backlink"&gt;↑ &lt;sup&gt;&lt;a href="#cite_ref-evans2013_1-0"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up to: &lt;/span&gt;1.0&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;&lt;a href="#cite_ref-evans2013_1-1"&gt;1.1&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;&lt;a href="#cite_ref-evans2013_1-2"&gt;1.2&lt;/a&gt;&lt;/sup&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Evans, M. N., Tolwinski-Ward, S. E., Thompson, D. M., &amp;amp; Anchukaitis, K. J. (2013). Applications of proxy system modeling in high resolution paleoclimatology. Quaternary Science Reviews, 76, 16-28. doi:10.1016/j.quascirev.2013.05.024 &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-2"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-2"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Khider, D., Huerta, G., Jackson, C., Stott, L. D., &amp;amp; Emile-Geay, J. (2015). A Bayesian, multivariate calibration for Globigerinoides ruber Mg/Ca. Geochemistry Geophysics Geosystems, 16(9), 2916-2932. doi:10.1002/2015GC005844 &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-3"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-3"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Anand, P., Elderfield, H., &amp;amp; Conte, M. H. (2003). Calibration of Mg/Ca thermometry in planktonic foraminifera from a sediment trap time series. Paleoceanography, 18(2), 1050. doi:10.1029/2002PA000846 &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-4"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-4"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Lea, D. W., Mashiotta, T. A., &amp;amp; Spero, H. J. (1999). Controls on magnesium and strontium uptake in planktonic foraminifera determined by live culturing. Geochimica et cosmochimica acta, 63(16), 2369-2379. &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-5"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-5"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Kisakürek, B., Eisenhauer, A., Böhm, F., Garbe-Schönberg, D., &amp;amp; Erez, J. (2008). Controls on shell Mg/Ca and Sr/Ca in cultured planktonic foraminiferan, Globigeriniodes ruber (white). Earth and Planetary Science Letters, 273, 260-269. doi:10.1016/j.epsl.2008.06.026 &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-6"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-6"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Regenberg, M., Regenberg, A., Garbe-Schonberg, D., &amp;amp; Lea, D. W. (2014). Global dissolution effects on planktonic foraminiferal Mg/Ca ratios controlled by the calcite-saturation state of bottom waters. Paleoceanography, 29, 127-142. doi:10.1002/2013PA002492 &lt;/span&gt;
+&lt;/li&gt;
+&lt;li id="cite_note-7"&gt;&lt;span class="mw-cite-backlink"&gt;&lt;a href="#cite_ref-7"&gt;&lt;span class="cite-accessibility-label"&gt;Jump up &lt;/span&gt;↑&lt;/a&gt;&lt;/span&gt; &lt;span class="reference-text"&gt; Dee, S., Emile-Geay, J., Evans, M. N., Allam, A., Steig, E. J., &amp;amp; Thompson, D. M. (2015). PRYSM: An open-source framework  for PRoxy System Modeling, with applications to oxygen-isotope systems. Journal of Advances in Modeling Earth Systems, 7, 1220-1247. doi:10.1002/2015MS000447&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</span>
       </div>
       <dl class="definedBy">
          <dt>is defined by</dt>
@@ -1777,7 +1802,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#Resolution</p>
       <div class="comment">
-         <span class="markdown">Refers to the distance (physical or temporal) between each point on the archive. May or May not be related to sampling. Value with units</span>
+         <span class="markdown">Refers to the time difference between two adjacent values of a Variable.</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
@@ -1911,7 +1936,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
          <dt>is in domain of</dt>
          <dd>
             <a href="#summaryTableGeneratedByModel"
-               title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table enerated by model</a>
+               title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table generated by model</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -2212,7 +2237,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
       </li>
       <li>
          <a href="#summaryTableGeneratedByModel"
-            title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table enerated by model</a>
+            title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table generated by model</a>
       </li>
       <li>
          <a href="#takenAtDepth" title="http://linked.earth/ontology#takenAtDepth">taken at depth</a>
@@ -2308,7 +2333,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets. If both raw and calibrated data are present, calibratedWith and calibratedFrom should link to the same Calibration instance</dd>
+         <dd>Provides calibration information, especially useful for legacy datasets where the raw measurements may not be available and for comparison of datasets.</dd>
       </dl>
       <dl>
          <dt>Example</dt>
@@ -2397,7 +2422,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
                <a href="#ChronData" title="http://linked.earth/ontology#ChronData">Chron data</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#ProxySystem" title="http://linked.earth/ontology#ProxySystem">Proxy system</a>
+               <a href="#ChronProxySystem" title="http://linked.earth/ontology#ChronProxySystem">Chron proxy system</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2479,7 +2504,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#contributor</p>
       <div class="comment">
-         <span class="markdown">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a LinkedMember may contribute a previously-published dataset that he/she may not have authored</span>
+         <span class="markdown">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
@@ -2840,7 +2865,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
                <sup class="type-op" title="object property">op</sup>, <a href="#ensembleTableGeneratedByModel"
                   title="http://linked.earth/ontology#ensembleTableGeneratedByModel">ensemble table generated by model</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#summaryTableGeneratedByModel"
-                  title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table enerated by model</a>
+                  title="http://linked.earth/ontology#summaryTableGeneratedByModel">summary table generated by model</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -3442,7 +3467,7 @@ This indirect assessment is made on proxies. According to Evans et al. (2013), a
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#measuredOn</p>
       <div class="comment">
-         <span class="markdown">Answers the question: On which ProxyArchive was the MeasuredVariable measured?</span>
+         <span class="markdown">Answers the question: On which PhysicalSample was the MeasuredVariable measured?</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
@@ -3525,11 +3550,11 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#modeledBy</p>
       <div class="comment">
-         <span class="markdown">Answers the question: What is the Model for the Data or ProxySystem under consideration?</span>
+         <span class="markdown">Answers the question: What is the Model for the Data, Compilation or ProxySystem under consideration?</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>Links Data or ProxySystem to Model</dd>
+         <dd>Links Data, Compilation or ProxySystem to Model</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3541,6 +3566,9 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
             </dd>
             <dt>has domain</dt>
             <dd>
+               <a href="#Compilation" title="http://linked.earth/ontology#Compilation">Compilation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Data" title="http://linked.earth/ontology#Data">Data</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
@@ -3989,7 +4017,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       </div>
    </div>
    <div class="entity" id="summaryTableGeneratedByModel">
-      <h3>summary table enerated by model<sup class="type-op" title="object property">op</sup>
+      <h3>summary table generated by model<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -4301,6 +4329,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       </li>
       <li>
          <a href="#relevantQuote" title="http://linked.earth/ontology#relevantQuote">relevant quote</a>
+      </li>
+      <li>
+         <a href="#scope" title="http://linked.earth/ontology#scope">scope</a>
       </li>
       <li>
          <a href="#seasonality" title="http://linked.earth/ontology#seasonality">seasonality</a>
@@ -5366,7 +5397,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</dd>
+         <dd>property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented</dd>
       </dl>
       <dl>
          <dt>Example</dt>
@@ -5400,7 +5431,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</dd>
+         <dd>property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented</dd>
       </dl>
       <dl>
          <dt>Example</dt>
@@ -5434,11 +5465,13 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</dd>
+         <dd>property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented</dd>
       </dl>
       <dl>
          <dt>Example</dt>
-         <dd>http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</dd>
+         <dd>
+            <a href="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES">http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -5466,7 +5499,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>property relevant to facilitate queries, as in most cases the ocntents of a csv file are not directly represented</dd>
+         <dd>property relevant to facilitate queries, as in most cases the contents of a csv file are not directly represented</dd>
       </dl>
       <dl>
          <dt>Example</dt>
@@ -5535,7 +5568,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#hasRank</p>
       <div class="comment">
-         <span class="markdown">Answers the question: What is the importance of the ClimateInterpretation or IsotopeInterpretation?</span>
+         <span class="markdown">Answers the question: What is the importance of the Interpretation?</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
@@ -5621,6 +5654,12 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       <dl>
          <dt>Term rationale</dt>
          <dd>Useful if there is only a single value rather than a vector of numbers. Often the case for analytical uncertainty or uncertainty reported as a RMSE</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty">http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18orub.Uncertainty</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -6264,6 +6303,12 @@ Also applies to InferredVariable to faciliate the search in database</dd>
          <dt>Term rationale</dt>
          <dd>Part of standard metadata for Publications</dd>
       </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/Publication.10.1002/2013PA002534">http://wiki.linked.earth/Publication.10.1002/2013PA002534</a>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -6323,6 +6368,34 @@ Also applies to InferredVariable to faciliate the search in database</dd>
          </dl>
       </div>
    </div>
+   <div class="entity" id="scope">
+      <h3>scope<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#scope</p>
+      <div class="comment">
+         <span class="markdown">Answers the question: how would you classify the Interpretation? Examples include Isotope, Climate…</span>
+      </div>
+      <dl>
+         <dt>Term rationale</dt>
+         <dd>Allows to separate the various types of interpretation</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interpretation" title="http://linked.earth/ontology#Interpretation">Interpretation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="seasonality">
       <h3>seasonality<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6374,6 +6447,12 @@ Also applies to InferredVariable to faciliate the search in database</dd>
          <dt>Term rationale</dt>
          <dd>Scientific Name of the organic ProxySensor</dd>
       </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/Globigerinoides_ruber">http://wiki.linked.earth/Globigerinoides_ruber</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -6396,11 +6475,17 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#sensorSpecies</p>
       <div class="comment">
-         <span class="markdown">Answers the question: What is the species of the Organic ProxySensor</span>
+         <span class="markdown">Answers the question: What is the species of the Organic ProxySensor?</span>
       </div>
       <dl>
          <dt>Term rationale</dt>
          <dd>Scientific Name of the organic ProxySensor</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/Globigerinoides_ruber">http://wiki.linked.earth/Globigerinoides_ruber</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -6430,6 +6515,12 @@ Also applies to InferredVariable to faciliate the search in database</dd>
          <dt>Term rationale</dt>
          <dd>Crucial for isotopic measurements (for instance, d18O measurements (VSMOW vs VPDB))</dd>
       </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v">http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18Og.rub-w.v</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -6457,6 +6548,12 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <dl>
          <dt>Term rationale</dt>
          <dd>Part of standard metadata for Publications</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="http://wiki.linked.earth/Publication.10.1029/98PA00070">http://wiki.linked.earth/Publication.10.1029/98PA00070</a>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -6596,8 +6693,7 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds</span>
          </dl>
       </div>
    </div>
-</div>
-<div id="legend">
+</div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>

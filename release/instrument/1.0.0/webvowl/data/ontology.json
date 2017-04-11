@@ -1,0 +1,731 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://linked.earth/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Linked Earth Instrument Ontology"
+    },
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "1.0.0",
+    "author" : [ "http://www.cefns.nau.edu/~npm4/", "http://orcid.org/0000-0001-5920-4751", "http://earth.usc.edu/~khider/" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://earth.usc.edu/~khider/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://www.cefns.nau.edu/~npm4/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0001-5920-4751",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://www.isi.edu/~gil/",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://w3id.org/people/dgarijo",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Linked Earth Instrument Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 30,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#CFAMS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CFAMS",
+      "en" : "Continuous-flow AMS system"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Spectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spectrometer",
+      "en" : "Spectrometer"
+    },
+    "subClasses" : [ "4", "5", "6" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MC-ICP-MS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MC-ICP-MS",
+      "en" : "Multi-collector (MC) Inductively coupled plasma mass spectrometry (ICPMS)"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#BinocularMicroscope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BinocularMicroscope",
+      "en" : "Binocular microscope"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Instrument",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology/core/1.2.0",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Instrument",
+      "en" : "Instrument"
+    },
+    "subClasses" : [ "2", "11", "12", "10", "13" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://linked.earth/ontology#Spectroscope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spectroscope",
+      "en" : "Spectroscope"
+    },
+    "subClasses" : [ "19", "20", "21" ],
+    "id" : "12",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ICP-OES",
+    "equivalent" : [ "21" ],
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ICP-OES",
+      "en" : "Inductively coupled plasma optical emission spectrometry"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "20",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#GC-IR-MS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GC-IR-MS",
+      "en" : "Gas Chromatography - Isotope ratio -Mass Spectrometer"
+    },
+    "id" : "24",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Microscope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Microscope",
+      "en" : "Microscope"
+    },
+    "subClasses" : [ "32", "9" ],
+    "id" : "10",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ICP-MS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ICP-MS",
+      "en" : "Inductively coupled plasma mass spectrometer"
+    },
+    "id" : "33",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ZeissPetrographicMicroscope",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZeissPetrographicMicroscope",
+      "en" : "Zeiss petrographic microscope"
+    },
+    "id" : "32",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#CRDS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CRDS",
+      "en" : "Cavity Ring-Down Spectroscopy"
+    },
+    "id" : "19",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#EnergyDispersiveSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnergyDispersiveSpectrometer",
+      "en" : "Energy dispersive spectrometer"
+    },
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#GasChromatographyMassSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GasChromatographyMassSpectrometer",
+      "en" : "Gas chromatography - mass spectrometer"
+    },
+    "subClasses" : [ "24", "15" ],
+    "id" : "16",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ICP-AES",
+    "equivalent" : [ "20" ],
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ICP-AES",
+      "en" : "Inductively coupled plasma atomic emission spectroscope"
+    },
+    "comment" : {
+      "en" : "Inductively coupled plasma atomic emission spectroscopy (ICP-AES), also referred to as inductively coupled plasma optical emission spectrometry (ICP-OES), is an analytical technique used for the detection of trace metals."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "21",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#GasChromatograph",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GasChromatograph",
+      "en" : "Gas chromatograph"
+    },
+    "id" : "11",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#IsotopeRatioMassSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IsotopeRatioMassSpectrometer",
+      "en" : "Isotope ratio mass spectrometer"
+    },
+    "subClasses" : [ "7", "45", "46", "33" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#WavelengthDispersiveSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WavelengthDispersiveSpectrometer",
+      "en" : "Wavelength dispersive spectrometry"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#SecondaryIonMassSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondaryIonMassSpectrometer",
+      "en" : "Secondary ion mass spectrometer"
+    },
+    "subClasses" : [ "47", "48" ],
+    "id" : "35",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#SIMS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SIMS",
+      "en" : "Secondary ion mass spectrometer"
+    },
+    "id" : "48",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#GCMS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GCMS",
+      "en" : "Gas chromatography mass spectrometer"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#IRMS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IRMS",
+      "en" : "Isotope ratio mass spectrometer"
+    },
+    "comment" : {
+      "en" : "An <b>isotope-ration mass spectrometer</b> measures the relative abundance of isotopes in a given sample."
+    },
+    "id" : "45",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#SHRIMP",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SHRIMP",
+      "en" : "Sensitive high-resolution ion microprobe"
+    },
+    "id" : "47",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MassSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MassSpectrometer",
+      "en" : "Mass spectrometer"
+    },
+    "subClasses" : [ "8", "35", "1", "16", "28" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#NOSAMSTandetron",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NOSAMSTandetron",
+      "en" : "NOSAMS tandetron"
+    },
+    "id" : "26",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#AcceleratorMassSpectrometerInstrument",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcceleratorMassSpectrometerInstrument",
+      "en" : "Accelerator mass spectrometer"
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#AcceleratorMassSpectrometer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcceleratorMassSpectrometer",
+      "en" : "Accelerator mass spectrometer"
+    },
+    "subClasses" : [ "0", "18", "26" ],
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MassSpectrometerInstrument",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MassSpectrometerInstrument",
+      "en" : "Mass spectrometer"
+    },
+    "id" : "28",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#LA-ICP-MS",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LA-ICP-MS",
+      "en" : "Laser-ablation (LA) Inductively coupled plasma mass spectrometry (ICP-MS)"
+    },
+    "id" : "46",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#RockHammer",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RockHammer",
+      "en" : "Rock hammer"
+    },
+    "id" : "13",
+    "superClasses" : [ "3" ]
+  } ],
+  "property" : [ {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "16",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "6",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "6",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "10",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "3",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "12",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "3",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "8",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "8",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "8",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "35",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "35",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  } ]
+}

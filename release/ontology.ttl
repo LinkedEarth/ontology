@@ -2027,12 +2027,12 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       rdfs:label "Mineral matter"@en .
 
 :     a       owl:Ontology , owl:NamedIndividual ;
-      rdfs:comment "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+      rdfs:comment "The Linked Earth Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
       dcterms:contributor <http://www.isi.edu/~gil/> , <http://w3id.org/people/dgarijo> ;
       dcterms:creator <http://orcid.org/0000-0001-5920-4751> , <http://www.cefns.nau.edu/~npm4/> , <http://earth.usc.edu/~khider/> ;
-      dcterms:description "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+      dcterms:description "The Linked Earth Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
       dcterms:license <http://creativecommons.org/licenses/by/2.0/> , "http://creativecommons.org/licenses/by/2.0/" ;
-      dcterms:title "The Proxy Observation Ontology"@en , "The Inferred Variable Ontology"@en , "The Linked Earth Instrument Ontology"@en , "The Proxy Archive Ontology"@en , "The Linked Earth LiPD Ontology"@en , "The Proxy Sensor Ontology"@en ;
+      dcterms:title "The Linked Earth Ontology"@en ;
       vann:preferredNamespacePrefix
               "le" ;
       vann:preferredNamespaceUri

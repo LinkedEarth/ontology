@@ -1208,12 +1208,12 @@ _:A6fe79865X3aX15b5e5801e2X3aXX2dX7fc1 <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
 <http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
-<http://linked.earth/ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
+<http://linked.earth/ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
-<http://linked.earth/ontology#> <http://purl.org/dc/terms/description> "The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/description> "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
 <http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.2.0"@en .
-<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Linked Earth LiPD Ontology"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The LiPD Ontology"@en .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
 <http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
 <http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .

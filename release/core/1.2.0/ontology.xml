@@ -989,12 +989,12 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
     <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
     <dcterms:license>http://creativecommons.org/licenses/by/2.0/</dcterms:license>
     <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
-    <rdfs:comment xml:lang="en">The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
+    <rdfs:comment xml:lang="en">The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
     <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
-    <dcterms:description xml:lang="en">The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</dcterms:description>
+    <dcterms:description xml:lang="en">The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</dcterms:description>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <owl:versionInfo xml:lang="en">1.2.0</owl:versionInfo>
-    <dcterms:title xml:lang="en">The Linked Earth LiPD Ontology</dcterms:title>
+    <dcterms:title xml:lang="en">The LiPD Ontology</dcterms:title>
     <dcterms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
     <dcterms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>

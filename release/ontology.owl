@@ -10,10 +10,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/">
     <owl:Ontology rdf:about="http://linked.earth/ontology#">
-        <rdfs:comment xml:lang="en">The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Linked Earth Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
         <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
         <owl:versionInfo xml:lang="en">1.2.0</owl:versionInfo>
-        <dcterms:description xml:lang="en">The Linked Earth LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</dcterms:description>
+        <dcterms:description xml:lang="en">The Linked Earth Ontology aims to provide a common vocabulary for annotating paleoclimatology data</dcterms:description>
         <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
     </owl:Ontology>
@@ -3277,12 +3277,7 @@ Evans et al. (2013) &lt;sup id=&quot;cite_ref-evans2013_1-0&quot; class=&quot;re
         <dcterms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
         <dcterms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
         <dcterms:license>http://creativecommons.org/licenses/by/2.0/</dcterms:license>
-        <dcterms:title xml:lang="en">The Inferred Variable Ontology</dcterms:title>
-        <dcterms:title xml:lang="en">The Linked Earth Instrument Ontology</dcterms:title>
-        <dcterms:title xml:lang="en">The Linked Earth LiPD Ontology</dcterms:title>
-        <dcterms:title xml:lang="en">The Proxy Archive Ontology</dcterms:title>
-        <dcterms:title xml:lang="en">The Proxy Observation Ontology</dcterms:title>
-        <dcterms:title xml:lang="en">The Proxy Sensor Ontology</dcterms:title>
+        <dcterms:title xml:lang="en">The Linked Earth Ontology</dcterms:title>
     </owl:NamedIndividual>
     
 

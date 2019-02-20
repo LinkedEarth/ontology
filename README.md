@@ -1,3 +1,5 @@
+[![NSF-1541029](https://img.shields.io/badge/NSF-1541029-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1541029)
+
 # Ontology
 Repository for storing the different versions and implementation of the Linked Earth ontology
 

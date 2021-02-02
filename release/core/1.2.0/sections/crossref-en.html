@@ -1,7 +1,7 @@
-<h2  id="crossreference" class="list">Cross reference for the LiPD Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by the LiPD Ontology.
-<div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+<h2 id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#CalibrationModel" title="http://linked.earth/ontology#CalibrationModel">Calibration model</a>
@@ -433,7 +433,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/DataCatalog</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -513,6 +513,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#datasetDate" title="http://linked.earth/ontology#datasetDate">dataset date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#datasetLicense" title="http://linked.earth/ontology#datasetLicense">dataset license</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#datasetVersion" title="http://linked.earth/ontology#datasetVersion">dataset version</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDatasetID" title="http://linked.earth/ontology#hasDatasetID">has dataset ID</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#includesChronData" title="http://linked.earth/ontology#includesChronData">includes chron data</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#includesData" title="http://linked.earth/ontology#includesData">includes data</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#includesPaleoData" title="http://linked.earth/ontology#includesPaleoData">includes paleo data</a>
@@ -530,7 +531,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/Dataset</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -619,7 +620,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       <p>
          <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Feature</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a>
          </dd>
@@ -654,7 +655,9 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       </dl>
       <dl>
          <dt>Example</dt>
-         <dd>http://wiki.linked.earth/MD982181.Khider.2014.Funding1</dd>
+         <dd>
+            <pre>http://wiki.linked.earth/MD982181.Khider.2014.Funding1</pre>
+         </dd>
       </dl>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -681,7 +684,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       <p>
          <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Geometry</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
          </dd>
@@ -887,15 +890,9 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://schema.org/Place" title="http://schema.org/Place">place</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">feature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/Place" title="http://schema.org/Place">place</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
                title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -928,13 +925,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd>
-            <a href="#Variable" title="http://linked.earth/ontology#Variable">Variable</a>
-            <sup class="type-c" title="class">c</sup> 
-            <span class="logic">and</span> 
-            <a href="#http://purl.oclc.org/NET/ssnx/ssn#Observation" title="http://purl.oclc.org/NET/ssnx/ssn#Observation">observation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
+         <dd/>
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasProxySystem" title="http://linked.earth/ontology#hasProxySystem">has proxy system</a>
@@ -1077,7 +1068,7 @@ Agreed that the ProxySystem concept applies to both Chron and PaleoData</dd>
          <span class="markdown">The class ssn:Observation provides the structure to represent a single observation. An observation is a situation that describes an observed feature, an observed property, a sensor and method of sensing used and a value observed for the property: that is, an observation describes a single value attributed to a single property by a particular sensor. Observations of multiple features or multiple properties of the one feature should be represented as either compound properties, features and values or as multiple observations, grouped in some appropriate structure.</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.oclc.org/NET/ssnx/ssn">http://purl.oclc.org/NET/ssnx/ssn</a>
          </dd>
@@ -1333,7 +1324,7 @@ Subclass of ProxySystem, pertaining to climate information</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/Person</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -1348,7 +1339,7 @@ Subclass of ProxySystem, pertaining to climate information</dd>
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
          </dd>
@@ -1396,7 +1387,7 @@ Subclass of ProxySystem, pertaining to climate information</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/Place</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -1420,14 +1411,14 @@ Subclass of ProxySystem, pertaining to climate information</dd>
          <span class="markdown">According to the Evans et al. (2013), the medium in which the response of a ProxySensor to environmental forcing is recorded. Example of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
       </dl>
       <dl>
          <dt>Term rationale</dt>
-         <dd>"See ProxyArchive ontology for details about the concept. 
+         <dd>"See ProxyArchive ontology for details about the concept.
 
 We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community"</dd>
       </dl>
@@ -1456,7 +1447,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
          <span class="markdown">A Model of how the ProxySensor either creates or emplaces the signal into the ProxyArchive. Sensu Evans et al. (2013)</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
@@ -1489,14 +1480,14 @@ We adopted the Evans et al. (2013) framework since this is the only published de
          <span class="markdown">The type of MeasuredVariables measured on the ProxyArchive, whether chemical (e.g. Mg/Ca, D18O, Sr/Ca), physical (e.g. density, layer thickness), or biological (e.g. Species abundance)</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
       </dl>
       <dl>
          <dt>Term rationale</dt>
-         <dd>See ProxyObservation ontology for details about the concept. 
+         <dd>See ProxyObservation ontology for details about the concept.
 
 We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community</dd>
       </dl>
@@ -1526,7 +1517,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
          <span class="markdown">The Model of how ProxyObservations are made on the archive. Sensu Evans et al. (2013)</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
@@ -1560,14 +1551,14 @@ We adopted the Evans et al. (2013) framework since this is the only published de
          <span class="markdown">The sensor comprises physical, chemical, and/or biological components that react to environmental conditions. Sensors often respond to more than one environmental variable, and may have complex responses to the environment they sense, including thresholds (record only part of the range of environmental conditions), seasonal biases (record environmental conditions over a few months of the year), and/or nonlinear responses (Evans et al. (2013)). Signals recorded by the ProxySensor are imprinted onto the ProxyArchive.</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
       </dl>
       <dl>
          <dt>Term rationale</dt>
-         <dd>See ProxySensor ontology for details about the concept. 
+         <dd>See ProxySensor ontology for details about the concept.
 
 We adopted the Evans et al. (2013) framework since this is the only published definition of what is most commonly referred to as ""proxy"" in the paleoclimate community</dd>
       </dl>
@@ -1608,7 +1599,7 @@ We adopted the Evans et al. (2013) framework since this is the only published de
          <span class="markdown">A Model of the ProxySensor. Sensu Evans et al. (2013)</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
@@ -1646,7 +1637,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
 &lt;ul&gt;&lt;li&gt; The &lt;a href="#ProxyArchive" title="Category:ProxyArchive ©"&gt; archive&lt;/a&gt; is the medium in which the response of a sensor to environmental forcing is recorded.  Marine sediments are a type of archive, on which many sensors and observations may be recorded (e.g. Foraminifera Mg/Ca, δ&lt;sup&gt;18&lt;/sup&gt;O, TEX86)&lt;/li&gt;&lt;/ul&gt;
 &lt;ul&gt;&lt;li&gt; &lt;a href="#ProxyObservation" title="Category:ProxyObservation"&gt; Observations&lt;/a&gt; are made on archives and are  generally referred to as "proxies". The term "proxy" used ubiquitously, and often ambiguously, throughout the paleoclimate literature, is most commonly equivalent to "sensor + observation". "Observation" is the more explicit, and thus, preferred term, however "proxy" can be treated as a synonym of "observation". For instance, Foraminifera Mg/Ca is often used to investigate past changes in sea-surface temperature but depends also on sea-surface salinity and deep-ocean carbonate saturation &lt;sup id="cite_ref-2" class="reference"&gt;&lt;a href="#cite_note-2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;.  Furthermore, its temperature and salinity dependence is exponential &lt;sup id="cite_ref-3" class="reference"&gt;&lt;a href="#cite_note-3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-4" class="reference"&gt;&lt;a href="#cite_note-4"&gt;[4]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-5" class="reference"&gt;&lt;a href="#cite_note-5"&gt;[5]&lt;/a&gt;&lt;/sup&gt; while its response to carbonate saturation is thresholded &lt;sup id="cite_ref-6" class="reference"&gt;&lt;a href="#cite_note-6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;.  &lt;/li&gt;&lt;/ul&gt;
 
-&lt;p&gt;These three major components may be individually modeled, and linked together within a &lt;a href="/Category:ProxySystemModel_%C2%A9" title="Category:ProxySystemModel ©"&gt;Proxy System Model&lt;/a&gt; &lt;sup id="cite_ref-evans2013_1-2" class="reference"&gt;&lt;a href="#cite_note-evans2013-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-7" class="reference"&gt;&lt;a href="#cite_note-7"&gt;[7]&lt;/a&gt;&lt;/sup&gt;. Some sensors are common to multiple archives (e.g. δ&lt;sup&gt;18&lt;/sup&gt;O), and all archives support more than one possible sensor. 
+&lt;p&gt;These three major components may be individually modeled, and linked together within a &lt;a href="/Category:ProxySystemModel_%C2%A9" title="Category:ProxySystemModel ©"&gt;Proxy System Model&lt;/a&gt; &lt;sup id="cite_ref-evans2013_1-2" class="reference"&gt;&lt;a href="#cite_note-evans2013-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; &lt;sup id="cite_ref-7" class="reference"&gt;&lt;a href="#cite_note-7"&gt;[7]&lt;/a&gt;&lt;/sup&gt;. Some sensors are common to multiple archives (e.g. δ&lt;sup&gt;18&lt;/sup&gt;O), and all archives support more than one possible sensor.
 &lt;/p&gt;
 
 &lt;h2&gt;&lt;span class="mw-headline" id="References"&gt;References&lt;/span&gt;&lt;/h2&gt;
@@ -1669,7 +1660,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
 &lt;/ol&gt;</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
@@ -1715,7 +1706,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
          <span class="markdown">In the Evans et al. (2013) framework, this is the combination of sensor, archive and observation models . "A generalized proxy system model encapuslates a simplified representation of prior physical, chemical, biological, and/or geological understanding of the ways in which environmental variation ultimately results in the observations used to retrieve paleoclimatic information."</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.sciencedirect.com/science/article/pii/S0277379113002011">http://www.sciencedirect.com/science/article/pii/S0277379113002011</a>
          </dd>
@@ -1824,7 +1815,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://ontosoft.org/software#Software</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://ontosoft.org/software#">http://ontosoft.org/software#</a>
          </dd>
@@ -1887,7 +1878,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">http://www.w3.org/2003/01/geo/wgs84_pos#</a>
          </dd>
@@ -1952,7 +1943,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
          <span class="markdown">A state of incomplete knowledge that results from a lack of information or from different modeling choices. Uncertainty may come from many sources, from imprecision in the data to ambigously defined concepts or terminology. Uncertainty can be represented by quantitative measures (e.g., probability density function) or by qualitative statements (e.g., reflecting the judgement of a team of experts). Sensu IPCC AR5</span>
       </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf">https://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_AnnexIII_FINAL.pdf</a>
          </dd>
@@ -2047,7 +2038,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -2272,11 +2263,8 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
                <a href="#http://schema.org/author" title="http://schema.org/author">author</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2306,7 +2294,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://schema.org/author</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/author">http://schema.org/author</a>
          </dd>
@@ -2481,7 +2469,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://schema.org/contentLocation</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -2521,10 +2509,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/contributor" title="http://schema.org/contributor">contributor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/contributor" title="http://schema.org/contributor">contributor</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2548,7 +2533,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -2571,7 +2556,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://schema.org/contributor</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -2594,7 +2579,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -2631,7 +2616,8 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -2670,7 +2656,8 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -2822,7 +2809,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://schema.org/funder</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -2897,7 +2884,8 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -2920,7 +2908,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#hasGeometry</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
          </dd>
@@ -3020,7 +3008,9 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       </dl>
       <dl>
          <dt>Example</dt>
-         <dd>http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</dd>
+         <dd>
+            <pre>http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.mgcarub.ICPAES</pre>
+         </dd>
       </dl>
       <div class="description">
          <dl>
@@ -3086,7 +3076,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://schema.org/includedInDataCatalog</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -3404,7 +3394,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/isPartOf</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -3486,7 +3476,9 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -3513,7 +3505,7 @@ Evans et al. (2013) &lt;sup id="cite_ref-evans2013_1-0" class="reference"&gt;&lt
       </div>
       <dl>
          <dt>Term rationale</dt>
-         <dd>Links a Model to its Publication. 
+         <dd>Links a Model to its Publication.
 Note: calibrationReferences and modelReferences in the Calibration may not need to be the same. For instance, the calibration data and one mathematical formulation can be provided in one Publication (answering the calibrationReferences) but a different mathematical Model may be applied in another Publication (answering the modelReferences)</dd>
       </dl>
       <dl>
@@ -3591,7 +3583,7 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
       <p>
          <strong>IRI:</strong> http://purl.oclc.org/NET/ssnx/ssn#observedBy</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.oclc.org/NET/ssnx/ssn#">http://purl.oclc.org/NET/ssnx/ssn#</a>
          </dd>
@@ -3661,11 +3653,8 @@ Note: calibrationReferences and modelReferences in the Calibration may not need 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">is part of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
                <a href="#http://schema.org/includedInDataCatalog" title="http://schema.org/includedInDataCatalog">included in data catalog</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">is part of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -3959,7 +3948,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/references</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -4038,7 +4027,8 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -4104,7 +4094,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://www.w3.org/ns/prov#wasDerivedFrom</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a>
          </dd>
@@ -4119,8 +4109,8 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
-   <h3 id="dataproperties" class="list">Data Properties</h3>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
@@ -4200,6 +4190,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       </li>
       <li>
          <a href="#hasColumnNumber" title="http://linked.earth/ontology#hasColumnNumber">has column number</a>
+      </li>
+      <li>
+         <a href="#hasDatasetID" title="http://linked.earth/ontology#hasDatasetID">has dataset ID</a>
       </li>
       <li>
          <a href="#hasDOI" title="http://linked.earth/ontology#hasDOI">has DOI</a>
@@ -4373,7 +4366,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#alt</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">http://www.w3.org/2003/01/geo/wgs84_pos#</a>
          </dd>
@@ -4382,7 +4375,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -4392,7 +4387,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4405,7 +4402,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#asWKT</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
          </dd>
@@ -4419,7 +4416,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
             </dd>
          </dl>
       </div>
@@ -4432,7 +4431,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -4472,7 +4471,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4485,7 +4486,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://schema.org/citation</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -4521,10 +4522,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">bibliographic citation</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/citation" title="http://schema.org/citation">citation</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/citation" title="http://schema.org/citation">citation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4534,7 +4532,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4558,10 +4558,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4571,7 +4568,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -4604,7 +4603,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4617,7 +4618,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -4653,10 +4654,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">bibliographic citation</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/citation" title="http://schema.org/citation">citation</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/citation" title="http://schema.org/citation">citation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4666,7 +4664,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
             </dd>
          </dl>
       </div>
@@ -4687,19 +4687,19 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
       </dl>
       <dl>
          <dt>Example</dt>
-         <dd>http://wiki.linked.earth/MD982181.Khider.2014</dd>
+         <dd>
+            <pre>http://wiki.linked.earth/MD982181.Khider.2014</pre>
+         </dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4709,7 +4709,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -4733,10 +4735,7 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/license" title="http://schema.org/license">license</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/license" title="http://schema.org/license">license</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4746,7 +4745,9 @@ For example, the measured value of 5.63 mmol/mol is of type Mg/Ca, or the proxy 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
             </dd>
          </dl>
       </div>
@@ -4775,7 +4776,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -4789,7 +4791,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4802,7 +4806,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       <p>
          <strong>IRI:</strong> http://schema.org/dateCreated</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -4848,12 +4852,16 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4883,7 +4891,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4917,7 +4927,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4951,7 +4963,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -4978,7 +4992,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -4987,7 +5002,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5008,7 +5025,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5017,7 +5035,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5051,7 +5071,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5085,7 +5107,39 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDatasetID">
+      <h3>has dataset ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#hasDatasetID</p>
+      <div class="comment">
+         <span class="markdown">Associates a dataset with an external identifier</span>
+      </div>
+      <dl>
+         <dt>Term rationale</dt>
+         <dd>Allows assigning external ids to datasets</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://linked.earth/ontology#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5112,7 +5166,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -5132,7 +5187,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5160,7 +5217,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5188,7 +5247,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5215,7 +5276,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5224,7 +5286,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5257,7 +5321,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5270,7 +5336,7 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       <p>
          <strong>IRI:</strong> http://ontosoft.org/software#hasImplementationLanguage</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://ontosoft.org/software#">http://ontosoft.org/software#</a>
          </dd>
@@ -5313,7 +5379,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5346,7 +5414,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5375,12 +5445,16 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
             </dd>
          </dl>
       </div>
@@ -5414,7 +5488,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -5448,7 +5524,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -5482,7 +5560,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -5516,7 +5596,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -5543,7 +5625,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5555,7 +5638,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5582,7 +5667,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5591,7 +5677,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
          </dl>
       </div>
@@ -5618,7 +5706,8 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5636,7 +5725,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5676,7 +5767,9 @@ It should follow the x.y.z notation where x refers to changes in metadata and da
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5713,7 +5806,9 @@ This allows someone to change every piece of metadata about column or dataset, i
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5750,7 +5845,9 @@ This allows someone to change every piece of metadata about column or dataset, i
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5763,7 +5860,7 @@ This allows someone to change every piece of metadata about column or dataset, i
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -5806,7 +5903,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5815,7 +5913,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5836,7 +5936,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5845,7 +5946,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5872,7 +5975,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -5881,7 +5985,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
          </dl>
       </div>
@@ -5915,7 +6021,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5928,7 +6036,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#lat</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">http://www.w3.org/2003/01/geo/wgs84_pos#</a>
          </dd>
@@ -5943,7 +6051,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -5956,7 +6066,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -5979,7 +6089,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/license</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -6002,7 +6112,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#long</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">http://www.w3.org/2003/01/geo/wgs84_pos#</a>
          </dd>
@@ -6017,7 +6127,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6057,7 +6169,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6087,12 +6201,16 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6105,7 +6223,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://schema.org/name</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -6119,12 +6237,16 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6167,7 +6289,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6194,7 +6318,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -6208,7 +6333,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6235,7 +6362,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -6244,7 +6372,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6284,7 +6414,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6311,15 +6443,13 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dd>
-               <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -6329,7 +6459,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
          </dl>
       </div>
@@ -6363,7 +6495,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6391,7 +6525,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6428,7 +6564,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6462,7 +6600,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6496,7 +6636,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6530,7 +6672,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6569,7 +6713,9 @@ Also applies to InferredVariable to faciliate the search in database</dd>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6582,7 +6728,7 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
          </dd>
@@ -6628,7 +6774,9 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6641,7 +6789,7 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds</span>
       <p>
          <strong>IRI:</strong> http://schema.org/version</p>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://schema.org/">http://schema.org/</a>
          </dd>
@@ -6679,7 +6827,8 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds</span>
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -6688,10 +6837,77 @@ Examples include 1-sigma, 2-sigma, 95% confidence bounds</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#" title="http://linked.earth/ontology#">
+            <span></span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="">
+      <h3>:<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linked.earth/ontology#</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://w3id.org/people/dgarijo"
+               target="_blank"
+               title="http://w3id.org/people/dgarijo">dgarijo</a>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.isi.edu/~gil/"
+               target="_blank"
+               title="http://www.isi.edu/~gil/">http://www.isi.edu/~gil/</a>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://earth.usc.edu/~khider/"
+               target="_blank"
+               title="http://earth.usc.edu/~khider/">http://earth.usc.edu/~khider/</a>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://orcid.org/0000-0001-5920-4751"
+               target="_blank"
+               title="http://orcid.org/0000-0001-5920-4751">0000 0001 5920 4751</a>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.cefns.nau.edu/~npm4/"
+               target="_blank"
+               title="http://www.cefns.nau.edu/~npm4/">http://www.cefns.nau.edu/~npm4/</a>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://creativecommons.org/licenses/by/2.0/"</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"The LiPD Ontology"@en</span>
+         </dd>
+      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

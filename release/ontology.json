@@ -958,6 +958,30 @@
       }
     },
     {
+      "@id": "http://linked.earth/ontology#hasDatasetID",
+      "@type": [
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Associates a dataset with an external identifier"
+      },
+      "rdfs:domain": {
+        "@id": "http://linked.earth/ontology#Dataset"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has dataset id"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "vaem:rationale": {
+        "@language": "en",
+        "@value": "Allows assigning external ids to datasets"
+      }
+    },
+    {
       "@id": "http://linked.earth/ontology#freeOxygenLevels",
       "@type": [
         "http://linked.earth/ontology#AtmosphericChemistry",

@@ -1,0 +1,43 @@
+@prefix : <http://linked.earth/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://linked.earth/ontology#> .
+
+<http://linked.earth/ontology#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://linked.earth/ontology/chron_variable/0.0.1> ;
+                                 dcterms:contributor <http://w3id.org/people/varunr> ,
+                                                     <http://earth.usc.edu/~khider/> ;
+                                 dcterms:creator <http://earth.usc.edu/~khider/> ,
+                                                 <http://orcid.org/0000-0001-5920-4751> ,
+                                                 <http://www.cefns.nau.edu/~npm4/> ;
+                                 dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
+                                 dcterms:title "The Paleo Proxy Ontology"@en ;
+                                 vann:preferredNamespacePrefix "le" ;
+                                 vann:preferredNamespaceUri "http://linked.earth/ontology#" ;
+                                 owl:versionInfo "0.0.1"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://linked.earth/ontology#hasNoaaPastName
+:hasNoaaPastName rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+###  http://linked.earth/ontology#hasNoaaPastUrl
+:hasNoaaPastUrl rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+###  http://linked.earth/ontology#hasSynonym
+:hasSynonym rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################

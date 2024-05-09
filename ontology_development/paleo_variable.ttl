@@ -3740,7 +3740,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
              :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2196" ;
              :hasSynonym "13CleafwaxC29-33err" ,
                          "A_site_std" ,
-                         "Age" ,
                          "Age_uncertainty" ,
                          "Annual Precipitation Error" ,
                          "C20 Total Unc" ,

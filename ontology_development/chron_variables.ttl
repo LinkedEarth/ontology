@@ -17,7 +17,7 @@
                                                  <http://orcid.org/0000-0001-5920-4751> ,
                                                  <http://www.cefns.nau.edu/~npm4/> ;
                                  dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
-                                 dcterms:title "The Paleo Proxy Ontology"@en ;
+                                 dcterms:title "The Chron Variables Ontology"@en ;
                                  vann:preferredNamespacePrefix "cvar" ;
                                  vann:preferredNamespaceUri "http://linked.earth/ontology/chron_variables#" ;
                                  owl:versionInfo "2.0.0"@en .

@@ -1,0 +1,214 @@
+<http://linked.earth/ontology/archive#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/archive/2.0.0> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
+<http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/title> "The Archive Type Ontology"@en .
+<http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/archive#" .
+<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology#hasNoaaPastName
+<http://linked.earth/ontology#hasNoaaPastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://linked.earth/ontology#hasNoaaPastUrl
+<http://linked.earth/ontology#hasNoaaPastUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://linked.earth/ontology#hasSynonym
+<http://linked.earth/ontology#hasSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology/archive#ArchiveType
+<http://linked.earth/ontology/archive#ArchiveType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology/archive#ArchiveType> <http://www.w3.org/2000/01/rdf-schema#comment> "The medium in which the response of a sensor to environmental forcing is recorded. Sensu Evans et al. (2013).\n\nExamples of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice, etc."@en .
+<http://linked.earth/ontology/archive#ArchiveType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.sciencedirect.com/science/article/pii/S0277379113002011> .
+<http://linked.earth/ontology/archive#ArchiveType> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy archive"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology/archive#Borehole
+<http://linked.earth/ontology/archive#Borehole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Borehole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Borehole> <http://linked.earth/ontology#hasNoaaPastName> "borehole" .
+<http://linked.earth/ontology/archive#Borehole> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114" .
+<http://linked.earth/ontology/archive#Borehole> <http://www.w3.org/2000/01/rdf-schema#comment> "a data type that consists of direct measurements of subsurface temperature from boreholes drilled into materials such as rock and glacier ice." .
+<http://linked.earth/ontology/archive#Borehole> <http://www.w3.org/2000/01/rdf-schema#label> "Borehole" .
+# 
+# http://linked.earth/ontology/archive#Coral
+<http://linked.earth/ontology/archive#Coral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Coral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Coral> <http://linked.earth/ontology#hasNoaaPastName> "coral" .
+<http://linked.earth/ontology/archive#Coral> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=245" .
+<http://linked.earth/ontology/archive#Coral> <http://www.w3.org/2000/01/rdf-schema#comment> "an identifiable organism that belongs to the kingdom Animalia, phylum Cnindaria." .
+<http://linked.earth/ontology/archive#Coral> <http://www.w3.org/2000/01/rdf-schema#label> "Coral"@en .
+# 
+# http://linked.earth/ontology/archive#Documents
+<http://linked.earth/ontology/archive#Documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Documents> <http://linked.earth/ontology#hasNoaaPastName> "documents" .
+<http://linked.earth/ontology/archive#Documents> <http://www.w3.org/2000/01/rdf-schema#comment> "added due to some LiPD files using this" .
+<http://linked.earth/ontology/archive#Documents> <http://www.w3.org/2000/01/rdf-schema#label> "Documents"@en .
+# 
+# http://linked.earth/ontology/archive#FluvialSediment
+<http://linked.earth/ontology/archive#FluvialSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://linked.earth/ontology#hasSynonym> "Creek" .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://linked.earth/ontology#hasSynonym> "Fluvial" .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://linked.earth/ontology#hasSynonym> "River" .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://linked.earth/ontology#hasSynonym> "Stream" .
+<http://linked.earth/ontology/archive#FluvialSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Fluvial sediment" .
+# 
+# http://linked.earth/ontology/archive#GlacierIce
+<http://linked.earth/ontology/archive#GlacierIce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#GlacierIce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#GlacierIce> <http://linked.earth/ontology#hasNoaaPastName> "ice cores" .
+<http://linked.earth/ontology/archive#GlacierIce> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=102" .
+<http://linked.earth/ontology/archive#GlacierIce> <http://www.w3.org/2000/01/rdf-schema#comment> "a data type that includes measurements made on land-based ice." .
+<http://linked.earth/ontology/archive#GlacierIce> <http://www.w3.org/2000/01/rdf-schema#label> "Glacier ice"@en .
+# 
+# http://linked.earth/ontology/archive#GroundIce
+<http://linked.earth/ontology/archive#GroundIce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#GroundIce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#GroundIce> <http://linked.earth/ontology#hasNoaaPastName> "bulk ice" .
+<http://linked.earth/ontology/archive#GroundIce> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=789" .
+<http://linked.earth/ontology/archive#GroundIce> <http://www.w3.org/2000/01/rdf-schema#comment> "a hydrologic material that is a whole sample of recrystallized and compacted snow, without any separation of components." .
+<http://linked.earth/ontology/archive#GroundIce> <http://www.w3.org/2000/01/rdf-schema#label> "Ground ice" .
+# 
+# http://linked.earth/ontology/archive#LakeSediment
+<http://linked.earth/ontology/archive#LakeSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#LakeSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#LakeSediment> <http://linked.earth/ontology#hasSynonym> "Lagoon" .
+<http://linked.earth/ontology/archive#LakeSediment> <http://linked.earth/ontology#hasSynonym> "Lake" .
+<http://linked.earth/ontology/archive#LakeSediment> <http://linked.earth/ontology#hasSynonym> "Lake Sediment" .
+<http://linked.earth/ontology/archive#LakeSediment> <http://www.w3.org/2000/01/rdf-schema#comment> "Sediment deposited in a lake" .
+<http://linked.earth/ontology/archive#LakeSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Lake sediment"@en .
+# 
+# http://linked.earth/ontology/archive#MarineSediment
+<http://linked.earth/ontology/archive#MarineSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#MarineSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#MarineSediment> <http://linked.earth/ontology#hasSynonym> "Delta" .
+<http://linked.earth/ontology/archive#MarineSediment> <http://linked.earth/ontology#hasSynonym> "Marine" .
+<http://linked.earth/ontology/archive#MarineSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Marine sediment"@en .
+# 
+# http://linked.earth/ontology/archive#Midden
+<http://linked.earth/ontology/archive#Midden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Midden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Midden> <http://www.w3.org/2000/01/rdf-schema#label> "Midden" .
+# 
+# http://linked.earth/ontology/archive#MolluskShell
+<http://linked.earth/ontology/archive#MolluskShell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#MolluskShell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#MolluskShell> <http://linked.earth/ontology#hasNoaaPastName> "bivalve" .
+<http://linked.earth/ontology/archive#MolluskShell> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1772" .
+<http://linked.earth/ontology/archive#MolluskShell> <http://linked.earth/ontology#hasSynonym> "MolluskShells" .
+<http://linked.earth/ontology/archive#MolluskShell> <http://www.w3.org/2000/01/rdf-schema#comment> "an identifiable organism including clams and mussels that belongs to the kingdom Animalia, phylum Mollusca, class Bivalvia." .
+<http://linked.earth/ontology/archive#MolluskShell> <http://www.w3.org/2000/01/rdf-schema#label> "Mollusk shell"@en .
+# 
+# http://linked.earth/ontology/archive#Other
+<http://linked.earth/ontology/archive#Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Other> <http://linked.earth/ontology#hasNoaaPastName> "other" .
+<http://linked.earth/ontology/archive#Other> <http://www.w3.org/2000/01/rdf-schema#comment> "added due to some LiPD files using this" .
+<http://linked.earth/ontology/archive#Other> <http://www.w3.org/2000/01/rdf-schema#label> "Other"@en .
+# 
+# http://linked.earth/ontology/archive#Peat
+<http://linked.earth/ontology/archive#Peat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Peat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasNoaaPastName> "peat" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1623" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasSynonym> "Bog" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasSynonym> "Fen" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasSynonym> "Marsh" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasSynonym> "Mire" .
+<http://linked.earth/ontology/archive#Peat> <http://linked.earth/ontology#hasSynonym> "Swamp" .
+<http://linked.earth/ontology/archive#Peat> <http://www.w3.org/2000/01/rdf-schema#comment> "a bulk biological material that consists of an unconsolidated combustible deposit of partially carbonized plant remains, common in bogs, fens, and lakes in tundra or periglacial regions (Credit: Smol et al. 2001 Tracking Environmental Change Using Lake Sediments)." .
+<http://linked.earth/ontology/archive#Peat> <http://www.w3.org/2000/01/rdf-schema#label> "Peat"@en .
+# 
+# http://linked.earth/ontology/archive#Sclerosponge
+<http://linked.earth/ontology/archive#Sclerosponge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Sclerosponge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Sclerosponge> <http://linked.earth/ontology#hasNoaaPastName> "sclerosponge" .
+<http://linked.earth/ontology/archive#Sclerosponge> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4574" .
+<http://linked.earth/ontology/archive#Sclerosponge> <http://www.w3.org/2000/01/rdf-schema#comment> "an identifiable organism that belongs to kingdom Animalia, phylum Porifera, class Demospongiae." .
+<http://linked.earth/ontology/archive#Sclerosponge> <http://www.w3.org/2000/01/rdf-schema#label> "Sclerosponge"@en .
+# 
+# http://linked.earth/ontology/archive#Shoreline
+<http://linked.earth/ontology/archive#Shoreline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Shoreline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Shoreline> <http://linked.earth/ontology#hasNoaaPastName> "lake levels" .
+<http://linked.earth/ontology/archive#Shoreline> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2298" .
+<http://linked.earth/ontology/archive#Shoreline> <http://linked.earth/ontology#hasSynonym> "LakeDeposit" .
+<http://linked.earth/ontology/archive#Shoreline> <http://linked.earth/ontology#hasSynonym> "LakeDeposits" .
+<http://linked.earth/ontology/archive#Shoreline> <http://www.w3.org/2000/01/rdf-schema#comment> "a data type that quantifies past changes in lake elevation or lake depth, either directly or using reconstruction methods, based on shoreline deposits or sediment cores." .
+<http://linked.earth/ontology/archive#Shoreline> <http://www.w3.org/2000/01/rdf-schema#label> "Shoreline" .
+# 
+# http://linked.earth/ontology/archive#Speleothem
+<http://linked.earth/ontology/archive#Speleothem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Speleothem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Speleothem> <http://linked.earth/ontology#hasNoaaPastName> "speleothems" .
+<http://linked.earth/ontology/archive#Speleothem> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=106" .
+<http://linked.earth/ontology/archive#Speleothem> <http://linked.earth/ontology#hasSynonym> "Cave" .
+<http://linked.earth/ontology/archive#Speleothem> <http://www.w3.org/2000/01/rdf-schema#comment> "a data type that includes measurements made on cave deposits." .
+<http://linked.earth/ontology/archive#Speleothem> <http://www.w3.org/2000/01/rdf-schema#label> "Speleothem"@en .
+# 
+# http://linked.earth/ontology/archive#TerrestrialSediment
+<http://linked.earth/ontology/archive#TerrestrialSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#TerrestrialSediment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#TerrestrialSediment> <http://linked.earth/ontology#hasSynonym> "Dune" .
+<http://linked.earth/ontology/archive#TerrestrialSediment> <http://linked.earth/ontology#hasSynonym> "Loess" .
+<http://linked.earth/ontology/archive#TerrestrialSediment> <http://www.w3.org/2000/01/rdf-schema#label> "Terrestrial sediment" .
+# 
+# http://linked.earth/ontology/archive#Wood
+<http://linked.earth/ontology/archive#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://linked.earth/ontology/archive#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#Wood> <http://linked.earth/ontology#hasNoaaPastName> "tree ring" .
+<http://linked.earth/ontology/archive#Wood> <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=116" .
+<http://linked.earth/ontology/archive#Wood> <http://linked.earth/ontology#hasSynonym> "tree" .
+<http://linked.earth/ontology/archive#Wood> <http://www.w3.org/2000/01/rdf-schema#comment> "a data type that includes measurements made on the rings of trees." .
+<http://linked.earth/ontology/archive#Wood> <http://www.w3.org/2000/01/rdf-schema#label> "Wood"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

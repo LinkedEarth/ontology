@@ -1,0 +1,1956 @@
+@prefix : <http://linked.earth/ontology/interpretation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://linked.earth/ontology/interpretation#> .
+
+<http://linked.earth/ontology/interpretation#> rdf:type owl:Ontology ;
+                                                owl:versionIRI <http://linked.earth/ontology/interpretation/2.0.0> ;
+                                                <http://purl.org/dc/terms/contributor> <http://earth.usc.edu/~khider/> ,
+                                                                                       <http://w3id.org/people/varunr> ;
+                                                <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> ,
+                                                                                   <http://orcid.org/0000-0001-5920-4751> ,
+                                                                                   <http://www.cefns.nau.edu/~npm4/> ;
+                                                <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" ;
+                                                <http://purl.org/dc/terms/title> "The Interpretation Ontology"@en ;
+                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "interp" ;
+                                                <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/interpretation#" ;
+                                                owl:versionInfo "2.0.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://linked.earth/ontology#hasNoaaPastName
+<http://linked.earth/ontology#hasNoaaPastName> rdf:type owl:AnnotationProperty .
+
+
+###  http://linked.earth/ontology#hasNoaaPastUrl
+<http://linked.earth/ontology#hasNoaaPastUrl> rdf:type owl:AnnotationProperty .
+
+
+###  http://linked.earth/ontology#hasSynonym
+<http://linked.earth/ontology#hasSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linked.earth/ontology/interpretation#InterpretationSeasonality
+:InterpretationSeasonality rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/interpretation#InterpretationVariable
+:InterpretationVariable rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://linked.earth/ontology/interpretation#Annual
+:Annual rdf:type owl:NamedIndividual ,
+                 :InterpretationSeasonality ;
+        <http://linked.earth/ontology#hasNoaaPastName> "annual" ;
+        <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=35" ;
+        <http://linked.earth/ontology#hasSynonym> "1 2 3 4 5 6 7 8 9 10 11 12" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,117" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,12" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,122" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,138" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,158" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,190" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,229" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,291" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,434" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,464" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,588" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,646" ,
+                                                  "1,2,3,4,5,6,7,8,9,10,11,706" ,
+                                                  "12 1 2; 6 7 8" ,
+                                                  "Mean annual (weighted toward OND and MAM)" ,
+                                                  "Winter" ,
+                                                  "Year-round" ,
+                                                  "annual" ,
+                                                  "annual (*but recently would prob be interpreted as summer-biased)" ,
+                                                  "annual calendar year (but 80% of precipitation from Nov to May)" ,
+                                                  "annual mean" ,
+                                                  "coldest + warmest month" ,
+                                                  "coldest month + summer" ,
+                                                  "late summer/winter lake water (summer-biased mean annual precip)" ,
+                                                  "multi-annual" ,
+                                                  "not applicable (always)" ,
+                                                  "summer + winter" ,
+                                                  "summer temperature" ,
+                                                  "summer-biased/annual?" ,
+                                                  "warmest + coldest" ,
+                                                  "warmest + coldest month" ,
+                                                  "warmest + coldest months" ,
+                                                  "warmest month + winter" ,
+                                                  "warmest month; coldest month" ,
+                                                  "year round" ,
+                                                  "years" ;
+        rdfs:comment "a reconstructed seasonality that consists of an average of twelve consecutive months of the calendar year."@en ;
+        rdfs:label "Annual"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr
+:Apr rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Apr" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=80" ;
+     <http://linked.earth/ontology#hasSynonym> "4" ;
+     rdfs:comment "a one month period that spans the month of April."@en ;
+     rdfs:label "Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Aug
+:Apr-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3324" ;
+         <http://linked.earth/ontology#hasSynonym> "April-May" ,
+                                                   "June-August" ;
+         rdfs:comment "a five month period that spans the months of April to August."@en ;
+         rdfs:label "Apr-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Dec
+:Apr-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3365" ;
+         <http://linked.earth/ontology#hasSynonym> "4 5 6 7 8 9 10 12" ;
+         rdfs:comment "a nine month period that spans the months of April to December."@en ;
+         rdfs:label "Apr-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Feb
+:Apr-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3389" ;
+         rdfs:comment "an eleven month period that spans the months of April to February."@en ;
+         rdfs:label "Apr-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Jan
+:Apr-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3377" ;
+         rdfs:comment "a ten month period that spans the months of April to January."@en ;
+         rdfs:label "Apr-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Jul
+:Apr-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=44" ;
+         <http://linked.earth/ontology#hasSynonym> "4 5 6 7" ,
+                                                   "AMJJ" ,
+                                                   "spring-summer (April-July)" ;
+         rdfs:comment "a four month period that spans the months of April to July."@en ;
+         rdfs:label "Apr-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Jun
+:Apr-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=14" ;
+         <http://linked.earth/ontology#hasSynonym> "4 5 2006" ;
+         rdfs:comment "a three month period that spans the months of April to June."@en ;
+         rdfs:label "Apr-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Mar
+:Apr-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "April/June to April/March" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Apr-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-May
+:Apr-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=68" ;
+         rdfs:comment "a two month period that spans the months of April and May."@en ;
+         rdfs:label "Apr-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Nov
+:Apr-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3353" ;
+         rdfs:comment "an eight month period that spans the months of April to November."@en ;
+         rdfs:label "Apr-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Oct
+:Apr-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3337" ;
+         <http://linked.earth/ontology#hasSynonym> "4,5,6,7,8,9,10" ,
+                                                   "AMJJASO" ;
+         rdfs:comment "a seven month period that spans the months of April to October."@en ;
+         rdfs:label "Apr-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Apr-Sep
+:Apr-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Apr-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=56" ;
+         <http://linked.earth/ontology#hasSynonym> "4 5 6 7 8 9" ,
+                                                   "4,5,6,7,8,9" ,
+                                                   "AMJJAS" ;
+         rdfs:comment "a six month period that spans the months of April to September."@en ;
+         rdfs:label "Apr-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug
+:Aug rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Aug" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=84" ;
+     <http://linked.earth/ontology#hasSynonym> "8" ;
+     rdfs:comment "a one month period that spans the month of August."@en ;
+     rdfs:label "Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Apr
+:Aug-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3369" ;
+         rdfs:comment "a nine month period that spans the months of August to April."@en ;
+         rdfs:label "Aug-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Dec
+:Aug-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3328" ;
+         rdfs:comment "a five month period that spans the months of August to December."@en ;
+         rdfs:label "Aug-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Feb
+:Aug-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3341" ;
+         rdfs:comment "a seven month period that spans the months of August to February."@en ;
+         rdfs:label "Aug-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Jan
+:Aug-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=60" ;
+         rdfs:comment "a six month period that spans the months of August to January."@en ;
+         rdfs:label "Aug-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Jul
+:Aug-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "-12 -11 -10 -9 -8 1 2 3 4 5 6 7" ,
+                                                   "thermal year (Aug-Jul) (but 80% of precipitation from Nov to May)" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Aug-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Jun
+:Aug-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3393" ;
+         rdfs:comment "an eleven month period that spans the months of August to June."@en ;
+         rdfs:label "Aug-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Mar
+:Aug-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3357" ;
+         rdfs:comment "an eight month period that spans the months of August to March."@en ;
+         rdfs:label "Aug-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-May
+:Aug-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3381" ;
+         rdfs:comment "a ten month period that spans the months of August to May."@en ;
+         rdfs:label "Aug-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Nov
+:Aug-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=48" ;
+         rdfs:comment "a four month period that spans the months of August to November."@en ;
+         rdfs:label "Aug-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Oct
+:Aug-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=18" ;
+         rdfs:comment "a three month period that spans the months of August to October."@en ;
+         rdfs:label "Aug-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Aug-Sep
+:Aug-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Aug-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=72" ;
+         rdfs:comment "a two month period that spans the months of August and September."@en ;
+         rdfs:label "Aug-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#C3C4Ratio
+:C3C4Ratio rdf:type owl:NamedIndividual ,
+                    :InterpretationVariable ;
+           <http://linked.earth/ontology#hasSynonym> "composition C3-C4 plants" ;
+           rdfs:comment ""@en ;
+           rdfs:label "C3C4Ratio"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Coldest_Month
+:Coldest_Month rdf:type owl:NamedIndividual ,
+                        :InterpretationSeasonality ;
+               <http://linked.earth/ontology#hasNoaaPastName> "growing season" ;
+               <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3398" ;
+               <http://linked.earth/ontology#hasSynonym> "coldest" ,
+                                                         "coldest month" ;
+               rdfs:comment "a non-calendric period that encompasses the period during which rainfall and temperature allow plants to grow, without specification of certain days or months."@en ;
+               rdfs:label "Coldest Month"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Apr
+:Dec-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3332" ;
+         <http://linked.earth/ontology#hasSynonym> "12,1,2,3,4" ;
+         rdfs:comment "a five month period that spans the months of December to April."@en ;
+         rdfs:label "Dec-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Aug
+:Dec-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3373" ;
+         rdfs:comment "a nine month period that spans the months of December to August."@en ;
+         rdfs:label "Dec-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Feb
+:Dec-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=22" ;
+         <http://linked.earth/ontology#hasSynonym> "-12 1 2" ,
+                                                   "1,2,12" ,
+                                                   "12,1,2" ,
+                                                   "DJF" ;
+         rdfs:comment "a three month period that spans the months of December to February."@en ;
+         rdfs:label "Dec-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Jan
+:Dec-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=76" ;
+         rdfs:comment "a two month period that spans the months of December and January."@en ;
+         rdfs:label "Dec-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Jul
+:Dec-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3361" ;
+         rdfs:comment "an eight month period that spans the months of December to July."@en ;
+         rdfs:label "Dec-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Jun
+:Dec-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3345" ;
+         rdfs:comment "a seven month period that spans the months of December to June."@en ;
+         rdfs:label "Dec-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Mar
+:Dec-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=52" ;
+         <http://linked.earth/ontology#hasSynonym> "-12 1 2 3" ,
+                                                   "12,1,2,3" ,
+                                                   "December - March (monsoon season)" ;
+         rdfs:comment "a four month period that spans the months of December to March."@en ;
+         rdfs:label "Dec-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-May
+:Dec-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=64" ;
+         <http://linked.earth/ontology#hasSynonym> "DJFMAM" ;
+         rdfs:comment "a six month period that spans the months of December to May."@en ;
+         rdfs:label "Dec-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Oct
+:Dec-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3397" ;
+         rdfs:comment "an eleven month period that spans the months of December to October."@en ;
+         rdfs:label "Dec-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Dec-Sep
+:Dec-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Dec-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3385" ;
+         rdfs:comment "a ten month period that spans the months of December to September."@en ;
+         rdfs:label "Dec-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#ELA
+:ELA rdf:type owl:NamedIndividual ,
+              :InterpretationVariable ;
+     <http://linked.earth/ontology#hasNoaaPastName> "equilibrium line altitude" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2303" ;
+     rdfs:comment "a cryospheric quantity that is the elevation at which the mass balance of an ice sheet or glacier is zero over the year, that is where ablation equals accumulation."@en ;
+     rdfs:label "ELA"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Fall
+:Fall rdf:type owl:NamedIndividual ,
+               :InterpretationSeasonality ;
+      <http://linked.earth/ontology#hasNoaaPastName> "fall" ;
+      <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1242" ;
+      <http://linked.earth/ontology#hasSynonym> "Autumn" ;
+      rdfs:comment "a non-calendric period that encompasses the local period of transition between summer and winter without specification of certain days or months."@en ;
+      rdfs:label "Fall"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb
+:Feb rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Feb" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=78" ;
+     <http://linked.earth/ontology#hasSynonym> "2" ;
+     rdfs:comment "a one month period that spans the month of February."@en ;
+     rdfs:label "Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Apr
+:Feb-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=12" ;
+         rdfs:comment "a three month period that spans the months of February to April."@en ;
+         rdfs:label "Feb-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Aug
+:Feb-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3335" ;
+         <http://linked.earth/ontology#hasSynonym> "2 3 4 5 6 7 8" ,
+                                                   "Feb" ;
+         rdfs:comment "a seven month period that spans the months of February to August."@en ;
+         rdfs:label "Feb-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Dec
+:Feb-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3387" ;
+         rdfs:comment "an eleven month period that spans the months of February to December."@en ;
+         rdfs:label "Feb-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Jul
+:Feb-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=54" ;
+         rdfs:comment "a six month period that spans the months of February to July."@en ;
+         rdfs:label "Feb-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Jun
+:Feb-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3322" ;
+         rdfs:comment "a five month period that spans the months of February to June."@en ;
+         rdfs:label "Feb-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Mar
+:Feb-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=66" ;
+         rdfs:comment "a two month period that spans the months of February and March."@en ;
+         rdfs:label "Feb-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-May
+:Feb-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=42" ;
+         rdfs:comment "a four month period that spans the months of February to May."@en ;
+         rdfs:label "Feb-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Nov
+:Feb-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3375" ;
+         rdfs:comment "a ten month period that spans the months of February to November."@en ;
+         rdfs:label "Feb-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Oct
+:Feb-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3363" ;
+         rdfs:comment "a nine month period that spans the months of February to October."@en ;
+         rdfs:label "Feb-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Feb-Sep
+:Feb-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Feb-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3351" ;
+         rdfs:comment "an eight month period that spans the months of February to September."@en ;
+         rdfs:label "Feb-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Growing_Season
+:Growing_Season rdf:type owl:NamedIndividual ,
+                         :InterpretationSeasonality ;
+                <http://linked.earth/ontology#hasNoaaPastName> "coldest month" ;
+                <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3399" ;
+                <http://linked.earth/ontology#hasSynonym> "growing season" ,
+                                                          "growing season? (not stated)" ,
+                                                          "growth season" ,
+                                                          "mainly growing season" ,
+                                                          "with potential addition effects of snowmelt following wet winters" ;
+                rdfs:comment "a non-calendric period that is defined as the coldest month of the year, with the actual calendar month being specific to a given geographic location and era."@en ;
+                rdfs:label "Growing Season"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan
+:Jan rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Jan" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=77" ;
+     <http://linked.earth/ontology#hasSynonym> "1" ;
+     rdfs:comment "a one month period that spans the month of January."@en ;
+     rdfs:label "Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Apr
+:Jan-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=41" ;
+         <http://linked.earth/ontology#hasSynonym> "April" ,
+                                                   "February" ,
+                                                   "JFMA" ,
+                                                   "January" ,
+                                                   "March" ;
+         rdfs:comment "a four month period that spans the months of January to April."@en ;
+         rdfs:label "Jan-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Aug
+:Jan-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3350" ;
+         rdfs:comment "an eight month period that spans the months of January to August."@en ;
+         rdfs:label "Jan-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Feb
+:Jan-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=65" ;
+         rdfs:comment "a two month period that spans the months of January and February."@en ;
+         rdfs:label "Jan-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Jul
+:Jan-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3334" ;
+         <http://linked.earth/ontology#hasSynonym> "JFMAMJJ" ;
+         rdfs:comment "a seven month period that spans the months of January to July."@en ;
+         rdfs:label "Jan-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Jun
+:Jan-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=53" ;
+         <http://linked.earth/ontology#hasSynonym> "January-June (spring)" ;
+         rdfs:comment "a six month period that spans the months of January to June."@en ;
+         rdfs:label "Jan-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Mar
+:Jan-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=11" ;
+         <http://linked.earth/ontology#hasSynonym> "1 2 2003" ;
+         rdfs:comment "a three month period that spans the months of January to March."@en ;
+         rdfs:label "Jan-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-May
+:Jan-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3321" ;
+         rdfs:comment "a five month period that spans the months of January to May."@en ;
+         rdfs:label "Jan-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Nov
+:Jan-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3386" ;
+         rdfs:comment "an eleven month period that spans the months of January to November."@en ;
+         rdfs:label "Jan-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Oct
+:Jan-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3374" ;
+         rdfs:comment "a ten month period that spans the months of January to October."@en ;
+         rdfs:label "Jan-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jan-Sep
+:Jan-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jan-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3362" ;
+         rdfs:comment "a nine month period that spans the months of January to September."@en ;
+         rdfs:label "Jan-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul
+:Jul rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Jul" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=83" ;
+     <http://linked.earth/ontology#hasSynonym> "7" ,
+                                               "July" ;
+     rdfs:comment "a one month period that spans the month of July."@en ;
+     rdfs:label "Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Apr
+:Jul-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3380" ;
+         rdfs:comment "a ten month period that spans the months of July to April."@en ;
+         rdfs:label "Jul-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Aug
+:Jul-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=71" ;
+         rdfs:comment "a two month period that spans the months of July and August."@en ;
+         rdfs:label "Jul-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Dec
+:Jul-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=59" ;
+         <http://linked.earth/ontology#hasSynonym> "7 8 9 10 11 12" ;
+         rdfs:comment "a six month period that spans the months of July to December."@en ;
+         rdfs:label "Jul-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Feb
+:Jul-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3356" ;
+         rdfs:comment "an eight month period that spans the months of July to February."@en ;
+         rdfs:label "Jul-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Jan
+:Jul-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3340" ;
+         rdfs:comment "a seven month period that spans the months of July to January."@en ;
+         rdfs:label "Jul-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Jun
+:Jul-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "-12 -11 -10 -9 -8 -7 1 2 3 4 5 6" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Jul-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Mar
+:Jul-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3368" ;
+         rdfs:comment "a nine month period that spans the months of July to March."@en ;
+         rdfs:label "Jul-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-May
+:Jul-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3392" ;
+         rdfs:comment "an eleven month period that spans the months of July to May."@en ;
+         rdfs:label "Jul-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Nov
+:Jul-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3327" ;
+         rdfs:comment "a five month period that spans the months of July to November."@en ;
+         rdfs:label "Jul-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Oct
+:Jul-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=47" ;
+         <http://linked.earth/ontology#hasSynonym> "7,8,9,10" ;
+         rdfs:comment "a four month period that spans the months of July to October."@en ;
+         rdfs:label "Jul-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jul-Sep
+:Jul-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jul-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=17" ;
+         <http://linked.earth/ontology#hasSynonym> "((( 7 8 2009 ))) null /// 7 8 9" ,
+                                                   "7 8 2009" ,
+                                                   "7,8,9" ,
+                                                   "JAS" ,
+                                                   "summer (JAS)" ;
+         rdfs:comment "a three month period that spans the months of July to September."@en ;
+         rdfs:label "Jul-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun
+:Jun rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Jun" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=82" ;
+     <http://linked.earth/ontology#hasSynonym> "6" ;
+     rdfs:comment "a one month period that spans the month of June."@en ;
+     rdfs:label "Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Apr
+:Jun-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3391" ;
+         rdfs:comment "an eleven month period that spans the months of June to April."@en ;
+         rdfs:label "Jun-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Aug
+:Jun-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=16" ;
+         <http://linked.earth/ontology#hasSynonym> "((( 6 7 2008 ))) 39606 /// 6 7 8" ,
+                                                   "((( 6 7 2008 ))) null /// 6 7 8" ,
+                                                   "6 7 2008" ,
+                                                   "6,7,8" ,
+                                                   "August" ,
+                                                   "JJA" ,
+                                                   "June,July" ,
+                                                   "Summer (JJA)" ,
+                                                   "summer (JJA)" ,
+                                                   "summer (June-August)" ;
+         rdfs:comment "a three month period that spans the months of June to August."@en ;
+         rdfs:label "Jun-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Dec
+:Jun-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3339" ;
+         rdfs:comment "a seven month period that spans the months of June to December."@en ;
+         rdfs:label "Jun-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Feb
+:Jun-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3367" ;
+         rdfs:comment "a nine month period that spans the months of June to February."@en ;
+         rdfs:label "Jun-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Jan
+:Jun-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3355" ;
+         rdfs:comment "an eight month period that spans the months of June to January."@en ;
+         rdfs:label "Jun-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Jul
+:Jun-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=70" ;
+         <http://linked.earth/ontology#hasSynonym> "6 7" ,
+                                                   "6,7" ,
+                                                   "June-July minimum" ;
+         rdfs:comment "a two month period that spans the months of June and July."@en ;
+         rdfs:label "Jun-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Mar
+:Jun-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3379" ;
+         rdfs:comment "a ten month period that spans the months of June to March."@en ;
+         rdfs:label "Jun-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Nov
+:Jun-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=58" ;
+         <http://linked.earth/ontology#hasSynonym> "JJASON" ;
+         rdfs:comment "a six month period that spans the months of June to November."@en ;
+         rdfs:label "Jun-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Oct
+:Jun-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3326" ;
+         <http://linked.earth/ontology#hasSynonym> "6,7,8,9,10" ,
+                                                   "JJASO" ;
+         rdfs:comment "a five month period that spans the months of June to October."@en ;
+         rdfs:label "Jun-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Jun-Sep
+:Jun-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Jun-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=46" ;
+         <http://linked.earth/ontology#hasSynonym> "((( warm season (June-Sept) ))) JJAS /// JJAS" ,
+                                                   "6 7 8 9" ,
+                                                   "6,7,8,9" ,
+                                                   "August" ,
+                                                   "JJAS" ,
+                                                   "July" ,
+                                                   "June" ,
+                                                   "June,July" ,
+                                                   "September" ,
+                                                   "growing season/JJAS" ,
+                                                   "summer (JJAS)" ,
+                                                   "summer (June to September)" ;
+         rdfs:comment "a four month period that spans the months of June to September."@en ;
+         rdfs:label "Jun-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar
+:Mar rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "Mar" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=79" ;
+     rdfs:comment "a one month period that spans the month of March."@en ;
+     rdfs:label "Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Apr
+:Mar-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=67" ;
+         rdfs:comment "a two month period that spans the months of March and April."@en ;
+         rdfs:label "Mar-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Aug
+:Mar-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=55" ;
+         <http://linked.earth/ontology#hasSynonym> "3 4 5 6 7 8" ,
+                                                   "3,4,5,6,7,8" ;
+         rdfs:comment "a six month period that spans the months of March to August."@en ;
+         rdfs:label "Mar-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Dec
+:Mar-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3376" ;
+         rdfs:comment "a ten month period that spans the months of March to December."@en ;
+         rdfs:label "Mar-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Jan
+:Mar-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3388" ;
+         rdfs:comment "an eleven month period that spans the months of March to January."@en ;
+         rdfs:label "Mar-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Jul
+:Mar-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3323" ;
+         rdfs:comment "a five month period that spans the months of March to July."@en ;
+         rdfs:label "Mar-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Jun
+:Mar-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=43" ;
+         rdfs:comment "a four month period that spans the months of March to June."@en ;
+         rdfs:label "Mar-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-May
+:Mar-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=13" ;
+         <http://linked.earth/ontology#hasSynonym> "3 4 2005" ,
+                                                   "MAM" ;
+         rdfs:comment "a three month period that spans the months of March to May."@en ;
+         rdfs:label "Mar-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Nov
+:Mar-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3364" ;
+         <http://linked.earth/ontology#hasSynonym> "March to November" ;
+         rdfs:comment "a nine month period that spans the months of March to November."@en ;
+         rdfs:label "Mar-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Oct
+:Mar-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3352" ;
+         <http://linked.earth/ontology#hasSynonym> "3 4 5 6 7 8 9 10" ,
+                                                   "3 4 5 6 7 8 9 10 11 12 13 14" ;
+         rdfs:comment "an eight month period that spans the months of March to October."@en ;
+         rdfs:label "Mar-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Mar-Sep
+:Mar-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Mar-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3336" ;
+         rdfs:comment "a seven month period that spans the months of March to September."@en ;
+         rdfs:label "Mar-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May
+:May rdf:type owl:NamedIndividual ,
+              :InterpretationSeasonality ;
+     <http://linked.earth/ontology#hasNoaaPastName> "May" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=81" ;
+     <http://linked.earth/ontology#hasSynonym> "5" ;
+     rdfs:comment "a one month period that spans the month of May."@en ;
+     rdfs:label "May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Apr
+:May-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "-5 -6 -7 -8 -9 -10 -11 -12 1 2 3 4" ;
+         rdfs:comment ""@en ;
+         rdfs:label "May-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Aug
+:May-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=45" ;
+         <http://linked.earth/ontology#hasSynonym> "5,6,7,8" ,
+                                                   "MJJA" ;
+         rdfs:comment "a four month period that spans the months of May to August."@en ;
+         rdfs:label "May-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Dec
+:May-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3354" ;
+         <http://linked.earth/ontology#hasSynonym> "5 6 7 8 9 10 11 12" ,
+                                                   "August" ,
+                                                   "December" ,
+                                                   "July" ,
+                                                   "June" ,
+                                                   "MJJASOND" ,
+                                                   "May" ,
+                                                   "November" ,
+                                                   "October" ,
+                                                   "September" ;
+         rdfs:comment "an eight month period that spans the months of May to December."@en ;
+         rdfs:label "May-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Feb
+:May-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3378" ;
+         rdfs:comment "a ten month period that spans the months of May to February."@en ;
+         rdfs:label "May-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Jan
+:May-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3366" ;
+         rdfs:comment "a nine month period that spans the months of May to January."@en ;
+         rdfs:label "May-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Jul
+:May-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=15" ;
+         <http://linked.earth/ontology#hasSynonym> "5 6 2007" ;
+         rdfs:comment "a three month period that spans the months of May to July."@en ;
+         rdfs:label "May-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Jun
+:May-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=69" ;
+         <http://linked.earth/ontology#hasSynonym> "MJ" ;
+         rdfs:comment "a two month period that spans the months of May and June."@en ;
+         rdfs:label "May-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Mar
+:May-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3390" ;
+         rdfs:comment "an eleven month period that spans the months of May to March."@en ;
+         rdfs:label "May-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Nov
+:May-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3338" ;
+         rdfs:comment "a seven month period that spans the months of May to November."@en ;
+         rdfs:label "May-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Oct
+:May-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=57" ;
+         <http://linked.earth/ontology#hasSynonym> "5,6,7,8,9,10" ,
+                                                   "August" ,
+                                                   "July" ,
+                                                   "June" ,
+                                                   "MJJASO" ,
+                                                   "May" ,
+                                                   "May to October" ,
+                                                   "October" ,
+                                                   "September" ;
+         rdfs:comment "a six month period that spans the months of May to October."@en ;
+         rdfs:label "May-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#May-Sep
+:May-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "May-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3325" ;
+         <http://linked.earth/ontology#hasSynonym> "5,6,7,8,9" ,
+                                                   "August" ,
+                                                   "July" ,
+                                                   "June" ,
+                                                   "MJJAS" ,
+                                                   "May" ,
+                                                   "May to Sept" ,
+                                                   "September" ;
+         rdfs:comment "a five month period that spans the months of May to September."@en ;
+         rdfs:label "May-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Apr
+:Nov-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=63" ;
+         <http://linked.earth/ontology#hasSynonym> "-11 -12 1 2 3 4" ,
+                                                   "11,12,1,2,3,4" ,
+                                                   "NDJFMA" ,
+                                                   "winter (Nov-April)" ;
+         rdfs:comment "a six month period that spans the months of November to April."@en ;
+         rdfs:label "Nov-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Aug
+:Nov-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3384" ;
+         rdfs:comment "a ten month period that spans the months of November to August."@en ;
+         rdfs:label "Nov-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Dec
+:Nov-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=75" ;
+         rdfs:comment "a two month period that spans the months of November and December."@en ;
+         rdfs:label "Nov-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Feb
+:Nov-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=51" ;
+         <http://linked.earth/ontology#hasSynonym> "-11 -12 1 2" ,
+                                                   "11,12,1,2" ,
+                                                   "NDJF" ,
+                                                   "November (previous year) to February (current year)" ;
+         rdfs:comment "a four month period that spans the months of November to February."@en ;
+         rdfs:label "Nov-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Jan
+:Nov-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=21" ;
+         <http://linked.earth/ontology#hasSynonym> "summer (NDJ)" ;
+         rdfs:comment "a three month period that spans the months of November to January."@en ;
+         rdfs:label "Nov-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Jul
+:Nov-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3372" ;
+         rdfs:comment "a nine month period that spans the months of November to July."@en ;
+         rdfs:label "Nov-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Jun
+:Nov-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3360" ;
+         <http://linked.earth/ontology#hasSynonym> "11,12,1,2,3,4,5,6" ;
+         rdfs:comment "an eight month period that spans the months of November to June."@en ;
+         rdfs:label "Nov-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Mar
+:Nov-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3331" ;
+         <http://linked.earth/ontology#hasSynonym> "11,12,1,2,3" ;
+         rdfs:comment "a five month period that spans the months of November to March."@en ;
+         rdfs:label "Nov-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-May
+:Nov-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3344" ;
+         <http://linked.earth/ontology#hasSynonym> "11,12,1,2,3,4,5" ,
+                                                   "Winter (11,12,1,2,3,4,5)" ;
+         rdfs:comment "a seven month period that spans the months of November to May."@en ;
+         rdfs:label "Nov-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Oct
+:Nov-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "-12 -11 1 2 3 4 5 6 7 8 9 10" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Nov-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Nov-Sep
+:Nov-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Nov-Sep" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3396" ;
+         rdfs:comment "an eleven month period that spans the months of November to September."@en ;
+         rdfs:label "Nov-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Apr
+:Oct-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3343" ;
+         <http://linked.earth/ontology#hasSynonym> "-10 -11 -12 1 2 3 4" ,
+                                                   "10,11,12,1,2,3,4" ,
+                                                   "ONDJFMA" ,
+                                                   "October-April (wet season)" ;
+         rdfs:comment "a seven month period that spans the months of October to April."@en ;
+         rdfs:label "Oct-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Aug
+:Oct-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Aug" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3395" ;
+         rdfs:comment "an eleven month period that spans the months of October to August."@en ;
+         rdfs:label "Oct-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Dec
+:Oct-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=20" ;
+         <http://linked.earth/ontology#hasSynonym> "OND" ;
+         rdfs:comment "a three month period that spans the months of October to December."@en ;
+         rdfs:label "Oct-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Feb
+:Oct-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3330" ;
+         rdfs:comment "a five month period that spans the months of October to February."@en ;
+         rdfs:label "Oct-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Jan
+:Oct-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=50" ;
+         <http://linked.earth/ontology#hasSynonym> "10,11,12,1" ,
+                                                   "ONDJ" ;
+         rdfs:comment "a four month period that spans the months of October to January."@en ;
+         rdfs:label "Oct-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Jul
+:Oct-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3383" ;
+         rdfs:comment "a ten month period that spans the months of October to July."@en ;
+         rdfs:label "Oct-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Jun
+:Oct-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3371" ;
+         rdfs:comment "a nine month period that spans the months of October to June."@en ;
+         rdfs:label "Oct-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Mar
+:Oct-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=62" ;
+         <http://linked.earth/ontology#hasSynonym> "10,11,12,1,2,3" ,
+                                                   "ONDJFM" ;
+         rdfs:comment "a six month period that spans the months of October to March."@en ;
+         rdfs:label "Oct-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-May
+:Oct-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3359" ;
+         <http://linked.earth/ontology#hasSynonym> "1" ,
+                                                   "10" ,
+                                                   "11" ,
+                                                   "12" ,
+                                                   "2" ,
+                                                   "3" ,
+                                                   "4" ,
+                                                   "5" ;
+         rdfs:comment "an eight month period that spans the months of October to May."@en ;
+         rdfs:label "Oct-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Nov
+:Oct-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Oct-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=74" ;
+         rdfs:comment "a two month period that spans the months of October and November."@en ;
+         rdfs:label "Oct-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Oct-Sep
+:Oct-Sep rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "Oct (previous year) to Sept (current year)" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Oct-Sep"@en .
+
+
+###  http://linked.earth/ontology/interpretation#P-E
+:P-E rdf:type owl:NamedIndividual ,
+              :InterpretationVariable ;
+     <http://linked.earth/ontology#hasNoaaPastName> "precipitation minus evaporation" ;
+     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2312" ;
+     <http://linked.earth/ontology#hasSynonym> "Effective Moisture" ,
+                                               "M" ,
+                                               "P=E" ,
+                                               "P_E" ;
+     rdfs:comment "the hydroclimate rate that is the difference in rate between precipitation and evaporation at the earth’s surface."@en ;
+     rdfs:label "P-E"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Apr
+:Sep-Apr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Apr" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3358" ;
+         <http://linked.earth/ontology#hasSynonym> "-9 -10 -11 -12 1 2 3 4" ;
+         rdfs:comment "an eight month period that spans the months of September to April."@en ;
+         rdfs:label "Sep-Apr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Aug
+:Sep-Aug rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "-12 -11 -10 -9 1 2 3 4 5 6 7 8" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Sep-Aug"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Dec
+:Sep-Dec rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Dec" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=49" ;
+         rdfs:comment "a four month period that spans the months of September to December."@en ;
+         rdfs:label "Sep-Dec"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Feb
+:Sep-Feb rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Feb" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=61" ;
+         <http://linked.earth/ontology#hasSynonym> "-9 -10 -11 -12 1 2 2" ,
+                                                   "SONDJF" ;
+         rdfs:comment "a six month period that spans the months of September to February."@en ;
+         rdfs:label "Sep-Feb"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Jan
+:Sep-Jan rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Jan" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3329" ;
+         rdfs:comment "a five month period that spans the months of September to January."@en ;
+         rdfs:label "Sep-Jan"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Jul
+:Sep-Jul rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Jul" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3394" ;
+         rdfs:comment "an eleven month period that spans the months of September to July."@en ;
+         rdfs:label "Sep-Jul"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Jun
+:Sep-Jun rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Jun" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3382" ;
+         rdfs:comment "a ten month period that spans the months of September to June."@en ;
+         rdfs:label "Sep-Jun"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Mar
+:Sep-Mar rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Mar" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3342" ;
+         rdfs:comment "a seven month period that spans the months of September to March."@en ;
+         rdfs:label "Sep-Mar"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-May
+:Sep-May rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-May" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3370" ;
+         rdfs:comment "a nine month period that spans the months of September to May."@en ;
+         rdfs:label "Sep-May"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Nov
+:Sep-Nov rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Nov" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=19" ;
+         <http://linked.earth/ontology#hasSynonym> "9 10 11" ;
+         rdfs:comment "a three month period that spans the months of September to November."@en ;
+         rdfs:label "Sep-Nov"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Sep-Oct
+:Sep-Oct rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasNoaaPastName> "Sep-Oct" ;
+         <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=73" ;
+         <http://linked.earth/ontology#hasSynonym> "9 10" ;
+         rdfs:comment "a two month period that spans the months of September and October."@en ;
+         rdfs:label "Sep-Oct"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Spr-Sum
+:Spr-Sum rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "probably spring/summer" ,
+                                                   "spring summer" ,
+                                                   "spring-summer" ,
+                                                   "variable" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Spr-Sum"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Spring
+:Spring rdf:type owl:NamedIndividual ,
+                 :InterpretationSeasonality ;
+        <http://linked.earth/ontology#hasNoaaPastName> "spring" ;
+        <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1243" ;
+        <http://linked.earth/ontology#hasSynonym> "spring" ;
+        rdfs:comment "a non-calendric period that encompasses the local period of transition between winter and summer without specification of certain days or months."@en ;
+        rdfs:label "Spring"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Summer
+:Summer rdf:type owl:NamedIndividual ,
+                 :InterpretationSeasonality ;
+        <http://linked.earth/ontology#hasNoaaPastName> "summer" ;
+        <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1244" ;
+        <http://linked.earth/ontology#hasSynonym> "((( SummerOnly ))) summerOnly /// null" ,
+                                                  "AM&JA" ,
+                                                  "Aug" ,
+                                                  "Aug)" ,
+                                                  "August)" ,
+                                                  "Austral summer (Oct-Jan)" ,
+                                                  "June" ,
+                                                  "Mar&Jul" ,
+                                                  "NH summer" ,
+                                                  "Oct)" ,
+                                                  "P_amount (July)" ,
+                                                  "P_amount (June)" ,
+                                                  "T_air (July" ,
+                                                  "early summer" ,
+                                                  "ice-free season" ,
+                                                  "mean summer" ,
+                                                  "mostly summer" ,
+                                                  "summer" ,
+                                                  "summer+" ,
+                                                  "summer-bias" ,
+                                                  "summer?" ,
+                                                  "temperature (July" ,
+                                                  "temperature (May" ,
+                                                  "warm season" ,
+                                                  "warmest quarter yr" ;
+        rdfs:comment "a non-calendric period that encompasses the warmest period of the year without specification of certain days or months."@en ;
+        rdfs:label "Summer"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Warmest_Month
+:Warmest_Month rdf:type owl:NamedIndividual ,
+                        :InterpretationSeasonality ;
+               <http://linked.earth/ontology#hasNoaaPastName> "231Pa excess" ;
+               <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4000" ;
+               <http://linked.earth/ontology#hasSynonym> "warmest" ,
+                                                         "warmest month" ;
+               rdfs:comment "the concentration of 231Pa that is produced by the decay of dissolved 235U in the water column, that is measured sedimentary 231Pa with any contributions from detrital material or decay of sedimentary 235U removed."@en ;
+               rdfs:label "Warmest Month"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Wet_Season
+:Wet_Season rdf:type owl:NamedIndividual ,
+                     :InterpretationSeasonality ;
+            <http://linked.earth/ontology#hasSynonym> "Andean wet season" ,
+                                                      "Monsoon" ,
+                                                      "monsoon" ,
+                                                      "monsoon season" ,
+                                                      "wet season" ;
+            rdfs:comment ""@en ;
+            rdfs:label "Wet Season"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Win-Spr
+:Win-Spr rdf:type owl:NamedIndividual ,
+                  :InterpretationSeasonality ;
+         <http://linked.earth/ontology#hasSynonym> "winter/spring" ;
+         rdfs:comment ""@en ;
+         rdfs:label "Win-Spr"@en .
+
+
+###  http://linked.earth/ontology/interpretation#Winter
+:Winter rdf:type owl:NamedIndividual ,
+                 :InterpretationSeasonality ;
+        <http://linked.earth/ontology#hasNoaaPastName> "winter" ;
+        <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1245" ;
+        <http://linked.earth/ontology#hasSynonym> "mostly winter" ,
+                                                  "winter" ,
+                                                  "winter+" ;
+        rdfs:comment "a non-calendric period that encompasses the coldest period of the year without specification of certain days or months."@en ;
+        rdfs:label "Winter"@en .
+
+
+###  http://linked.earth/ontology/interpretation#circulationIndex
+:circulationIndex rdf:type owl:NamedIndividual ,
+                           :InterpretationVariable ;
+                  <http://linked.earth/ontology#hasNoaaPastName> "circulation index" ;
+                  <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2270" ;
+                  <http://linked.earth/ontology#hasSynonym> "MODE" ,
+                                                            "NAO index" ;
+                  rdfs:comment "a circulation variable that describes or quantifies a climate pattern with identifiable characteristics, specific regional effects, and often oscillatory behavior (Credit: Wikipedia)."@en ;
+                  rdfs:label "circulationIndex"@en .
+
+
+###  http://linked.earth/ontology/interpretation#circulationVariable
+:circulationVariable rdf:type owl:NamedIndividual ,
+                              :InterpretationVariable ;
+                     <http://linked.earth/ontology#hasNoaaPastName> "circulation variable" ;
+                     <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4885" ;
+                     <http://linked.earth/ontology#hasSynonym> "Circulation" ,
+                                                               "changes in monsoon intensity." ,
+                                                               "circulation" ;
+                     rdfs:comment "an earth system variable that describes or quantifies motion and related properties in the atmosphere or ocean."@en ;
+                     rdfs:label "circulationVariable"@en .
+
+
+###  http://linked.earth/ontology/interpretation#dissolvedOxygen
+:dissolvedOxygen rdf:type owl:NamedIndividual ,
+                          :InterpretationVariable ;
+                 <http://linked.earth/ontology#hasNoaaPastName> "dissolved oxygen" ;
+                 <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4766" ;
+                 <http://linked.earth/ontology#hasSynonym> "suboxia" ;
+                 rdfs:comment "the amount of gaseous oxygen dissolved in water."@en ;
+                 rdfs:label "dissolvedOxygen"@en .
+
+
+###  http://linked.earth/ontology/interpretation#dust
+:dust rdf:type owl:NamedIndividual ,
+               :InterpretationVariable ;
+      <http://linked.earth/ontology#hasNoaaPastName> "dust" ;
+      <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=867" ;
+      <http://linked.earth/ontology#hasSynonym> "DUST" ;
+      rdfs:comment "a bulk geological material that consists of organic or inorganic particles of typically clay and silt size that are transportable by wind."@en ;
+      rdfs:label "dust"@en .
+
+
+###  http://linked.earth/ontology/interpretation#evaporation
+:evaporation rdf:type owl:NamedIndividual ,
+                      :InterpretationVariable ;
+             <http://linked.earth/ontology#hasNoaaPastName> "evaporation" ;
+             <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4733" ;
+             <http://linked.earth/ontology#hasSynonym> "Evaporation" ;
+             rdfs:comment "the hydroclimatic rate of water transfer to the atmosphere from soil, waterbodies, and canopy interception, excluding transpiration from plants."@en ;
+             rdfs:label "evaporation"@en .
+
+
+###  http://linked.earth/ontology/interpretation#fire
+:fire rdf:type owl:NamedIndividual ,
+               :InterpretationVariable ;
+      <http://linked.earth/ontology#hasNoaaPastName> "fire history" ;
+      <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=115" ;
+      <http://linked.earth/ontology#hasSynonym> "FIRE" ;
+      rdfs:comment "a data type that includes measurements made to deduce the past history of fire, whether from tree rings, sediment, or other natural archives."@en ;
+      rdfs:label "fire"@en .
+
+
+###  http://linked.earth/ontology/interpretation#growingDegreeDays
+:growingDegreeDays rdf:type owl:NamedIndividual ,
+                            :InterpretationVariable ;
+                   <http://linked.earth/ontology#hasNoaaPastName> "growing degree days" ;
+                   <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1386" ;
+                   <http://linked.earth/ontology#hasSynonym> "GDD" ;
+                   rdfs:comment "a temperature index that integrates warmth above a base temperature (usually 10 degrees Celsius) through time."@en ;
+                   rdfs:label "growingDegreeDays"@en .
+
+
+###  http://linked.earth/ontology/interpretation#hydrologicBalance
+:hydrologicBalance rdf:type owl:NamedIndividual ,
+                            :InterpretationVariable ;
+                   <http://linked.earth/ontology#hasSynonym> "GW-E" ,
+                                                             "Hydrology" ,
+                                                             "I_E" ;
+                   rdfs:comment ""@en ;
+                   rdfs:label "hydrologicBalance"@en .
+
+
+###  http://linked.earth/ontology/interpretation#lakeWaterIsotope
+:lakeWaterIsotope rdf:type owl:NamedIndividual ,
+                           :InterpretationVariable ;
+                  <http://linked.earth/ontology#hasSynonym> "Liso" ,
+                                                            "lake water and precipitation d2H" ,
+                                                            "lake water d18O" ,
+                                                            "lake water d2H" ;
+                  rdfs:comment ""@en ;
+                  rdfs:label "lakeWaterIsotope"@en .
+
+
+###  http://linked.earth/ontology/interpretation#meltwater
+:meltwater rdf:type owl:NamedIndividual ,
+                    :InterpretationVariable ;
+           <http://linked.earth/ontology#hasNoaaPastName> "ice melt" ;
+           <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4951" ;
+           <http://linked.earth/ontology#hasSynonym> "Meltwater" ;
+           rdfs:comment "the ice mass loss from a glacier, ice-cap, ice-sheet, or ice-shelf through phase transformation to liquid water."@en ;
+           rdfs:label "meltwater"@en .
+
+
+###  http://linked.earth/ontology/interpretation#needsToBeChanged
+:needsToBeChanged rdf:type owl:NamedIndividual ,
+                           :InterpretationSeasonality ;
+                  <http://linked.earth/ontology#hasSynonym> "1,10" ,
+                                                            "1,11" ,
+                                                            "N/A" ,
+                                                            "but d18O may reflect high summer rain" ,
+                                                            "changes depending on which season provides source moisture for plants" ,
+                                                            "depends" ,
+                                                            "inflow@surface" ,
+                                                            "not indicated" ,
+                                                            "or both" ,
+                                                            "under present conditions" ,
+                                                            "unknown" ,
+                                                            "upwelling" ,
+                                                            "upwelling season" ,
+                                                            "wet years often have higehr amount of winter rain" ,
+                                                            "winter rain" ;
+                  rdfs:comment ""@en ;
+                  rdfs:label "needsToBeChanged"@en .
+
+
+###  http://linked.earth/ontology/interpretation#needsToBeReplaced
+:needsToBeReplaced rdf:type owl:NamedIndividual ,
+                            :InterpretationVariable ;
+                   <http://linked.earth/ontology#hasSynonym> "Carbonate_ion_concentration" ,
+                                                             "GDGT" ,
+                                                             "Liso/P-E" ,
+                                                             "Mixed" ,
+                                                             "T+ELA" ,
+                                                             "anoxia" ,
+                                                             "export-productivity" ,
+                                                             "mixed" ,
+                                                             "organic matter source" ,
+                                                             "plant community composition" ,
+                                                             "precipitation d2H + evap" ;
+                   rdfs:comment ""@en ;
+                   rdfs:label "needsToBeReplaced"@en .
+
+
+###  http://linked.earth/ontology/interpretation#precipitation
+:precipitation rdf:type owl:NamedIndividual ,
+                        :InterpretationVariable ;
+               <http://linked.earth/ontology#hasNoaaPastName> "precipitation" ;
+               <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=560" ;
+               <http://linked.earth/ontology#hasSynonym> "P" ,
+                                                         "P_amount" ,
+                                                         "Pmax" ,
+                                                         "Pmin" ;
+               rdfs:comment "the hydroclimatic rate of rain, snow, sleet or hail that falls to the ground."@en ;
+               rdfs:label "precipitation"@en .
+
+
+###  http://linked.earth/ontology/interpretation#precipitationDeuteriumExcess
+:precipitationDeuteriumExcess rdf:type owl:NamedIndividual ,
+                                       :InterpretationVariable ;
+                              <http://linked.earth/ontology#hasSynonym> "precipitation d-excess" ;
+                              rdfs:comment ""@en ;
+                              rdfs:label "precipitationDeuteriumExcess"@en .
+
+
+###  http://linked.earth/ontology/interpretation#precipitationIsotope
+:precipitationIsotope rdf:type owl:NamedIndividual ,
+                               :InterpretationVariable ;
+                      <http://linked.earth/ontology#hasSynonym> "PISO" ,
+                                                                "P_isotope" ,
+                                                                "Precipitation Isotope" ,
+                                                                "Source" ,
+                                                                "d18O of precipitation" ,
+                                                                "dD" ,
+                                                                "precipitation d18O" ,
+                                                                "precipitation d2H" ;
+                      rdfs:comment ""@en ;
+                      rdfs:label "precipitationIsotope"@en .
+
+
+###  http://linked.earth/ontology/interpretation#productivity
+:productivity rdf:type owl:NamedIndividual ,
+                       :InterpretationVariable ;
+              <http://linked.earth/ontology#hasNoaaPastName> "productivity" ;
+              <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3293" ;
+              <http://linked.earth/ontology#hasSynonym> "Algal productivity" ;
+              rdfs:comment "an ecosystem process variable that quantifies the rate of generation of biomass in an ecosystem."@en ;
+              rdfs:label "productivity"@en .
+
+
+###  http://linked.earth/ontology/interpretation#relativeHumidity
+:relativeHumidity rdf:type owl:NamedIndividual ,
+                           :InterpretationVariable ;
+                  <http://linked.earth/ontology#hasNoaaPastName> "relative humidity" ;
+                  <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2314" ;
+                  <http://linked.earth/ontology#hasSynonym> "RH" ;
+                  rdfs:comment "the hydroclimate ratio of water vapor present in air to the amount of water needed to achieve saturation at the local temperature."@en ;
+                  rdfs:label "relativeHumidity"@en .
+
+
+###  http://linked.earth/ontology/interpretation#salinity
+:salinity rdf:type owl:NamedIndividual ,
+                   :InterpretationVariable ;
+          <http://linked.earth/ontology#hasNoaaPastName> "salinity" ;
+          <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4396" ;
+          <http://linked.earth/ontology#hasSynonym> "S" ,
+                                                    "SSS" ;
+          rdfs:comment "a solution property that is the amount of salt dissolved in a body of water."@en ;
+          rdfs:label "salinity"@en .
+
+
+###  http://linked.earth/ontology/interpretation#seaIce
+:seaIce rdf:type owl:NamedIndividual ,
+                 :InterpretationVariable ;
+        <http://linked.earth/ontology#hasNoaaPastName> "sea ice cover" ;
+        <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2317" ;
+        <http://linked.earth/ontology#hasSynonym> "ICE" ;
+        rdfs:comment "a cryospheric quantity that is a measure of the extent to which the ocean surface is covered by sea ice."@en ;
+        rdfs:label "seaIce"@en .
+
+
+###  http://linked.earth/ontology/interpretation#seasonality
+:seasonality rdf:type owl:NamedIndividual ,
+                      :InterpretationVariable ;
+             <http://linked.earth/ontology#hasNoaaPastName> "seasonality" ;
+             <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5" ;
+             rdfs:comment "the specific part of the annual cycle explicitly reconstructed from raw values."@en ;
+             rdfs:label "seasonality"@en .
+
+
+###  http://linked.earth/ontology/interpretation#seawaterIsotope
+:seawaterIsotope rdf:type owl:NamedIndividual ,
+                          :InterpretationVariable ;
+                 <http://linked.earth/ontology#hasSynonym> "seawater_isotope" ;
+                 rdfs:comment ""@en ;
+                 rdfs:label "seawaterIsotope"@en .
+
+
+###  http://linked.earth/ontology/interpretation#streamflow
+:streamflow rdf:type owl:NamedIndividual ,
+                     :InterpretationVariable ;
+            <http://linked.earth/ontology#hasNoaaPastName> "streamflow" ;
+            <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1396" ;
+            <http://linked.earth/ontology#hasSynonym> "Q" ;
+            rdfs:comment "the hydroclimatic rate of flow of water in streams, rivers, and other channels."@en ;
+            rdfs:label "streamflow"@en .
+
+
+###  http://linked.earth/ontology/interpretation#subannual
+:subannual rdf:type owl:NamedIndividual ,
+                    :InterpretationSeasonality ;
+           <http://linked.earth/ontology#hasSynonym> "N/A (subannually resolved)" ,
+                                                     "not applicable (subannually resolved)" ;
+           rdfs:comment "The dataset is subannually resolved so seasonal variability is explicit in the timeseries"@en ;
+           rdfs:label "subannual"@en .
+
+
+###  http://linked.earth/ontology/interpretation#sunlight
+:sunlight rdf:type owl:NamedIndividual ,
+                   :InterpretationVariable ;
+          <http://linked.earth/ontology#hasNoaaPastName> "solar irradiance" ;
+          <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4376" ;
+          <http://linked.earth/ontology#hasSynonym> "SUN" ;
+          rdfs:comment "a forcing variable that is the radiation from the sun integrated over the whole electromagnetic spectrum and over the entire solar disk. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun."@en ;
+          rdfs:label "sunlight"@en .
+
+
+###  http://linked.earth/ontology/interpretation#surfacePressure
+:surfacePressure rdf:type owl:NamedIndividual ,
+                          :InterpretationVariable ;
+                 <http://linked.earth/ontology#hasNoaaPastName> "surface pressure" ;
+                 <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4720" ;
+                 <http://linked.earth/ontology#hasSynonym> "surface pressure" ;
+                 rdfs:comment "a pressure variable that is the atmospheric pressure at the earth’s surface at a given location and time."@en ;
+                 rdfs:label "surfacePressure"@en .
+
+
+###  http://linked.earth/ontology/interpretation#temperature
+:temperature rdf:type owl:NamedIndividual ,
+                      :InterpretationVariable ;
+             <http://linked.earth/ontology#hasNoaaPastName> "temperature" ;
+             <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4067" ;
+             <http://linked.earth/ontology#hasSynonym> "SST" ,
+                                                       "Surface water temp" ,
+                                                       "T" ,
+                                                       "T_air" ,
+                                                       "T_water" ,
+                                                       "Temperature_water" ,
+                                                       "lake water temperature" ,
+                                                       "subT" ;
+             rdfs:comment "the mean temperature over a particular time period."@en ;
+             rdfs:label "temperature"@en .
+
+
+###  http://linked.earth/ontology/interpretation#upwelling
+:upwelling rdf:type owl:NamedIndividual ,
+                    :InterpretationVariable ;
+           <http://linked.earth/ontology#hasNoaaPastName> "Upwelling Index" ;
+           <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4771" ;
+           rdfs:comment "a circulation index that is a measure of the volume of water upwelling in the ocean."@en ;
+           rdfs:label "upwelling"@en .
+
+
+###  http://linked.earth/ontology/interpretation#windSpeed
+:windSpeed rdf:type owl:NamedIndividual ,
+                    :InterpretationVariable ;
+           <http://linked.earth/ontology#hasNoaaPastName> "wind speed" ;
+           <http://linked.earth/ontology#hasNoaaPastUrl> "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3413" ;
+           <http://linked.earth/ontology#hasSynonym> "W" ;
+           rdfs:comment "a velocity variable that is the velocity of wind at some height in the atmosphere."@en ;
+           rdfs:label "windSpeed"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

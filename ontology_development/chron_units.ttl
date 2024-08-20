@@ -1,4 +1,4 @@
-@prefix : <http://linked.earth/ontology/units##> .
+@prefix : <http://linked.earth/ontology/chron_units#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,10 +6,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://linked.earth/ontology/units##> .
+@prefix le: <http://linked.earth/ontology#> .
+@base <http://linked.earth/ontology/chron_units#> .
 
-<http://linked.earth/ontology/units##> rdf:type owl:Ontology ;
-                                 owl:versionIRI <http://linked.earth/ontology/chron_units/0.0.1> ;
+<http://linked.earth/ontology/chron_units#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://linked.earth/ontology/chron_units/2.0.0> ;
                                  dcterms:contributor <http://w3id.org/people/varunr> ,
                                                      <http://earth.usc.edu/~khider/> ;
                                  dcterms:creator <http://earth.usc.edu/~khider/> ,
@@ -17,26 +18,9 @@
                                                  <http://www.cefns.nau.edu/~npm4/> ;
                                  dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
                                  dcterms:title "The Paleo Proxy Ontology"@en ;
-                                 vann:preferredNamespacePrefix "le" ;
-                                 vann:preferredNamespaceUri "http://linked.earth/ontology/units##" ;
-                                 owl:versionInfo "0.0.1"@en .
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://linked.earth/ontology/units##hasNoaaPastName
-:hasNoaaPastName rdf:type owl:DatatypeProperty ;
-            rdfs:range xsd:string .
-
-###  http://linked.earth/ontology/units##hasNoaaPastUrl
-:hasNoaaPastUrl rdf:type owl:DatatypeProperty ;
-            rdfs:range xsd:string .
-
-###  http://linked.earth/ontology/units##hasSynonym
-:hasSynonym rdf:type owl:DatatypeProperty ;
-            rdfs:range xsd:string .
-
+                                 vann:preferredNamespacePrefix "cunits" ;
+                                 vann:preferredNamespaceUri "http://linked.earth/ontology/chron_units#" ;
+                                 owl:versionInfo "2.0.0"@en .
 
 #################################################################
 #    Individuals

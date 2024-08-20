@@ -6,10 +6,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix le: <http://linked.earth/ontology#> .
 @base <http://linked.earth/ontology/archive#> .
 
 <http://linked.earth/ontology/archive#> rdf:type owl:Ontology ;
-                                 owl:versionIRI <http://linked.earth/ontology/archive/1.1.0> ;
+                                 owl:versionIRI <http://linked.earth/ontology/archive/2.0.0> ;
                                  dcterms:contributor <http://w3id.org/people/dgarijo> ,
                                                      <http://www.isi.edu/~gil/> ;
                                  dcterms:creator <http://earth.usc.edu/~khider/> ,
@@ -19,7 +20,7 @@
                                  dcterms:title "The Archive Type Ontology"@en ;
                                  vann:preferredNamespacePrefix "le" ;
                                  vann:preferredNamespaceUri "http://linked.earth/ontology/archive#" ;
-                                 owl:versionInfo "1.1.0"@en .
+                                 owl:versionInfo "2.0.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -50,26 +51,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Data properties
-#################################################################
-
-###  http://linked.earth/ontology/archive#hasNoaaPastName
-:hasNoaaPastName rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :ArchiveType .
-
-
-###  http://linked.earth/ontology/archive#hasNoaaPastUrl
-:hasNoaaPastUrl rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ArchiveType .
-
-
-###  http://linked.earth/ontology/archive#hasSynonym
-:hasSynonym rdf:type owl:DatatypeProperty ;
-            rdfs:domain :ArchiveType ;
-            rdfs:range xsd:string .
-
-
-#################################################################
 #    Classes
 #################################################################
 
@@ -89,8 +70,8 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Borehole
 :Borehole rdf:type owl:NamedIndividual ,
                    :ArchiveType ;
-          :hasNoaaPastName "borehole" ;
-          :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114" ;
+          le:hasNoaaPastName "borehole" ;
+          le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114" ;
           rdfs:comment "a data type that consists of direct measurements of subsurface temperature from boreholes drilled into materials such as rock and glacier ice." ;
           rdfs:label "Borehole" .
 
@@ -98,8 +79,8 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Coral
 :Coral rdf:type owl:NamedIndividual ,
                 :ArchiveType ;
-       :hasNoaaPastName "coral" ;
-       :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=245" ;
+       le:hasNoaaPastName "coral" ;
+       le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=245" ;
        rdfs:comment "an identifiable organism that belongs to the kingdom Animalia, phylum Cnindaria." ;
        rdfs:label "Coral"@en .
 
@@ -107,7 +88,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#FluvialSediment
 :FluvialSediment rdf:type owl:NamedIndividual ,
                           :ArchiveType ;
-                 :hasSynonym "Creek" ,
+                 le:hasSynonym "Creek" ,
                              "Fluvial" ,
                              "River" ,
                              "Stream" ;
@@ -117,8 +98,8 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#GlacierIce
 :GlacierIce rdf:type owl:NamedIndividual ,
                      :ArchiveType ;
-            :hasNoaaPastName "ice cores" ;
-            :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=102" ;
+            le:hasNoaaPastName "ice cores" ;
+            le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=102" ;
             rdfs:comment "a data type that includes measurements made on land-based ice." ;
             rdfs:label "Glacier ice"@en .
 
@@ -126,8 +107,8 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#GroundIce
 :GroundIce rdf:type owl:NamedIndividual ,
                     :ArchiveType ;
-           :hasNoaaPastName "bulk ice" ;
-           :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=789" ;
+           le:hasNoaaPastName "bulk ice" ;
+           le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=789" ;
            rdfs:comment "a hydrologic material that is a whole sample of recrystallized and compacted snow, without any separation of components." ;
            rdfs:label "Ground ice" .
 
@@ -135,7 +116,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#LakeSediment
 :LakeSediment rdf:type owl:NamedIndividual ,
                        :ArchiveType ;
-              :hasSynonym "Lagoon" ,
+              le:hasSynonym "Lagoon" ,
                           "Lake" ,
                           "Lake Sediment" ;
               rdfs:comment "Sediment deposited in a lake" ;
@@ -145,7 +126,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#MarineSediment
 :MarineSediment rdf:type owl:NamedIndividual ,
                          :ArchiveType ;
-                :hasSynonym "Delta" ,
+                le:hasSynonym "Delta" ,
                             "Marine" ;
                 rdfs:label "Marine sediment"@en .
 
@@ -159,9 +140,9 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#MolluskShell
 :MolluskShell rdf:type owl:NamedIndividual ,
                        :ArchiveType ;
-              :hasNoaaPastName "bivalve" ;
-              :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1772" ;
-              :hasSynonym "MolluskShells" ;
+              le:hasNoaaPastName "bivalve" ;
+              le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1772" ;
+              le:hasSynonym "MolluskShells" ;
               rdfs:comment "an identifiable organism including clams and mussels that belongs to the kingdom Animalia, phylum Mollusca, class Bivalvia." ;
               rdfs:label "Mollusk shell"@en .
 
@@ -169,9 +150,9 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Peat
 :Peat rdf:type owl:NamedIndividual ,
                :ArchiveType ;
-      :hasNoaaPastName "peat" ;
-      :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1623" ;
-      :hasSynonym "Bog" ,
+      le:hasNoaaPastName "peat" ;
+      le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1623" ;
+      le:hasSynonym "Bog" ,
                   "Fen" ,
                   "Marsh" ,
                   "Mire" ,
@@ -183,8 +164,8 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Sclerosponge
 :Sclerosponge rdf:type owl:NamedIndividual ,
                        :ArchiveType ;
-              :hasNoaaPastName "sclerosponge" ;
-              :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4574" ;
+              le:hasNoaaPastName "sclerosponge" ;
+              le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4574" ;
               rdfs:comment "an identifiable organism that belongs to kingdom Animalia, phylum Porifera, class Demospongiae." ;
               rdfs:label "Sclerosponge"@en .
 
@@ -192,9 +173,9 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Shoreline
 :Shoreline rdf:type owl:NamedIndividual ,
                     :ArchiveType ;
-           :hasNoaaPastName "lake levels" ;
-           :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2298" ;
-           :hasSynonym "LakeDeposit" ,
+           le:hasNoaaPastName "lake levels" ;
+           le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2298" ;
+           le:hasSynonym "LakeDeposit" ,
                        "LakeDeposits" ;
            rdfs:comment "a data type that quantifies past changes in lake elevation or lake depth, either directly or using reconstruction methods, based on shoreline deposits or sediment cores." ;
            rdfs:label "Shoreline" .
@@ -203,9 +184,9 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Speleothem
 :Speleothem rdf:type owl:NamedIndividual ,
                      :ArchiveType ;
-            :hasNoaaPastName "speleothems" ;
-            :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=106" ;
-            :hasSynonym "Cave" ;
+            le:hasNoaaPastName "speleothems" ;
+            le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=106" ;
+            le:hasSynonym "Cave" ;
             rdfs:comment "a data type that includes measurements made on cave deposits." ;
             rdfs:label "Speleothem"@en .
 
@@ -213,7 +194,7 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#TerrestrialSediment
 :TerrestrialSediment rdf:type owl:NamedIndividual ,
                               :ArchiveType ;
-                     :hasSynonym "Dune" ,
+                     le:hasSynonym "Dune" ,
                                  "Loess" ;
                      rdfs:label "Terrestrial sediment" .
 
@@ -221,9 +202,9 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Wood
 :Wood rdf:type owl:NamedIndividual ,
                :ArchiveType ;
-      :hasNoaaPastName "tree ring" ;
-      :hasSynonym "tree" ;
-      :hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=116" ;
+      le:hasNoaaPastName "tree ring" ;
+      le:hasSynonym "tree" ;
+      le:hasNoaaPastUrl "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=116" ;
       rdfs:comment "a data type that includes measurements made on the rings of trees." ;
       rdfs:label "Wood"@en .
 
@@ -231,14 +212,14 @@ Examples of archives include: marine sediments, corals, wood, lake sediments, sp
 ###  http://linked.earth/ontology/archive#Documents
 :Documents rdf:type owl:NamedIndividual ,
                 :ArchiveType ;
-       :hasNoaaPastName "documents" ;
+       le:hasNoaaPastName "documents" ;
        rdfs:comment "added due to some LiPD files using this" ;
        rdfs:label "Documents"@en .
 
 ###  http://linked.earth/ontology/archive#Other
 :Other rdf:type owl:NamedIndividual ,
                 :ArchiveType ;
-       :hasNoaaPastName "other" ;
+       le:hasNoaaPastName "other" ;
        rdfs:comment "added due to some LiPD files using this" ;
        rdfs:label "Other"@en .
 

@@ -7,7 +7,7 @@
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/title> "The Archive Type Ontology"@en .
-<http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "archive" .
 <http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/archive#" .
 <http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0"@en .
 # 

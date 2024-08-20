@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by [Ontology Name].
+<h2 id="crossreference" class="list">Cross-reference for The Linked Earth Core Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Linked Earth Core Ontology.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -1387,18 +1387,8 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
-            <span>contributor</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://schema.org/contributor" title="http://schema.org/contributor">
             <span>contributor</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
-            <span>creator</span>
          </a>
       </li>
       <li>
@@ -1634,29 +1624,6 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/contributor">
-      <h3>contributor<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasContributor" title="http://linked.earth/ontology#hasContributor">has contributor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://schema.org/contributor">
       <h3>contributor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1675,32 +1642,6 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has sub-properties</dt>
             <dd>
                <a href="#hasContributor" title="http://linked.earth/ontology#hasContributor">has contributor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/creator">
-      <h3>creator<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasAuthor" title="http://linked.earth/ontology#hasAuthor">has author</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasCreator" title="http://linked.earth/ontology#hasCreator">has creator</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasDataContributor" title="http://linked.earth/ontology#hasDataContributor">has data contributor</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstAuthor" title="http://linked.earth/ontology#hasFirstAuthor">has first author</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1787,25 +1728,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#hasAuthor</p>
-      <div class="comment">
-         <span class="markdown">Answers the question: Who wrote (i.e., created) the resource, such as a Publication?</span>
-      </div>
-      <dl>
-         <dt>Term rationale</dt>
-         <dd>Give credit to the original author of the resource</dd>
-      </dl>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <a href="http://wiki.linked.earth/Publication.10.1002/2013PA002534">http://wiki.linked.earth/Publication.10.1002/2013PA002534</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://schema.org/author" title="http://schema.org/author">author</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1823,6 +1750,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Person" title="http://linked.earth/ontology#Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasAuthor">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -1936,25 +1867,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#hasContributor</p>
-      <div class="comment">
-         <span class="markdown">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored</span>
-      </div>
-      <dl>
-         <dt>Term rationale</dt>
-         <dd>Allows distinction between contributor to a resource and the author</dd>
-      </dl>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <a href="http://wiki.linked.earth/MD982181.Khider.2014">http://wiki.linked.earth/MD982181.Khider.2014</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/contributor" title="http://schema.org/contributor">contributor</a>
+               <a href="#http://schema.org/contributor" title="http://schema.org/contributor">contributor</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1966,6 +1883,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Person" title="http://linked.earth/ontology#Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasContributor">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -1979,11 +1900,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://linked.earth/ontology#hasCreator</p>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Dataset" title="http://linked.earth/ontology#Dataset">dataset</a>
@@ -1996,6 +1912,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Person" title="http://linked.earth/ontology#Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasCreator">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -2044,11 +1964,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://linked.earth/ontology#hasDataContributor</p>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Dataset" title="http://linked.earth/ontology#Dataset">dataset</a>
@@ -2058,6 +1973,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Person" title="http://linked.earth/ontology#Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasDataContributor">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -2074,7 +1993,6 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has super-properties</dt>
             <dd>
                <a href="#http://schema.org/author" title="http://schema.org/author">author</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2092,6 +2010,10 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Person" title="http://linked.earth/ontology#Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasFirstAuthor">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -2912,11 +2834,6 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
-            <span>created</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">
             <span>date created</span>
          </a>
@@ -3273,11 +3190,6 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
-            <span>identifier</span>
-         </a>
-      </li>
-      <li>
          <a href="#isLocal" title="http://linked.earth/ontology#isLocal">
             <span>is local</span>
          </a>
@@ -3290,11 +3202,6 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
             <span>lat</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
-            <span>license</span>
          </a>
       </li>
       <li>
@@ -3355,11 +3262,6 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#standard" title="http://linked.earth/ontology#standard">
             <span>standard</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
-            <span>title</span>
          </a>
       </li>
       <li>
@@ -3476,30 +3378,6 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#hasCitation" title="http://linked.earth/ontology#hasCitation">has citation</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCiteKey" title="http://linked.earth/ontology#hasCiteKey">has cite key</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/created">
-      <h3>created<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasDate" title="http://linked.earth/ontology#hasDate">has date</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasYear" title="http://linked.earth/ontology#hasYear">has year</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
@@ -3896,7 +3774,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -3982,19 +3862,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#hasDatasetLicense</p>
-      <div class="comment">
-         <span class="markdown">License associated to a dataset</span>
-      </div>
-      <dl>
-         <dt>Term rationale</dt>
-         <dd>Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset</dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/license" title="http://schema.org/license">license</a>
+               <a href="#http://schema.org/license" title="http://schema.org/license">license</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4007,6 +3879,10 @@ This section provides details for each class and property defined by [Ontology N
                <a href="http://www.w3.org/2001/XMLSchema#anyURI"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasDatasetLicense">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -4052,7 +3928,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
+               <a href="http://purl.org/dc/terms/created"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/created">created</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
@@ -4441,7 +4319,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4476,7 +4356,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4511,7 +4393,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -5352,26 +5236,8 @@ Also applies to InferredVariable to faciliate the search in database</dd>
       </h3>
       <p>
          <strong>IRI:</strong> http://linked.earth/ontology#hasTitle</p>
-      <div class="comment">
-         <span class="markdown">Answers the question: What is the title of the Publication?</span>
-      </div>
-      <dl>
-         <dt>Term rationale</dt>
-         <dd>Part of standard metadata for Publications</dd>
-      </dl>
-      <dl>
-         <dt>Example</dt>
-         <dd>
-            <a href="http://wiki.linked.earth/Publication.10.1029/98PA00070">http://wiki.linked.earth/Publication.10.1029/98PA00070</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Publication" title="http://linked.earth/ontology#Publication">publication</a>
@@ -5382,6 +5248,10 @@ Also applies to InferredVariable to faciliate the search in database</dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#hasTitle">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -5585,7 +5455,9 @@ This allows someone to change every piece of metadata about column or dataset, i
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -5698,7 +5570,9 @@ This allows someone to change every piece of metadata about column or dataset, i
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
+               <a href="http://purl.org/dc/terms/created"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/created">created</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">date created</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
@@ -5751,34 +5625,6 @@ This allows someone to change every piece of metadata about column or dataset, i
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/identifier">
-      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasDOI" title="http://linked.earth/ontology#hasDOI">has d o i</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIGSN" title="http://linked.earth/ontology#hasIGSN">has i g s n</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasISBN" title="http://linked.earth/ontology#hasISBN">has i s b n</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasISSN" title="http://linked.earth/ontology#hasISSN">has i s s n</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVariableId" title="http://linked.earth/ontology#hasVariableId">has variable id</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#orcidNumber" title="http://linked.earth/ontology#orcidNumber">orcid number</a>
-               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -5865,29 +5711,6 @@ This allows someone to change every piece of metadata about column or dataset, i
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/license">
-      <h3>license<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasDatasetLicense" title="http://linked.earth/ontology#hasDatasetLicense">has dataset license</a>
-               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -6039,7 +5862,9 @@ This allows someone to change every piece of metadata about column or dataset, i
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -6288,29 +6113,6 @@ This allows someone to change every piece of metadata about column or dataset, i
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/title">
-      <h3>title<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasTitle" title="http://linked.earth/ontology#hasTitle">has title</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://schema.org/version">
       <h3>version<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6334,82 +6136,11 @@ This allows someone to change every piece of metadata about column or dataset, i
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#" title="http://linked.earth/ontology#">
-            <span></span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="">
-      <h3>:<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://linked.earth/ontology#</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="http://w3id.org/people/dgarijo"
-               target="_blank"
-               title="http://w3id.org/people/dgarijo">dgarijo</a>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="http://www.isi.edu/~gil/"
-               target="_blank"
-               title="http://www.isi.edu/~gil/">http://www.isi.edu/~gil/</a>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="http://earth.usc.edu/~khider/"
-               target="_blank"
-               title="http://earth.usc.edu/~khider/">http://earth.usc.edu/~khider/</a>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="http://orcid.org/0000-0001-5920-4751"
-               target="_blank"
-               title="http://orcid.org/0000-0001-5920-4751">0000 0001 5920 4751</a>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="http://www.cefns.nau.edu/~npm4/"
-               target="_blank"
-               title="http://www.cefns.nau.edu/~npm4/">http://www.cefns.nau.edu/~npm4/</a>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"http://creativecommons.org/licenses/by/2.0/"</span>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"The LiPD Ontology"@en</span>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"The Linked Earth Core Ontology"@en</span>
-         </dd>
-      </dl>
-   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>

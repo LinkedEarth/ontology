@@ -30,7 +30,7 @@
     "@value" : "The Archive Type Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "le"
+    "@value" : "archive"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "http://linked.earth/ontology/archive#"

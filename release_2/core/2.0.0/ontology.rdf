@@ -8,13 +8,20 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="http://linked.earth/ontology#">
     <owl:Ontology rdf:about="http://linked.earth/ontology#">
         <owl:versionIRI rdf:resource="http://linked.earth/ontology/core/2.0.0"/>
+        <terms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
+        <terms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
+        <terms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+        <terms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+        <terms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
         <terms:description xml:lang="en">The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</terms:description>
+        <terms:license>http://creativecommons.org/licenses/by/2.0/</terms:license>
+        <terms:title xml:lang="en">The Linked Earth Core Ontology</terms:title>
         <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://linked.earth/ontology#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data</rdfs:comment>
         <owl:versionInfo xml:lang="en">2.0.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -32,10 +39,101 @@
     
 
 
+    <!-- http://linked.earth/ontology#hasAuthor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasContributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasContributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasCreator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasCreator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasDataContributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasDataContributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasDatasetLicense -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasDatasetLicense">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/license"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasFirstAuthor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasFirstAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://linked.earth/ontology#hasTitle -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -126,7 +224,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasAuthor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
         <rdfs:subPropertyOf rdf:resource="http://schema.org/author"/>
         <rdfs:domain>
             <owl:Class>
@@ -138,9 +235,6 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
-        <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
-        <vaem:rationale xml:lang="en">Give credit to the original author of the resource</vaem:rationale>
-        <rdfs:comment xml:lang="en">Answers the question: Who wrote (i.e., created) the resource, such as a Publication?</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -188,13 +282,9 @@
 
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasContributor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:subPropertyOf rdf:resource="http://schema.org/contributor"/>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
         <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
-        <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
-        <vaem:rationale xml:lang="en">Allows distinction between contributor to a resource and the author</vaem:rationale>
-        <rdfs:comment xml:lang="en">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -203,7 +293,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasCreator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -233,7 +322,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasDataContributor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
         <rdfs:range rdf:resource="http://linked.earth/ontology#Person"/>
     </owl:ObjectProperty>
@@ -244,7 +332,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://linked.earth/ontology#hasFirstAuthor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
         <rdfs:subPropertyOf rdf:resource="http://schema.org/author"/>
         <rdfs:domain>
             <owl:Class>
@@ -539,24 +626,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/contributor -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/dc/terms/isPartOf -->
 
 
@@ -839,12 +908,9 @@
 
 
     <owl:DatatypeProperty rdf:about="http://linked.earth/ontology#hasDatasetLicense">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/license"/>
         <rdfs:subPropertyOf rdf:resource="http://schema.org/license"/>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <vaem:rationale xml:lang="en">Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset</vaem:rationale>
-        <rdfs:comment xml:lang="en">License associated to a dataset</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1374,12 +1440,8 @@ Also applies to InferredVariable to faciliate the search in database</vaem:ratio
 
 
     <owl:DatatypeProperty rdf:about="http://linked.earth/ontology#hasTitle">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
         <rdfs:domain rdf:resource="http://linked.earth/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1029/98PA00070"/>
-        <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
-        <rdfs:comment xml:lang="en">Answers the question: What is the title of the Publication?</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1694,36 +1756,14 @@ This allows someone to change every piece of metadata about column or dataset, i
     <!-- http://purl.org/dc/terms/created -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 
@@ -2265,22 +2305,6 @@ This allows someone to change every piece of metadata about column or dataset, i
     
 
 
-    <!-- http://linked.earth/ontology# -->
-
-
-    <owl:NamedIndividual rdf:about="http://linked.earth/ontology#">
-        <terms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
-        <terms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
-        <terms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
-        <terms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
-        <terms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
-        <terms:license>http://creativecommons.org/licenses/by/2.0/</terms:license>
-        <terms:title xml:lang="en">The LiPD Ontology</terms:title>
-        <terms:title xml:lang="en">The Linked Earth Core Ontology</terms:title>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://orcid.org/0000-0001-5920-4751 -->
 
 
@@ -2306,6 +2330,37 @@ This allows someone to change every piece of metadata about column or dataset, i
 
 
     <owl:NamedIndividual rdf:about="http://www.isi.edu/~gil/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://linked.earth/ontology#hasAuthor">
+        <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1002/2013PA002534"/>
+        <vaem:rationale xml:lang="en">Give credit to the original author of the resource</vaem:rationale>
+        <rdfs:comment xml:lang="en">Answers the question: Who wrote (i.e., created) the resource, such as a Publication?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://linked.earth/ontology#hasContributor">
+        <vann:example rdf:resource="http://wiki.linked.earth/MD982181.Khider.2014"/>
+        <vaem:rationale xml:lang="en">Allows distinction between contributor to a resource and the author</vaem:rationale>
+        <rdfs:comment xml:lang="en">Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://linked.earth/ontology#hasDatasetLicense">
+        <vaem:rationale xml:lang="en">Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset</vaem:rationale>
+        <rdfs:comment xml:lang="en">License associated to a dataset</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://linked.earth/ontology#hasTitle">
+        <vann:example rdf:resource="http://wiki.linked.earth/Publication.10.1029/98PA00070"/>
+        <vaem:rationale xml:lang="en">Part of standard metadata for Publications</vaem:rationale>
+        <rdfs:comment xml:lang="en">Answers the question: What is the title of the Publication?</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 

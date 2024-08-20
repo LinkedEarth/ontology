@@ -8,18 +8,75 @@
 
 <http://linked.earth/ontology#> rdf:type owl:Ontology ;
                                  owl:versionIRI <http://linked.earth/ontology/core/2.0.0> ;
+                                 <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> ,
+                                                                        <http://www.isi.edu/~gil/> ;
+                                 <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> ,
+                                                                    <http://orcid.org/0000-0001-5920-4751> ,
+                                                                    <http://www.cefns.nau.edu/~npm4/> ;
                                  <http://purl.org/dc/terms/description> "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+                                 <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" ;
+                                 <http://purl.org/dc/terms/title> "The Linked Earth Core Ontology"@en ;
                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" ;
                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" ;
-                                 rdfs:comment "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
                                  owl:versionInfo "2.0.0"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://linked.earth/ontology#hasAuthor
+:hasAuthor rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf <http://purl.org/dc/terms/creator> .
+
+
+###  http://linked.earth/ontology#hasContributor
+:hasContributor rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> .
+
+
+###  http://linked.earth/ontology#hasCreator
+:hasCreator rdf:type owl:AnnotationProperty ;
+            rdfs:subPropertyOf <http://purl.org/dc/terms/creator> .
+
+
+###  http://linked.earth/ontology#hasDataContributor
+:hasDataContributor rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf <http://purl.org/dc/terms/creator> .
+
+
+###  http://linked.earth/ontology#hasDatasetLicense
+:hasDatasetLicense rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf <http://purl.org/dc/terms/license> .
+
+
+###  http://linked.earth/ontology#hasFirstAuthor
+:hasFirstAuthor rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf <http://purl.org/dc/terms/creator> .
+
+
+###  http://linked.earth/ontology#hasTitle
+:hasTitle rdf:type owl:AnnotationProperty ;
+          rdfs:subPropertyOf <http://purl.org/dc/terms/title> .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/example
@@ -66,18 +123,14 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#hasAuthor
 :hasAuthor rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ,
-                              <http://schema.org/author> ;
+           rdfs:subPropertyOf <http://schema.org/author> ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Compilation
                                        :Dataset
                                        :Publication
                                      )
                        ] ;
-           rdfs:range :Person ;
-           <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> ;
-           <http://www.linkedmodel.org/schema/vaem#rationale> "Give credit to the original author of the resource"@en ;
-           rdfs:comment "Answers the question: Who wrote (i.e., created) the resource, such as a Publication?"@en .
+           rdfs:range :Person .
 
 
 ###  http://linked.earth/ontology#hasCalibration
@@ -109,18 +162,13 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#hasContributor
 :hasContributor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ,
-                                   <http://schema.org/contributor> ;
+                rdfs:subPropertyOf <http://schema.org/contributor> ;
                 rdfs:domain :Dataset ;
-                rdfs:range :Person ;
-                <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
-                <http://www.linkedmodel.org/schema/vaem#rationale> "Allows distinction between contributor to a resource and the author"@en ;
-                rdfs:comment "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored"@en .
+                rdfs:range :Person .
 
 
 ###  http://linked.earth/ontology#hasCreator
 :hasCreator rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :Dataset
                                         :SoftwareCode
@@ -139,15 +187,13 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#hasDataContributor
 :hasDataContributor rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ;
                     rdfs:domain :Dataset ;
                     rdfs:range :Person .
 
 
 ###  http://linked.earth/ontology#hasFirstAuthor
 :hasFirstAuthor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ,
-                                   <http://schema.org/author> ;
+                rdfs:subPropertyOf <http://schema.org/author> ;
                 rdfs:domain [ rdf:type owl:Class ;
                               owl:unionOf ( :Compilation
                                             :Dataset
@@ -344,16 +390,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
                                                rdfs:isDefinedBy <http://purl.oclc.org/NET/ssnx/ssn#> .
 
 
-###  http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> rdf:type owl:ObjectProperty ;
-                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:ObjectProperty ;
-                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-
-
 ###  http://purl.org/dc/terms/isPartOf
 <http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty ;
                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> .
@@ -528,12 +564,9 @@ rdfs:Literal owl:equivalentClass xsd:string .
 
 ###  http://linked.earth/ontology#hasDatasetLicense
 :hasDatasetLicense rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf <http://purl.org/dc/terms/license> ,
-                                      <http://schema.org/license> ;
+                   rdfs:subPropertyOf <http://schema.org/license> ;
                    rdfs:domain :Dataset ;
-                   rdfs:range xsd:anyURI ;
-                   <http://www.linkedmodel.org/schema/vaem#rationale> "Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset"@en ;
-                   rdfs:comment "License associated to a dataset"@en .
+                   rdfs:range xsd:anyURI .
 
 
 ###  http://linked.earth/ontology#hasDatasetRange
@@ -885,12 +918,8 @@ Also applies to InferredVariable to faciliate the search in database"""@en ;
 
 ###  http://linked.earth/ontology#hasTitle
 :hasTitle rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
           rdfs:domain :Publication ;
-          rdfs:range xsd:string ;
-          <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1029/98PA00070> ;
-          <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en ;
-          rdfs:comment "Answers the question: What is the title of the Publication?"@en .
+          rdfs:range xsd:string .
 
 
 ###  http://linked.earth/ontology#hasType
@@ -1103,23 +1132,11 @@ This allows someone to change every piece of metadata about column or dataset, i
 
 
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
-                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/identifier
-<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
-                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:DatatypeProperty ;
-                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
-                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty .
 
 
 ###  http://schema.org/citation
@@ -1453,18 +1470,6 @@ This allows someone to change every piece of metadata about column or dataset, i
 <http://earth.usc.edu/~khider/> rdf:type owl:NamedIndividual .
 
 
-###  http://linked.earth/ontology#
-<http://linked.earth/ontology#> rdf:type owl:NamedIndividual ;
-                                <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> ,
-                                                                       <http://www.isi.edu/~gil/> ;
-                                <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> ,
-                                                                   <http://orcid.org/0000-0001-5920-4751> ,
-                                                                   <http://www.cefns.nau.edu/~npm4/> ;
-                                <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" ;
-                                <http://purl.org/dc/terms/title> "The LiPD Ontology"@en ,
-                                                                 "The Linked Earth Core Ontology"@en .
-
-
 ###  http://orcid.org/0000-0001-5920-4751
 <http://orcid.org/0000-0001-5920-4751> rdf:type owl:NamedIndividual .
 
@@ -1479,6 +1484,29 @@ This allows someone to change every piece of metadata about column or dataset, i
 
 ###  http://www.isi.edu/~gil/
 <http://www.isi.edu/~gil/> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasAuthor <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1002/2013PA002534> ;
+           <http://www.linkedmodel.org/schema/vaem#rationale> "Give credit to the original author of the resource"@en ;
+           rdfs:comment "Answers the question: Who wrote (i.e., created) the resource, such as a Publication?"@en .
+
+
+:hasContributor <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+                <http://www.linkedmodel.org/schema/vaem#rationale> "Allows distinction between contributor to a resource and the author"@en ;
+                rdfs:comment "Answers the question: Who contributed the resource? A contributor may be the same as the authors of the resource or different. For instance, in the case of a legacy dataset, a Linked Earth member may contribute a previously-published dataset that he/she may not have authored"@en .
+
+
+:hasDatasetLicense <http://www.linkedmodel.org/schema/vaem#rationale> "Property needed to let other scientists know about the usage and attribution terms of the uploaded dataset"@en ;
+                   rdfs:comment "License associated to a dataset"@en .
+
+
+:hasTitle <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Publication.10.1029/98PA00070> ;
+          <http://www.linkedmodel.org/schema/vaem#rationale> "Part of standard metadata for Publications"@en ;
+          rdfs:comment "Answers the question: What is the title of the Publication?"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

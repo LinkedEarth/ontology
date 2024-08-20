@@ -18,7 +18,7 @@
         <terms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
         <terms:license>http://creativecommons.org/licenses/by/2.0/</terms:license>
         <terms:title xml:lang="en">The Archive Type Ontology</terms:title>
-        <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>archive</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://linked.earth/ontology/archive#</vann:preferredNamespaceUri>
         <owl:versionInfo xml:lang="en">2.0.0</owl:versionInfo>
     </owl:Ontology>

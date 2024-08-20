@@ -15,7 +15,7 @@
                                                                             <http://www.cefns.nau.edu/~npm4/> ;
                                          <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" ;
                                          <http://purl.org/dc/terms/title> "The Archive Type Ontology"@en ;
-                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "archive" ;
                                          <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/archive#" ;
                                          owl:versionInfo "2.0.0"@en .
 

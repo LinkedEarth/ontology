@@ -11,16 +11,37 @@
 
 <http://linked.earth/ontology#> rdf:type owl:Ontology ;
                                  owl:versionIRI <http://linked.earth/ontology/core/2.0.0> ;
+                                 dcterms:contributor <http://w3id.org/people/dgarijo> ,
+                                                     <http://www.isi.edu/~gil/> ;
+                                 dcterms:creator <http://earth.usc.edu/~khider/> ,
+                                                 <http://orcid.org/0000-0001-5920-4751> ,
+                                                 <http://www.cefns.nau.edu/~npm4/> ;
+                                 dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
                                  dcterms:title "The Linked Earth Core Ontology"@en ;
                                  dcterms:description "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
                                  vann:preferredNamespacePrefix "le" ;
                                  vann:preferredNamespaceUri "http://linked.earth/ontology#" ;
-                                 rdfs:comment "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
                                  owl:versionInfo "2.0.0"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty .
@@ -363,16 +384,6 @@ rdfs:Literal owl:equivalentClass xsd:string .
 ###  http://purl.oclc.org/NET/ssnx/ssn#observedBy
 <http://purl.oclc.org/NET/ssnx/ssn#observedBy> rdf:type owl:ObjectProperty ;
                                                rdfs:isDefinedBy <http://purl.oclc.org/NET/ssnx/ssn#> .
-
-
-###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:ObjectProperty ;
-                    rdfs:isDefinedBy dcterms: .
-
-
-###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:ObjectProperty ;
-                rdfs:isDefinedBy dcterms: .
 
 
 ###  http://purl.org/dc/terms/isPartOf
@@ -1107,25 +1118,6 @@ dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
                               rdfs:isDefinedBy dcterms: .
 
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:DatatypeProperty ;
-                rdfs:isDefinedBy dcterms: .
-
-
-###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:DatatypeProperty ;
-                   rdfs:isDefinedBy dcterms: .
-
-
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:DatatypeProperty ;
-                rdfs:isDefinedBy dcterms: .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:DatatypeProperty ;
-              rdfs:isDefinedBy dcterms: .
-
 
 ###  http://schema.org/citation
 <http://schema.org/citation> rdf:type owl:DatatypeProperty ;
@@ -1456,17 +1448,6 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 ###  http://earth.usc.edu/~khider/
 <http://earth.usc.edu/~khider/> rdf:type owl:NamedIndividual .
-
-
-###  http://linked.earth/ontology#
-<http://linked.earth/ontology#> rdf:type owl:NamedIndividual ;
-                                dcterms:contributor <http://w3id.org/people/dgarijo> ,
-                                                    <http://www.isi.edu/~gil/> ;
-                                dcterms:creator <http://earth.usc.edu/~khider/> ,
-                                                <http://orcid.org/0000-0001-5920-4751> ,
-                                                <http://www.cefns.nau.edu/~npm4/> ;
-                                dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
-                                dcterms:title "The LiPD Ontology"@en .
 
 
 ###  http://orcid.org/0000-0001-5920-4751

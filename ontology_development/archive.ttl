@@ -18,7 +18,7 @@
                                                  <http://www.cefns.nau.edu/~npm4/> ;
                                  dcterms:license "http://creativecommons.org/licenses/by/2.0/" ;
                                  dcterms:title "The Archive Type Ontology"@en ;
-                                 vann:preferredNamespacePrefix "le" ;
+                                 vann:preferredNamespacePrefix "archive" ;
                                  vann:preferredNamespaceUri "http://linked.earth/ontology/archive#" ;
                                  owl:versionInfo "2.0.0"@en .
 

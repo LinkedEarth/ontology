@@ -1,0 +1,1439 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linked.earth/ontology/paleo_proxy#"
+     xml:base="http://linked.earth/ontology/paleo_proxy"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="http://linked.earth/ontology#">
+    <owl:Ontology rdf:about="http://linked.earth/ontology/paleo_proxy#">
+        <owl:versionIRI rdf:resource="http://linked.earth/ontology/paleo_proxy/2.0.0"/>
+        <terms:contributor rdf:resource="http://earth.usc.edu/~khider/"/>
+        <terms:contributor rdf:resource="http://w3id.org/people/varunr"/>
+        <terms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
+        <terms:creator rdf:resource="http://orcid.org/0000-0001-5920-4751"/>
+        <terms:creator rdf:resource="http://www.cefns.nau.edu/~npm4/"/>
+        <terms:license>http://creativecommons.org/licenses/by/2.0/</terms:license>
+        <terms:title xml:lang="en">The Paleo Proxy Ontology</terms:title>
+        <vann:preferredNamespacePrefix>pproxy</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://linked.earth/ontology/paleo_proxy#</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">2.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://linked.earth/ontology#hasNoaaPastName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasNoaaPastName"/>
+    
+
+
+    <!-- http://linked.earth/ontology#hasNoaaPastUrl -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasNoaaPastUrl"/>
+    
+
+
+    <!-- http://linked.earth/ontology#hasSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://linked.earth/ontology#hasSynonym"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#PaleoProxy -->
+
+
+    <owl:Class rdf:about="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral -->
+
+
+    <owl:Class rdf:about="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#ACL -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#ACL">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>average chain length</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4170</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chain length index that is the average number of carbon atoms within organic compound chains in a sample.</rdfs:comment>
+        <rdfs:label xml:lang="en">ACL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Al2O3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Al2O3">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>aluminum oxide</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=305</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an inorganic compound that has the chemical formula Al2O3.</rdfs:comment>
+        <rdfs:label xml:lang="en">Al2O3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#BIT -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#BIT">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>branched and isoprenoid tetraether index</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1676</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>BITindex</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an organic compound index that is the abundance of branched tetraethers relative to isoprenoid tetraethers, indicative of the relative amounts of soil organic matter and aquatic organic matter.</rdfs:comment>
+        <rdfs:label xml:lang="en">BIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#BSi -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#BSi">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>biogenic silica</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4018</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a hydrated, amorphous form of silicon dioxide with the formula SiO2•nH20 that is biogenically precipitated by a variety of organisms including chrysophytes, diatoms, radiolarians, silicoflagellates, and sponges (Credit: Last et al. 2001 Tracking Environmental Change Using Lake Sediments).</rdfs:comment>
+        <rdfs:label xml:lang="en">BSi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ba_Al -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ba_Al">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>barium/aluminum</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2410</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of barium to aluminum.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ba/Al</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ba_Ca -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ba_Ca">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>barium/calcium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=317</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>BaCa</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the elemental ratio of barium to calcium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ba/Ca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#C_N -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#C_N">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>carbon/nitrogen</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=750</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of carbon to nitrogen.</rdfs:comment>
+        <rdfs:label xml:lang="en">C/N</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#CaCO3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#CaCO3">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>calcium carbonate</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1515</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a carbonate with the chemical formula CaCO3 but of unspecified crystal structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">CaCO3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ca_K -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ca_K">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>calcium/potassium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3783</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of calcium to potassium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ca/K</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ca_Ti -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ca_Ti">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>calcium/titanium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1635</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of calcium to titanium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ca/Ti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Eu_Zr -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Eu_Zr">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Eu/Zr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Fe -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Fe">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>iron</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=285</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 26.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Fe_Al -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Fe_Al">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>iron/aluminum</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2416</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of iron to aluminum.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fe/Al</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#GDGT -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#GDGT">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>glycerol dialkyl glycerol tetraether</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1680</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>brGDGT</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an ether that is a tetraether membrane lipid and that contains between 0 and 4 cyclopentane moieties, with an increasing number of cyclopentane moieties related to the temperature of formation.</rdfs:comment>
+        <rdfs:label xml:lang="en">GDGT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#HBI -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#HBI">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>highly-branched isoprenoid alkene</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2283</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an alkene that is highly-branched and composed of a number of isoprene (C5H8) units and that is produced by a relatively small number of marine and freshwater diatoms belonging to the Haslea, Navicula, Pleurosigma, and Rhizosolenia genera (Credit: Belt et al. 2013, 10.1016/j.quascirev.2012.12.001).</rdfs:comment>
+        <rdfs:label xml:lang="en">HBI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#IP25 -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#IP25">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>ice proxy with 25 carbon atoms</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2493</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a highly-branched isoprenoid alkene that contains 25 carbon atoms and that is produced selectively by sea ice diatoms (Credit: Belt et al. 2013, 10.1016/j.quascirev.2012.12.001).</rdfs:comment>
+        <rdfs:label xml:lang="en">IP25</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#LDI -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#LDI">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>long-chain diol index</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5705</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>long chain diol</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an organic compound index calculated based on the relative abundance of long chain alkyl 1,13- and 1,15-diols.</rdfs:comment>
+        <rdfs:label xml:lang="en">LDI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Mg">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>magnesium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=891</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 12.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Mg_Ca -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Mg_Ca">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>magnesium/calcium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=327</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Foram Mg/Ca</ontology:hasSynonym>
+        <ontology:hasSynonym>MgCa</ontology:hasSynonym>
+        <ontology:hasSynonym>foram Mg/Ca</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the elemental ratio of magnesium to calcium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mg/Ca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#P-aqueous -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#P-aqueous">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>P-aqueous</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1000103</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Paq</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an organic compound index that measures the relative predominance of submerged versus emergent aquatic plants and that is generally calculated from n-alkanes as (C23 + C25)/(C23 + C25 + C29 + C31).</rdfs:comment>
+        <rdfs:label xml:lang="en">P-aqueous</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Rb -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Rb">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>rubidium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=913</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 37.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Rb_Sr -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Rb_Sr">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Rb/Sr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Sr -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Sr">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>strontium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=290</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 38.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Sr_Ca -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Sr_Ca">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>strontium/calcium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=328</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Ca/Sr</ontology:hasSynonym>
+        <ontology:hasSynonym>Coral Sr/Ca</ontology:hasSynonym>
+        <ontology:hasSynonym>SrCa</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the elemental ratio of strontium to calcium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sr/Ca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#TEX86 -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#TEX86">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>tetraether index of 86 carbon atoms</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1599</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an organic compound index that is calculated as the ratio of different isoprenoidal glycerol dialkyl glycerol tetraethers.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEX86</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#TOC -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#TOC">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>organic carbon</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=995</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">carbon that is derived from an organic source.</rdfs:comment>
+        <rdfs:label xml:lang="en">TOC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ti -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ti">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>titanium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=292</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 22.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ti_Al -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ti_Al">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>titanium/aluminum</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3687</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the elemental ratio of titanium to aluminum.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ti/Al</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#Ti_Ca -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#Ti_Ca">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>titanium/calcium</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2426</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Ti/CA</ontology:hasSynonym>
+        <ontology:hasSynonym>ln(ti/ca)</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the elemental ratio of titanium to calcium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ti/Ca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#accumulation_rate -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#accumulation_rate">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>sed accumulation</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">accumulation rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#alkenone -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#alkenone">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>alkenone</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2485</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a ketone that is a long-chain unsaturated methyl and ethyl n-ketone produced by a few phytoplankton species of the class Prymnesiophyceae (Credit: Wikipedia).</rdfs:comment>
+        <rdfs:label xml:lang="en">alkenone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#amoeba -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#amoeba">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>testate amoeba</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3577</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an identifiable organism that is an ameboid protist with a test and that belongs to the kingdom Protozoa. Traditionally, those species that form large networks of anastomosing pseudopodia, despite of some of them having tests e.g. Foraminifera, are not counted amongst testate amoebae (Credit: Wikipedia).</rdfs:comment>
+        <rdfs:label xml:lang="en">amoeba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#biogenic -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#biogenic">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>biological material</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=444</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">measurements of cells or collections of cells that partially or completely compose an organism or group of organisms.</rdfs:comment>
+        <rdfs:label xml:lang="en">biogenic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#biomarker -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#biomarker">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>organic compound</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1596</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>C15 fatty alcohols</ontology:hasSynonym>
+        <ontology:hasSynonym>C37.concentration</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">a compound that consists of one or more atoms of carbon covalently linked to atoms of other elements, most commonly hydrogen, oxgen, or nitrogen.</rdfs:comment>
+        <rdfs:label xml:lang="en">biomarker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#borehole -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#borehole">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>borehole</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a data type that consists of direct measurements of subsurface temperature from boreholes drilled into materials such as rock and glacier ice.</rdfs:comment>
+        <rdfs:label xml:lang="en">borehole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#bubble_frequency -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#bubble_frequency">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">bubble frequency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#bulk_density -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#bulk_density">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>gamma</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">bulk density</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#bulk_sediment -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#bulk_sediment">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>dry sediment</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1502</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>BulkSed</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">sediment from which all water has been removed.</rdfs:comment>
+        <rdfs:label xml:lang="en">bulk sediment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#calcification_rate -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#calcification_rate">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>calcification rate</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=756</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>calcification</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a formation rate that is a rate of skeletal growth in calcifying organisms, often expressed as a mass times unit area per time (e.g., g cm2/yr)</rdfs:comment>
+        <rdfs:label xml:lang="en">calcification rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#calcite -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#calcite">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>calcite</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=482</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a calcium carbonate with rhombohedral crystal structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">calcite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#carbonate -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#carbonate">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>carbonate</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=692</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Carbonate content</ontology:hasSynonym>
+        <ontology:hasSynonym>authigenic carbonate</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identified mineral characterized by a fundamental anionic structure of CO3(2-) (Credit: Dictionary of Geological Terms).</rdfs:comment>
+        <rdfs:label xml:lang="en">carbonate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#cellulose -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#cellulose">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>cellulose</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=689</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an organooxygen compound with the general formula (C6H10O5)n and that is an important structural component of the cell walls of green plants.</rdfs:comment>
+        <rdfs:label xml:lang="en">cellulose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#charcoal -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#charcoal">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>charcoal</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=630</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a bulk biological material that consists of any black-colored plant-derived material that has had its chemical composition and structure altered as a result of heating in a fire, and retains recognizable anatomic structure of the plant material, even if only in a fragmentary form (Credit: Smol et al. 2001 Tracking Environmental Change Using Lake Sediments).</rdfs:comment>
+        <rdfs:label xml:lang="en">charcoal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#chironomid -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#chironomid">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>midge</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1571</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Chironomid</ontology:hasSynonym>
+        <ontology:hasSynonym>midge</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identifiable organism that belongs to one of several families in the kingdom Animalia, phylum Arthropoda, class Insecta, order Diptera.</rdfs:comment>
+        <rdfs:label xml:lang="en">chironomid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#chlorophyll -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#chlorophyll">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>chlorophyll</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1615</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an organic pigment that is any of several green pigments found in cyanobacteria and the chloroplasts of algae and plants and that is composed of carbon, hydrogen, oxygen, nitrogen, and magnesium.</rdfs:comment>
+        <rdfs:label xml:lang="en">chlorophyll</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#chrysophyte_assemblage -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#chrysophyte_assemblage">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>chrysophyte assemblage</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4080</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>chrysophyte</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an assemblage of golden or golden-brown algae that belong to the kingdom Chromista, class Chrysophyceae.</rdfs:comment>
+        <rdfs:label xml:lang="en">chrysophyte assemblage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#cladoceran -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#cladoceran">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>cladoceran</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3587</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Cladocera</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identifiable organism commonly known as a water flea that belongs to the kingdom Animalia, phylum Arthropoda, class Branchiopoda, order Cladocera.</rdfs:comment>
+        <rdfs:label xml:lang="en">cladoceran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#coccolithophore -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#coccolithophore">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>coccolithophore</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3250</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>coccolith</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identifiable organism that is a unicellular phytoplankton and that belongs to the kingdom Chromista, phylum Haptophyta, class Prymnesiophyceae.</rdfs:comment>
+        <rdfs:label xml:lang="en">coccolithophore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#cryophysical -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#cryophysical">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">cryophysical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#d13C -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#d13C">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>delta 13C</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=320</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>d13Cwax</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the ratio of two isotopes of carbon, 13C/12C, in a sample compared to that of a standard, typically the Pee Dee Belemnite, as in: ((13C/12C sample)/(13C/12C standard) - 1) x 1000.</rdfs:comment>
+        <rdfs:label xml:lang="en">d13C</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#d15N -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#d15N">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>delta 15N</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=322</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">the ratio of two isotopes of nitrogen, 15N/14N, in a sample compared to that of a standard, typically modern air ratios, as in: ((15N/14N sample)/(15N/14N standard) - 1) x 1000.</rdfs:comment>
+        <rdfs:label xml:lang="en">d15N</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#d15N_d40Ar -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#d15N_d40Ar">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>15N/40Ar fractionation</ontology:hasSynonym>
+        <ontology:hasSynonym>d15Nd40Ar</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">d15N/d40Ar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#d18O -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#d18O">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>delta 18O</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=323</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>cellulose d18O</ontology:hasSynonym>
+        <ontology:hasSynonym>delta18O</ontology:hasSynonym>
+        <ontology:hasSynonym>foram d18O</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the ratio of two isotopes of oxygen, 18O/16O, in a sample compared to that of a standard, typically either Pee Dee Belemnite or standard mean ocean water, as in: ((18O/16O sample)/(18O/16O standard) - 1) x 1000.</rdfs:comment>
+        <rdfs:label xml:lang="en">d18O</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#dD -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#dD">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>delta 2H</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=324</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>LeafWax</ontology:hasSynonym>
+        <ontology:hasSynonym>d2H</ontology:hasSynonym>
+        <ontology:hasSynonym>dDwax</ontology:hasSynonym>
+        <ontology:hasSynonym>leaf wax</ontology:hasSynonym>
+        <ontology:hasSynonym>leafWax</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the ratio of two isotopes of hydrogen, 2H/1H, in a sample compared to that of a standard, typically standard mean ocean water, as in: ((2H/1H sample)/(2H/1H standard) - 1) x 1000.</rdfs:comment>
+        <rdfs:label xml:lang="en">dD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#dendrophysical -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#dendrophysical">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">dendrophysical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#deuterium_excess -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#deuterium_excess">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>deuterium excess</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1426</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>deterium excess</ontology:hasSynonym>
+        <ontology:hasSynonym>dx</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a measure of how different a delta 2H value is from the value expected from the Global Meteoric Water Line, that is delta 2H - 8* delta 18O.</rdfs:comment>
+        <rdfs:label xml:lang="en">deuterium excess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#diatom -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#diatom">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>diatom</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1601</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an identifiable organism that is a unicellular phytoplankton and that belongs to the kingdom Chromista, phylum Ochrophyta, class Bacillariophyceae.</rdfs:comment>
+        <rdfs:label xml:lang="en">diatom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#dinocyst -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#dinocyst">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>dinoflagellate</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4532</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>dynocist MAT</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identifiable organism that belongs to the kingdom Chromista, division Pyrrophycophyta.</rdfs:comment>
+        <rdfs:label xml:lang="en">dinocyst</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#dry_bulk_density -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#dry_bulk_density">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>DBD</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">dry bulk density</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#elemental -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#elemental">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">elemental</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#faunal_assemblage -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#faunal_assemblage">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">faunal assemblage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#floral_assemblage -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#floral_assemblage">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">floral assemblage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#foraminifera -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#foraminifera">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>foraminifer</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2500</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>N. dutertrei</ontology:hasSynonym>
+        <ontology:hasSynonym>Uvigerina mediterranea</ontology:hasSynonym>
+        <ontology:hasSynonym>benthic foraminifers</ontology:hasSynonym>
+        <ontology:hasSynonym>foraminifer</ontology:hasSynonym>
+        <ontology:hasSynonym>planktonic foraminifera</ontology:hasSynonym>
+        <ontology:hasSynonym>transfer function</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">an identifiable organism that belongs to the kingdom Protozoa, order Foraminiferida.</rdfs:comment>
+        <rdfs:label xml:lang="en">foraminifera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#grain_size -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#grain_size">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>grain size</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1233</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>particle size</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the diameter of individual grains of a material such as sediment, dust, or ice.</rdfs:comment>
+        <rdfs:label xml:lang="en">grain size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#historical -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#historical">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>historical</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3460</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Documentary</ontology:hasSynonym>
+        <ontology:hasSynonym>historic</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a data type that includes measurements of past climatic conditions and climate-dependent phenomena as observed and recorded by humans not using modern meteorological instruments.</rdfs:comment>
+        <rdfs:label xml:lang="en">historical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#humification -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#humification">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>humification index</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2129</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a measure of the extent to which a peat sample has undergone decomposition and humic acids have been produced.</rdfs:comment>
+        <rdfs:label xml:lang="en">humification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#ice_accumulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#ice_accumulation">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>Ice Accumulation</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">ice accumulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#ice_melt -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#ice_melt">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>ice melt</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4951</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>melt</ontology:hasSynonym>
+        <ontology:hasSynonym>melt layer</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the ice mass loss from a glacier, ice-cap, ice-sheet, or ice-shelf through phase transformation to liquid water.</rdfs:comment>
+        <rdfs:label xml:lang="en">ice melt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#inorganic_carbon -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#inorganic_carbon">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>inorganic carbon</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=996</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>TIC</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">carbon that is derived from an inorganic source.</rdfs:comment>
+        <rdfs:label xml:lang="en">inorganic carbon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#isotopic -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#isotopic">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>isotope</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4584</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a measure of chemical composition that relates to variants of a given element that differ in neutron number.</rdfs:comment>
+        <rdfs:label xml:lang="en">isotopic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#lake_level -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#lake_level">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>lake level</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2137</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Lake stratigraphy and radiocarbon dating of macrofossils</ontology:hasSynonym>
+        <ontology:hasSynonym>LakeStatus</ontology:hasSynonym>
+        <ontology:hasSynonym>lakeLevel</ontology:hasSynonym>
+        <ontology:hasSynonym>lakelevel</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a geographic variable that quantifies the height of the lake water surface relative to some datum.</rdfs:comment>
+        <rdfs:label xml:lang="en">lake level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#latewood_cellulose -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#latewood_cellulose">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>latewood cellulose</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1589</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>late-wood cellulose</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">cellulose from wood that formed late in the growing season and that tends to consist of small and thick-walled cells.</rdfs:comment>
+        <rdfs:label xml:lang="en">latewood cellulose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#macrofossils -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#macrofossils">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>plant macrofossils</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4595</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a data type that includes measurements of plant remains large enough to be observed without a microscope.</rdfs:comment>
+        <rdfs:label xml:lang="en">macrofossils</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#magnetic -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#magnetic">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>ARM/IRM</ontology:hasSynonym>
+        <ontology:hasSynonym>IRM</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">magnetic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#magnetic_susceptibility -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#magnetic_susceptibility">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>magnetic susceptibility</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1793</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>MS</ontology:hasSynonym>
+        <ontology:hasSynonym>Magnetic Susceptibility</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a magnetic moment that is the degree to which a material can be magnetized in an external magnetic field.</rdfs:comment>
+        <rdfs:label xml:lang="en">magnetic susceptibility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#mass_accumulation_rate -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#mass_accumulation_rate">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>mass per area per time unit</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4704</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>MAR</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a rate unit that is a standard measure of the accumulation or flow of mass per unit area per time.</rdfs:comment>
+        <rdfs:label xml:lang="en">mass accumulation rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#maximum_latewood_density -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#maximum_latewood_density">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>latewood density</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1573</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>MXD</ontology:hasSynonym>
+        <ontology:hasSynonym>delta Density</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the density of xylem cells in wood that formed near the end of the growing season and that tend to be small and thick-walled.</rdfs:comment>
+        <rdfs:label xml:lang="en">maximum latewood density</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#mineral -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#mineral">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">mineral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#multiproxy -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#multiproxy">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>multiple proxies</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3630</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Ca</ontology:hasSynonym>
+        <ontology:hasSynonym>Hybrid Grain Size</ontology:hasSynonym>
+        <ontology:hasSynonym>K</ontology:hasSynonym>
+        <ontology:hasSynonym>Ti</ontology:hasSynonym>
+        <ontology:hasSynonym>hybrid</ontology:hasSynonym>
+        <ontology:hasSynonym>hybrid-ice</ontology:hasSynonym>
+        <ontology:hasSynonym>hybrid-lake</ontology:hasSynonym>
+        <ontology:hasSynonym>pore ice d2H and d18O</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a material used to create a climate reconstruction that consists of proxies from more than two proxy data types.</rdfs:comment>
+        <rdfs:label xml:lang="en">multiproxy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#needsToBeChanged -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#needsToBeChanged">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>((( calcium carbonate ))) accumulation /// null</ontology:hasSynonym>
+        <ontology:hasSynonym>3-OH-Fatty Acids</ontology:hasSynonym>
+        <ontology:hasSynonym>Age</ontology:hasSynonym>
+        <ontology:hasSynonym>CAS</ontology:hasSynonym>
+        <ontology:hasSynonym>CIA</ontology:hasSynonym>
+        <ontology:hasSynonym>Element Ratio</ontology:hasSynonym>
+        <ontology:hasSynonym>MG0</ontology:hasSynonym>
+        <ontology:hasSynonym>Sediment</ontology:hasSynonym>
+        <ontology:hasSynonym>TDS</ontology:hasSynonym>
+        <ontology:hasSynonym>TraceElement</ontology:hasSynonym>
+        <ontology:hasSynonym>coral</ontology:hasSynonym>
+        <ontology:hasSynonym>element</ontology:hasSynonym>
+        <ontology:hasSynonym>ice</ontology:hasSynonym>
+        <ontology:hasSynonym>isotope</ontology:hasSynonym>
+        <ontology:hasSynonym>isotope diffusion</ontology:hasSynonym>
+        <ontology:hasSynonym>middle-wood cellulose</ontology:hasSynonym>
+        <ontology:hasSynonym>mineral</ontology:hasSynonym>
+        <ontology:hasSynonym>mineralogy</ontology:hasSynonym>
+        <ontology:hasSynonym>percent</ontology:hasSynonym>
+        <ontology:hasSynonym>sediment</ontology:hasSynonym>
+        <ontology:hasSynonym>trace element / CA</ontology:hasSynonym>
+        <ontology:hasSynonym>u Cluster 2</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">needsToBeChanged</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#needs_to_be_changed -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#needs_to_be_changed">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>PCA</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">needs to be changed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#ostracod -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#ostracod">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>ostracod</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1002</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an identifiable organism that belongs to the kingdom Animalia, phylum Arthropoda, class Ostracoda.</rdfs:comment>
+        <rdfs:label xml:lang="en">ostracod</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#pH -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#pH">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>pH</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=569</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a measure of acidity that is calculated as the negative logarithm of the hydrogen ion concentration.</rdfs:comment>
+        <rdfs:label xml:lang="en">pH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#peat_ash -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#peat_ash">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">peat ash</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#pollen -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#pollen">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>pollen</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5578</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>aquatic palynomorphs</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a bulk biological material that consists of microscopic grains produced by seed plants for reproduction.</rdfs:comment>
+        <rdfs:label xml:lang="en">pollen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#pyrogenic -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#pyrogenic">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>fire history</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=115</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">a data type that includes measurements made to deduce the past history of fire, whether from tree rings, sediment, or other natural archives.</rdfs:comment>
+        <rdfs:label xml:lang="en">pyrogenic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#radiolaria -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#radiolaria">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>radiolarian</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2796</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an identifiable organism that belongs to the kingdom Protozoa, order Radiolaria.</rdfs:comment>
+        <rdfs:label xml:lang="en">radiolaria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#reflectance -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#reflectance">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasNoaaPastName>reflectance</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1005</ontology:hasNoaaPastUrl>
+        <rdfs:comment xml:lang="en">an electromagnetic property that measures the amount of light that reflects from the surface of a material.</rdfs:comment>
+        <rdfs:label xml:lang="en">reflectance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#ring_width -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#ring_width">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>ring width</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3639</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>TRW</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a physical measurement of the width of all or of some subcomponent of one annual ring from a tree.</rdfs:comment>
+        <rdfs:label xml:lang="en">ring width</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#sedimentology -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#sedimentology">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">sedimentology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#stratigraphy -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#stratigraphy">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"/>
+        <ontology:hasSynonym>Minerogenic layers</ontology:hasSynonym>
+        <ontology:hasSynonym>Plant detrital layers</ontology:hasSynonym>
+        <ontology:hasSynonym>Stratigraphy</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">stratigraphy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#sulfur -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#sulfur">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>sulfur</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=902</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>S</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">a chemical element with atomic number 16.</rdfs:comment>
+        <rdfs:label xml:lang="en">sulfur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#total_nitrogen -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#total_nitrogen">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasSynonym>TN</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">total nitrogen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://linked.earth/ontology/paleo_proxy#varve_thickness -->
+
+
+    <owl:NamedIndividual rdf:about="http://linked.earth/ontology/paleo_proxy#varve_thickness">
+        <rdf:type rdf:resource="http://linked.earth/ontology/paleo_proxy#PaleoProxy"/>
+        <ontology:hasNoaaPastName>varve thickness</ontology:hasNoaaPastName>
+        <ontology:hasNoaaPastUrl>https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1630</ontology:hasNoaaPastUrl>
+        <ontology:hasSynonym>Varve</ontology:hasSynonym>
+        <ontology:hasSynonym>varve</ontology:hasSynonym>
+        <ontology:hasSynonym>varve property</ontology:hasSynonym>
+        <ontology:hasSynonym>varves</ontology:hasSynonym>
+        <rdfs:comment xml:lang="en">the thickness of a sublayer of or an entire annually-resolved varve in a sediment sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">varve thickness</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

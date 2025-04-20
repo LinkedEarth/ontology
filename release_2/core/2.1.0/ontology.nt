@@ -1,0 +1,913 @@
+<http://linked.earth/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/core/2.1.0> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-5920-4751> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/creator> <http://www.cefns.nau.edu/~npm4/> .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/description> "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" .
+<http://linked.earth/ontology#> <http://purl.org/dc/terms/title> "The Linked Earth Core Ontology"@en .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" .
+<http://linked.earth/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" .
+<http://linked.earth/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "2.1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.linkedmodel.org/schema/vaem#rationale
+<http://www.linkedmodel.org/schema/vaem#rationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology#calibratedVia
+<http://linked.earth/ontology#calibratedVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#calibratedVia> <http://www.w3.org/2000/01/rdf-schema#label> "calibrated via" .
+# 
+# http://linked.earth/ontology#hasArchiveType
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/archive#ArchiveType> .
+<http://linked.earth/ontology/archive#ArchiveType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasArchiveType> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#hasArchiveType> <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects a dataset or variable to its archive type. This enables users to search for data from specific archive types (e.g., corals, ice cores)."@en .
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What type of natural archive contains this data?" .
+<http://linked.earth/ontology#hasArchiveType> <http://www.w3.org/2000/01/rdf-schema#label> "has archive type" .
+# 
+# http://linked.earth/ontology#hasAuthor
+<http://linked.earth/ontology#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasAuthor> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Mann.etal.1998> .
+<http://linked.earth/ontology#hasAuthor> <http://www.linkedmodel.org/schema/vaem#rationale> "Authors are a critical element in the scientific workflow as they are the foundation of scientific credit. The LinkedEarth Ontology seeks to appropriately credit authors and their scientific contributions."@en .
+<http://linked.earth/ontology#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a publication to one of its authors. This property is used to connect all authors to a publication related to the dataset." .
+<http://linked.earth/ontology#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author" .
+# 
+# http://linked.earth/ontology#hasChangeLog
+<http://linked.earth/ontology#hasChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasChangeLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasChangeLog> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "has change log" .
+# 
+# http://linked.earth/ontology#hasChanges
+<http://linked.earth/ontology#hasChanges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasChanges> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasChanges> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Change> .
+<http://linked.earth/ontology#hasChanges> <http://www.w3.org/2000/01/rdf-schema#label> "has changes" .
+# 
+# http://linked.earth/ontology#hasChronData
+<http://linked.earth/ontology#hasChronData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasChronData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasChronData> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#ChronData> .
+<http://linked.earth/ontology#hasChronData> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#hasChronData> <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of hasData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
+<http://linked.earth/ontology#hasChronData> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to its chronology data. This property connects the dataset to its age model and age-depth measurements." .
+<http://linked.earth/ontology#hasChronData> <http://www.w3.org/2000/01/rdf-schema#label> "has chron data" .
+# 
+# http://linked.earth/ontology#hasCode
+<http://linked.earth/ontology#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
+<http://linked.earth/ontology#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "has code" .
+# 
+# http://linked.earth/ontology#hasContributor
+<http://linked.earth/ontology#hasContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to a person who contributed to its creation, curation, or publication. Contributors include anyone who helped with the dataset beyond the principal investigators." .
+<http://linked.earth/ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#label> "has contributor" .
+# 
+# http://linked.earth/ontology#hasCreator
+<http://linked.earth/ontology#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator" .
+# 
+# http://linked.earth/ontology#hasCurator
+<http://linked.earth/ontology#hasCurator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasCurator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasCurator> <http://www.w3.org/2000/01/rdf-schema#label> "has curator" .
+# 
+# http://linked.earth/ontology#hasDistributionTable
+<http://linked.earth/ontology#hasDistributionTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasDistributionTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
+<http://linked.earth/ontology#hasDistributionTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasDistributionTable> <http://www.w3.org/2000/01/rdf-schema#label> "has distribution table" .
+# 
+# http://linked.earth/ontology#hasEnsembleTable
+<http://linked.earth/ontology#hasEnsembleTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasEnsembleTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
+<http://linked.earth/ontology#hasEnsembleTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasEnsembleTable> <http://www.w3.org/2000/01/rdf-schema#label> "has ensemble table" .
+# 
+# http://linked.earth/ontology#hasFirstAuthor
+<http://linked.earth/ontology#hasFirstAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasFirstAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasFirstAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasFirstAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has first author" .
+# 
+# http://linked.earth/ontology#hasFunding
+<http://linked.earth/ontology#hasFunding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasFunding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasFunding> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Funding> .
+<http://linked.earth/ontology#hasFunding> <http://www.w3.org/2000/01/rdf-schema#label> "has funding" .
+# 
+# http://linked.earth/ontology#hasFundingAgency
+<http://linked.earth/ontology#hasFundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Funding> .
+<http://linked.earth/ontology#hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "has funding agency" .
+# 
+# http://linked.earth/ontology#hasIGSN
+<http://linked.earth/ontology#hasIGSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#PhysicalSample> .
+<http://linked.earth/ontology#hasIGSN> <http://www.w3.org/2000/01/rdf-schema#label> "has IGSN" .
+# 
+# http://linked.earth/ontology#hasInstrument
+<http://linked.earth/ontology#hasInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasInstrument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "has instrument" .
+# 
+# http://linked.earth/ontology#hasInterpretation
+<http://linked.earth/ontology#hasInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasInterpretation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasInterpretation> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasInterpretation> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> .
+<http://linked.earth/ontology#hasInterpretation> <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects variables to their interpretation. Variables may have multiple interpretations, especially when different researchers propose different interpretations of the same data."@en .
+<http://linked.earth/ontology#hasInterpretation> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the climatic or environmental interpretation of this variable?" .
+<http://linked.earth/ontology#hasInterpretation> <http://www.w3.org/2000/01/rdf-schema#label> "has interpretation" .
+# 
+# http://linked.earth/ontology#hasInvestigator
+<http://linked.earth/ontology#hasInvestigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasInvestigator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasInvestigator> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasInvestigator> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to a principal investigator responsible for the research project that generated the dataset." .
+<http://linked.earth/ontology#hasInvestigator> <http://www.w3.org/2000/01/rdf-schema#label> "has investigator" .
+# 
+# http://linked.earth/ontology#hasLocation
+<http://linked.earth/ontology#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasLocation> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#hasLocation> <http://www.linkedmodel.org/schema/vaem#rationale> "Paleoclimate archives are tied to particular locations. The spatial aspects of paleoclimate data are critical for regional to global studies."@en .
+<http://linked.earth/ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to its geographic location. This property connects the dataset to information about where the samples were collected." .
+<http://linked.earth/ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
+# 
+# http://linked.earth/ontology#hasMeasurementTable
+<http://linked.earth/ontology#hasMeasurementTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChronData> .
+<http://linked.earth/ontology#hasMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#PaleoData> .
+<http://linked.earth/ontology#hasMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasMeasurementTable> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement table" .
+# 
+# http://linked.earth/ontology#hasPaleoData
+<http://linked.earth/ontology#hasPaleoData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasPaleoData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasPaleoData> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#PaleoData> .
+<http://linked.earth/ontology#hasPaleoData> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#hasPaleoData> <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of hasData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en .
+<http://linked.earth/ontology#hasPaleoData> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to its paleoclimate data. This property connects the dataset to its measurements and derived variables related to past climate." .
+<http://linked.earth/ontology#hasPaleoData> <http://www.w3.org/2000/01/rdf-schema#label> "has paleo data" .
+# 
+# http://linked.earth/ontology#hasPhysicalSample
+<http://linked.earth/ontology#hasPhysicalSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasPhysicalSample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasPhysicalSample> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#PhysicalSample> .
+<http://linked.earth/ontology#hasPhysicalSample> <http://www.w3.org/2000/01/rdf-schema#label> "has physical sample" .
+# 
+# http://linked.earth/ontology#hasProxy
+<http://linked.earth/ontology#hasProxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasProxy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasProxy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/paleo_proxy#PaleoProxy> .
+<http://linked.earth/ontology/paleo_proxy#PaleoProxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasProxy> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18O> .
+<http://linked.earth/ontology#hasProxy> <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects a variable to its proxy type. This enables users to search for all data associated with a specific proxy type (e.g., all δ18O measurements)."@en .
+<http://linked.earth/ontology#hasProxy> <http://www.w3.org/2000/01/rdf-schema#comment> "Answers the question: What is the proxy type of this variable?" .
+<http://linked.earth/ontology#hasProxy> <http://www.w3.org/2000/01/rdf-schema#label> "has proxy" .
+# 
+# http://linked.earth/ontology#hasProxyGeneral
+<http://linked.earth/ontology#hasProxyGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasProxyGeneral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasProxyGeneral> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral> .
+<http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasProxyGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "has proxy general" .
+# 
+# http://linked.earth/ontology#hasPublication
+<http://linked.earth/ontology#hasPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasPublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasPublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasPublication> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#hasPublication> <http://www.linkedmodel.org/schema/vaem#rationale> "A publication is a critical element in the scientific workflow as it documents the scientific information in the context of the literature. The LinkedEarth Ontology connects Datasets to Publications and Authors."@en .
+<http://linked.earth/ontology#hasPublication> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a dataset to a scientific publication that documents it. This can include original publications, review papers, or other works that cite or analyze the dataset." .
+<http://linked.earth/ontology#hasPublication> <http://www.w3.org/2000/01/rdf-schema#label> "has publication" .
+# 
+# http://linked.earth/ontology#hasResolution
+<http://linked.earth/ontology#hasResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasResolution> <http://www.w3.org/2000/01/rdf-schema#label> "has resolution" .
+# 
+# http://linked.earth/ontology#hasSeasonality
+<http://linked.earth/ontology#hasSeasonality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasSeasonality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasSeasonality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasSeasonality> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/interpretation#InterpretationSeasonality> .
+<http://linked.earth/ontology/interpretation#InterpretationSeasonality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasSeasonality> <http://www.w3.org/2000/01/rdf-schema#label> "has seasonality" .
+# 
+# http://linked.earth/ontology#hasSeasonalityGeneral
+<http://linked.earth/ontology#hasSeasonalityGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasSeasonalityGeneral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasSeasonalityGeneral> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/interpretation#InterpretationSeasonality> .
+<http://linked.earth/ontology#hasSeasonalityGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "has seasonality general" .
+# 
+# http://linked.earth/ontology#hasSeasonalityOriginal
+<http://linked.earth/ontology#hasSeasonalityOriginal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasSeasonalityOriginal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasSeasonalityOriginal> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/interpretation#InterpretationSeasonality> .
+<http://linked.earth/ontology#hasSeasonalityOriginal> <http://www.w3.org/2000/01/rdf-schema#label> "has seasonality original" .
+# 
+# http://linked.earth/ontology#hasStandardVariable
+<http://linked.earth/ontology#hasStandardVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/paleo_variables#PaleoVariable> .
+<http://linked.earth/ontology/paleo_variables#PaleoVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has standard variable" .
+# 
+# http://linked.earth/ontology#hasSummaryTable
+<http://linked.earth/ontology#hasSummaryTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasSummaryTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Model> .
+<http://linked.earth/ontology#hasSummaryTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasSummaryTable> <http://www.w3.org/2000/01/rdf-schema#label> "has summary table" .
+# 
+# http://linked.earth/ontology#hasUnits
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology/paleo_units#PaleoUnit> .
+<http://linked.earth/ontology/paleo_units#PaleoUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#hasUnits> <http://www.w3.org/2000/01/rdf-schema#label> "has units" .
+# 
+# http://linked.earth/ontology#hasVariable
+<http://linked.earth/ontology#hasVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#hasVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasVariable> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has variable" .
+# 
+# http://linked.earth/ontology#modeledBy
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChronData> .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#PaleoData> .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Model> .
+<http://linked.earth/ontology#modeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "modeled by" .
+# 
+# http://linked.earth/ontology#partOfCompilation
+<http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#range> <http://linked.earth/ontology#Compilation> .
+<http://linked.earth/ontology#partOfCompilation> <http://www.w3.org/2000/01/rdf-schema#label> "part of compilation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology#hasAbstract
+<http://linked.earth/ontology#hasAbstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasAbstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasAbstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasAbstract> <http://www.w3.org/2000/01/rdf-schema#comment> "The abstract of a publication. This property contains the summary text that describes the content and findings of a scientific publication." .
+<http://linked.earth/ontology#hasAbstract> <http://www.w3.org/2000/01/rdf-schema#label> "has abstract" .
+# 
+# http://linked.earth/ontology#hasBasis
+<http://linked.earth/ontology#hasBasis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasBasis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasBasis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasBasis> <http://www.w3.org/2000/01/rdf-schema#comment> "The basis for the interpretation. This property describes the evidence, assumption, or methodology used to derive the climate interpretation from the proxy measurements." .
+<http://linked.earth/ontology#hasBasis> <http://www.w3.org/2000/01/rdf-schema#label> "has basis" .
+# 
+# http://linked.earth/ontology#hasCitation
+<http://linked.earth/ontology#hasCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCitation> <http://www.w3.org/2000/01/rdf-schema#label> "has citation" .
+# 
+# http://linked.earth/ontology#hasCiteKey
+<http://linked.earth/ontology#hasCiteKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCiteKey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasCiteKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCiteKey> <http://www.w3.org/2000/01/rdf-schema#label> "has cite key" .
+# 
+# http://linked.earth/ontology#hasCollectionName
+<http://linked.earth/ontology#hasCollectionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCollectionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasCollectionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCollectionName> <http://www.w3.org/2000/01/rdf-schema#label> "has collection name" .
+# 
+# http://linked.earth/ontology#hasCollectionYear
+<http://linked.earth/ontology#hasCollectionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCollectionYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasCollectionYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCollectionYear> <http://www.w3.org/2000/01/rdf-schema#label> "has collection year" .
+# 
+# http://linked.earth/ontology#hasColumnNumber
+<http://linked.earth/ontology#hasColumnNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasColumnNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasColumnNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://linked.earth/ontology#hasColumnNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has column number" .
+# 
+# http://linked.earth/ontology#hasCompilationNest
+<http://linked.earth/ontology#hasCompilationNest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCompilationNest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasCompilationNest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCompilationNest> <http://www.w3.org/2000/01/rdf-schema#label> "has compilation nest" .
+# 
+# http://linked.earth/ontology#hasContinent
+<http://linked.earth/ontology#hasContinent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasContinent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasContinent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasContinent> <http://www.w3.org/2000/01/rdf-schema#label> "has continent" .
+# 
+# http://linked.earth/ontology#hasCountry
+<http://linked.earth/ontology#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "has country" .
+# 
+# http://linked.earth/ontology#hasCountryOcean
+<http://linked.earth/ontology#hasCountryOcean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasCountryOcean> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasCountryOcean> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasCountryOcean> <http://www.w3.org/2000/01/rdf-schema#label> "has country ocean" .
+# 
+# http://linked.earth/ontology#hasDOI
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDOI> <http://purl.org/vocab/vann/example> "10.1126/science.1228026" .
+<http://linked.earth/ontology#hasDOI> <http://www.linkedmodel.org/schema/vaem#rationale> "DOIs provide persistent identifiers for publications and other research outputs, enabling reliable citation and linking."@en .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#comment> "The Digital Object Identifier (DOI) for a publication or calibration. This property provides a persistent identifier that resolves to the online location of the resource." .
+<http://linked.earth/ontology#hasDOI> <http://www.w3.org/2000/01/rdf-schema#label> "has DOI" .
+# 
+# http://linked.earth/ontology#hasDataSource
+<http://linked.earth/ontology#hasDataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The source of the dataset. This property indicates where the data was originally obtained or published." .
+<http://linked.earth/ontology#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "has data source" .
+# 
+# http://linked.earth/ontology#hasDataUrl
+<http://linked.earth/ontology#hasDataUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDataUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasDataUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDataUrl> <http://www.w3.org/2000/01/rdf-schema#label> "has data URL" .
+# 
+# http://linked.earth/ontology#hasDatasetId
+<http://linked.earth/ontology#hasDatasetId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDatasetId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasDatasetId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDatasetId> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for the dataset. This property provides a persistent identifier that can be used to reference the dataset across systems." .
+<http://linked.earth/ontology#hasDatasetId> <http://www.w3.org/2000/01/rdf-schema#label> "has dataset id" .
+# 
+# http://linked.earth/ontology#hasDatasetRange
+<http://linked.earth/ontology#hasDatasetRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDatasetRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasDatasetRange> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDatasetRange> <http://www.w3.org/2000/01/rdf-schema#label> "has dataset range" .
+# 
+# http://linked.earth/ontology#hasDescription
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of a variable or location. This property provides additional details about the meaning, collection, or relevance of a variable or the characteristics of a location." .
+<http://linked.earth/ontology#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description" .
+# 
+# http://linked.earth/ontology#hasDirection
+<http://linked.earth/ontology#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasDirection> <http://www.w3.org/2000/01/rdf-schema#label> "has direction" .
+# 
+# http://linked.earth/ontology#hasElevation
+<http://linked.earth/ontology#hasElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasElevation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasElevation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasElevation> <http://www.w3.org/2000/01/rdf-schema#label> "has elevation" .
+# 
+# http://linked.earth/ontology#hasEquation
+<http://linked.earth/ontology#hasEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasEquation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasEquation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasEquation> <http://www.w3.org/2000/01/rdf-schema#label> "has equation" .
+# 
+# http://linked.earth/ontology#hasEquationIntercept
+<http://linked.earth/ontology#hasEquationIntercept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasEquationIntercept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasEquationIntercept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasEquationIntercept> <http://www.w3.org/2000/01/rdf-schema#label> "has equation intercept" .
+# 
+# http://linked.earth/ontology#hasEquationR2
+<http://linked.earth/ontology#hasEquationR2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasEquationR2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasEquationR2> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasEquationR2> <http://www.w3.org/2000/01/rdf-schema#label> "has equation R2" .
+# 
+# http://linked.earth/ontology#hasEquationSlope
+<http://linked.earth/ontology#hasEquationSlope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasEquationSlope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasEquationSlope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasEquationSlope> <http://www.w3.org/2000/01/rdf-schema#label> "has equation slope" .
+# 
+# http://linked.earth/ontology#hasEquationSlopeUncertainty
+<http://linked.earth/ontology#hasEquationSlopeUncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasEquationSlopeUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasEquationSlopeUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasEquationSlopeUncertainty> <http://www.w3.org/2000/01/rdf-schema#label> "has equation slope uncertainty" .
+# 
+# http://linked.earth/ontology#hasFileName
+<http://linked.earth/ontology#hasFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasFileName> <http://www.w3.org/2000/01/rdf-schema#label> "has file name" .
+# 
+# http://linked.earth/ontology#hasFundingCountry
+<http://linked.earth/ontology#hasFundingCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasFundingCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Funding> .
+<http://linked.earth/ontology#hasFundingCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasFundingCountry> <http://www.w3.org/2000/01/rdf-schema#label> "has funding country" .
+# 
+# http://linked.earth/ontology#hasGeometryType
+<http://linked.earth/ontology#hasGeometryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasGeometryType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasGeometryType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasGeometryType> <http://www.w3.org/2000/01/rdf-schema#label> "has geometry type" .
+# 
+# http://linked.earth/ontology#hasGrant
+<http://linked.earth/ontology#hasGrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasGrant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Funding> .
+<http://linked.earth/ontology#hasGrant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasGrant> <http://www.w3.org/2000/01/rdf-schema#label> "has grant" .
+# 
+# http://linked.earth/ontology#hasInstitution
+<http://linked.earth/ontology#hasInstitution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasInstitution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasInstitution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasInstitution> <http://www.w3.org/2000/01/rdf-schema#label> "has institution" .
+# 
+# http://linked.earth/ontology#hasIssue
+<http://linked.earth/ontology#hasIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasIssue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasIssue> <http://www.w3.org/2000/01/rdf-schema#label> "has issue" .
+# 
+# http://linked.earth/ontology#hasJournal
+<http://linked.earth/ontology#hasJournal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasJournal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasJournal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasJournal> <http://www.w3.org/2000/01/rdf-schema#label> "has journal" .
+# 
+# http://linked.earth/ontology#hasLastVersion
+<http://linked.earth/ontology#hasLastVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasLastVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasLastVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasLastVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has last version" .
+# 
+# http://linked.earth/ontology#hasLatitude
+<http://linked.earth/ontology#hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasLatitude> <http://purl.org/vocab/vann/example> "6.3N" .
+<http://linked.earth/ontology#hasLatitude> <http://www.linkedmodel.org/schema/vaem#rationale> "Latitude is essential for spatial referencing of paleoclimate data. It enables mapping and spatial analysis."@en .
+<http://linked.earth/ontology#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The latitude coordinate of a location. This property specifies the north-south position of a sampling site in decimal degrees." .
+<http://linked.earth/ontology#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "has latitude" .
+# 
+# http://linked.earth/ontology#hasLocationName
+<http://linked.earth/ontology#hasLocationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasLocationName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasLocationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasLocationName> <http://www.w3.org/2000/01/rdf-schema#label> "has location name" .
+# 
+# http://linked.earth/ontology#hasLongitude
+<http://linked.earth/ontology#hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasLongitude> <http://purl.org/vocab/vann/example> "125.83E" .
+<http://linked.earth/ontology#hasLongitude> <http://www.linkedmodel.org/schema/vaem#rationale> "Longitude is essential for spatial referencing of paleoclimate data. It enables mapping and spatial analysis."@en .
+<http://linked.earth/ontology#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The longitude coordinate of a location. This property specifies the east-west position of a sampling site in decimal degrees." .
+<http://linked.earth/ontology#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "has longitude" .
+# 
+# http://linked.earth/ontology#hasMathematicalRelation
+<http://linked.earth/ontology#hasMathematicalRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMathematicalRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasMathematicalRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasMathematicalRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has mathematical relation" .
+# 
+# http://linked.earth/ontology#hasMaxValue
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum value of a variable or resolution. This property specifies the upper bound of the measured or derived values in the dataset." .
+<http://linked.earth/ontology#hasMaxValue> <http://www.w3.org/2000/01/rdf-schema#label> "has max value" .
+# 
+# http://linked.earth/ontology#hasMeanValue
+<http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://linked.earth/ontology#hasMeanValue> <http://www.w3.org/2000/01/rdf-schema#label> "has mean value" .
+# 
+# http://linked.earth/ontology#hasMedianValue
+<http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://linked.earth/ontology#hasMedianValue> <http://www.w3.org/2000/01/rdf-schema#label> "has median value" .
+# 
+# http://linked.earth/ontology#hasMethod
+<http://linked.earth/ontology#hasMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasMethod> <http://www.w3.org/2000/01/rdf-schema#label> "has method" .
+# 
+# http://linked.earth/ontology#hasMethodDetail
+<http://linked.earth/ontology#hasMethodDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMethodDetail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasMethodDetail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasMethodDetail> <http://www.w3.org/2000/01/rdf-schema#label> "has method detail" .
+# 
+# http://linked.earth/ontology#hasMinValue
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Resolution> .
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum value of a variable or resolution. This property specifies the lower bound of the measured or derived values in the dataset." .
+<http://linked.earth/ontology#hasMinValue> <http://www.w3.org/2000/01/rdf-schema#label> "has min value" .
+# 
+# http://linked.earth/ontology#hasMissingValue
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#DataTable> .
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasMissingValue> <http://www.w3.org/2000/01/rdf-schema#label> "has missing value" .
+# 
+# http://linked.earth/ontology#hasName
+<http://linked.earth/ontology#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Compilation> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#PaleoData> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Person> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasName> <http://purl.org/vocab/vann/example> "MD98-2181" .
+<http://linked.earth/ontology#hasName> <http://www.linkedmodel.org/schema/vaem#rationale> "This property provides a human-readable identifier for entities in the ontology. Names are essential for discovery and identification."@en .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or title of an entity. This property is used to provide a human-readable label for datasets, variables, and people." .
+<http://linked.earth/ontology#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# 
+# http://linked.earth/ontology#hasNotes
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Change> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasNotes> <http://www.w3.org/2000/01/rdf-schema#label> "has notes" .
+# 
+# http://linked.earth/ontology#hasOcean
+<http://linked.earth/ontology#hasOcean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasOcean> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasOcean> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasOcean> <http://www.w3.org/2000/01/rdf-schema#label> "has ocean" .
+# 
+# http://linked.earth/ontology#hasOriginalDataUrl
+<http://linked.earth/ontology#hasOriginalDataUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasOriginalDataUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasOriginalDataUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasOriginalDataUrl> <http://www.w3.org/2000/01/rdf-schema#label> "has original data URL" .
+# 
+# http://linked.earth/ontology#hasPages
+<http://linked.earth/ontology#hasPages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasPages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasPages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasPages> <http://www.w3.org/2000/01/rdf-schema#label> "has pages" .
+# 
+# http://linked.earth/ontology#hasProxyDataset
+<http://linked.earth/ontology#hasProxyDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasProxyDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasProxyDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasProxyDataset> <http://www.w3.org/2000/01/rdf-schema#label> "has proxy dataset" .
+# 
+# http://linked.earth/ontology#hasPublisher
+<http://linked.earth/ontology#hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#label> "has publisher" .
+# 
+# http://linked.earth/ontology#hasRank
+<http://linked.earth/ontology#hasRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasRank> <http://www.w3.org/2000/01/rdf-schema#label> "has rank" .
+# 
+# http://linked.earth/ontology#hasReport
+<http://linked.earth/ontology#hasReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasReport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasReport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasReport> <http://www.w3.org/2000/01/rdf-schema#label> "has report" .
+# 
+# http://linked.earth/ontology#hasScope
+<http://linked.earth/ontology#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasScope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasScope> <http://www.w3.org/2000/01/rdf-schema#label> "has scope" .
+# 
+# http://linked.earth/ontology#hasSiteName
+<http://linked.earth/ontology#hasSiteName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasSiteName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasSiteName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasSiteName> <http://www.w3.org/2000/01/rdf-schema#label> "has site name" .
+# 
+# http://linked.earth/ontology#hasSpreadsheetLink
+<http://linked.earth/ontology#hasSpreadsheetLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasSpreadsheetLink> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasSpreadsheetLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasSpreadsheetLink> <http://www.w3.org/2000/01/rdf-schema#label> "has spreadsheet link" .
+# 
+# http://linked.earth/ontology#hasTargetDataset
+<http://linked.earth/ontology#hasTargetDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasTargetDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasTargetDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasTargetDataset> <http://www.w3.org/2000/01/rdf-schema#label> "has target dataset" .
+# 
+# http://linked.earth/ontology#hasTimestamp
+<http://linked.earth/ontology#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp" .
+# 
+# http://linked.earth/ontology#hasTitle
+<http://linked.earth/ontology#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasTitle> <http://purl.org/vocab/vann/example> "Surface Temperature Reconstructions for the Last 2,000 Years" .
+<http://linked.earth/ontology#hasTitle> <http://www.linkedmodel.org/schema/vaem#rationale> "The title is a key metadata element for publications, enabling discovery and citation."@en .
+<http://linked.earth/ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of a publication. This property provides the complete title of a scientific publication related to the dataset." .
+<http://linked.earth/ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
+# 
+# http://linked.earth/ontology#hasType
+<http://linked.earth/ontology#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Location> .
+<http://linked.earth/ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "has type" .
+# 
+# http://linked.earth/ontology#hasUncertainty
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Calibration> .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#comment> "The uncertainty associated with a variable or calibration. This property specifies the quantitative measure of the precision or confidence in the measured or derived values." .
+<http://linked.earth/ontology#hasUncertainty> <http://www.w3.org/2000/01/rdf-schema#label> "has uncertainty" .
+# 
+# http://linked.earth/ontology#hasUncertaintyAnalytical
+<http://linked.earth/ontology#hasUncertaintyAnalytical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasUncertaintyAnalytical> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasUncertaintyAnalytical> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasUncertaintyAnalytical> <http://www.w3.org/2000/01/rdf-schema#label> "has uncertainty analytical" .
+# 
+# http://linked.earth/ontology#hasUncertaintyReproducibility
+<http://linked.earth/ontology#hasUncertaintyReproducibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasUncertaintyReproducibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasUncertaintyReproducibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasUncertaintyReproducibility> <http://www.w3.org/2000/01/rdf-schema#label> "has uncertainty reproducibility" .
+# 
+# http://linked.earth/ontology#hasUrl
+<http://linked.earth/ontology#hasUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#label> "has URL" .
+# 
+# http://linked.earth/ontology#hasVariableDetail
+<http://linked.earth/ontology#hasVariableDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVariableDetail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasVariableDetail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVariableDetail> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed specification of the interpreted variable. This property provides more specific information about the climate parameter being reconstructed." .
+<http://linked.earth/ontology#hasVariableDetail> <http://www.w3.org/2000/01/rdf-schema#label> "has variable detail" .
+# 
+# http://linked.earth/ontology#hasVariableGeneral
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVariableGeneral> <http://purl.org/vocab/vann/example> "Temperature" .
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.linkedmodel.org/schema/vaem#rationale> "This property identifies the general climate or environmental variable being interpreted. It uses standardized terms to enable consistent searching."@en .
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.w3.org/2000/01/rdf-schema#comment> "The general climate or environmental variable being interpreted. This property identifies the broad category of the climate parameter being reconstructed from proxy measurements." .
+<http://linked.earth/ontology#hasVariableGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "has variable general" .
+# 
+# http://linked.earth/ontology#hasVariableGeneralDirection
+<http://linked.earth/ontology#hasVariableGeneralDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVariableGeneralDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#hasVariableGeneralDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVariableGeneralDirection> <http://www.w3.org/2000/01/rdf-schema#label> "has variable general direction" .
+# 
+# http://linked.earth/ontology#hasVariableId
+<http://linked.earth/ontology#hasVariableId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVariableId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#hasVariableId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVariableId> <http://www.w3.org/2000/01/rdf-schema#label> "has variable id" .
+# 
+# http://linked.earth/ontology#hasVersion
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#ChangeLog> .
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Compilation> .
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Dataset> .
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version" .
+# 
+# http://linked.earth/ontology#hasVolume
+<http://linked.earth/ontology#hasVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasVolume> <http://www.w3.org/2000/01/rdf-schema#label> "has volume" .
+# 
+# http://linked.earth/ontology#hasYear
+<http://linked.earth/ontology#hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#hasYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Publication> .
+<http://linked.earth/ontology#hasYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#hasYear> <http://www.w3.org/2000/01/rdf-schema#label> "has year" .
+# 
+# http://linked.earth/ontology#isComposite
+<http://linked.earth/ontology#isComposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#isComposite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#isComposite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://linked.earth/ontology#isComposite> <http://www.w3.org/2000/01/rdf-schema#label> "is composite" .
+# 
+# http://linked.earth/ontology#isLocal
+<http://linked.earth/ontology#isLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#isLocal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Interpretation> .
+<http://linked.earth/ontology#isLocal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://linked.earth/ontology#isLocal> <http://www.w3.org/2000/01/rdf-schema#label> "is local" .
+# 
+# http://linked.earth/ontology#isPrimary
+<http://linked.earth/ontology#isPrimary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://linked.earth/ontology#isPrimary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linked.earth/ontology#Variable> .
+<http://linked.earth/ontology#isPrimary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://linked.earth/ontology#isPrimary> <http://www.w3.org/2000/01/rdf-schema#label> "is primary" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://linked.earth/ontology#Calibration
+<http://linked.earth/ontology#Calibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Calibration> <http://www.w3.org/2000/01/rdf-schema#comment> "Calibration information for measured data" .
+<http://linked.earth/ontology#Calibration> <http://www.w3.org/2000/01/rdf-schema#label> "Calibration" .
+# 
+# http://linked.earth/ontology#Change
+<http://linked.earth/ontology#Change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Change> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific change recorded in a changelog" .
+<http://linked.earth/ontology#Change> <http://www.w3.org/2000/01/rdf-schema#label> "Change" .
+# 
+# http://linked.earth/ontology#ChangeLog
+<http://linked.earth/ontology#ChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A record of changes made to a dataset" .
+<http://linked.earth/ontology#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "ChangeLog" .
+# 
+# http://linked.earth/ontology#ChronData
+<http://linked.earth/ontology#ChronData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#ChronData> <http://www.w3.org/2000/01/rdf-schema#comment> "Chronology data contained within a dataset. This includes all measurements and models related to establishing the age-depth relationship of the archive." .
+<http://linked.earth/ontology#ChronData> <http://www.w3.org/2000/01/rdf-schema#label> "ChronData" .
+# 
+# http://linked.earth/ontology#Compilation
+<http://linked.earth/ontology#Compilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Compilation> <http://www.w3.org/2000/01/rdf-schema#comment> "A compilation of paleoclimate datasets. Compilations aggregate multiple datasets to enable regional or global analyses of paleoclimate patterns." .
+<http://linked.earth/ontology#Compilation> <http://www.w3.org/2000/01/rdf-schema#label> "Compilation" .
+# 
+# http://linked.earth/ontology#DataTable
+<http://linked.earth/ontology#DataTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#DataTable> <http://www.w3.org/2000/01/rdf-schema#comment> "A table of data measurements" .
+<http://linked.earth/ontology#DataTable> <http://www.w3.org/2000/01/rdf-schema#label> "DataTable" .
+# 
+# http://linked.earth/ontology#Dataset
+<http://linked.earth/ontology#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Dataset> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> .
+<http://linked.earth/ontology#Dataset> <http://www.linkedmodel.org/schema/vaem#rationale> "Datasets are the core units of the LinkedEarth Ontology. Each Dataset corresponds to a paleoclimate archive (e.g., core, speleothem) and has descriptors (metadata) and data (measurements)."@en .
+<http://linked.earth/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A paleoclimate dataset containing measurements, interpretations, and metadata. Datasets form the core unit in the LinkedEarth ontology and include paleoclimate data (measurements), chronology data, physical sample information, and related publications." .
+<http://linked.earth/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
+# 
+# http://linked.earth/ontology#Funding
+<http://linked.earth/ontology#Funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Funding> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about funding sources for research" .
+<http://linked.earth/ontology#Funding> <http://www.w3.org/2000/01/rdf-schema#label> "Funding" .
+# 
+# http://linked.earth/ontology#Interpretation
+<http://linked.earth/ontology#Interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Interpretation> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.interpretation> .
+<http://linked.earth/ontology#Interpretation> <http://www.linkedmodel.org/schema/vaem#rationale> "An Interpretation connects proxies (e.g., Mg/Ca) to environmental/climate variables (e.g., temperature) and provides qualitative or quantitative information about this link."@en .
+<http://linked.earth/ontology#Interpretation> <http://www.w3.org/2000/01/rdf-schema#comment> "An interpretation of measured variables. This represents the climate or environmental interpretation derived from proxy measurements, including the relationship between the measured variable and the interpreted parameter." .
+<http://linked.earth/ontology#Interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation" .
+# 
+# http://linked.earth/ontology#Location
+<http://linked.earth/ontology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic location where data was collected. This includes coordinates, site name, and other geographic information related to where the physical samples were obtained." .
+<http://linked.earth/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://linked.earth/ontology#Model
+<http://linked.earth/ontology#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "A model derived from or applied to dataset measurements" .
+<http://linked.earth/ontology#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
+# 
+# http://linked.earth/ontology#PaleoData
+<http://linked.earth/ontology#PaleoData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#PaleoData> <http://www.w3.org/2000/01/rdf-schema#comment> "Paleoclimate data contained within a dataset. This includes all measured and derived variables related to past climate conditions, distinct from chronology data." .
+<http://linked.earth/ontology#PaleoData> <http://www.w3.org/2000/01/rdf-schema#label> "PaleoData" .
+# 
+# http://linked.earth/ontology#Person
+<http://linked.earth/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person involved with the dataset" .
+<http://linked.earth/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://linked.earth/ontology#PhysicalSample
+<http://linked.earth/ontology#PhysicalSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#PhysicalSample> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical sample used for measurements. This represents the actual physical specimen from which measurements were taken, such as a core section, fossil, or sediment sample." .
+<http://linked.earth/ontology#PhysicalSample> <http://www.w3.org/2000/01/rdf-schema#label> "PhysicalSample" .
+# 
+# http://linked.earth/ontology#Publication
+<http://linked.earth/ontology#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "A scientific publication related to the dataset. This includes journal articles, books, reports and other publication types that document the dataset's collection, processing, interpretation, or use in a scientific study." .
+<http://linked.earth/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication" .
+# 
+# http://linked.earth/ontology#Resolution
+<http://linked.earth/ontology#Resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "The temporal or spatial resolution of measurements" .
+<http://linked.earth/ontology#Resolution> <http://www.w3.org/2000/01/rdf-schema#label> "Resolution" .
+# 
+# http://linked.earth/ontology#Variable
+<http://linked.earth/ontology#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linked.earth/ontology#Variable> <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18O> .
+<http://linked.earth/ontology#Variable> <http://www.linkedmodel.org/schema/vaem#rationale> "Variables are the basic units for analysis, including raw measurements (MeasuredVariable), modeled/interpolated values (ModeledVariable), and inferences of past climate (InferredVariable)."@en .
+<http://linked.earth/ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable measured or derived in a dataset. Variables represent the actual measurements or values derived from the paleoclimate archive, and can include measured proxies, chronological controls, or interpreted climate parameters." .
+<http://linked.earth/ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable" .
+# 
+# http://linked.earth/ontology/archive#ArchiveType
+# 
+# http://linked.earth/ontology/interpretation#InterpretationSeasonality
+# 
+# http://linked.earth/ontology/paleo_proxy#PaleoProxy
+# 
+# http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral
+# 
+# http://linked.earth/ontology/paleo_units#PaleoUnit
+# 
+# http://linked.earth/ontology/paleo_variables#PaleoVariable
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

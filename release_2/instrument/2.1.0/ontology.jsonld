@@ -1,0 +1,362 @@
+[ {
+  "@id" : "http://linked.earth/ontolog/instrument#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://w3id.org/people/dgarijo"
+  }, {
+    "@id" : "http://www.isi.edu/~gil/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-5920-4751"
+  }, {
+    "@id" : "http://www.cefns.nau.edu/~npm4/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Linked Earth Instrument Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "le"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://linked.earth/ontology/instrument#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://linked.earth/ontology/instrument/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accelerator mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometerInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accelerator mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#BinocularMicroscope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Binocular microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Microscope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#CFAMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Continuous-flow AMS system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#CRDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cavity Ring-Down Spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectroscope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#EnergyDispersiveSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy dispersive spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#GC-IR-MS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas Chromatography - Isotope ratio -Mass Spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#GCMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas chromatography mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#GasChromatograph",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas chromatograph"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gas chromatography - mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#ICP-AES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inductively coupled plasma atomic emission spectroscopy (ICP-AES), also referred to as inductively coupled plasma optical emission spectrometry (ICP-OES), is an analytical technique used for the detection of trace metals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inductively coupled plasma atomic emission spectroscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectroscope"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#ICP-OES"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#ICP-MS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inductively coupled plasma mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#ICP-OES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inductively coupled plasma optical emission spectrometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectroscope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#IRMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An <b>isotope-ration mass spectrometer</b> measures the relative abundance of isotopes in a given sample."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Isotope ratio mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#Instrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Isotope ratio mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#LA-ICP-MS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Laser-ablation (LA) Inductively coupled plasma mass spectrometry (ICP-MS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#MC-ICP-MS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Multi-collector (MC) Inductively coupled plasma mass spectrometry (ICPMS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometerInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#Microscope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#NOSAMSTandetron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NOSAMS tandetron"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#RockHammer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rock hammer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#SHRIMP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensitive high-resolution ion microprobe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#SIMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Secondary ion mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Secondary ion mass spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#MassSpectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#Spectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spectrometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#Spectroscope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spectroscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Instrument"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#WavelengthDispersiveSpectrometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wavelength dispersive spectrometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Spectrometer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontolog/instrument#ZeissPetrographicMicroscope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Zeiss petrographic microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linked.earth/ontolog/instrument#Microscope"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

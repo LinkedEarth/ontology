@@ -1,0 +1,1043 @@
+@prefix : <http://linked.earth/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://linked.earth/ontology#> .
+
+<http://linked.earth/ontology#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://linked.earth/ontology/core/2.1.0> ;
+                                 <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> ,
+                                                                        <http://www.isi.edu/~gil/> ;
+                                 <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> ,
+                                                                    <http://orcid.org/0000-0001-5920-4751> ,
+                                                                    <http://www.cefns.nau.edu/~npm4/> ;
+                                 <http://purl.org/dc/terms/description> "The LiPD Ontology aims to provide a common vocabulary for annotating paleoclimatology data"@en ;
+                                 <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/2.0/" ;
+                                 <http://purl.org/dc/terms/title> "The Linked Earth Core Ontology"@en ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" ;
+                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology#" ;
+                                 owl:versionInfo "2.1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.linkedmodel.org/schema/vaem#rationale
+<http://www.linkedmodel.org/schema/vaem#rationale> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://linked.earth/ontology#calibratedVia
+:calibratedVia rdf:type owl:ObjectProperty ;
+               rdfs:domain :Variable ;
+               rdfs:range :Calibration ;
+               rdfs:label "calibrated via" .
+
+
+###  http://linked.earth/ontology#hasArchiveType
+:hasArchiveType rdf:type owl:ObjectProperty ;
+                rdfs:domain :Dataset ,
+                            :Variable ;
+                rdfs:range <http://linked.earth/ontology/archive#ArchiveType> ;
+                <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+                <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects a dataset or variable to its archive type. This enables users to search for data from specific archive types (e.g., corals, ice cores)."@en ;
+                rdfs:comment "Answers the question: What type of natural archive contains this data?" ;
+                rdfs:label "has archive type" .
+
+
+###  http://linked.earth/ontology#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Publication ;
+           rdfs:range :Person ;
+           <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/Mann.etal.1998> ;
+           <http://www.linkedmodel.org/schema/vaem#rationale> "Authors are a critical element in the scientific workflow as they are the foundation of scientific credit. The LinkedEarth Ontology seeks to appropriately credit authors and their scientific contributions."@en ;
+           rdfs:comment "Links a publication to one of its authors. This property is used to connect all authors to a publication related to the dataset." ;
+           rdfs:label "has author" .
+
+
+###  http://linked.earth/ontology#hasChangeLog
+:hasChangeLog rdf:type owl:ObjectProperty ;
+              rdfs:domain :Dataset ;
+              rdfs:range :ChangeLog ;
+              rdfs:label "has change log" .
+
+
+###  http://linked.earth/ontology#hasChanges
+:hasChanges rdf:type owl:ObjectProperty ;
+            rdfs:domain :ChangeLog ;
+            rdfs:range :Change ;
+            rdfs:label "has changes" .
+
+
+###  http://linked.earth/ontology#hasChronData
+:hasChronData rdf:type owl:ObjectProperty ;
+              rdfs:domain :Dataset ;
+              rdfs:range :ChronData ;
+              <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+              <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of hasData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en ;
+              rdfs:comment "Links a dataset to its chronology data. This property connects the dataset to its age model and age-depth measurements." ;
+              rdfs:label "has chron data" .
+
+
+###  http://linked.earth/ontology#hasCode
+:hasCode rdf:type owl:ObjectProperty ;
+         rdfs:domain :Model ;
+         rdfs:label "has code" .
+
+
+###  http://linked.earth/ontology#hasContributor
+:hasContributor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Dataset ;
+                rdfs:range :Person ;
+                rdfs:comment "Links a dataset to a person who contributed to its creation, curation, or publication. Contributors include anyone who helped with the dataset beyond the principal investigators." ;
+                rdfs:label "has contributor" .
+
+
+###  http://linked.earth/ontology#hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dataset ;
+            rdfs:range :Person ;
+            rdfs:label "has creator" .
+
+
+###  http://linked.earth/ontology#hasCurator
+:hasCurator rdf:type owl:ObjectProperty ;
+            rdfs:domain :ChangeLog ;
+            rdfs:label "has curator" .
+
+
+###  http://linked.earth/ontology#hasDistributionTable
+:hasDistributionTable rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Model ;
+                      rdfs:range :DataTable ;
+                      rdfs:label "has distribution table" .
+
+
+###  http://linked.earth/ontology#hasEnsembleTable
+:hasEnsembleTable rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Model ;
+                  rdfs:range :DataTable ;
+                  rdfs:label "has ensemble table" .
+
+
+###  http://linked.earth/ontology#hasFirstAuthor
+:hasFirstAuthor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range :Person ;
+                rdfs:label "has first author" .
+
+
+###  http://linked.earth/ontology#hasFunding
+:hasFunding rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dataset ;
+            rdfs:range :Funding ;
+            rdfs:label "has funding" .
+
+
+###  http://linked.earth/ontology#hasFundingAgency
+:hasFundingAgency rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Funding ;
+                  rdfs:label "has funding agency" .
+
+
+###  http://linked.earth/ontology#hasIGSN
+:hasIGSN rdf:type owl:ObjectProperty ;
+         rdfs:domain :PhysicalSample ;
+         rdfs:label "has IGSN" .
+
+
+###  http://linked.earth/ontology#hasInstrument
+:hasInstrument rdf:type owl:ObjectProperty ;
+               rdfs:domain :Variable ;
+               rdfs:label "has instrument" .
+
+
+###  http://linked.earth/ontology#hasInterpretation
+:hasInterpretation rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Variable ;
+                   rdfs:range :Interpretation ;
+                   <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst> ;
+                   <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects variables to their interpretation. Variables may have multiple interpretations, especially when different researchers propose different interpretations of the same data."@en ;
+                   rdfs:comment "Answers the question: What is the climatic or environmental interpretation of this variable?" ;
+                   rdfs:label "has interpretation" .
+
+
+###  http://linked.earth/ontology#hasInvestigator
+:hasInvestigator rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Dataset ;
+                 rdfs:range :Person ;
+                 rdfs:comment "Links a dataset to a principal investigator responsible for the research project that generated the dataset." ;
+                 rdfs:label "has investigator" .
+
+
+###  http://linked.earth/ontology#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain :Dataset ;
+             rdfs:range :Location ;
+             <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+             <http://www.linkedmodel.org/schema/vaem#rationale> "Paleoclimate archives are tied to particular locations. The spatial aspects of paleoclimate data are critical for regional to global studies."@en ;
+             rdfs:comment "Links a dataset to its geographic location. This property connects the dataset to information about where the samples were collected." ;
+             rdfs:label "has location" .
+
+
+###  http://linked.earth/ontology#hasMeasurementTable
+:hasMeasurementTable rdf:type owl:ObjectProperty ;
+                     rdfs:domain :ChronData ,
+                                 :PaleoData ;
+                     rdfs:range :DataTable ;
+                     rdfs:label "has measurement table" .
+
+
+###  http://linked.earth/ontology#hasPaleoData
+:hasPaleoData rdf:type owl:ObjectProperty ;
+              rdfs:domain :Dataset ;
+              rdfs:range :PaleoData ;
+              <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+              <http://www.linkedmodel.org/schema/vaem#rationale> "Subproperty of hasData. The subdivision between chronological and paleoenvironmental information reflects the fact that Datasets are fundamentally characterized by two distinct components"@en ;
+              rdfs:comment "Links a dataset to its paleoclimate data. This property connects the dataset to its measurements and derived variables related to past climate." ;
+              rdfs:label "has paleo data" .
+
+
+###  http://linked.earth/ontology#hasPhysicalSample
+:hasPhysicalSample rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Variable ;
+                   rdfs:range :PhysicalSample ;
+                   rdfs:label "has physical sample" .
+
+
+###  http://linked.earth/ontology#hasProxy
+:hasProxy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Variable ;
+          rdfs:range <http://linked.earth/ontology/paleo_proxy#PaleoProxy> ;
+          <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18O> ;
+          <http://www.linkedmodel.org/schema/vaem#rationale> "This property connects a variable to its proxy type. This enables users to search for all data associated with a specific proxy type (e.g., all δ18O measurements)."@en ;
+          rdfs:comment "Answers the question: What is the proxy type of this variable?" ;
+          rdfs:label "has proxy" .
+
+
+###  http://linked.earth/ontology#hasProxyGeneral
+:hasProxyGeneral rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Variable ;
+                 rdfs:range <http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral> ;
+                 rdfs:label "has proxy general" .
+
+
+###  http://linked.earth/ontology#hasPublication
+:hasPublication rdf:type owl:ObjectProperty ;
+                rdfs:domain :Dataset ;
+                rdfs:range :Publication ;
+                <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+                <http://www.linkedmodel.org/schema/vaem#rationale> "A publication is a critical element in the scientific workflow as it documents the scientific information in the context of the literature. The LinkedEarth Ontology connects Datasets to Publications and Authors."@en ;
+                rdfs:comment "Links a dataset to a scientific publication that documents it. This can include original publications, review papers, or other works that cite or analyze the dataset." ;
+                rdfs:label "has publication" .
+
+
+###  http://linked.earth/ontology#hasResolution
+:hasResolution rdf:type owl:ObjectProperty ;
+               rdfs:domain :Variable ;
+               rdfs:range :Resolution ;
+               rdfs:label "has resolution" .
+
+
+###  http://linked.earth/ontology#hasSeasonality
+:hasSeasonality rdf:type owl:ObjectProperty ;
+                rdfs:domain :Calibration ,
+                            :Interpretation ;
+                rdfs:range <http://linked.earth/ontology/interpretation#InterpretationSeasonality> ;
+                rdfs:label "has seasonality" .
+
+
+###  http://linked.earth/ontology#hasSeasonalityGeneral
+:hasSeasonalityGeneral rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Interpretation ;
+                       rdfs:range <http://linked.earth/ontology/interpretation#InterpretationSeasonality> ;
+                       rdfs:label "has seasonality general" .
+
+
+###  http://linked.earth/ontology#hasSeasonalityOriginal
+:hasSeasonalityOriginal rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Interpretation ;
+                        rdfs:range <http://linked.earth/ontology/interpretation#InterpretationSeasonality> ;
+                        rdfs:label "has seasonality original" .
+
+
+###  http://linked.earth/ontology#hasStandardVariable
+:hasStandardVariable rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Variable ;
+                     rdfs:range <http://linked.earth/ontology/paleo_variables#PaleoVariable> ;
+                     rdfs:label "has standard variable" .
+
+
+###  http://linked.earth/ontology#hasSummaryTable
+:hasSummaryTable rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Model ;
+                 rdfs:range :DataTable ;
+                 rdfs:label "has summary table" .
+
+
+###  http://linked.earth/ontology#hasUnits
+:hasUnits rdf:type owl:ObjectProperty ;
+          rdfs:domain :Resolution ,
+                      :Variable ;
+          rdfs:range <http://linked.earth/ontology/paleo_units#PaleoUnit> ;
+          rdfs:label "has units" .
+
+
+###  http://linked.earth/ontology#hasVariable
+:hasVariable rdf:type owl:ObjectProperty ;
+             rdfs:domain :DataTable ;
+             rdfs:range :Variable ;
+             rdfs:label "has variable" .
+
+
+###  http://linked.earth/ontology#modeledBy
+:modeledBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :ChronData ,
+                       :PaleoData ;
+           rdfs:range :Model ;
+           rdfs:label "modeled by" .
+
+
+###  http://linked.earth/ontology#partOfCompilation
+:partOfCompilation rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Variable ;
+                   rdfs:range :Compilation ;
+                   rdfs:label "part of compilation" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://linked.earth/ontology#hasAbstract
+:hasAbstract rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The abstract of a publication. This property contains the summary text that describes the content and findings of a scientific publication." ;
+             rdfs:label "has abstract" .
+
+
+###  http://linked.earth/ontology#hasBasis
+:hasBasis rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Interpretation ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The basis for the interpretation. This property describes the evidence, assumption, or methodology used to derive the climate interpretation from the proxy measurements." ;
+          rdfs:label "has basis" .
+
+
+###  http://linked.earth/ontology#hasCitation
+:hasCitation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range xsd:string ;
+             rdfs:label "has citation" .
+
+
+###  http://linked.earth/ontology#hasCiteKey
+:hasCiteKey rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Publication ;
+            rdfs:range xsd:string ;
+            rdfs:label "has cite key" .
+
+
+###  http://linked.earth/ontology#hasCollectionName
+:hasCollectionName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Dataset ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has collection name" .
+
+
+###  http://linked.earth/ontology#hasCollectionYear
+:hasCollectionYear rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Dataset ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has collection year" .
+
+
+###  http://linked.earth/ontology#hasColumnNumber
+:hasColumnNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Variable ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "has column number" .
+
+
+###  http://linked.earth/ontology#hasCompilationNest
+:hasCompilationNest rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Dataset ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "has compilation nest" .
+
+
+###  http://linked.earth/ontology#hasContinent
+:hasContinent rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Location ;
+              rdfs:range xsd:string ;
+              rdfs:label "has continent" .
+
+
+###  http://linked.earth/ontology#hasCountry
+:hasCountry rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Location ;
+            rdfs:range xsd:string ;
+            rdfs:label "has country" .
+
+
+###  http://linked.earth/ontology#hasCountryOcean
+:hasCountryOcean rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Location ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has country ocean" .
+
+
+###  http://linked.earth/ontology#hasDOI
+:hasDOI rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Calibration ,
+                    :Publication ;
+        rdfs:range xsd:string ;
+        <http://purl.org/vocab/vann/example> "10.1126/science.1228026" ;
+        <http://www.linkedmodel.org/schema/vaem#rationale> "DOIs provide persistent identifiers for publications and other research outputs, enabling reliable citation and linking."@en ;
+        rdfs:comment "The Digital Object Identifier (DOI) for a publication or calibration. This property provides a persistent identifier that resolves to the online location of the resource." ;
+        rdfs:label "has DOI" .
+
+
+###  http://linked.earth/ontology#hasDataSource
+:hasDataSource rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Dataset ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The source of the dataset. This property indicates where the data was originally obtained or published." ;
+               rdfs:label "has data source" .
+
+
+###  http://linked.earth/ontology#hasDataUrl
+:hasDataUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Publication ;
+            rdfs:range xsd:string ;
+            rdfs:label "has data URL" .
+
+
+###  http://linked.earth/ontology#hasDatasetId
+:hasDatasetId rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Dataset ;
+              rdfs:range xsd:string ;
+              rdfs:comment "A unique identifier for the dataset. This property provides a persistent identifier that can be used to reference the dataset across systems." ;
+              rdfs:label "has dataset id" .
+
+
+###  http://linked.earth/ontology#hasDatasetRange
+:hasDatasetRange rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Calibration ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has dataset range" .
+
+
+###  http://linked.earth/ontology#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Location ,
+                            :Variable ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A textual description of a variable or location. This property provides additional details about the meaning, collection, or relevance of a variable or the characteristics of a location." ;
+                rdfs:label "has description" .
+
+
+###  http://linked.earth/ontology#hasDirection
+:hasDirection rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Interpretation ;
+              rdfs:range xsd:string ;
+              rdfs:label "has direction" .
+
+
+###  http://linked.earth/ontology#hasElevation
+:hasElevation rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Location ;
+              rdfs:range xsd:string ;
+              rdfs:label "has elevation" .
+
+
+###  http://linked.earth/ontology#hasEquation
+:hasEquation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Calibration ;
+             rdfs:range xsd:string ;
+             rdfs:label "has equation" .
+
+
+###  http://linked.earth/ontology#hasEquationIntercept
+:hasEquationIntercept rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Calibration ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "has equation intercept" .
+
+
+###  http://linked.earth/ontology#hasEquationR2
+:hasEquationR2 rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Calibration ;
+               rdfs:range xsd:string ;
+               rdfs:label "has equation R2" .
+
+
+###  http://linked.earth/ontology#hasEquationSlope
+:hasEquationSlope rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Calibration ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has equation slope" .
+
+
+###  http://linked.earth/ontology#hasEquationSlopeUncertainty
+:hasEquationSlopeUncertainty rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Calibration ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "has equation slope uncertainty" .
+
+
+###  http://linked.earth/ontology#hasFileName
+:hasFileName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DataTable ;
+             rdfs:range xsd:string ;
+             rdfs:label "has file name" .
+
+
+###  http://linked.earth/ontology#hasFundingCountry
+:hasFundingCountry rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Funding ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has funding country" .
+
+
+###  http://linked.earth/ontology#hasGeometryType
+:hasGeometryType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Location ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has geometry type" .
+
+
+###  http://linked.earth/ontology#hasGrant
+:hasGrant rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Funding ;
+          rdfs:range xsd:string ;
+          rdfs:label "has grant" .
+
+
+###  http://linked.earth/ontology#hasInstitution
+:hasInstitution rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:string ;
+                rdfs:label "has institution" .
+
+
+###  http://linked.earth/ontology#hasIssue
+:hasIssue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Publication ;
+          rdfs:range xsd:string ;
+          rdfs:label "has issue" .
+
+
+###  http://linked.earth/ontology#hasJournal
+:hasJournal rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Publication ;
+            rdfs:range xsd:string ;
+            rdfs:label "has journal" .
+
+
+###  http://linked.earth/ontology#hasLastVersion
+:hasLastVersion rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ChangeLog ;
+                rdfs:range xsd:string ;
+                rdfs:label "has last version" .
+
+
+###  http://linked.earth/ontology#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Location ;
+             rdfs:range xsd:string ;
+             <http://purl.org/vocab/vann/example> "6.3N" ;
+             <http://www.linkedmodel.org/schema/vaem#rationale> "Latitude is essential for spatial referencing of paleoclimate data. It enables mapping and spatial analysis."@en ;
+             rdfs:comment "The latitude coordinate of a location. This property specifies the north-south position of a sampling site in decimal degrees." ;
+             rdfs:label "has latitude" .
+
+
+###  http://linked.earth/ontology#hasLocationName
+:hasLocationName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Location ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has location name" .
+
+
+###  http://linked.earth/ontology#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Location ;
+              rdfs:range xsd:string ;
+              <http://purl.org/vocab/vann/example> "125.83E" ;
+              <http://www.linkedmodel.org/schema/vaem#rationale> "Longitude is essential for spatial referencing of paleoclimate data. It enables mapping and spatial analysis."@en ;
+              rdfs:comment "The longitude coordinate of a location. This property specifies the east-west position of a sampling site in decimal degrees." ;
+              rdfs:label "has longitude" .
+
+
+###  http://linked.earth/ontology#hasMathematicalRelation
+:hasMathematicalRelation rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Interpretation ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "has mathematical relation" .
+
+
+###  http://linked.earth/ontology#hasMaxValue
+:hasMaxValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Resolution ,
+                         :Variable ;
+             rdfs:range xsd:float ;
+             rdfs:comment "The maximum value of a variable or resolution. This property specifies the upper bound of the measured or derived values in the dataset." ;
+             rdfs:label "has max value" .
+
+
+###  http://linked.earth/ontology#hasMeanValue
+:hasMeanValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Resolution ,
+                          :Variable ;
+              rdfs:range xsd:float ;
+              rdfs:label "has mean value" .
+
+
+###  http://linked.earth/ontology#hasMedianValue
+:hasMedianValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Resolution ,
+                            :Variable ;
+                rdfs:range xsd:float ;
+                rdfs:label "has median value" .
+
+
+###  http://linked.earth/ontology#hasMethod
+:hasMethod rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Calibration ;
+           rdfs:range xsd:string ;
+           rdfs:label "has method" .
+
+
+###  http://linked.earth/ontology#hasMethodDetail
+:hasMethodDetail rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Calibration ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has method detail" .
+
+
+###  http://linked.earth/ontology#hasMinValue
+:hasMinValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Resolution ,
+                         :Variable ;
+             rdfs:range xsd:float ;
+             rdfs:comment "The minimum value of a variable or resolution. This property specifies the lower bound of the measured or derived values in the dataset." ;
+             rdfs:label "has min value" .
+
+
+###  http://linked.earth/ontology#hasMissingValue
+:hasMissingValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :DataTable ,
+                             :Variable ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has missing value" .
+
+
+###  http://linked.earth/ontology#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Compilation ,
+                     :Dataset ,
+                     :PaleoData ,
+                     :Person ,
+                     :Variable ;
+         rdfs:range xsd:string ;
+         <http://purl.org/vocab/vann/example> "MD98-2181" ;
+         <http://www.linkedmodel.org/schema/vaem#rationale> "This property provides a human-readable identifier for entities in the ontology. Names are essential for discovery and identification."@en ;
+         rdfs:comment "The name or title of an entity. This property is used to provide a human-readable label for datasets, variables, and people." ;
+         rdfs:label "has name" .
+
+
+###  http://linked.earth/ontology#hasNotes
+:hasNotes rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Calibration ,
+                      :Change ,
+                      :ChangeLog ,
+                      :Dataset ,
+                      :Interpretation ,
+                      :Variable ;
+          rdfs:range xsd:string ;
+          rdfs:label "has notes" .
+
+
+###  http://linked.earth/ontology#hasOcean
+:hasOcean rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Location ;
+          rdfs:range xsd:string ;
+          rdfs:label "has ocean" .
+
+
+###  http://linked.earth/ontology#hasOriginalDataUrl
+:hasOriginalDataUrl rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Dataset ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "has original data URL" .
+
+
+###  http://linked.earth/ontology#hasPages
+:hasPages rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Publication ;
+          rdfs:range xsd:string ;
+          rdfs:label "has pages" .
+
+
+###  http://linked.earth/ontology#hasProxyDataset
+:hasProxyDataset rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Calibration ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has proxy dataset" .
+
+
+###  http://linked.earth/ontology#hasPublisher
+:hasPublisher rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Publication ;
+              rdfs:range xsd:string ;
+              rdfs:label "has publisher" .
+
+
+###  http://linked.earth/ontology#hasRank
+:hasRank rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Interpretation ;
+         rdfs:range xsd:string ;
+         rdfs:label "has rank" .
+
+
+###  http://linked.earth/ontology#hasReport
+:hasReport rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Publication ;
+           rdfs:range xsd:string ;
+           rdfs:label "has report" .
+
+
+###  http://linked.earth/ontology#hasScope
+:hasScope rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Interpretation ;
+          rdfs:range xsd:string ;
+          rdfs:label "has scope" .
+
+
+###  http://linked.earth/ontology#hasSiteName
+:hasSiteName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Location ;
+             rdfs:range xsd:string ;
+             rdfs:label "has site name" .
+
+
+###  http://linked.earth/ontology#hasSpreadsheetLink
+:hasSpreadsheetLink rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Dataset ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "has spreadsheet link" .
+
+
+###  http://linked.earth/ontology#hasTargetDataset
+:hasTargetDataset rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Calibration ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has target dataset" .
+
+
+###  http://linked.earth/ontology#hasTimestamp
+:hasTimestamp rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ChangeLog ;
+              rdfs:range xsd:string ;
+              rdfs:label "has timestamp" .
+
+
+###  http://linked.earth/ontology#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Publication ;
+          rdfs:range xsd:string ;
+          <http://purl.org/vocab/vann/example> "Surface Temperature Reconstructions for the Last 2,000 Years" ;
+          <http://www.linkedmodel.org/schema/vaem#rationale> "The title is a key metadata element for publications, enabling discovery and citation."@en ;
+          rdfs:comment "The title of a publication. This property provides the complete title of a scientific publication related to the dataset." ;
+          rdfs:label "has title" .
+
+
+###  http://linked.earth/ontology#hasType
+:hasType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Location ,
+                     :Publication ;
+         rdfs:range xsd:string ;
+         rdfs:label "has type" .
+
+
+###  http://linked.earth/ontology#hasUncertainty
+:hasUncertainty rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Calibration ,
+                            :Variable ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The uncertainty associated with a variable or calibration. This property specifies the quantitative measure of the precision or confidence in the measured or derived values." ;
+                rdfs:label "has uncertainty" .
+
+
+###  http://linked.earth/ontology#hasUncertaintyAnalytical
+:hasUncertaintyAnalytical rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Variable ;
+                          rdfs:range xsd:string ;
+                          rdfs:label "has uncertainty analytical" .
+
+
+###  http://linked.earth/ontology#hasUncertaintyReproducibility
+:hasUncertaintyReproducibility rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Variable ;
+                               rdfs:range xsd:string ;
+                               rdfs:label "has uncertainty reproducibility" .
+
+
+###  http://linked.earth/ontology#hasUrl
+:hasUrl rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Publication ;
+        rdfs:range xsd:string ;
+        rdfs:label "has URL" .
+
+
+###  http://linked.earth/ontology#hasVariableDetail
+:hasVariableDetail rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Interpretation ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Detailed specification of the interpreted variable. This property provides more specific information about the climate parameter being reconstructed." ;
+                   rdfs:label "has variable detail" .
+
+
+###  http://linked.earth/ontology#hasVariableGeneral
+:hasVariableGeneral rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Interpretation ;
+                    rdfs:range xsd:string ;
+                    <http://purl.org/vocab/vann/example> "Temperature" ;
+                    <http://www.linkedmodel.org/schema/vaem#rationale> "This property identifies the general climate or environmental variable being interpreted. It uses standardized terms to enable consistent searching."@en ;
+                    rdfs:comment "The general climate or environmental variable being interpreted. This property identifies the broad category of the climate parameter being reconstructed from proxy measurements." ;
+                    rdfs:label "has variable general" .
+
+
+###  http://linked.earth/ontology#hasVariableGeneralDirection
+:hasVariableGeneralDirection rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Interpretation ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "has variable general direction" .
+
+
+###  http://linked.earth/ontology#hasVariableId
+:hasVariableId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Variable ;
+               rdfs:range xsd:string ;
+               rdfs:label "has variable id" .
+
+
+###  http://linked.earth/ontology#hasVersion
+:hasVersion rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ChangeLog ,
+                        :Compilation ,
+                        :Dataset ;
+            rdfs:range xsd:string ;
+            rdfs:label "has version" .
+
+
+###  http://linked.earth/ontology#hasVolume
+:hasVolume rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Publication ;
+           rdfs:range xsd:string ;
+           rdfs:label "has volume" .
+
+
+###  http://linked.earth/ontology#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Publication ;
+         rdfs:range xsd:string ;
+         rdfs:label "has year" .
+
+
+###  http://linked.earth/ontology#isComposite
+:isComposite rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Variable ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "is composite" .
+
+
+###  http://linked.earth/ontology#isLocal
+:isLocal rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Interpretation ;
+         rdfs:range xsd:string ;
+         rdfs:label "is local" .
+
+
+###  http://linked.earth/ontology#isPrimary
+:isPrimary rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Variable ;
+           rdfs:range xsd:boolean ;
+           rdfs:label "is primary" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linked.earth/ontology#Calibration
+:Calibration rdf:type owl:Class ;
+             rdfs:comment "Calibration information for measured data" ;
+             rdfs:label "Calibration" .
+
+
+###  http://linked.earth/ontology#Change
+:Change rdf:type owl:Class ;
+        rdfs:comment "A specific change recorded in a changelog" ;
+        rdfs:label "Change" .
+
+
+###  http://linked.earth/ontology#ChangeLog
+:ChangeLog rdf:type owl:Class ;
+           rdfs:comment "A record of changes made to a dataset" ;
+           rdfs:label "ChangeLog" .
+
+
+###  http://linked.earth/ontology#ChronData
+:ChronData rdf:type owl:Class ;
+           rdfs:comment "Chronology data contained within a dataset. This includes all measurements and models related to establishing the age-depth relationship of the archive." ;
+           rdfs:label "ChronData" .
+
+
+###  http://linked.earth/ontology#Compilation
+:Compilation rdf:type owl:Class ;
+             rdfs:comment "A compilation of paleoclimate datasets. Compilations aggregate multiple datasets to enable regional or global analyses of paleoclimate patterns." ;
+             rdfs:label "Compilation" .
+
+
+###  http://linked.earth/ontology#DataTable
+:DataTable rdf:type owl:Class ;
+           rdfs:comment "A table of data measurements" ;
+           rdfs:label "DataTable" .
+
+
+###  http://linked.earth/ontology#Dataset
+:Dataset rdf:type owl:Class ;
+         <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014> ;
+         <http://www.linkedmodel.org/schema/vaem#rationale> "Datasets are the core units of the LinkedEarth Ontology. Each Dataset corresponds to a paleoclimate archive (e.g., core, speleothem) and has descriptors (metadata) and data (measurements)."@en ;
+         rdfs:comment "A paleoclimate dataset containing measurements, interpretations, and metadata. Datasets form the core unit in the LinkedEarth ontology and include paleoclimate data (measurements), chronology data, physical sample information, and related publications." ;
+         rdfs:label "Dataset" .
+
+
+###  http://linked.earth/ontology#Funding
+:Funding rdf:type owl:Class ;
+         rdfs:comment "Information about funding sources for research" ;
+         rdfs:label "Funding" .
+
+
+###  http://linked.earth/ontology#Interpretation
+:Interpretation rdf:type owl:Class ;
+                <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement2.sst.interpretation> ;
+                <http://www.linkedmodel.org/schema/vaem#rationale> "An Interpretation connects proxies (e.g., Mg/Ca) to environmental/climate variables (e.g., temperature) and provides qualitative or quantitative information about this link."@en ;
+                rdfs:comment "An interpretation of measured variables. This represents the climate or environmental interpretation derived from proxy measurements, including the relationship between the measured variable and the interpreted parameter." ;
+                rdfs:label "Interpretation" .
+
+
+###  http://linked.earth/ontology#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "The geographic location where data was collected. This includes coordinates, site name, and other geographic information related to where the physical samples were obtained." ;
+          rdfs:label "Location" .
+
+
+###  http://linked.earth/ontology#Model
+:Model rdf:type owl:Class ;
+       rdfs:comment "A model derived from or applied to dataset measurements" ;
+       rdfs:label "Model" .
+
+
+###  http://linked.earth/ontology#PaleoData
+:PaleoData rdf:type owl:Class ;
+           rdfs:comment "Paleoclimate data contained within a dataset. This includes all measured and derived variables related to past climate conditions, distinct from chronology data." ;
+           rdfs:label "PaleoData" .
+
+
+###  http://linked.earth/ontology#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "A person involved with the dataset" ;
+        rdfs:label "Person" .
+
+
+###  http://linked.earth/ontology#PhysicalSample
+:PhysicalSample rdf:type owl:Class ;
+                rdfs:comment "A physical sample used for measurements. This represents the actual physical specimen from which measurements were taken, such as a core section, fossil, or sediment sample." ;
+                rdfs:label "PhysicalSample" .
+
+
+###  http://linked.earth/ontology#Publication
+:Publication rdf:type owl:Class ;
+             rdfs:comment "A scientific publication related to the dataset. This includes journal articles, books, reports and other publication types that document the dataset's collection, processing, interpretation, or use in a scientific study." ;
+             rdfs:label "Publication" .
+
+
+###  http://linked.earth/ontology#Resolution
+:Resolution rdf:type owl:Class ;
+            rdfs:comment "The temporal or spatial resolution of measurements" ;
+            rdfs:label "Resolution" .
+
+
+###  http://linked.earth/ontology#Variable
+:Variable rdf:type owl:Class ;
+          <http://purl.org/vocab/vann/example> <http://wiki.linked.earth/MD982181.Khider.2014.paleo1measurement1.d18O> ;
+          <http://www.linkedmodel.org/schema/vaem#rationale> "Variables are the basic units for analysis, including raw measurements (MeasuredVariable), modeled/interpolated values (ModeledVariable), and inferences of past climate (InferredVariable)."@en ;
+          rdfs:comment "A variable measured or derived in a dataset. Variables represent the actual measurements or values derived from the paleoclimate archive, and can include measured proxies, chronological controls, or interpreted climate parameters." ;
+          rdfs:label "Variable" .
+
+
+###  http://linked.earth/ontology/archive#ArchiveType
+<http://linked.earth/ontology/archive#ArchiveType> rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/interpretation#InterpretationSeasonality
+<http://linked.earth/ontology/interpretation#InterpretationSeasonality> rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/paleo_proxy#PaleoProxy
+<http://linked.earth/ontology/paleo_proxy#PaleoProxy> rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral
+<http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral> rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/paleo_units#PaleoUnit
+<http://linked.earth/ontology/paleo_units#PaleoUnit> rdf:type owl:Class .
+
+
+###  http://linked.earth/ontology/paleo_variables#PaleoVariable
+<http://linked.earth/ontology/paleo_variables#PaleoVariable> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

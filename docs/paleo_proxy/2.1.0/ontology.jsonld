@@ -1,0 +1,2100 @@
+[ {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasSynonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://w3id.org/people/varunr"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-5920-4751"
+  }, {
+    "@id" : "http://www.cefns.nau.edu/~npm4/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Paleo Proxy Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "pproxy"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://linked.earth/ontology/paleo_proxy#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy/2.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "2.0.0"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#ACL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "average chain length"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4170"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chain length index that is the average number of carbon atoms within organic compound chains in a sample."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ACL"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Al2O3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "aluminum oxide"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=305"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an inorganic compound that has the chemical formula Al2O3."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Al2O3"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#BIT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "branched and isoprenoid tetraether index"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1676"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "BITindex"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organic compound index that is the abundance of branched tetraethers relative to isoprenoid tetraethers, indicative of the relative amounts of soil organic matter and aquatic organic matter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BIT"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#BSi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "biogenic silica"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a hydrated, amorphous form of silicon dioxide with the formula SiO2•nH20 that is biogenically precipitated by a variety of organisms including chrysophytes, diatoms, radiolarians, silicoflagellates, and sponges (Credit: Last et al. 2001 Tracking Environmental Change Using Lake Sediments)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BSi"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ba_Al",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "barium/aluminum"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2410"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of barium to aluminum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ba/Al"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ba_Ca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "barium/calcium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=317"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "BaCa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of barium to calcium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ba/Ca"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#C_N",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "carbon/nitrogen"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=750"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of carbon to nitrogen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "C/N"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#CaCO3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "calcium carbonate"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1515"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a carbonate with the chemical formula CaCO3 but of unspecified crystal structure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CaCO3"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ca_K",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "calcium/potassium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3783"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of calcium to potassium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ca/K"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ca_Ti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "calcium/titanium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1635"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of calcium to titanium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ca/Ti"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Eu_Zr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Eu/Zr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Fe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "iron"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=285"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 26."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fe"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Fe_Al",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "iron/aluminum"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2416"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of iron to aluminum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fe/Al"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#GDGT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "glycerol dialkyl glycerol tetraether"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1680"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "brGDGT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an ether that is a tetraether membrane lipid and that contains between 0 and 4 cyclopentane moieties, with an increasing number of cyclopentane moieties related to the temperature of formation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GDGT"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#HBI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "highly-branched isoprenoid alkene"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2283"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an alkene that is highly-branched and composed of a number of isoprene (C5H8) units and that is produced by a relatively small number of marine and freshwater diatoms belonging to the Haslea, Navicula, Pleurosigma, and Rhizosolenia genera (Credit: Belt et al. 2013, 10.1016/j.quascirev.2012.12.001)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HBI"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#IP25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ice proxy with 25 carbon atoms"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2493"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a highly-branched isoprenoid alkene that contains 25 carbon atoms and that is produced selectively by sea ice diatoms (Credit: Belt et al. 2013, 10.1016/j.quascirev.2012.12.001)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IP25"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#LDI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "long-chain diol index"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5705"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "long chain diol"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organic compound index calculated based on the relative abundance of long chain alkyl 1,13- and 1,15-diols."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LDI"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Mg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "magnesium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=891"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 12."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mg"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Mg_Ca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "magnesium/calcium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=327"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Foram Mg/Ca"
+  }, {
+    "@value" : "MgCa"
+  }, {
+    "@value" : "foram Mg/Ca"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of magnesium to calcium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mg/Ca"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#P-aqueous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "P-aqueous"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1000103"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Paq"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organic compound index that measures the relative predominance of submerged versus emergent aquatic plants and that is generally calculated from n-alkanes as (C23 + C25)/(C23 + C25 + C29 + C31)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "P-aqueous"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Rb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "rubidium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=913"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 37."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Rb_Sr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rb/Sr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Sr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "strontium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=290"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 38."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Sr_Ca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "strontium/calcium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=328"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Ca/Sr"
+  }, {
+    "@value" : "Coral Sr/Ca"
+  }, {
+    "@value" : "SrCa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of strontium to calcium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sr/Ca"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#TEX86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "tetraether index of 86 carbon atoms"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1599"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organic compound index that is calculated as the ratio of different isoprenoidal glycerol dialkyl glycerol tetraethers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TEX86"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#TOC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "organic carbon"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=995"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "carbon that is derived from an organic source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TOC"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "titanium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=292"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 22."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ti"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ti_Al",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "titanium/aluminum"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3687"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of titanium to aluminum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ti/Al"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#Ti_Ca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "titanium/calcium"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2426"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Ti/CA"
+  }, {
+    "@value" : "ln(ti/ca)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the elemental ratio of titanium to calcium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ti/Ca"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#accumulation_rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "sed accumulation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "accumulation rate"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#alkenone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "alkenone"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2485"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ketone that is a long-chain unsaturated methyl and ethyl n-ketone produced by a few phytoplankton species of the class Prymnesiophyceae (Credit: Wikipedia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "alkenone"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#amoeba",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "testate amoeba"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3577"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that is an ameboid protist with a test and that belongs to the kingdom Protozoa. Traditionally, those species that form large networks of anastomosing pseudopodia, despite of some of them having tests e.g. Foraminifera, are not counted amongst testate amoebae (Credit: Wikipedia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amoeba"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#biogenic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "biological material"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=444"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "measurements of cells or collections of cells that partially or completely compose an organism or group of organisms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "biogenic"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#biomarker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "organic compound"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1596"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "C15 fatty alcohols"
+  }, {
+    "@value" : "C37.concentration"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : "a compound that consists of one or more atoms of carbon covalently linked to atoms of other elements, most commonly hydrogen, oxgen, or nitrogen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "biomarker"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#borehole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "borehole"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a data type that consists of direct measurements of subsurface temperature from boreholes drilled into materials such as rock and glacier ice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "borehole"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#bubble_frequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bubble frequency"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#bulk_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "gamma"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bulk density"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#bulk_sediment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "dry sediment"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1502"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "BulkSed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "sediment from which all water has been removed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bulk sediment"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#calcification_rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "calcification rate"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=756"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "calcification"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a formation rate that is a rate of skeletal growth in calcifying organisms, often expressed as a mass times unit area per time (e.g., g cm2/yr)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "calcification rate"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#calcite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "calcite"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=482"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a calcium carbonate with rhombohedral crystal structure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "calcite"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#carbonate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "carbonate"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=692"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Carbonate content"
+  }, {
+    "@value" : "authigenic carbonate"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identified mineral characterized by a fundamental anionic structure of CO3(2-) (Credit: Dictionary of Geological Terms)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "carbonate"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#cellulose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "cellulose"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=689"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organooxygen compound with the general formula (C6H10O5)n and that is an important structural component of the cell walls of green plants."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cellulose"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#charcoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "charcoal"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=630"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a bulk biological material that consists of any black-colored plant-derived material that has had its chemical composition and structure altered as a result of heating in a fire, and retains recognizable anatomic structure of the plant material, even if only in a fragmentary form (Credit: Smol et al. 2001 Tracking Environmental Change Using Lake Sediments)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "charcoal"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#chironomid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "midge"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1571"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Chironomid"
+  }, {
+    "@value" : "midge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that belongs to one of several families in the kingdom Animalia, phylum Arthropoda, class Insecta, order Diptera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "chironomid"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#chlorophyll",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "chlorophyll"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1615"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an organic pigment that is any of several green pigments found in cyanobacteria and the chloroplasts of algae and plants and that is composed of carbon, hydrogen, oxygen, nitrogen, and magnesium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "chlorophyll"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#chrysophyte_assemblage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "chrysophyte assemblage"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4080"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "chrysophyte"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an assemblage of golden or golden-brown algae that belong to the kingdom Chromista, class Chrysophyceae."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "chrysophyte assemblage"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#cladoceran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "cladoceran"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3587"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Cladocera"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism commonly known as a water flea that belongs to the kingdom Animalia, phylum Arthropoda, class Branchiopoda, order Cladocera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cladoceran"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#coccolithophore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "coccolithophore"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3250"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "coccolith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that is a unicellular phytoplankton and that belongs to the kingdom Chromista, phylum Haptophyta, class Prymnesiophyceae."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "coccolithophore"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#cryophysical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cryophysical"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#d13C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "delta 13C"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=320"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "d13Cwax"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ratio of two isotopes of carbon, 13C/12C, in a sample compared to that of a standard, typically the Pee Dee Belemnite, as in: ((13C/12C sample)/(13C/12C standard) - 1) x 1000."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "d13C"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#d15N",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "delta 15N"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=322"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ratio of two isotopes of nitrogen, 15N/14N, in a sample compared to that of a standard, typically modern air ratios, as in: ((15N/14N sample)/(15N/14N standard) - 1) x 1000."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "d15N"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#d15N_d40Ar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "15N/40Ar fractionation"
+  }, {
+    "@value" : "d15Nd40Ar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "d15N/d40Ar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#d18O",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "delta 18O"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=323"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "cellulose d18O"
+  }, {
+    "@value" : "delta18O"
+  }, {
+    "@value" : "foram d18O"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ratio of two isotopes of oxygen, 18O/16O, in a sample compared to that of a standard, typically either Pee Dee Belemnite or standard mean ocean water, as in: ((18O/16O sample)/(18O/16O standard) - 1) x 1000."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "d18O"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#dD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "delta 2H"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=324"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "LeafWax"
+  }, {
+    "@value" : "d2H"
+  }, {
+    "@value" : "dDwax"
+  }, {
+    "@value" : "leaf wax"
+  }, {
+    "@value" : "leafWax"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ratio of two isotopes of hydrogen, 2H/1H, in a sample compared to that of a standard, typically standard mean ocean water, as in: ((2H/1H sample)/(2H/1H standard) - 1) x 1000."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dD"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#dendrophysical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dendrophysical"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#deuterium_excess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "deuterium excess"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1426"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "deterium excess"
+  }, {
+    "@value" : "dx"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a measure of how different a delta 2H value is from the value expected from the Global Meteoric Water Line, that is delta 2H - 8* delta 18O."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "deuterium excess"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#diatom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "diatom"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1601"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that is a unicellular phytoplankton and that belongs to the kingdom Chromista, phylum Ochrophyta, class Bacillariophyceae."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diatom"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#dinocyst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "dinoflagellate"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4532"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "dynocist MAT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that belongs to the kingdom Chromista, division Pyrrophycophyta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dinocyst"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#dry_bulk_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "DBD"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dry bulk density"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#elemental",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "elemental"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#faunal_assemblage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "faunal assemblage"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#floral_assemblage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "floral assemblage"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#foraminifera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "foraminifer"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2500"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "N. dutertrei"
+  }, {
+    "@value" : "Uvigerina mediterranea"
+  }, {
+    "@value" : "benthic foraminifers"
+  }, {
+    "@value" : "foraminifer"
+  }, {
+    "@value" : "planktonic foraminifera"
+  }, {
+    "@value" : "transfer function"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that belongs to the kingdom Protozoa, order Foraminiferida."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "foraminifera"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#grain_size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "grain size"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1233"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "particle size"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the diameter of individual grains of a material such as sediment, dust, or ice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "grain size"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#historical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "historical"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3460"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Documentary"
+  }, {
+    "@value" : "historic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a data type that includes measurements of past climatic conditions and climate-dependent phenomena as observed and recorded by humans not using modern meteorological instruments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "historical"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#humification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "humification index"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2129"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a measure of the extent to which a peat sample has undergone decomposition and humic acids have been produced."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "humification"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#ice_accumulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Ice Accumulation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ice accumulation"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#ice_melt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ice melt"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4951"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "melt"
+  }, {
+    "@value" : "melt layer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ice mass loss from a glacier, ice-cap, ice-sheet, or ice-shelf through phase transformation to liquid water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ice melt"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#inorganic_carbon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "inorganic carbon"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=996"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "TIC"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "carbon that is derived from an inorganic source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inorganic carbon"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#isotopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "isotope"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4584"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a measure of chemical composition that relates to variants of a given element that differ in neutron number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isotopic"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#lake_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "lake level"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2137"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Lake stratigraphy and radiocarbon dating of macrofossils"
+  }, {
+    "@value" : "LakeStatus"
+  }, {
+    "@value" : "lakeLevel"
+  }, {
+    "@value" : "lakelevel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a geographic variable that quantifies the height of the lake water surface relative to some datum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lake level"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#latewood_cellulose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "latewood cellulose"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1589"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "late-wood cellulose"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "cellulose from wood that formed late in the growing season and that tends to consist of small and thick-walled cells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "latewood cellulose"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#macrofossils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "plant macrofossils"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4595"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a data type that includes measurements of plant remains large enough to be observed without a microscope."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "macrofossils"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#magnetic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "ARM/IRM"
+  }, {
+    "@value" : "IRM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "magnetic"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#magnetic_susceptibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "magnetic susceptibility"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1793"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MS"
+  }, {
+    "@value" : "Magnetic Susceptibility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a magnetic moment that is the degree to which a material can be magnetized in an external magnetic field."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "magnetic susceptibility"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#mass_accumulation_rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "mass per area per time unit"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4704"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MAR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a rate unit that is a standard measure of the accumulation or flow of mass per unit area per time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mass accumulation rate"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#maximum_latewood_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "latewood density"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1573"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MXD"
+  }, {
+    "@value" : "delta Density"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the density of xylem cells in wood that formed near the end of the growing season and that tend to be small and thick-walled."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "maximum latewood density"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#mineral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mineral"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#multiproxy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "multiple proxies"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3630"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Ca"
+  }, {
+    "@value" : "Hybrid Grain Size"
+  }, {
+    "@value" : "K"
+  }, {
+    "@value" : "Ti"
+  }, {
+    "@value" : "hybrid"
+  }, {
+    "@value" : "hybrid-ice"
+  }, {
+    "@value" : "hybrid-lake"
+  }, {
+    "@value" : "pore ice d2H and d18O"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a material used to create a climate reconstruction that consists of proxies from more than two proxy data types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "multiproxy"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#needsToBeChanged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "((( calcium carbonate ))) accumulation /// null"
+  }, {
+    "@value" : "3-OH-Fatty Acids"
+  }, {
+    "@value" : "Age"
+  }, {
+    "@value" : "CAS"
+  }, {
+    "@value" : "CIA"
+  }, {
+    "@value" : "Element Ratio"
+  }, {
+    "@value" : "MG0"
+  }, {
+    "@value" : "Sediment"
+  }, {
+    "@value" : "TDS"
+  }, {
+    "@value" : "TraceElement"
+  }, {
+    "@value" : "coral"
+  }, {
+    "@value" : "element"
+  }, {
+    "@value" : "ice"
+  }, {
+    "@value" : "isotope"
+  }, {
+    "@value" : "isotope diffusion"
+  }, {
+    "@value" : "middle-wood cellulose"
+  }, {
+    "@value" : "mineral"
+  }, {
+    "@value" : "mineralogy"
+  }, {
+    "@value" : "percent"
+  }, {
+    "@value" : "sediment"
+  }, {
+    "@value" : "trace element / CA"
+  }, {
+    "@value" : "u Cluster 2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "needsToBeChanged"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#needs_to_be_changed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "PCA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "needs to be changed"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#ostracod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ostracod"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that belongs to the kingdom Animalia, phylum Arthropoda, class Ostracoda."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ostracod"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#pH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "pH"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=569"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a measure of acidity that is calculated as the negative logarithm of the hydrogen ion concentration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pH"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#peat_ash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "peat ash"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#pollen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "pollen"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5578"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "aquatic palynomorphs"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a bulk biological material that consists of microscopic grains produced by seed plants for reproduction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pollen"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#pyrogenic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "fire history"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=115"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a data type that includes measurements made to deduce the past history of fire, whether from tree rings, sediment, or other natural archives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pyrogenic"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#radiolaria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "radiolarian"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2796"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an identifiable organism that belongs to the kingdom Protozoa, order Radiolaria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "radiolaria"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#reflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "reflectance"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1005"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an electromagnetic property that measures the amount of light that reflects from the surface of a material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reflectance"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#ring_width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ring width"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3639"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "TRW"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a physical measurement of the width of all or of some subcomponent of one annual ring from a tree."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ring width"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#sedimentology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sedimentology"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#stratigraphy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Minerogenic layers"
+  }, {
+    "@value" : "Plant detrital layers"
+  }, {
+    "@value" : "Stratigraphy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  }, {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxyGeneral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stratigraphy"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#sulfur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "sulfur"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=902"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "S"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a chemical element with atomic number 16."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sulfur"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#total_nitrogen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "TN"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total nitrogen"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/paleo_proxy#varve_thickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "varve thickness"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1630"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Varve"
+  }, {
+    "@value" : "varve"
+  }, {
+    "@value" : "varve property"
+  }, {
+    "@value" : "varves"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/paleo_proxy#PaleoProxy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the thickness of a sublayer of or an entire annually-resolved varve in a sediment sequence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "varve thickness"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

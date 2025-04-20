@@ -1,0 +1,4242 @@
+[ {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasSynonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://w3id.org/people/varunr"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-5920-4751"
+  }, {
+    "@id" : "http://www.cefns.nau.edu/~npm4/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Interpretation Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "interp"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://linked.earth/ontology/interpretation#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation/2.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "2.0.0"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Annual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "annual"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=35"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "1 2 3 4 5 6 7 8 9 10 11 12"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,117"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,12"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,122"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,138"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,158"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,190"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,229"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,291"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,434"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,464"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,588"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,646"
+  }, {
+    "@value" : "1,2,3,4,5,6,7,8,9,10,11,706"
+  }, {
+    "@value" : "12 1 2; 6 7 8"
+  }, {
+    "@value" : "Mean annual (weighted toward OND and MAM)"
+  }, {
+    "@value" : "Winter"
+  }, {
+    "@value" : "Year-round"
+  }, {
+    "@value" : "annual"
+  }, {
+    "@value" : "annual (*but recently would prob be interpreted as summer-biased)"
+  }, {
+    "@value" : "annual calendar year (but 80% of precipitation from Nov to May)"
+  }, {
+    "@value" : "annual mean"
+  }, {
+    "@value" : "coldest + warmest month"
+  }, {
+    "@value" : "coldest month + summer"
+  }, {
+    "@value" : "late summer/winter lake water (summer-biased mean annual precip)"
+  }, {
+    "@value" : "multi-annual"
+  }, {
+    "@value" : "not applicable (always)"
+  }, {
+    "@value" : "summer + winter"
+  }, {
+    "@value" : "summer temperature"
+  }, {
+    "@value" : "summer-biased/annual?"
+  }, {
+    "@value" : "warmest + coldest"
+  }, {
+    "@value" : "warmest + coldest month"
+  }, {
+    "@value" : "warmest + coldest months"
+  }, {
+    "@value" : "warmest month + winter"
+  }, {
+    "@value" : "warmest month; coldest month"
+  }, {
+    "@value" : "year round"
+  }, {
+    "@value" : "years"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a reconstructed seasonality that consists of an average of twelve consecutive months of the calendar year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annual"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=80"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3324"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "April-May"
+  }, {
+    "@value" : "June-August"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of April to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3365"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4 5 6 7 8 9 10 12"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of April to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3389"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of April to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3377"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of April to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=44"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4 5 6 7"
+  }, {
+    "@value" : "AMJJ"
+  }, {
+    "@value" : "spring-summer (April-July)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of April to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=14"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4 5 2006"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of April to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "April/June to April/March"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=68"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of April and May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3353"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of April to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3337"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4,5,6,7,8,9,10"
+  }, {
+    "@value" : "AMJJASO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of April to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Apr-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Apr-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=56"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "4 5 6 7 8 9"
+  }, {
+    "@value" : "4,5,6,7,8,9"
+  }, {
+    "@value" : "AMJJAS"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of April to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Apr-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=84"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3369"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of August to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3328"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of August to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3341"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of August to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=60"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of August to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 -11 -10 -9 -8 1 2 3 4 5 6 7"
+  }, {
+    "@value" : "thermal year (Aug-Jul) (but 80% of precipitation from Nov to May)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3393"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of August to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3357"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of August to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3381"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of August to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=48"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of August to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=18"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of August to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Aug-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Aug-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=72"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of August and September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aug-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#C3C4Ratio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "composition C3-C4 plants"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "C3C4Ratio"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Coldest_Month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "growing season"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3398"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "coldest"
+  }, {
+    "@value" : "coldest month"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that encompasses the period during which rainfall and temperature allow plants to grow, without specification of certain days or months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coldest Month"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3332"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "12,1,2,3,4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of December to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3373"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of December to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=22"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 1 2"
+  }, {
+    "@value" : "1,2,12"
+  }, {
+    "@value" : "12,1,2"
+  }, {
+    "@value" : "DJF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of December to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=76"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of December and January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3361"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of December to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3345"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of December to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=52"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 1 2 3"
+  }, {
+    "@value" : "12,1,2,3"
+  }, {
+    "@value" : "December - March (monsoon season)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of December to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=64"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "DJFMAM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of December to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3397"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of December to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Dec-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Dec-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3385"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of December to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dec-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#ELA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "equilibrium line altitude"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2303"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a cryospheric quantity that is the elevation at which the mass balance of an ice sheet or glacier is zero over the year, that is where ablation equals accumulation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ELA"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Fall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "fall"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1242"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Autumn"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that encompasses the local period of transition between summer and winter without specification of certain days or months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fall"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=78"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=12"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of February to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3335"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "2 3 4 5 6 7 8"
+  }, {
+    "@value" : "Feb"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of February to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3387"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of February to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=54"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of February to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3322"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of February to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=66"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of February and March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=42"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of February to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3375"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of February to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3363"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of February to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Feb-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Feb-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3351"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of February to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feb-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Growing_Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "coldest month"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3399"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "growing season"
+  }, {
+    "@value" : "growing season? (not stated)"
+  }, {
+    "@value" : "growth season"
+  }, {
+    "@value" : "mainly growing season"
+  }, {
+    "@value" : "with potential addition effects of snowmelt following wet winters"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that is defined as the coldest month of the year, with the actual calendar month being specific to a given geographic location and era."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Growing Season"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=77"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=41"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "April"
+  }, {
+    "@value" : "February"
+  }, {
+    "@value" : "JFMA"
+  }, {
+    "@value" : "January"
+  }, {
+    "@value" : "March"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of January to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3350"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of January to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=65"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of January and February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3334"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "JFMAMJJ"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of January to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=53"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "January-June (spring)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of January to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=11"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "1 2 2003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of January to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3321"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of January to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3386"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of January to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3374"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of January to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jan-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jan-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3362"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of January to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jan-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=83"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "7"
+  }, {
+    "@value" : "July"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3380"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of July to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=71"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of July and August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=59"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "7 8 9 10 11 12"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of July to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3356"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of July to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3340"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of July to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 -11 -10 -9 -8 -7 1 2 3 4 5 6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3368"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of July to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3392"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of July to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3327"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of July to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=47"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "7,8,9,10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of July to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jul-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jul-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=17"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "((( 7 8 2009 ))) null /// 7 8 9"
+  }, {
+    "@value" : "7 8 2009"
+  }, {
+    "@value" : "7,8,9"
+  }, {
+    "@value" : "JAS"
+  }, {
+    "@value" : "summer (JAS)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of July to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jul-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=82"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3391"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of June to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=16"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "((( 6 7 2008 ))) 39606 /// 6 7 8"
+  }, {
+    "@value" : "((( 6 7 2008 ))) null /// 6 7 8"
+  }, {
+    "@value" : "6 7 2008"
+  }, {
+    "@value" : "6,7,8"
+  }, {
+    "@value" : "August"
+  }, {
+    "@value" : "JJA"
+  }, {
+    "@value" : "June,July"
+  }, {
+    "@value" : "Summer (JJA)"
+  }, {
+    "@value" : "summer (JJA)"
+  }, {
+    "@value" : "summer (June-August)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of June to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3339"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of June to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3367"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of June to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3355"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of June to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=70"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "6 7"
+  }, {
+    "@value" : "6,7"
+  }, {
+    "@value" : "June-July minimum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of June and July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3379"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of June to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=58"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "JJASON"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of June to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3326"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "6,7,8,9,10"
+  }, {
+    "@value" : "JJASO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of June to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Jun-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Jun-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=46"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "((( warm season (June-Sept) ))) JJAS /// JJAS"
+  }, {
+    "@value" : "6 7 8 9"
+  }, {
+    "@value" : "6,7,8,9"
+  }, {
+    "@value" : "August"
+  }, {
+    "@value" : "JJAS"
+  }, {
+    "@value" : "July"
+  }, {
+    "@value" : "June"
+  }, {
+    "@value" : "June,July"
+  }, {
+    "@value" : "September"
+  }, {
+    "@value" : "growing season/JJAS"
+  }, {
+    "@value" : "summer (JJAS)"
+  }, {
+    "@value" : "summer (June to September)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of June to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jun-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=79"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=67"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of March and April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=55"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "3 4 5 6 7 8"
+  }, {
+    "@value" : "3,4,5,6,7,8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of March to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3376"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of March to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3388"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of March to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3323"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of March to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=43"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of March to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=13"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "3 4 2005"
+  }, {
+    "@value" : "MAM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of March to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3364"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "March to November"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of March to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3352"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "3 4 5 6 7 8 9 10"
+  }, {
+    "@value" : "3 4 5 6 7 8 9 10 11 12 13 14"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of March to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Mar-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Mar-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3336"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of March to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mar-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=81"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a one month period that spans the month of May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-5 -6 -7 -8 -9 -10 -11 -12 1 2 3 4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=45"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5,6,7,8"
+  }, {
+    "@value" : "MJJA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of May to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3354"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5 6 7 8 9 10 11 12"
+  }, {
+    "@value" : "August"
+  }, {
+    "@value" : "December"
+  }, {
+    "@value" : "July"
+  }, {
+    "@value" : "June"
+  }, {
+    "@value" : "MJJASOND"
+  }, {
+    "@value" : "May"
+  }, {
+    "@value" : "November"
+  }, {
+    "@value" : "October"
+  }, {
+    "@value" : "September"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of May to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3378"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of May to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3366"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of May to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=15"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5 6 2007"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of May to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=69"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MJ"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of May and June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3390"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of May to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3338"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of May to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=57"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5,6,7,8,9,10"
+  }, {
+    "@value" : "August"
+  }, {
+    "@value" : "July"
+  }, {
+    "@value" : "June"
+  }, {
+    "@value" : "MJJASO"
+  }, {
+    "@value" : "May"
+  }, {
+    "@value" : "May to October"
+  }, {
+    "@value" : "October"
+  }, {
+    "@value" : "September"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of May to October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#May-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "May-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3325"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "5,6,7,8,9"
+  }, {
+    "@value" : "August"
+  }, {
+    "@value" : "July"
+  }, {
+    "@value" : "June"
+  }, {
+    "@value" : "MJJAS"
+  }, {
+    "@value" : "May"
+  }, {
+    "@value" : "May to Sept"
+  }, {
+    "@value" : "September"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of May to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "May-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=63"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-11 -12 1 2 3 4"
+  }, {
+    "@value" : "11,12,1,2,3,4"
+  }, {
+    "@value" : "NDJFMA"
+  }, {
+    "@value" : "winter (Nov-April)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of November to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3384"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of November to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=75"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of November and December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=51"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-11 -12 1 2"
+  }, {
+    "@value" : "11,12,1,2"
+  }, {
+    "@value" : "NDJF"
+  }, {
+    "@value" : "November (previous year) to February (current year)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of November to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=21"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "summer (NDJ)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of November to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3372"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of November to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3360"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "11,12,1,2,3,4,5,6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of November to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3331"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "11,12,1,2,3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of November to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3344"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "11,12,1,2,3,4,5"
+  }, {
+    "@value" : "Winter (11,12,1,2,3,4,5)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of November to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 -11 1 2 3 4 5 6 7 8 9 10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Nov-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Nov-Sep"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3396"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of November to September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nov-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3343"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-10 -11 -12 1 2 3 4"
+  }, {
+    "@value" : "10,11,12,1,2,3,4"
+  }, {
+    "@value" : "ONDJFMA"
+  }, {
+    "@value" : "October-April (wet season)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of October to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Aug"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3395"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of October to August."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=20"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "OND"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of October to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3330"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of October to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=50"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "10,11,12,1"
+  }, {
+    "@value" : "ONDJ"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of October to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3383"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of October to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3371"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of October to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=62"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "10,11,12,1,2,3"
+  }, {
+    "@value" : "ONDJFM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of October to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3359"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "1"
+  }, {
+    "@value" : "10"
+  }, {
+    "@value" : "11"
+  }, {
+    "@value" : "12"
+  }, {
+    "@value" : "2"
+  }, {
+    "@value" : "3"
+  }, {
+    "@value" : "4"
+  }, {
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of October to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Oct-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=74"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of October and November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Oct-Sep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Oct (previous year) to Sept (current year)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oct-Sep"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#P-E",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "precipitation minus evaporation"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2312"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Effective Moisture"
+  }, {
+    "@value" : "M"
+  }, {
+    "@value" : "P=E"
+  }, {
+    "@value" : "P_E"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the hydroclimate rate that is the difference in rate between precipitation and evaporation at the earth’s surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "P-E"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Apr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Apr"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3358"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-9 -10 -11 -12 1 2 3 4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eight month period that spans the months of September to April."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Apr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Aug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-12 -11 -10 -9 1 2 3 4 5 6 7 8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Aug"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Dec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Dec"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=49"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a four month period that spans the months of September to December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Dec"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Feb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Feb"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=61"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "-9 -10 -11 -12 1 2 2"
+  }, {
+    "@value" : "SONDJF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a six month period that spans the months of September to February."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Feb"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Jan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Jan"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3329"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a five month period that spans the months of September to January."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Jan"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Jul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Jul"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3394"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an eleven month period that spans the months of September to July."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Jul"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Jun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Jun"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3382"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a ten month period that spans the months of September to June."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Jun"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Mar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Mar"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3342"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a seven month period that spans the months of September to March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Mar"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-May"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3370"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a nine month period that spans the months of September to May."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-May"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Nov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Nov"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=19"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "9 10 11"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a three month period that spans the months of September to November."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Nov"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Sep-Oct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Sep-Oct"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=73"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "9 10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a two month period that spans the months of September and October."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sep-Oct"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Spr-Sum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "probably spring/summer"
+  }, {
+    "@value" : "spring summer"
+  }, {
+    "@value" : "spring-summer"
+  }, {
+    "@value" : "variable"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spr-Sum"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Spring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "spring"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1243"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "spring"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that encompasses the local period of transition between winter and summer without specification of certain days or months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spring"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Summer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "summer"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1244"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "((( SummerOnly ))) summerOnly /// null"
+  }, {
+    "@value" : "AM&JA"
+  }, {
+    "@value" : "Aug"
+  }, {
+    "@value" : "Aug)"
+  }, {
+    "@value" : "August)"
+  }, {
+    "@value" : "Austral summer (Oct-Jan)"
+  }, {
+    "@value" : "June"
+  }, {
+    "@value" : "Mar&Jul"
+  }, {
+    "@value" : "NH summer"
+  }, {
+    "@value" : "Oct)"
+  }, {
+    "@value" : "P_amount (July)"
+  }, {
+    "@value" : "P_amount (June)"
+  }, {
+    "@value" : "T_air (July"
+  }, {
+    "@value" : "early summer"
+  }, {
+    "@value" : "ice-free season"
+  }, {
+    "@value" : "mean summer"
+  }, {
+    "@value" : "mostly summer"
+  }, {
+    "@value" : "summer"
+  }, {
+    "@value" : "summer+"
+  }, {
+    "@value" : "summer-bias"
+  }, {
+    "@value" : "summer?"
+  }, {
+    "@value" : "temperature (July"
+  }, {
+    "@value" : "temperature (May"
+  }, {
+    "@value" : "warm season"
+  }, {
+    "@value" : "warmest quarter yr"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that encompasses the warmest period of the year without specification of certain days or months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Summer"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Warmest_Month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "231Pa excess"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4000"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "warmest"
+  }, {
+    "@value" : "warmest month"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the concentration of 231Pa that is produced by the decay of dissolved 235U in the water column, that is measured sedimentary 231Pa with any contributions from detrital material or decay of sedimentary 235U removed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Warmest Month"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Wet_Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Andean wet season"
+  }, {
+    "@value" : "Monsoon"
+  }, {
+    "@value" : "monsoon"
+  }, {
+    "@value" : "monsoon season"
+  }, {
+    "@value" : "wet season"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wet Season"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Win-Spr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "winter/spring"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Win-Spr"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#Winter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "winter"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1245"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "mostly winter"
+  }, {
+    "@value" : "winter"
+  }, {
+    "@value" : "winter+"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a non-calendric period that encompasses the coldest period of the year without specification of certain days or months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Winter"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#circulationIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "circulation index"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2270"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MODE"
+  }, {
+    "@value" : "NAO index"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a circulation variable that describes or quantifies a climate pattern with identifiable characteristics, specific regional effects, and often oscillatory behavior (Credit: Wikipedia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "circulationIndex"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#circulationVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "circulation variable"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4885"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Circulation"
+  }, {
+    "@value" : "changes in monsoon intensity."
+  }, {
+    "@value" : "circulation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an earth system variable that describes or quantifies motion and related properties in the atmosphere or ocean."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "circulationVariable"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#dissolvedOxygen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "dissolved oxygen"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4766"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "suboxia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the amount of gaseous oxygen dissolved in water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dissolvedOxygen"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#dust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "dust"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=867"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "DUST"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a bulk geological material that consists of organic or inorganic particles of typically clay and silt size that are transportable by wind."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dust"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#evaporation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "evaporation"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4733"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Evaporation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the hydroclimatic rate of water transfer to the atmosphere from soil, waterbodies, and canopy interception, excluding transpiration from plants."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaporation"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#fire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "fire history"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=115"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "FIRE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a data type that includes measurements made to deduce the past history of fire, whether from tree rings, sediment, or other natural archives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fire"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#growingDegreeDays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "growing degree days"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1386"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "GDD"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a temperature index that integrates warmth above a base temperature (usually 10 degrees Celsius) through time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "growingDegreeDays"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#hydrologicBalance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "GW-E"
+  }, {
+    "@value" : "Hydrology"
+  }, {
+    "@value" : "I_E"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hydrologicBalance"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#lakeWaterIsotope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Liso"
+  }, {
+    "@value" : "lake water and precipitation d2H"
+  }, {
+    "@value" : "lake water d18O"
+  }, {
+    "@value" : "lake water d2H"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lakeWaterIsotope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#meltwater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ice melt"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4951"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Meltwater"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the ice mass loss from a glacier, ice-cap, ice-sheet, or ice-shelf through phase transformation to liquid water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "meltwater"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#needsToBeChanged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "1,10"
+  }, {
+    "@value" : "1,11"
+  }, {
+    "@value" : "N/A"
+  }, {
+    "@value" : "but d18O may reflect high summer rain"
+  }, {
+    "@value" : "changes depending on which season provides source moisture for plants"
+  }, {
+    "@value" : "depends"
+  }, {
+    "@value" : "inflow@surface"
+  }, {
+    "@value" : "not indicated"
+  }, {
+    "@value" : "or both"
+  }, {
+    "@value" : "under present conditions"
+  }, {
+    "@value" : "unknown"
+  }, {
+    "@value" : "upwelling"
+  }, {
+    "@value" : "upwelling season"
+  }, {
+    "@value" : "wet years often have higehr amount of winter rain"
+  }, {
+    "@value" : "winter rain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "needsToBeChanged"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#needsToBeReplaced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Carbonate_ion_concentration"
+  }, {
+    "@value" : "GDGT"
+  }, {
+    "@value" : "Liso/P-E"
+  }, {
+    "@value" : "Mixed"
+  }, {
+    "@value" : "T+ELA"
+  }, {
+    "@value" : "anoxia"
+  }, {
+    "@value" : "export-productivity"
+  }, {
+    "@value" : "mixed"
+  }, {
+    "@value" : "organic matter source"
+  }, {
+    "@value" : "plant community composition"
+  }, {
+    "@value" : "precipitation d2H + evap"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "needsToBeReplaced"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#precipitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "precipitation"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=560"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "P"
+  }, {
+    "@value" : "P_amount"
+  }, {
+    "@value" : "Pmax"
+  }, {
+    "@value" : "Pmin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the hydroclimatic rate of rain, snow, sleet or hail that falls to the ground."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "precipitation"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#precipitationDeuteriumExcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "precipitation d-excess"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "precipitationDeuteriumExcess"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#precipitationIsotope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "PISO"
+  }, {
+    "@value" : "P_isotope"
+  }, {
+    "@value" : "Precipitation Isotope"
+  }, {
+    "@value" : "Source"
+  }, {
+    "@value" : "d18O of precipitation"
+  }, {
+    "@value" : "dD"
+  }, {
+    "@value" : "precipitation d18O"
+  }, {
+    "@value" : "precipitation d2H"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "precipitationIsotope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#productivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "productivity"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3293"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Algal productivity"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "an ecosystem process variable that quantifies the rate of generation of biomass in an ecosystem."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "productivity"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#relativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "relative humidity"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2314"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "RH"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the hydroclimate ratio of water vapor present in air to the amount of water needed to achieve saturation at the local temperature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relativeHumidity"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#salinity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "salinity"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4396"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "S"
+  }, {
+    "@value" : "SSS"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a solution property that is the amount of salt dissolved in a body of water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "salinity"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#seaIce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "sea ice cover"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2317"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "ICE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a cryospheric quantity that is a measure of the extent to which the ocean surface is covered by sea ice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "seaIce"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#seasonality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "seasonality"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the specific part of the annual cycle explicitly reconstructed from raw values."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "seasonality"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#seawaterIsotope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "seawater_isotope"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "seawaterIsotope"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#streamflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "streamflow"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1396"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Q"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the hydroclimatic rate of flow of water in streams, rivers, and other channels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "streamflow"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#subannual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "N/A (subannually resolved)"
+  }, {
+    "@value" : "not applicable (subannually resolved)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationSeasonality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The dataset is subannually resolved so seasonal variability is explicit in the timeseries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subannual"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#sunlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "solar irradiance"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4376"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "SUN"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a forcing variable that is the radiation from the sun integrated over the whole electromagnetic spectrum and over the entire solar disk. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sunlight"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#surfacePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "surface pressure"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4720"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "surface pressure"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a pressure variable that is the atmospheric pressure at the earth’s surface at a given location and time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surfacePressure"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "temperature"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4067"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "SST"
+  }, {
+    "@value" : "Surface water temp"
+  }, {
+    "@value" : "T"
+  }, {
+    "@value" : "T_air"
+  }, {
+    "@value" : "T_water"
+  }, {
+    "@value" : "Temperature_water"
+  }, {
+    "@value" : "lake water temperature"
+  }, {
+    "@value" : "subT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the mean temperature over a particular time period."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "temperature"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#upwelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "Upwelling Index"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4771"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a circulation index that is a measure of the volume of water upwelling in the ocean."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "upwelling"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/interpretation#windSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "wind speed"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=3413"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "W"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/interpretation#InterpretationVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a velocity variable that is the velocity of wind at some height in the atmosphere."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "windSpeed"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

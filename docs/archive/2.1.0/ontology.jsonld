@@ -1,0 +1,397 @@
+[ {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasNoaaPastUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology#hasSynonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://w3id.org/people/dgarijo"
+  }, {
+    "@id" : "http://www.isi.edu/~gil/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://earth.usc.edu/~khider/"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-5920-4751"
+  }, {
+    "@id" : "http://www.cefns.nau.edu/~npm4/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/2.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Archive Type Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "archive"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://linked.earth/ontology/archive#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://linked.earth/ontology/archive/2.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "2.0.0"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#ArchiveType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The medium in which the response of a sensor to environmental forcing is recorded. Sensu Evans et al. (2013).\n\nExamples of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Proxy archive"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Borehole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "borehole"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=114"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data type that consists of direct measurements of subsurface temperature from boreholes drilled into materials such as rock and glacier ice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Borehole"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Coral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "coral"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=245"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an identifiable organism that belongs to the kingdom Animalia, phylum Cnindaria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coral"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Documents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "documents"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "added due to some LiPD files using this"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Documents"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#FluvialSediment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Creek"
+  }, {
+    "@value" : "Fluvial"
+  }, {
+    "@value" : "River"
+  }, {
+    "@value" : "Stream"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fluvial sediment"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#GlacierIce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "ice cores"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=102"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data type that includes measurements made on land-based ice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Glacier ice"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#GroundIce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "bulk ice"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=789"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a hydrologic material that is a whole sample of recrystallized and compacted snow, without any separation of components."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ground ice"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#LakeSediment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Lagoon"
+  }, {
+    "@value" : "Lake"
+  }, {
+    "@value" : "Lake Sediment"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sediment deposited in a lake"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lake sediment"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#MarineSediment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Delta"
+  }, {
+    "@value" : "Marine"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Marine sediment"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Midden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Midden"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#MolluskShell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "bivalve"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1772"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "MolluskShells"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an identifiable organism including clams and mussels that belongs to the kingdom Animalia, phylum Mollusca, class Bivalvia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mollusk shell"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Other",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "other"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "added due to some LiPD files using this"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Other"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Peat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "peat"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=1623"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Bog"
+  }, {
+    "@value" : "Fen"
+  }, {
+    "@value" : "Marsh"
+  }, {
+    "@value" : "Mire"
+  }, {
+    "@value" : "Swamp"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a bulk biological material that consists of an unconsolidated combustible deposit of partially carbonized plant remains, common in bogs, fens, and lakes in tundra or periglacial regions (Credit: Smol et al. 2001 Tracking Environmental Change Using Lake Sediments)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Peat"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Sclerosponge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "sclerosponge"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=4574"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an identifiable organism that belongs to kingdom Animalia, phylum Porifera, class Demospongiae."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sclerosponge"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Shoreline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "lake levels"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=2298"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "LakeDeposit"
+  }, {
+    "@value" : "LakeDeposits"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data type that quantifies past changes in lake elevation or lake depth, either directly or using reconstruction methods, based on shoreline deposits or sediment cores."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Shoreline"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Speleothem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "speleothems"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=106"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Cave"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data type that includes measurements made on cave deposits."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Speleothem"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#TerrestrialSediment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "Dune"
+  }, {
+    "@value" : "Loess"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Terrestrial sediment"
+  } ]
+}, {
+  "@id" : "http://linked.earth/ontology/archive#Wood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linked.earth/ontology#hasNoaaPastName" : [ {
+    "@value" : "tree ring"
+  } ],
+  "http://linked.earth/ontology#hasNoaaPastUrl" : [ {
+    "@value" : "https://www.ncei.noaa.gov/access/paleo-search/cvterms?termId=116"
+  } ],
+  "http://linked.earth/ontology#hasSynonym" : [ {
+    "@value" : "tree"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linked.earth/ontology/archive#ArchiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data type that includes measurements made on the rings of trees."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wood"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

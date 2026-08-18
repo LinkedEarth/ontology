@@ -31,39 +31,27 @@ Everything else on the site continues to work exactly as before — the worker o
 
 ---
 
-## What Needs to Change
+## Setup (split between you and your coworker)
 
-### Step 1: Add `linked.earth` to Cloudflare (if not already there)
+### Steps YOU do (Cloudflare account setup, Worker, routes)
 
-If the domain is not yet managed by Cloudflare:
+#### Step 1: Add `linked.earth` to Cloudflare
 
-1. Create a free Cloudflare account at https://dash.cloudflare.com
-2. Click "Add a site" → enter `linked.earth`
+1. Create a free Cloudflare account at https://dash.cloudflare.com (or log in)
+2. Click **Add a site** → enter `linked.earth`
 3. Select the **Free** plan
 4. Cloudflare will scan existing DNS records. Verify that the 4 A records above are present
-5. Cloudflare will provide two nameservers (e.g., `anna.ns.cloudflare.com`, `bob.ns.cloudflare.com`)
-6. Go to your domain registrar and update the nameservers to the ones Cloudflare provides
-7. Wait for propagation (usually minutes, can take up to 24 hours)
+5. Toggle all 4 A records to **Proxied** mode (orange cloud icon)
+6. Cloudflare will show two nameservers it assigns (e.g., `anna.ns.cloudflare.com`, `bob.ns.cloudflare.com`) — **note these down** for your coworker
 
-### Step 2: Enable Proxy Mode (orange cloud)
+#### Step 2: SSL/TLS Settings
 
-In the Cloudflare dashboard → DNS → Records:
-
-- Find the 4 A records for `linked.earth`
-- Click the grey cloud icon next to each one to toggle it to **Proxied** (orange cloud ☁️)
-- This makes traffic flow through Cloudflare, which is required for the Worker to intercept requests
-- The A records stay pointing to the same GitHub Pages IPs — no IP changes needed
-
-> **Important**: Leave any other subdomains (e.g., `www`, `wiki`) as-is unless they also need Workers.
-
-### Step 3: SSL/TLS Settings
-
-In the Cloudflare dashboard → SSL/TLS:
+In the Cloudflare dashboard → **SSL/TLS**:
 
 - Set encryption mode to **Full** (not "Full (strict)")
 - This is needed because GitHub Pages has its own SSL certificate, but it won't match Cloudflare's validation for "strict" mode
 
-### Step 4: Create and Deploy the Worker
+#### Step 3: Create and Deploy the Worker
 
 Option A — **Via Cloudflare Dashboard** (no CLI needed):
 
@@ -82,7 +70,7 @@ cd cloudflare-worker/
 wrangler deploy
 ```
 
-### Step 5: Add the Worker Route
+#### Step 4: Add the Worker Route
 
 1. In the Cloudflare dashboard → **Workers & Pages** → `linked-earth-ontology`
 2. Go to **Settings** → **Triggers** (or **Routes**)
@@ -92,13 +80,29 @@ wrangler deploy
    - **Zone**: `linked.earth`
 5. Save
 
-This tells Cloudflare: "run this Worker on any request to `linked.earth/ontology...`"
+> At this point everything is configured. The site will continue to work on GitHub Pages as before until the nameservers are switched. Nothing breaks.
+
+---
+
+### Step your COWORKER does (DNS nameserver change)
+
+The only thing your coworker needs to do:
+
+1. Log in to the **domain registrar** where `linked.earth` is registered
+2. Find the **nameserver settings** for `linked.earth`
+3. Replace the current nameservers with the two Cloudflare nameservers (from Step 1 above), e.g.:
+   - `anna.ns.cloudflare.com`
+   - `bob.ns.cloudflare.com`
+   - (The exact names will be shown in your Cloudflare dashboard)
+4. Save and wait for propagation (usually minutes, can take up to 24 hours)
+
+That's it — no IP changes, no other DNS records to modify. The A records are already configured in Cloudflare from Step 1.
 
 ---
 
 ## Verification
 
-Once deployed, test with these commands:
+Once nameservers have propagated, test with these commands:
 
 ```bash
 # Should return Turtle content

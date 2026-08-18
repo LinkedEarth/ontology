@@ -29,7 +29,7 @@ authors:
     given-names: "Elizabeth"
     orcid: "https://orcid.org/0000-0002-4567-2543"
 title: "The Linked Earth Ontology: A Modular, Extensible Representation of Open Paleoclimate Data"
-version: v2.0.0
+version: v2.1.1
 doi: 10.5281/zenodo.2577604
-date-released: 2026-03-16
+date-released: 2026-08-18
 url: "https://github.com/LinkedEarth/ontology"

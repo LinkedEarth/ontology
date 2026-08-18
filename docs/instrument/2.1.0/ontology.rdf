@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://linked.earth/ontolog/instrument#"
-     xml:base="http://linked.earth/ontolog/instrument"
+<rdf:RDF xmlns="http://linked.earth/ontology/instrument#"
+     xml:base="http://linked.earth/ontology/instrument"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,8 +8,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://linked.earth/ontolog/instrument#">
-        <owl:versionIRI rdf:resource="http://linked.earth/ontology/instrument/1.0.0"/>
+    <owl:Ontology rdf:about="http://linked.earth/ontology/instrument#">
+        <owl:versionIRI rdf:resource="http://linked.earth/ontology/instrument/2.1.0"/>
         <terms:contributor rdf:resource="http://w3id.org/people/dgarijo"/>
         <terms:contributor rdf:resource="http://www.isi.edu/~gil/"/>
         <terms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
@@ -19,7 +19,7 @@
         <terms:title xml:lang="en">The Linked Earth Instrument Ontology</terms:title>
         <vann:preferredNamespacePrefix>le</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://linked.earth/ontology/instrument#</vann:preferredNamespaceUri>
-        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -90,303 +90,303 @@
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#MassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#MassSpectrometer"/>
         <rdfs:label xml:lang="en">Accelerator mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometerInstrument -->
+    <!-- http://linked.earth/ontology/instrument#AcceleratorMassSpectrometerInstrument -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometerInstrument">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#AcceleratorMassSpectrometerInstrument">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer"/>
         <rdfs:label xml:lang="en">Accelerator mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#BinocularMicroscope -->
+    <!-- http://linked.earth/ontology/instrument#BinocularMicroscope -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#BinocularMicroscope">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Microscope"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#BinocularMicroscope">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Microscope"/>
         <rdfs:label xml:lang="en">Binocular microscope</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#CFAMS -->
+    <!-- http://linked.earth/ontology/instrument#CFAMS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#CFAMS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#CFAMS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer"/>
         <rdfs:label xml:lang="en">Continuous-flow AMS system</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#CRDS -->
+    <!-- http://linked.earth/ontology/instrument#CRDS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#CRDS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectroscope"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#CRDS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectroscope"/>
         <rdfs:label xml:lang="en">Cavity Ring-Down Spectroscopy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#EnergyDispersiveSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#EnergyDispersiveSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#EnergyDispersiveSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#EnergyDispersiveSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectrometer"/>
         <rdfs:label xml:lang="en">Energy dispersive spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#GC-IR-MS -->
+    <!-- http://linked.earth/ontology/instrument#GC-IR-MS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#GC-IR-MS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#GC-IR-MS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#GasChromatographyMassSpectrometer"/>
         <rdfs:label xml:lang="en">Gas Chromatography - Isotope ratio -Mass Spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#GCMS -->
+    <!-- http://linked.earth/ontology/instrument#GCMS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#GCMS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#GCMS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#GasChromatographyMassSpectrometer"/>
         <rdfs:label xml:lang="en">Gas chromatography mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#GasChromatograph -->
+    <!-- http://linked.earth/ontology/instrument#GasChromatograph -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#GasChromatograph">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Instrument"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#GasChromatograph">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Instrument"/>
         <rdfs:label xml:lang="en">Gas chromatograph</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#GasChromatographyMassSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#MassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#GasChromatographyMassSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#MassSpectrometer"/>
         <rdfs:label xml:lang="en">Gas chromatography - mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#ICP-AES -->
+    <!-- http://linked.earth/ontology/instrument#ICP-AES -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#ICP-AES">
-        <owl:equivalentClass rdf:resource="http://linked.earth/ontolog/instrument#ICP-OES"/>
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectroscope"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#ICP-AES">
+        <owl:equivalentClass rdf:resource="http://linked.earth/ontology/instrument#ICP-OES"/>
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectroscope"/>
         <rdfs:comment xml:lang="en">Inductively coupled plasma atomic emission spectroscopy (ICP-AES), also referred to as inductively coupled plasma optical emission spectrometry (ICP-OES), is an analytical technique used for the detection of trace metals.</rdfs:comment>
         <rdfs:label xml:lang="en">Inductively coupled plasma atomic emission spectroscope</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#ICP-MS -->
+    <!-- http://linked.earth/ontology/instrument#ICP-MS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#ICP-MS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#ICP-MS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer"/>
         <rdfs:label xml:lang="en">Inductively coupled plasma mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#ICP-OES -->
+    <!-- http://linked.earth/ontology/instrument#ICP-OES -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#ICP-OES">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectroscope"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#ICP-OES">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectroscope"/>
         <rdfs:label xml:lang="en">Inductively coupled plasma optical emission spectrometry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#IRMS -->
+    <!-- http://linked.earth/ontology/instrument#IRMS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#IRMS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#IRMS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer"/>
         <rdfs:comment xml:lang="en">An &lt;b&gt;isotope-ration mass spectrometer&lt;/b&gt; measures the relative abundance of isotopes in a given sample.</rdfs:comment>
         <rdfs:label xml:lang="en">Isotope ratio mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#Instrument -->
+    <!-- http://linked.earth/ontology/instrument#Instrument -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#Instrument">
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#Instrument">
         <rdfs:label xml:lang="en">Instrument</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#MassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#MassSpectrometer"/>
         <rdfs:label xml:lang="en">Isotope ratio mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#LA-ICP-MS -->
+    <!-- http://linked.earth/ontology/instrument#LA-ICP-MS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#LA-ICP-MS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#LA-ICP-MS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer"/>
         <rdfs:label xml:lang="en">Laser-ablation (LA) Inductively coupled plasma mass spectrometry (ICP-MS)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#MC-ICP-MS -->
+    <!-- http://linked.earth/ontology/instrument#MC-ICP-MS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#MC-ICP-MS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#MC-ICP-MS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer"/>
         <rdfs:label xml:lang="en">Multi-collector (MC) Inductively coupled plasma mass spectrometry (ICPMS)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#MassSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#MassSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#MassSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#MassSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectrometer"/>
         <rdfs:label xml:lang="en">Mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#MassSpectrometerInstrument -->
+    <!-- http://linked.earth/ontology/instrument#MassSpectrometerInstrument -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#MassSpectrometerInstrument">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#MassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#MassSpectrometerInstrument">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#MassSpectrometer"/>
         <rdfs:label xml:lang="en">Mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#Microscope -->
+    <!-- http://linked.earth/ontology/instrument#Microscope -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#Microscope">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Instrument"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#Microscope">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Instrument"/>
         <rdfs:label xml:lang="en">Microscope</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#NOSAMSTandetron -->
+    <!-- http://linked.earth/ontology/instrument#NOSAMSTandetron -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#NOSAMSTandetron">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#NOSAMSTandetron">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer"/>
         <rdfs:label xml:lang="en">NOSAMS tandetron</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#RockHammer -->
+    <!-- http://linked.earth/ontology/instrument#RockHammer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#RockHammer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Instrument"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#RockHammer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Instrument"/>
         <rdfs:label xml:lang="en">Rock hammer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#SHRIMP -->
+    <!-- http://linked.earth/ontology/instrument#SHRIMP -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#SHRIMP">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#SHRIMP">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#SecondaryIonMassSpectrometer"/>
         <rdfs:label xml:lang="en">Sensitive high-resolution ion microprobe</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#SIMS -->
+    <!-- http://linked.earth/ontology/instrument#SIMS -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#SIMS">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#SIMS">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#SecondaryIonMassSpectrometer"/>
         <rdfs:label xml:lang="en">Secondary ion mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#SecondaryIonMassSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#MassSpectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#SecondaryIonMassSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#MassSpectrometer"/>
         <rdfs:label xml:lang="en">Secondary ion mass spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#Spectrometer -->
+    <!-- http://linked.earth/ontology/instrument#Spectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#Spectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Instrument"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#Spectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Instrument"/>
         <rdfs:label xml:lang="en">Spectrometer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#Spectroscope -->
+    <!-- http://linked.earth/ontology/instrument#Spectroscope -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#Spectroscope">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Instrument"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#Spectroscope">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Instrument"/>
         <rdfs:label xml:lang="en">Spectroscope</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#WavelengthDispersiveSpectrometer -->
+    <!-- http://linked.earth/ontology/instrument#WavelengthDispersiveSpectrometer -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#WavelengthDispersiveSpectrometer">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Spectrometer"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#WavelengthDispersiveSpectrometer">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Spectrometer"/>
         <rdfs:label xml:lang="en">Wavelength dispersive spectrometry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://linked.earth/ontolog/instrument#ZeissPetrographicMicroscope -->
+    <!-- http://linked.earth/ontology/instrument#ZeissPetrographicMicroscope -->
 
 
-    <owl:Class rdf:about="http://linked.earth/ontolog/instrument#ZeissPetrographicMicroscope">
-        <rdfs:subClassOf rdf:resource="http://linked.earth/ontolog/instrument#Microscope"/>
+    <owl:Class rdf:about="http://linked.earth/ontology/instrument#ZeissPetrographicMicroscope">
+        <rdfs:subClassOf rdf:resource="http://linked.earth/ontology/instrument#Microscope"/>
         <rdfs:label xml:lang="en">Zeiss petrographic microscope</rdfs:label>
     </owl:Class>
 </rdf:RDF>

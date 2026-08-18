@@ -1,5 +1,5 @@
 <http://linked.earth/ontology/archive#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/archive/2.0.0> .
+<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionIRI> <http://linked.earth/ontology/archive/2.1.0> .
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> .
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/contributor> <http://www.isi.edu/~gil/> .
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> .
@@ -9,7 +9,7 @@
 <http://linked.earth/ontology/archive#> <http://purl.org/dc/terms/title> "The Archive Type Ontology"@en .
 <http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "archive" .
 <http://linked.earth/ontology/archive#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/archive#" .
-<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0"@en .
+<http://linked.earth/ontology/archive#> <http://www.w3.org/2002/07/owl#versionInfo> "2.1.0"@en .
 # 
 # 
 # #################################################################

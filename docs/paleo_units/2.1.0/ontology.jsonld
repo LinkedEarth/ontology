@@ -36,11 +36,11 @@
     "@value" : "http://linked.earth/ontology/paleo_units#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://linked.earth/ontology/paleo_units/2.0.0"
+    "@id" : "http://linked.earth/ontology/paleo_units/2.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "2.0.0"
+    "@value" : "2.1.0"
   } ]
 }, {
   "@id" : "http://linked.earth/ontology/paleo_units#PaleoUnit",

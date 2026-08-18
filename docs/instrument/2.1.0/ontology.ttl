@@ -1,13 +1,13 @@
-@prefix : <http://linked.earth/ontolog/instrument#> .
+@prefix : <http://linked.earth/ontology/instrument#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://linked.earth/ontolog/instrument#> .
+@base <http://linked.earth/ontology/instrument#> .
 
-<http://linked.earth/ontolog/instrument#> rdf:type owl:Ontology ;
-                                           owl:versionIRI <http://linked.earth/ontology/instrument/1.0.0> ;
+<http://linked.earth/ontology/instrument#> rdf:type owl:Ontology ;
+                                           owl:versionIRI <http://linked.earth/ontology/instrument/2.1.0> ;
                                            <http://purl.org/dc/terms/contributor> <http://w3id.org/people/dgarijo> ,
                                                                                   <http://www.isi.edu/~gil/> ;
                                            <http://purl.org/dc/terms/creator> <http://earth.usc.edu/~khider/> ,
@@ -17,7 +17,7 @@
                                            <http://purl.org/dc/terms/title> "The Linked Earth Instrument Ontology"@en ;
                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "le" ;
                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://linked.earth/ontology/instrument#" ;
-                                           owl:versionInfo "1.0.0"@en .
+                                           owl:versionInfo "2.1.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -51,67 +51,67 @@
 #    Classes
 #################################################################
 
-###  http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometer
+###  http://linked.earth/ontology/instrument#AcceleratorMassSpectrometer
 :AcceleratorMassSpectrometer rdf:type owl:Class ;
                              rdfs:subClassOf :MassSpectrometer ;
                              rdfs:label "Accelerator mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#AcceleratorMassSpectrometerInstrument
+###  http://linked.earth/ontology/instrument#AcceleratorMassSpectrometerInstrument
 :AcceleratorMassSpectrometerInstrument rdf:type owl:Class ;
                                        rdfs:subClassOf :AcceleratorMassSpectrometer ;
                                        rdfs:label "Accelerator mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#BinocularMicroscope
+###  http://linked.earth/ontology/instrument#BinocularMicroscope
 :BinocularMicroscope rdf:type owl:Class ;
                      rdfs:subClassOf :Microscope ;
                      rdfs:label "Binocular microscope"@en .
 
 
-###  http://linked.earth/ontolog/instrument#CFAMS
+###  http://linked.earth/ontology/instrument#CFAMS
 :CFAMS rdf:type owl:Class ;
        rdfs:subClassOf :AcceleratorMassSpectrometer ;
        rdfs:label "Continuous-flow AMS system"@en .
 
 
-###  http://linked.earth/ontolog/instrument#CRDS
+###  http://linked.earth/ontology/instrument#CRDS
 :CRDS rdf:type owl:Class ;
       rdfs:subClassOf :Spectroscope ;
       rdfs:label "Cavity Ring-Down Spectroscopy"@en .
 
 
-###  http://linked.earth/ontolog/instrument#EnergyDispersiveSpectrometer
+###  http://linked.earth/ontology/instrument#EnergyDispersiveSpectrometer
 :EnergyDispersiveSpectrometer rdf:type owl:Class ;
                               rdfs:subClassOf :Spectrometer ;
                               rdfs:label "Energy dispersive spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#GC-IR-MS
+###  http://linked.earth/ontology/instrument#GC-IR-MS
 :GC-IR-MS rdf:type owl:Class ;
           rdfs:subClassOf :GasChromatographyMassSpectrometer ;
           rdfs:label "Gas Chromatography - Isotope ratio -Mass Spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#GCMS
+###  http://linked.earth/ontology/instrument#GCMS
 :GCMS rdf:type owl:Class ;
       rdfs:subClassOf :GasChromatographyMassSpectrometer ;
       rdfs:label "Gas chromatography mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#GasChromatograph
+###  http://linked.earth/ontology/instrument#GasChromatograph
 :GasChromatograph rdf:type owl:Class ;
                   rdfs:subClassOf :Instrument ;
                   rdfs:label "Gas chromatograph"@en .
 
 
-###  http://linked.earth/ontolog/instrument#GasChromatographyMassSpectrometer
+###  http://linked.earth/ontology/instrument#GasChromatographyMassSpectrometer
 :GasChromatographyMassSpectrometer rdf:type owl:Class ;
                                    rdfs:subClassOf :MassSpectrometer ;
                                    rdfs:label "Gas chromatography - mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#ICP-AES
+###  http://linked.earth/ontology/instrument#ICP-AES
 :ICP-AES rdf:type owl:Class ;
          owl:equivalentClass :ICP-OES ;
          rdfs:subClassOf :Spectroscope ;
@@ -119,115 +119,115 @@
          rdfs:label "Inductively coupled plasma atomic emission spectroscope"@en .
 
 
-###  http://linked.earth/ontolog/instrument#ICP-MS
+###  http://linked.earth/ontology/instrument#ICP-MS
 :ICP-MS rdf:type owl:Class ;
         rdfs:subClassOf :IsotopeRatioMassSpectrometer ;
         rdfs:label "Inductively coupled plasma mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#ICP-OES
+###  http://linked.earth/ontology/instrument#ICP-OES
 :ICP-OES rdf:type owl:Class ;
          rdfs:subClassOf :Spectroscope ;
          rdfs:label "Inductively coupled plasma optical emission spectrometry"@en .
 
 
-###  http://linked.earth/ontolog/instrument#IRMS
+###  http://linked.earth/ontology/instrument#IRMS
 :IRMS rdf:type owl:Class ;
       rdfs:subClassOf :IsotopeRatioMassSpectrometer ;
       rdfs:comment "An <b>isotope-ration mass spectrometer</b> measures the relative abundance of isotopes in a given sample."@en ;
       rdfs:label "Isotope ratio mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#Instrument
+###  http://linked.earth/ontology/instrument#Instrument
 :Instrument rdf:type owl:Class ;
             rdfs:label "Instrument"@en .
 
 
-###  http://linked.earth/ontolog/instrument#IsotopeRatioMassSpectrometer
+###  http://linked.earth/ontology/instrument#IsotopeRatioMassSpectrometer
 :IsotopeRatioMassSpectrometer rdf:type owl:Class ;
                               rdfs:subClassOf :MassSpectrometer ;
                               rdfs:label "Isotope ratio mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#LA-ICP-MS
+###  http://linked.earth/ontology/instrument#LA-ICP-MS
 :LA-ICP-MS rdf:type owl:Class ;
            rdfs:subClassOf :IsotopeRatioMassSpectrometer ;
            rdfs:label "Laser-ablation (LA) Inductively coupled plasma mass spectrometry (ICP-MS)"@en .
 
 
-###  http://linked.earth/ontolog/instrument#MC-ICP-MS
+###  http://linked.earth/ontology/instrument#MC-ICP-MS
 :MC-ICP-MS rdf:type owl:Class ;
            rdfs:subClassOf :IsotopeRatioMassSpectrometer ;
            rdfs:label "Multi-collector (MC) Inductively coupled plasma mass spectrometry (ICPMS)"@en .
 
 
-###  http://linked.earth/ontolog/instrument#MassSpectrometer
+###  http://linked.earth/ontology/instrument#MassSpectrometer
 :MassSpectrometer rdf:type owl:Class ;
                   rdfs:subClassOf :Spectrometer ;
                   rdfs:label "Mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#MassSpectrometerInstrument
+###  http://linked.earth/ontology/instrument#MassSpectrometerInstrument
 :MassSpectrometerInstrument rdf:type owl:Class ;
                             rdfs:subClassOf :MassSpectrometer ;
                             rdfs:label "Mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#Microscope
+###  http://linked.earth/ontology/instrument#Microscope
 :Microscope rdf:type owl:Class ;
             rdfs:subClassOf :Instrument ;
             rdfs:label "Microscope"@en .
 
 
-###  http://linked.earth/ontolog/instrument#NOSAMSTandetron
+###  http://linked.earth/ontology/instrument#NOSAMSTandetron
 :NOSAMSTandetron rdf:type owl:Class ;
                  rdfs:subClassOf :AcceleratorMassSpectrometer ;
                  rdfs:label "NOSAMS tandetron"@en .
 
 
-###  http://linked.earth/ontolog/instrument#RockHammer
+###  http://linked.earth/ontology/instrument#RockHammer
 :RockHammer rdf:type owl:Class ;
             rdfs:subClassOf :Instrument ;
             rdfs:label "Rock hammer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#SHRIMP
+###  http://linked.earth/ontology/instrument#SHRIMP
 :SHRIMP rdf:type owl:Class ;
         rdfs:subClassOf :SecondaryIonMassSpectrometer ;
         rdfs:label "Sensitive high-resolution ion microprobe"@en .
 
 
-###  http://linked.earth/ontolog/instrument#SIMS
+###  http://linked.earth/ontology/instrument#SIMS
 :SIMS rdf:type owl:Class ;
       rdfs:subClassOf :SecondaryIonMassSpectrometer ;
       rdfs:label "Secondary ion mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#SecondaryIonMassSpectrometer
+###  http://linked.earth/ontology/instrument#SecondaryIonMassSpectrometer
 :SecondaryIonMassSpectrometer rdf:type owl:Class ;
                               rdfs:subClassOf :MassSpectrometer ;
                               rdfs:label "Secondary ion mass spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#Spectrometer
+###  http://linked.earth/ontology/instrument#Spectrometer
 :Spectrometer rdf:type owl:Class ;
               rdfs:subClassOf :Instrument ;
               rdfs:label "Spectrometer"@en .
 
 
-###  http://linked.earth/ontolog/instrument#Spectroscope
+###  http://linked.earth/ontology/instrument#Spectroscope
 :Spectroscope rdf:type owl:Class ;
               rdfs:subClassOf :Instrument ;
               rdfs:label "Spectroscope"@en .
 
 
-###  http://linked.earth/ontolog/instrument#WavelengthDispersiveSpectrometer
+###  http://linked.earth/ontology/instrument#WavelengthDispersiveSpectrometer
 :WavelengthDispersiveSpectrometer rdf:type owl:Class ;
                                   rdfs:subClassOf :Spectrometer ;
                                   rdfs:label "Wavelength dispersive spectrometry"@en .
 
 
-###  http://linked.earth/ontolog/instrument#ZeissPetrographicMicroscope
+###  http://linked.earth/ontology/instrument#ZeissPetrographicMicroscope
 :ZeissPetrographicMicroscope rdf:type owl:Class ;
                              rdfs:subClassOf :Microscope ;
                              rdfs:label "Zeiss petrographic microscope"@en .

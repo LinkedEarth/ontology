@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://linked.earth/ontology/interpretation/2.0.0> a prov:Entity;
+<http://linked.earth/ontology/interpretation/2.1.0> a prov:Entity;
 	 dc:title "The Interpretation Ontology";
 	 prov:wasAttributedTo <http://earth.usc.edu/~khider/>;
 	 dc:creator <http://earth.usc.edu/~khider/>;

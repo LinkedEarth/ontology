@@ -27,11 +27,11 @@
     "@value" : "http://linked.earth/ontology/chron_variables#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://linked.earth/ontology/chron_variables/2.0.0"
+    "@id" : "http://linked.earth/ontology/chron_variables/2.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "2.0.0"
+    "@value" : "2.1.0"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",

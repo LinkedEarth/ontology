@@ -10,7 +10,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="http://linked.earth/ontology#">
     <owl:Ontology rdf:about="http://linked.earth/ontology/paleo_units#">
-        <owl:versionIRI rdf:resource="http://linked.earth/ontology/paleo_units/2.0.0"/>
+        <owl:versionIRI rdf:resource="http://linked.earth/ontology/paleo_units/2.1.0"/>
         <terms:contributor rdf:resource="http://earth.usc.edu/~khider/"/>
         <terms:contributor rdf:resource="http://w3id.org/people/varunr"/>
         <terms:creator rdf:resource="http://earth.usc.edu/~khider/"/>
@@ -20,7 +20,7 @@
         <terms:title xml:lang="en">The Paleo Units Ontology</terms:title>
         <vann:preferredNamespacePrefix>punits</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://linked.earth/ontology/paleo_units#</vann:preferredNamespaceUri>
-        <owl:versionInfo xml:lang="en">2.0.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2.1.0</owl:versionInfo>
     </owl:Ontology>
     
 

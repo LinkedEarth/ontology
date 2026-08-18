@@ -1,0 +1,9 @@
+name = "linked-earth-ontology"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Route configuration — intercept ontology namespace requests
+# Add these routes in the Cloudflare dashboard or uncomment below:
+# [[routes]]
+# pattern = "linked.earth/ontology*"
+# zone_name = "linked.earth"
